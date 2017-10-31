@@ -1,5 +1,6 @@
 function Garden(config) {
     this.svg = config.svg;
+    this.date = config.date;
     this.canvas = config.canvas;
     this.ctx = config.canvas.getContext('2d');
     this.pan = {x: 0, y: 0};
@@ -80,7 +81,7 @@ Garden.prototype.findTouchedIndividual = function (click, grace) {
             min = rad;
             match = c;
         }
-    });
+    }, this.date);
 
     return match;
 };
@@ -269,7 +270,7 @@ Garden.prototype.render = function () {
         ctx.arc(c.cx, c.cy, c.r, 0, Math.PI * 2, false);
         ctx.fillStyle = this.colorPalette[species.index % this.colorPalette.length];
         ctx.fill();
-    });
+    }, this.date);
 
     this.renderIndividualDetails();
 

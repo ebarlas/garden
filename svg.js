@@ -33,6 +33,11 @@ Svg.prototype.findPaths = function (svg, resolver) {
     });
 };
 
+Svg.prototype.parseDate = function (text) {
+    const parts = /([0-9]+)-([0-9]+)-([0-9]+)/.exec(text);
+    return new Date(parseInt(parts[1]), parseInt(parts[2]) + 1, parseInt(parts[3]));
+};
+
 Svg.prototype.findCircles = function (svg, resolver) {
     return this.iterator(svg, resolver, '//svg:circle[@garden:date][@garden:species][@garden:instance][@garden:version][@garden:type]', node => {
         return {
@@ -40,7 +45,7 @@ Svg.prototype.findCircles = function (svg, resolver) {
             cx: parseFloat(node.attributes.cx.value),
             cy: parseFloat(node.attributes.cy.value),
             r: parseFloat(node.attributes.r.value),
-            date: node.attributes['garden:date'].value,
+            date: this.parseDate(node.attributes['garden:date'].value),
             species: node.attributes['garden:species'].value,
             instance: node.attributes['garden:instance'].value,
             version: parseInt(node.attributes['garden:version'].value),
@@ -49,20 +54,31 @@ Svg.prototype.findCircles = function (svg, resolver) {
     });
 };
 
-Svg.prototype.forEachCircle = function(callback) {
+Svg.prototype.locateVersion = function (versions, date) {
+    let i;
+    for (i = 0; i < versions.length; i++) {
+        // advance until target date is in the past
+        if (date.getTime() <= versions[i].date.getTime()) {
+            break;
+        }
+    }
+    return i === 0 ? null : versions[i - 1];
+};
+
+Svg.prototype.forEachCircle = function (callback, date) {
     Object.keys(this.index).forEach(id => {
         const species = this.index[id];
         Object.keys(species).forEach(instance => {
-            const version = species[instance];
-            const latest = version[version.length - 1];
-            if (latest.type !== 'remove') {
-                callback(latest);
+            const versions = species[instance];
+            const version = date ? this.locateVersion(versions, date) : versions[versions.length - 1];
+            if (version && version.type !== 'remove') {
+                callback(version);
             }
         });
     });
 };
 
-Svg.prototype.index = function(circles) {
+Svg.prototype.index = function (circles) {
     const index = {};
     circles.forEach((c) => {
         let species = index[c.species];
@@ -79,7 +95,7 @@ Svg.prototype.index = function(circles) {
     return index;
 };
 
-Svg.prototype.load = function(callback) {
+Svg.prototype.load = function (callback) {
     const svg = this;
     $.ajax({
         type: "GET",
