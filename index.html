@@ -12,6 +12,7 @@
 <canvas id="gardenCanvas"></canvas>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/suncalc/1.8.0/suncalc.min.js"></script>
 <script src="svg.js"></script>
 <script src="garden.js"></script>
 <script src="species.js"></script>
@@ -22,9 +23,10 @@
         svg: svg,
         canvas: document.getElementById("gardenCanvas"),
         // date: new Date(2014, 0, 1),
-        map: {
-            gardenWidth: 175
-        },
+        date: new Date(2017, 9, 30, 12),
+        gardenWidth: 175,
+        latitude: 38.221946,
+        longitude: -122.659924,
         species: species
     };
 

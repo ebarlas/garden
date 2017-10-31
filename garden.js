@@ -1,18 +1,21 @@
 function Garden(config) {
     this.svg = config.svg;
     this.date = config.date;
+    this.latitude = config.latitude;
+    this.longitude = config.longitude;
     this.canvas = config.canvas;
     this.ctx = config.canvas.getContext('2d');
     this.pan = {x: 0, y: 0};
     this.scale = null;
     this.scaleRange = null;
     this.translation = null;
-    this.zoomOpts = {pinch: 1.05, wheel: 1.05, tap: 1.2, max: 10};
-    this.map = config.map;
+    this.zoomOpts = {pinch: 1.05, wheel: 1.05, tap: 1.0, max: 10};
+    this.gardenWidth = config.gardenWidth;
     this.species = config.species;
     this.speciesIndex = this.indexSpecies(config.species);
     this.selection = {};
     this.selectionOpts = {height: 40, margin: 10, baseline: 26, fontSize: 16};
+    this.sunOpts = {radius: 75};
     /*
     http://colorbrewer2.org
     this.colorPalette = ['#8dd3c7', '#ffffb3', '#bebada', '#fb8072', '#80b1d3', '#fdb462', '#b3de69', '#fccde5', '#d9d9d9', '#bc80bd', '#ccebc5', '#ffed6f'];
@@ -42,7 +45,7 @@ Garden.prototype.canvasCenter = function () {
 };
 
 Garden.prototype.feetPerPixel = function () {
-    return this.map.gardenWidth / this.svg.size.width;
+    return this.gardenWidth / this.svg.size.width;
 };
 
 Garden.prototype.onWindowResize = function () {
@@ -173,16 +176,16 @@ Garden.prototype.init = function () {
 
 Garden.prototype.renderScale = function () {
     const ctx = this.ctx;
-    const width = this.canvas.width;
-    const height = this.canvas.height;
-    const sideMargin = width / 20;
-    const lineWidth = sideMargin * 2;
-    const text = Math.round(lineWidth * this.feetPerPixel() / this.scale) + " feet";
-    const textWidth = this.ctx.measureText(text).width;
-
     ctx.font = '14px serif';
     ctx.lineWidth = 1;
     ctx.fillStyle = 'black';
+
+    const width = this.canvas.width;
+    const height = this.canvas.height;
+    const sideMargin = width / 15;
+    const lineWidth = sideMargin * 2;
+    const text = Math.round(lineWidth * this.feetPerPixel() / this.scale) + " feet";
+    const textWidth = this.ctx.measureText(text).width;
 
     ctx.beginPath();
     ctx.moveTo(width - sideMargin - lineWidth, height - sideMargin);
@@ -245,6 +248,46 @@ Garden.prototype.individualDetailsDimensions = function () {
     };
 };
 
+Garden.prototype.toDegrees = function (radians) {
+    return radians * (180 / Math.PI);
+};
+
+Garden.prototype.renderSun = function () {
+    const sunPos = SunCalc.getPosition(this.date, this.latitude, this.longitude);
+    const sunRadians = sunPos.azimuth;
+    const sunRadius = this.sunOpts.radius;
+
+    const rads = sunRadians + Math.PI / 2;
+
+    const nx = Math.cos(rads);
+    const ny = Math.sin(rads);
+
+    const center = {x: this.canvas.width / 2, y: this.canvas.height / 2};
+
+    const xi = nx > 0 ? this.canvas.width - center.x : -center.x;
+    const yi = ny > 0 ? this.canvas.height - center.y : -center.y;
+
+    const xic = xi / nx;
+    const yic = yi / ny;
+
+    let x, y;
+    if (center.y + ny * xic <= this.canvas.height) {
+        x = center.x + xi;
+        y = center.y + ny * xic;
+    } else {
+        x = center.x + nx * yic;
+        y = center.y + yi;
+    }
+
+    const gradient = this.ctx.createRadialGradient(x, y, sunRadius, x, y, 0);
+    gradient.addColorStop(0, 'white');
+    gradient.addColorStop(1, 'yellow');
+    this.ctx.fillStyle = gradient;
+    this.ctx.beginPath();
+    this.ctx.arc(x, y, sunRadius, 0, Math.PI * 2, false);
+    this.ctx.fill();
+};
+
 Garden.prototype.render = function () {
     const ctx = this.ctx;
     const svg = this.svg;
@@ -275,6 +318,8 @@ Garden.prototype.render = function () {
     this.renderIndividualDetails();
 
     ctx.restore();
+
+    this.renderSun();
 
     this.renderScale();
 };
