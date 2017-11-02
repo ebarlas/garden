@@ -10,7 +10,9 @@ Textbox.maxWidth = function (lines, ctx) {
 };
 
 function Textbox(opts) {
-    this.opts = opts;
+    this.margin = opts.margin;
+    this.fontSize = opts.fontSize;
+    this.lineHeight = opts.lineHeight;
 }
 
 Textbox.prototype.setText = function (lines) {
@@ -24,11 +26,11 @@ Textbox.prototype.setPosition = function (position) {
 };
 
 Textbox.prototype.render = function (ctx, style) {
-    ctx.font = this.opts.fontSize + 'px serif';
+    ctx.font = this.fontSize + 'px serif';
 
     const maxTextWidth = Textbox.maxWidth(this.lines, ctx);
-    const width = maxTextWidth + this.opts.margin * 2;
-    const height = this.opts.lineHeight * (2 * this.lines.length + 1);
+    const width = maxTextWidth + this.margin * 2;
+    const height = this.lineHeight * (2 * this.lines.length + 1);
 
     let x, y;
     if (style === Textbox.UpperLeft) {
@@ -51,6 +53,6 @@ Textbox.prototype.render = function (ctx, style) {
     ctx.fillStyle = 'black';
     ctx.strokeRect(x, y, width, height);
     for (let i = 0; i < this.lines.length; i++) {
-        ctx.fillText(this.lines[i], x + this.opts.margin, y + this.opts.lineHeight * (2 * (i + 1)));
+        ctx.fillText(this.lines[i], x + this.margin, y + this.lineHeight * (2 * (i + 1)));
     }
 };

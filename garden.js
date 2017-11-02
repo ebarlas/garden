@@ -174,40 +174,6 @@ Garden.prototype.init = function () {
     hammertime.on('pinchout', (evt) => garden.onPinchOut(evt));
 };
 
-Garden.prototype.renderScale = function () {
-    const ctx = this.ctx;
-    ctx.font = '14px serif';
-    ctx.lineWidth = 1;
-    ctx.fillStyle = 'black';
-
-    const width = this.canvas.width;
-    const height = this.canvas.height;
-    const sideMargin = width / 15;
-    const lineWidth = sideMargin * 2;
-    const text = Math.round(lineWidth * this.feetPerPixel() / this.scale) + " feet";
-    const textWidth = this.ctx.measureText(text).width;
-
-    ctx.beginPath();
-    ctx.moveTo(width - sideMargin - lineWidth, height - sideMargin);
-    ctx.lineTo(width - sideMargin, height - sideMargin);
-    ctx.closePath();
-    ctx.stroke();
-
-    ctx.beginPath();
-    ctx.moveTo(width - sideMargin - lineWidth, height - sideMargin - 5);
-    ctx.lineTo(width - sideMargin - lineWidth, height - sideMargin + 5);
-    ctx.closePath();
-    ctx.stroke();
-
-    ctx.beginPath();
-    ctx.moveTo(width - sideMargin, height - sideMargin - 5);
-    ctx.lineTo(width - sideMargin, height - sideMargin + 5);
-    ctx.closePath();
-    ctx.stroke();
-
-    ctx.fillText(text, width - sideMargin - lineWidth / 2 - textWidth / 2, height - sideMargin - 5);
-};
-
 Garden.prototype.renderIndividualDetails = function () {
     if (!this.selection.individual) {
         return;
@@ -224,42 +190,6 @@ Garden.prototype.renderIndividualDetails = function () {
 
 Garden.prototype.toDegrees = function (radians) {
     return radians * (180 / Math.PI);
-};
-
-Garden.prototype.renderSun = function () {
-    const sunPos = SunCalc.getPosition(this.date, this.latitude, this.longitude);
-    const sunRadians = sunPos.azimuth;
-    const sunRadius = this.sunOpts.radius;
-
-    const rads = sunRadians + Math.PI / 2;
-
-    const nx = Math.cos(rads);
-    const ny = Math.sin(rads);
-
-    const center = {x: this.canvas.width / 2, y: this.canvas.height / 2};
-
-    const xi = nx > 0 ? this.canvas.width - center.x : -center.x;
-    const yi = ny > 0 ? this.canvas.height - center.y : -center.y;
-
-    const xic = xi / nx;
-    const yic = yi / ny;
-
-    let x, y;
-    if (center.y + ny * xic <= this.canvas.height) {
-        x = center.x + xi;
-        y = center.y + ny * xic;
-    } else {
-        x = center.x + nx * yic;
-        y = center.y + yi;
-    }
-
-    const gradient = this.ctx.createRadialGradient(x, y, sunRadius, x, y, 0);
-    gradient.addColorStop(0, 'white');
-    gradient.addColorStop(1, 'yellow');
-    this.ctx.fillStyle = gradient;
-    this.ctx.beginPath();
-    this.ctx.arc(x, y, sunRadius, 0, Math.PI * 2, false);
-    this.ctx.fill();
 };
 
 Garden.prototype.render = function () {
@@ -293,7 +223,11 @@ Garden.prototype.render = function () {
 
     ctx.restore();
 
-    this.renderSun();
+    new GardenSun({radius: this.sunOpts.radius, date: this.date, latitude: this.latitude, longitude: this.longitude})
+        .setSize(this.canvas.width, this.canvas.height)
+        .render(this.ctx);
 
-    this.renderScale();
+    new Scale({fontSize: 14})
+        .setSize(this.canvas.width, this.canvas.height)
+        .render(this.ctx, this.feetPerPixel() / this.scale);
 };
