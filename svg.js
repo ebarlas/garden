@@ -95,6 +95,10 @@ Svg.prototype.index = function (circles) {
     return index;
 };
 
+Svg.prototype.versions = function (species, instance) {
+    return (this.index[species] || {})[instance];
+};
+
 Svg.prototype.load = function (callback) {
     const svg = this;
     $.ajax({

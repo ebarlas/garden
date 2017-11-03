@@ -1,3 +1,5 @@
+Garden.DateFormat = {month: '2-digit', day: '2-digit', year: 'numeric'};
+
 function Garden(config) {
     this.svg = config.svg;
     this.date = config.date;
@@ -13,7 +15,7 @@ function Garden(config) {
     this.gardenWidth = config.gardenWidth;
     this.species = config.species;
     this.speciesIndex = this.indexSpecies(config.species);
-    this.selection = {};
+    this.selection = null;
     /*
     http://colorbrewer2.org
     this.colorPalette = ['#8dd3c7', '#ffffb3', '#bebada', '#fb8072', '#80b1d3', '#fdb462', '#b3de69', '#fccde5', '#d9d9d9', '#bc80bd', '#ccebc5', '#ffed6f'];
@@ -122,9 +124,9 @@ Garden.prototype.onPanEnd = function (evt) {
 Garden.prototype.onTap = function (evt) {
     const click = this.clickCoordinates(evt.srcEvent);
 
-    this.selection.individual = this.findTouchedIndividual(click, 0);
-    if (!this.selection.individual) {
-        this.selection.individual = this.findTouchedIndividual(click, 2);
+    this.selection = this.findTouchedIndividual(click, 1);
+    if (!this.selection) {
+        this.selection = this.findTouchedIndividual(click, 2);
     }
 
     if (evt.tapCount === 2) {
@@ -173,16 +175,24 @@ Garden.prototype.init = function () {
 };
 
 Garden.prototype.renderIndividualDetails = function () {
-    if (!this.selection.individual) {
+    if (!this.selection) {
         return;
     }
 
-    const ind = this.selection.individual;
+    const ind = this.selection;
     const species = this.speciesIndex[ind.species];
+    const versions = this.svg.versions(ind.species, ind.instance);
+
+    const lines = [
+        species.scientificName,
+        species.commonName,
+        "Version " + ind.version + " of " + versions.length,
+        "Added " + versions[0].date.toLocaleDateString('en', Garden.DateFormat)
+    ];
 
     new Textbox()
         .setPosition({x: ind.cx + ind.r, y: ind.cy - ind.r})
-        .setText([species.scientificName, species.commonName])
+        .setText(lines)
         .setStyle(Textbox.LowerLeft)
         .render(this.ctx);
 };
