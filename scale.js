@@ -1,5 +1,7 @@
-function Scale(opts) {
-    this.fontSize = opts.fontSize;
+function Scale(opts = {}) {
+    this.fontSize = opts.fontSize || 14;
+    this.lineWidth = opts.lineWidth || 150;
+    this.sideMargin = opts.sideMargin || 20;
 }
 
 Scale.prototype.setSize = function (width, height) {
@@ -13,28 +15,26 @@ Scale.prototype.render = function (ctx, feetPerScaledPixel) {
     ctx.lineWidth = 1;
     ctx.fillStyle = 'black';
 
-    const sideMargin = this.width / 15;
-    const lineWidth = sideMargin * 2;
-    const text = Math.round(lineWidth * feetPerScaledPixel) + " feet";
+    const text = Math.round(this.lineWidth * feetPerScaledPixel) + " feet";
     const textWidth = ctx.measureText(text).width;
 
     ctx.beginPath();
-    ctx.moveTo(this.width - sideMargin - lineWidth, this.height - sideMargin);
-    ctx.lineTo(this.width - sideMargin, this.height - sideMargin);
+    ctx.moveTo(this.width - this.sideMargin - this.lineWidth, this.height - this.sideMargin);
+    ctx.lineTo(this.width - this.sideMargin, this.height - this.sideMargin);
     ctx.closePath();
     ctx.stroke();
 
     ctx.beginPath();
-    ctx.moveTo(this.width - sideMargin - lineWidth, this.height - sideMargin - 5);
-    ctx.lineTo(this.width - sideMargin - lineWidth, this.height - sideMargin + 5);
+    ctx.moveTo(this.width - this.sideMargin - this.lineWidth, this.height - this.sideMargin - 5);
+    ctx.lineTo(this.width - this.sideMargin - this.lineWidth, this.height - this.sideMargin + 5);
     ctx.closePath();
     ctx.stroke();
 
     ctx.beginPath();
-    ctx.moveTo(this.width - sideMargin, this.height - sideMargin - 5);
-    ctx.lineTo(this.width - sideMargin, this.height - sideMargin + 5);
+    ctx.moveTo(this.width - this.sideMargin, this.height - this.sideMargin - 5);
+    ctx.lineTo(this.width - this.sideMargin, this.height - this.sideMargin + 5);
     ctx.closePath();
     ctx.stroke();
 
-    ctx.fillText(text, this.width - sideMargin - lineWidth / 2 - textWidth / 2, this.height - sideMargin - 5);
+    ctx.fillText(text, this.width - this.sideMargin - this.lineWidth / 2 - textWidth / 2, this.height - this.sideMargin - 5);
 };

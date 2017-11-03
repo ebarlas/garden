@@ -9,10 +9,10 @@ Textbox.maxWidth = function (lines, ctx) {
     return max;
 };
 
-function Textbox(opts) {
-    this.margin = opts.margin;
-    this.fontSize = opts.fontSize;
-    this.lineHeight = opts.lineHeight;
+function Textbox(opts = {}) {
+    this.margin = opts.margin || 10;
+    this.fontSize = opts.fontSize || 16;
+    this.lineHeight = opts.lineHeight || 10;
 }
 
 Textbox.prototype.setText = function (lines) {
@@ -25,7 +25,12 @@ Textbox.prototype.setPosition = function (position) {
     return this;
 };
 
-Textbox.prototype.render = function (ctx, style) {
+Textbox.prototype.setStyle = function (style) {
+    this.style = style;
+    return this;
+};
+
+Textbox.prototype.render = function (ctx) {
     ctx.font = this.fontSize + 'px serif';
 
     const maxTextWidth = Textbox.maxWidth(this.lines, ctx);
@@ -33,16 +38,16 @@ Textbox.prototype.render = function (ctx, style) {
     const height = this.lineHeight * (2 * this.lines.length + 1);
 
     let x, y;
-    if (style === Textbox.UpperLeft) {
+    if (this.style === Textbox.UpperLeft) {
         x = this.position.x;
         y = this.position.y;
-    } else if (style === Textbox.LowerLeft) {
+    } else if (this.style === Textbox.LowerLeft) {
         x = this.position.x;
         y = this.position.y - height;
-    } else if (style === Textbox.UpperRight) {
+    } else if (this.style === Textbox.UpperRight) {
         x = this.position.x - width;
         y = this.position.y;
-    } else if (style === Textbox.LowerRight) {
+    } else if (this.style === Textbox.LowerRight) {
         x = this.position.x - width;
         y = this.position.y - height;
     }

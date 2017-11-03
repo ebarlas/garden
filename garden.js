@@ -14,8 +14,6 @@ function Garden(config) {
     this.species = config.species;
     this.speciesIndex = this.indexSpecies(config.species);
     this.selection = {};
-    this.selectionOpts = {lineHeight: 10, margin: 10, fontSize: 16};
-    this.sunOpts = {radius: 50};
     /*
     http://colorbrewer2.org
     this.colorPalette = ['#8dd3c7', '#ffffb3', '#bebada', '#fb8072', '#80b1d3', '#fdb462', '#b3de69', '#fccde5', '#d9d9d9', '#bc80bd', '#ccebc5', '#ffed6f'];
@@ -182,14 +180,11 @@ Garden.prototype.renderIndividualDetails = function () {
     const ind = this.selection.individual;
     const species = this.speciesIndex[ind.species];
 
-    new Textbox(this.selectionOpts)
+    new Textbox()
         .setPosition({x: ind.cx + ind.r, y: ind.cy - ind.r})
         .setText([species.scientificName, species.commonName])
-        .render(this.ctx, Textbox.LowerLeft);
-};
-
-Garden.prototype.toDegrees = function (radians) {
-    return radians * (180 / Math.PI);
+        .setStyle(Textbox.LowerLeft)
+        .render(this.ctx);
 };
 
 Garden.prototype.render = function () {
@@ -223,11 +218,11 @@ Garden.prototype.render = function () {
 
     ctx.restore();
 
-    new GardenSun({radius: this.sunOpts.radius, date: this.date, latitude: this.latitude, longitude: this.longitude})
+    new GardenSun({date: this.date, latitude: this.latitude, longitude: this.longitude})
         .setSize(this.canvas.width, this.canvas.height)
         .render(this.ctx);
 
-    new Scale({fontSize: 14})
+    new Scale()
         .setSize(this.canvas.width, this.canvas.height)
         .render(this.ctx, this.feetPerPixel() / this.scale);
 };
