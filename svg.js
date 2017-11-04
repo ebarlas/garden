@@ -42,7 +42,7 @@ Svg.prototype.parseDate = function (text) {
 };
 
 Svg.prototype.findCircles = function (svg, resolver) {
-    return this.iterator(svg, resolver, '//svg:circle[@garden:date][@garden:species][@garden:instance][@garden:version][@garden:type]', node => {
+    return this.iterator(svg, resolver, '//svg:circle[@garden:date][@garden:species][@garden:instance][@garden:version][@garden:type][@garden:description]', node => {
         return {
             id: node.attributes.id.value,
             cx: parseFloat(node.attributes.cx.value),
@@ -52,7 +52,8 @@ Svg.prototype.findCircles = function (svg, resolver) {
             species: node.attributes['garden:species'].value,
             instance: node.attributes['garden:instance'].value,
             version: parseInt(node.attributes['garden:version'].value),
-            type: node.attributes['garden:type'].value
+            type: node.attributes['garden:type'].value,
+            description: node.attributes['garden:type'].description
         };
     });
 };
