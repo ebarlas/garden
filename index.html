@@ -10,7 +10,6 @@
 </head>
 <body>
 <canvas id="gardenCanvas"></canvas>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/suncalc/1.8.0/suncalc.min.js"></script>
 <script src="svg.js"></script>
@@ -19,17 +18,17 @@
 <script src="sun.js"></script>
 <script src="garden.js"></script>
 <script src="species.js"></script>
+<script src="fragment.js"></script>
 <script>
-    const svg = new Svg("property.svg");
+    const fragment = new Fragment();
+
+    const svg = new Svg(fragment.get("svg") || "property.svg");
+    const date = fragment.getDate("date") || new Date();
 
     const config = {
         svg: svg,
         canvas: document.getElementById("gardenCanvas"),
-        // date: new Date(2014, 0, 1),
-        date: new Date(2017, 9, 30, 12),
-        gardenWidth: 175,
-        latitude: 38.221946,
-        longitude: -122.659924,
+        date: date,
         species: species
     };
 

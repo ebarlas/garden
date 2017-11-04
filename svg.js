@@ -19,7 +19,10 @@ Svg.prototype.findSize = function (svg, resolver) {
     return this.iterator(svg, resolver, '//svg:svg', node => {
         return {
             width: parseFloat(node.attributes.width.value),
-            height: parseFloat(node.attributes.height.value)
+            height: parseFloat(node.attributes.height.value),
+            latitude: parseFloat(node.attributes['garden:latitude'].value),
+            longitude: parseFloat(node.attributes['garden:longitude'].value),
+            gardenWidth: parseFloat(node.attributes['garden:width'].value)
         };
     })[0];
 };
@@ -101,10 +104,10 @@ Svg.prototype.versions = function (species, instance) {
 
 Svg.prototype.load = function (callback) {
     const svg = this;
-    $.ajax({
-        type: "GET",
-        url: this.resource
-    }).done(function (res) {
+
+    const xhr = new XMLHttpRequest();
+    xhr.addEventListener("load", evt => {
+        const res = xhr.responseXML;
         const resolver = res.createNSResolver(res.ownerDocument === null
             ? res.documentElement
             : res.ownerDocument.documentElement);
@@ -114,4 +117,6 @@ Svg.prototype.load = function (callback) {
         svg.index = svg.index(svg.circles);
         callback(svg);
     });
+    xhr.open("GET", this.resource);
+    xhr.send();
 };

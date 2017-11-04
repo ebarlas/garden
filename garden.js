@@ -3,8 +3,6 @@ Garden.DateFormat = {month: '2-digit', day: '2-digit', year: 'numeric'};
 function Garden(config) {
     this.svg = config.svg;
     this.date = config.date;
-    this.latitude = config.latitude;
-    this.longitude = config.longitude;
     this.canvas = config.canvas;
     this.ctx = config.canvas.getContext('2d');
     this.pan = {x: 0, y: 0};
@@ -12,7 +10,6 @@ function Garden(config) {
     this.scaleRange = null;
     this.translation = null;
     this.zoomOpts = {pinch: 1.05, wheel: 1.05, tap: 1.0, max: 10};
-    this.gardenWidth = config.gardenWidth;
     this.species = config.species;
     this.speciesIndex = this.indexSpecies(config.species);
     this.selection = null;
@@ -45,7 +42,7 @@ Garden.prototype.canvasCenter = function () {
 };
 
 Garden.prototype.feetPerPixel = function () {
-    return this.gardenWidth / this.svg.size.width;
+    return this.svg.size.gardenWidth / this.svg.size.width;
 };
 
 Garden.prototype.onWindowResize = function () {
@@ -228,7 +225,7 @@ Garden.prototype.render = function () {
 
     ctx.restore();
 
-    new GardenSun({date: this.date, latitude: this.latitude, longitude: this.longitude})
+    new GardenSun({date: this.date, latitude: this.svg.size.latitude, longitude: this.svg.size.longitude})
         .setSize(this.canvas.width, this.canvas.height)
         .render(this.ctx);
 
