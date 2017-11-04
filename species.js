@@ -1,4 +1,4 @@
-const species = [
+const speciesCatalog = [
     {
         id: "teu",
         scientificName: "Teucrium Chamaedrys",

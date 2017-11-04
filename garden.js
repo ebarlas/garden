@@ -9,10 +9,8 @@ function Garden(config) {
     this.scale = null;
     this.scaleRange = null;
     this.translation = null;
-    this.zoomOpts = {pinch: 1.05, wheel: 1.05, tap: 1.0, max: 10};
-    this.species = config.species;
-    this.speciesIndex = this.indexSpecies(config.species);
-    this.selection = null;
+    this.zoomOpts = {pinch: 1.05, wheel: 1.05, tap: 1.0, max: 12};
+    this.speciesIndex = this.indexSpecies(config.speciesCatalog);
     /*
     http://colorbrewer2.org
     this.colorPalette = ['#8dd3c7', '#ffffb3', '#bebada', '#fb8072', '#80b1d3', '#fdb462', '#b3de69', '#fccde5', '#d9d9d9', '#bc80bd', '#ccebc5', '#ffed6f'];
@@ -22,14 +20,9 @@ function Garden(config) {
     this.colorPalette = ['#a6cee3', '#1f78b4', '#b2df8a', '#33a02c', '#fb9a99', '#e31a1c', '#fdbf6f', '#ff7f00', '#cab2d6', '#6a3d9a', '#ffff99', '#b15928'];
 }
 
-/**
- * Index plant species.
- * @param array plant species array, each must contain an id property
- * @returns {{}} map of species objects, indexed by id
- */
 Garden.prototype.indexSpecies = function (array) {
     const index = {};
-    for (let i=0; i<array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
         const s = array[i];
         s.index = i;
         index[s.id] = s;
@@ -152,7 +145,7 @@ Garden.prototype.onWheel = function (evt) {
     evt.preventDefault();
 };
 
-Garden.prototype.init = function () {
+Garden.prototype.init = function (species, instance, zoom) {
     const garden = this;
 
     const resize = () => garden.onWindowResize();
@@ -169,6 +162,18 @@ Garden.prototype.init = function () {
     hammertime.on('tap', (evt) => garden.onTap(evt));
     hammertime.on('pinchin', (evt) => garden.onPinchIn(evt));
     hammertime.on('pinchout', (evt) => garden.onPinchOut(evt));
+
+    this.selection = (species && instance)
+        ? this.svg.versionAt(species, instance, this.date)
+        : null;
+
+    if (this.selection) {
+        this.zoom(true, zoom, {
+            x: this.translation.x + this.scale * this.selection.cx,
+            y: this.translation.y + this.scale * this.selection.cy
+        });
+        this.render();
+    }
 };
 
 Garden.prototype.renderIndividualDetails = function () {

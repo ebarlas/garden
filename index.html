@@ -24,18 +24,21 @@
 
     const svg = new Svg(fragment.get("svg") || "property.svg");
     const date = fragment.getDate("date") || new Date();
+    const species = fragment.get("species");
+    const instance = fragment.get("instance");
+    const zoom = parseFloat(fragment.get("zoom") || "1.0");
 
     const config = {
         svg: svg,
         canvas: document.getElementById("gardenCanvas"),
         date: date,
-        species: species
+        speciesCatalog: speciesCatalog
     };
 
     const garden = new Garden(config);
 
     svg.load(() => {
-        garden.init();
+        garden.init(species, instance, zoom);
     });
 </script>
 </body>

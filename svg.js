@@ -102,6 +102,10 @@ Svg.prototype.versions = function (species, instance) {
     return (this.index[species] || {})[instance];
 };
 
+Svg.prototype.versionAt = function (species, instance, date) {
+    return this.locateVersion(this.versions(species, instance) || [], date);
+};
+
 Svg.prototype.load = function (callback) {
     const svg = this;
 
