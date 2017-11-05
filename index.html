@@ -11,21 +11,21 @@
 <body>
 <canvas id="gardenCanvas"></canvas>
 <div style="display:none;">
-    <img id="imgSun" src="sun.svg">
+    <img id="imgSun" src="img/sun.svg">
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/suncalc/1.8.0/suncalc.min.js"></script>
-<script src="svg.js"></script>
-<script src="textbox.js"></script>
-<script src="scale.js"></script>
-<script src="sun.js"></script>
-<script src="garden.js"></script>
-<script src="species.js"></script>
-<script src="fragment.js"></script>
+<script src="js/svg.js"></script>
+<script src="js/textbox.js"></script>
+<script src="js/scale.js"></script>
+<script src="js/sun.js"></script>
+<script src="js/garden.js"></script>
+<script src="js/species.js"></script>
+<script src="js/fragment.js"></script>
 <script>
     const fragment = new Fragment();
 
-    const svg = new Svg(fragment.get("svg") || "property.svg");
+    const svg = new Svg(fragment.get("svg") || "img/property.svg");
     const date = fragment.getDate("date") || new Date();
     const species = fragment.get("species");
     const instance = fragment.get("instance");
