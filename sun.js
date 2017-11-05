@@ -1,7 +1,7 @@
 GardenSun.DateFormat = {month: '2-digit', day: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit'};
 
 function GardenSun(opts) {
-    this.radius = opts.radius || 50;
+    this.radius = opts.radius || 75;
     this.margin = opts.margin || 20;
     this.date = opts.date;
     this.position = SunCalc.getPosition(opts.date, opts.latitude, opts.longitude);
@@ -44,14 +44,8 @@ GardenSun.prototype.render = function (ctx) {
         y = center.y + yi;
     }
 
-    const gradient = ctx.createRadialGradient(x, y, this.radius, x, y, 0);
-    gradient.addColorStop(0, 'white');
-    gradient.addColorStop(1, 'yellow');
-
-    ctx.fillStyle = gradient;
-    ctx.beginPath();
-    ctx.arc(x, y, this.radius, 0, Math.PI * 2, false);
-    ctx.fill();
+    const image = document.getElementById('imgSun');
+    ctx.drawImage(image, x - this.radius, y - this.radius, this.radius * 2, this.radius * 2);
 
     const lines = [
         this.date.toLocaleDateString('en', GardenSun.DateFormat),
