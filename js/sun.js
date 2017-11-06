@@ -5,6 +5,7 @@ function GardenSun(opts) {
     this.margin = opts.margin || 20;
     this.date = opts.date;
     this.position = SunCalc.getPosition(opts.date, opts.latitude, opts.longitude);
+    this.showText = false;
 }
 
 GardenSun.prototype.setSize = function (width, height) {
@@ -17,9 +18,9 @@ GardenSun.prototype.toDegrees = function (radians) {
     return radians * (180 / Math.PI);
 };
 
-GardenSun.prototype.render = function (ctx) {
+GardenSun.prototype.compute = function () {
     if (this.position.altitude <= 0) {
-        return;
+        return null;
     }
 
     const rads = this.position.azimuth + Math.PI / 2;
@@ -36,7 +37,7 @@ GardenSun.prototype.render = function (ctx) {
     const yic = yi / ny;
 
     let x, y;
-    if (center.y + ny * xic <= this.height) {
+    if (ny > 0 && center.y + ny * xic <= this.height || ny < 0 && center.y + ny * xic >= 0) {
         x = center.x + xi;
         y = center.y + ny * xic;
     } else {
@@ -44,18 +45,70 @@ GardenSun.prototype.render = function (ctx) {
         y = center.y + yi;
     }
 
+    return {x: x, y: y};
+};
+
+GardenSun.prototype.onTap = function (click) {
+    console.log('tap', click);
+    const sun = this.compute();
+
+    const xDiff = click.x - sun.x;
+    const yDiff = click.y - sun.y;
+    this.showText = xDiff * xDiff + yDiff * yDiff <= this.radius * this.radius;
+};
+
+GardenSun.prototype.render = function (ctx) {
+    const sun = this.compute();
     const image = document.getElementById('imgSun');
-    ctx.drawImage(image, x - this.radius, y - this.radius, this.radius * 2, this.radius * 2);
+    ctx.drawImage(image, sun.x - this.radius, sun.y - this.radius, this.radius * 2, this.radius * 2);
 
-    const lines = [
-        this.date.toLocaleDateString('en', GardenSun.DateFormat),
-        "Sun Altitude " + Math.round(this.toDegrees(this.position.altitude)) + '\u00B0',
-        "Sun Azimuth " + Math.round(this.toDegrees(rads)) + '\u00B0'
-    ];
+    if (this.showText) {
+        const lines = [
+            this.date.toLocaleDateString('en', GardenSun.DateFormat),
+            "Sun Altitude " + Math.round(this.toDegrees(this.position.altitude)) + '\u00B0',
+            "Sun Azimuth " + Math.round(this.toDegrees(this.position.azimuth + Math.PI / 2)) + '\u00B0'
+        ];
 
-    new Textbox()
-        .setText(lines)
-        .setPosition({x: this.width - this.margin, y: this.margin})
-        .setStyle(Textbox.UpperRight)
-        .render(ctx);
+        let style;
+        let position;
+        if (sun.x === 0) {
+            if (sun.y < this.height / 2) {
+                position = {x: sun.x + this.radius, y: sun.y + this.radius};
+                style = Textbox.UpperLeft;
+            } else {
+                position = {x: sun.x + this.radius, y: sun.y - this.radius};
+                style = Textbox.LowerLeft;
+            }
+        } else if (sun.x === this.width) {
+            if (sun.y < this.height / 2) {
+                position = {x: sun.x - this.radius, y: sun.y + this.radius};
+                style = Textbox.UpperRight;
+            } else {
+                position = {x: sun.x - this.radius, y: sun.y - this.radius};
+                style = Textbox.LowerRight;
+            }
+        } else if (sun.x < this.width / 2) {
+            if (sun.y === 0) {
+                position = {x: sun.x + this.radius, y: sun.y + this.radius};
+                style = Textbox.UpperLeft;
+            } else {
+                position = {x: sun.x + this.radius, y: sun.y - this.radius};
+                style = Textbox.LowerLeft;
+            }
+        } else {
+            if (sun.y === 0) {
+                position = {x: sun.x - this.radius, y: sun.y + this.radius};
+                style = Textbox.UpperRight;
+            } else {
+                position = {x: sun.x - this.radius, y: sun.y - this.radius};
+                style = Textbox.LowerRight;
+            }
+        }
+
+        new Textbox()
+            .setText(lines)
+            .setPosition(position)
+            .setStyle(style)
+            .render(ctx);
+    }
 };

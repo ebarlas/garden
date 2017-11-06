@@ -107,6 +107,15 @@ Svg.prototype.versionAt = function (species, instance, date) {
     return this.locateVersion(this.versions(species, instance) || [], date);
 };
 
+Svg.prototype.versionsAt = function (species, date) {
+    const instances = this.index[species];
+    const versions = [];
+    for (const instance in instances) {
+        versions.push(this.locateVersion(instances[instance], date));
+    }
+    return versions;
+};
+
 Svg.prototype.load = function (callback) {
     const svg = this;
 

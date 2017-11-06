@@ -9,6 +9,12 @@ function Garden(config) {
     this.scale = null;
     this.scaleRange = null;
     this.translation = null;
+    this.selection = null;
+    this.framesPerPeriod = 30;
+    this.frameInterval = 50;
+    this.highlights = [];
+    this.intervalId = null;
+    this.sun = null;
     this.zoomOpts = {pinch: 1.05, wheel: 1.05, tap: 1.0, max: 12};
     this.speciesIndex = this.indexSpecies(config.speciesCatalog);
     /*
@@ -121,7 +127,15 @@ Garden.prototype.onTap = function (evt) {
 
     if (evt.tapCount === 2) {
         this.zoom(true, this.zoomOpts.tap, click);
+    } else {
+        if (this.intervalId) {
+            clearInterval(this.intervalId);
+            this.highlights = [];
+            this.intervalId = null;
+        }
     }
+
+    this.sun.onTap(click);
 
     this.render();
 };
@@ -145,8 +159,14 @@ Garden.prototype.onWheel = function (evt) {
     evt.preventDefault();
 };
 
-Garden.prototype.init = function (species, instance, zoom) {
+Garden.prototype.init = function (species, instance) {
     const garden = this;
+
+    this.sun = new GardenSun({
+        date: this.date,
+        latitude: this.svg.size.latitude,
+        longitude: this.svg.size.longitude
+    });
 
     const resize = () => garden.onWindowResize();
     window.addEventListener('resize', resize, false);
@@ -163,16 +183,18 @@ Garden.prototype.init = function (species, instance, zoom) {
     hammertime.on('pinchin', (evt) => garden.onPinchIn(evt));
     hammertime.on('pinchout', (evt) => garden.onPinchOut(evt));
 
-    this.selection = (species && instance)
-        ? this.svg.versionAt(species, instance, this.date)
-        : null;
+    if (species) {
+        if (instance) {
+            this.highlights = [this.svg.versionAt(species, instance, this.date)];
+        } else {
+            this.highlights = this.svg.versionsAt(species, this.date);
+        }
 
-    if (this.selection) {
-        this.zoom(true, zoom, {
-            x: this.translation.x + this.scale * this.selection.cx,
-            y: this.translation.y + this.scale * this.selection.cy
-        });
-        this.render();
+        this.frame = 0;
+        this.intervalId = window.setInterval(() => {
+            garden.render();
+            this.frame = (this.frame + 1) % this.framesPerPeriod;
+        }, this.frameInterval);
     }
 };
 
@@ -199,6 +221,20 @@ Garden.prototype.renderIndividualDetails = function () {
         .render(this.ctx);
 };
 
+Garden.prototype.pulsate = function (ctx) {
+    this.highlights.forEach(h => {
+        const r = this.interpolate(this.frame / this.framesPerPeriod);
+        ctx.beginPath();
+        ctx.arc(h.cx, h.cy, r * 100, 0, Math.PI * 2, false);
+        ctx.strokeStyle = 'rgba(0, 0, 0, ' + (1.0 - r) + ')';
+        ctx.stroke();
+    });
+};
+
+Garden.prototype.interpolate = function (input) {
+    return 1.0 - (1.0 - input) * (1.0 - input);
+};
+
 Garden.prototype.render = function () {
     const ctx = this.ctx;
     const svg = this.svg;
@@ -216,6 +252,8 @@ Garden.prototype.render = function () {
         ctx.stroke(new Path2D(p.d));
     });
 
+    this.pulsate(ctx);
+
     ctx.globalAlpha = 0.9;
 
     svg.forEachCircle(c => {
@@ -230,7 +268,7 @@ Garden.prototype.render = function () {
 
     ctx.restore();
 
-    new GardenSun({date: this.date, latitude: this.svg.size.latitude, longitude: this.svg.size.longitude})
+    this.sun
         .setSize(this.canvas.width, this.canvas.height)
         .render(this.ctx);
 
