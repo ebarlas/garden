@@ -1,4 +1,37 @@
+GardenSun.Directions = [
+    {degrees: 0, direction: "N"},
+    {degrees: 11.25, direction: "NNE"},
+    {degrees: 33.75, direction: "NE"},
+    {degrees: 56.25, direction: "ENE"},
+    {degrees: 78.75, direction: "E"},
+    {degree: 101.25, direction: "ESE"},
+    {degrees: 123.75, direction: "SE"},
+    {degrees: 146.25, direction: "SSE"},
+    {degrees: 168.75, direction: "S"},
+    {degrees: 191.25, direction: "SSW"},
+    {degrees: 213.75, direction: "SW"},
+    {degrees: 236.25, direction: "WSW"},
+    {degrees: 258.75, direction: "W"},
+    {degrees: 281.25, direction: "WNW"},
+    {degrees: 303.75, direction: "NW"},
+    {degrees: 326.25, direction: "NNW"},
+    {degrees: 348.75, direction: "N"}
+];
+
 GardenSun.DateFormat = {month: '2-digit', day: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit'};
+
+GardenSun.toDirection = function (degrees) {
+    while (degrees < 0) degrees += 360;
+    while (degrees > 360) degrees -= 360;
+
+    for (let i = 1; i < GardenSun.Directions.length; i++) {
+        if (degrees >= GardenSun.Directions[i - 1].degrees && degrees <= GardenSun.Directions[i].degrees) {
+            return GardenSun.Directions[i - 1].direction;
+        }
+    }
+
+    return GardenSun.Directions[GardenSun.Directions.length - 1].direction;
+};
 
 function GardenSun(opts) {
     this.radius = opts.radius || 75;
@@ -63,10 +96,13 @@ GardenSun.prototype.render = function (ctx) {
     ctx.drawImage(image, sun.x - this.radius, sun.y - this.radius, this.radius * 2, this.radius * 2);
 
     if (this.showText) {
+        const altitude = Math.round(this.toDegrees(this.position.altitude));
+        const azimuth = Math.round(this.toDegrees(this.position.azimuth + Math.PI / 2));
+
         const lines = [
             this.date.toLocaleDateString('en', GardenSun.DateFormat),
-            "Sun Altitude " + Math.round(this.toDegrees(this.position.altitude)) + '\u00B0',
-            "Sun Azimuth " + Math.round(this.toDegrees(this.position.azimuth + Math.PI / 2)) + '\u00B0'
+            "Sun Altitude " + altitude + '\u00B0',
+            "Sun Azimuth " + azimuth + '\u00B0 ' + GardenSun.toDirection(azimuth + 90)
         ];
 
         let style;
