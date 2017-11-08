@@ -211,7 +211,7 @@ Garden.prototype.renderIndividualDetails = function () {
         species.scientificName,
         species.commonName,
         "Version " + ind.version + " of " + versions.length,
-        "Added " + versions[0].date.toLocaleDateString('en', Garden.DateFormat)
+        "Introduced " + versions[0].date.toLocaleDateString('en', Garden.DateFormat)
     ];
 
     new Textbox()

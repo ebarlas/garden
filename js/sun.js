@@ -82,8 +82,10 @@ GardenSun.prototype.compute = function () {
 };
 
 GardenSun.prototype.onTap = function (click) {
-    console.log('tap', click);
     const sun = this.compute();
+    if (!sun) {
+        return;
+    }
 
     const xDiff = click.x - sun.x;
     const yDiff = click.y - sun.y;
@@ -92,6 +94,10 @@ GardenSun.prototype.onTap = function (click) {
 
 GardenSun.prototype.render = function (ctx) {
     const sun = this.compute();
+    if (!sun) {
+        return;
+    }
+
     const image = document.getElementById('imgSun');
     ctx.drawImage(image, sun.x - this.radius, sun.y - this.radius, this.radius * 2, this.radius * 2);
 
