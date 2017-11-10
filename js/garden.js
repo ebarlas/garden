@@ -16,7 +16,6 @@ function Garden(config) {
     this.intervalId = null;
     this.sun = null;
     this.zoomOpts = {pinch: 1.05, wheel: 1.05, tap: 1.0, max: 12};
-    this.speciesIndex = this.indexSpecies(config.speciesCatalog);
     /*
     http://colorbrewer2.org
     this.colorPalette = ['#8dd3c7', '#ffffb3', '#bebada', '#fb8072', '#80b1d3', '#fdb462', '#b3de69', '#fccde5', '#d9d9d9', '#bc80bd', '#ccebc5', '#ffed6f'];
@@ -25,16 +24,6 @@ function Garden(config) {
     */
     this.colorPalette = ['#a6cee3', '#1f78b4', '#b2df8a', '#33a02c', '#fb9a99', '#e31a1c', '#fdbf6f', '#ff7f00', '#cab2d6', '#6a3d9a', '#ffff99', '#b15928'];
 }
-
-Garden.prototype.indexSpecies = function (array) {
-    const index = {};
-    for (let i = 0; i < array.length; i++) {
-        const s = array[i];
-        s.index = i;
-        index[s.id] = s;
-    }
-    return index;
-};
 
 Garden.prototype.canvasCenter = function () {
     return {x: this.canvas.width / 2, y: this.canvas.height / 2};
@@ -204,7 +193,7 @@ Garden.prototype.renderIndividualDetails = function () {
     }
 
     const ind = this.selection;
-    const species = this.speciesIndex[ind.species];
+    const species = GardenSpecies.index[ind.species];
     const versions = this.svg.versions(ind.species, ind.instance);
 
     const lines = [
@@ -257,7 +246,7 @@ Garden.prototype.render = function () {
     ctx.globalAlpha = 0.9;
 
     svg.forEachCircle(c => {
-        const species = this.speciesIndex[c.species];
+        const species = GardenSpecies.index[c.species];
         ctx.beginPath();
         ctx.arc(c.cx, c.cy, c.r, 0, Math.PI * 2, false);
         ctx.fillStyle = this.colorPalette[species.index % this.colorPalette.length];

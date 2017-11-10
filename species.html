@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Garden Species</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            padding-top: 5rem;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Garden</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Species</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Individuals</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Garden</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input id="txtSearch" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        </form>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Scientific Name<button id="btnSciName" data-property="scientificName" type="button" class="btn btn-sm"><i class="fa fa-sort-asc"></i></button></th>
+            <th>Common Name<button data-property="commonName" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
+            <th>Type<button data-property="type" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
+            <th>Individuals<button data-property="individuals" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
+            <th>Introduced<button data-property="introduced" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
+            <th>Updated<button data-property="updated" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
+        </tr>
+        </thead>
+        <tbody id="tbodySpecies">
+        </tbody>
+    </table>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="js/species.js"></script>
+<script src="js/svg.js"></script>
+<script>
+    const format = {month: '2-digit', day: '2-digit', year: 'numeric'};
+    const svg = new Svg("img/property.svg");
+
+    let speciesList = [];
+
+    function dateParam(date) {
+        return date.getFullYear() + '-' + (date.getMonth() + 1) + "-" + date.getDate();
+    }
+
+    function formatDate(date) {
+        return date.toLocaleDateString('en', format);
+    }
+
+    function speciesTableRow(species) {
+        return `
+        <tr data-species="${species.id}">
+            <td><a href="index.html#species=${species.id}">${species.scientificName}</a></td>
+            <td>${species.commonName}</td>
+            <td>${species.type}</td>
+            <td><a href="individuals.html#species=${species.id}">${Object.keys(svg.index[species.id]).length}</a></td>
+            <td><a href="index.html#date=${dateParam(species.firstVersion)}">${formatDate(species.firstVersion)}</a></td>
+            <td><a href="index.html#date=${dateParam(species.lastVersion)}">${formatDate(species.lastVersion)}</a></td>
+        </tr>`;
+    }
+
+    function replaceTableRows(input) {
+        let html = "";
+        speciesList.forEach(s => {
+            if (input.length === 0
+                || s.scientificName.toLowerCase().indexOf(input) >= 0
+                || s.commonName.toLowerCase().indexOf(input) >= 0) {
+                html += speciesTableRow(s);
+            }
+        });
+
+        $("#tbodySpecies tr").remove();
+        $("#tbodySpecies").append(html);
+    }
+
+    function sortAndReplaceTableRows(input, comparator) {
+        speciesList.sort(comparator);
+        replaceTableRows(input);
+    }
+
+    function init() {
+        GardenSpecies.Catalog.forEach(s => {
+            const species = {
+                individuals: Object.keys(svg.index[s.id]).length,
+                firstVersion: svg.firstVersion(s.id),
+                lastVersion: svg.lastVersion(s.id)
+            };
+            $.extend(species, s);
+            speciesList.push(species);
+        });
+
+        sortAndReplaceTableRows("", (l, r) => l.scientificName.localeCompare(r.scientificName));
+
+        $("#txtSearch").keyup(function () {
+            replaceTableRows($(this).val().toLowerCase());
+        });
+
+        $("thead th button").click(function () {
+            const i = $(this).find("i");
+            const property = $(this).attr("data-property");
+            const asc = i.hasClass("fa-sort-asc");
+            const mul = (asc ? -1 : 1);
+            const search = $("#txtSearch").val();
+
+            $("thead th button i").removeClass("fa-sort-asc").removeClass("fa-sort-desc").addClass("fa-sort");
+            i.removeClass("fa-sort").addClass(asc ? "fa-sort-desc" : "fa-sort-asc");
+
+            if (property === "scientificName") {
+                sortAndReplaceTableRows(search, (l, r) => mul * l.scientificName.localeCompare(r.scientificName));
+            } else if (property === "commonName") {
+                sortAndReplaceTableRows(search, (l, r) => mul * l.commonName.localeCompare(r.commonName));
+            } else if (property === "type") {
+                sortAndReplaceTableRows(search, (l, r) => mul * l.type.localeCompare(r.type));
+            } else if (property === "individuals") {
+                sortAndReplaceTableRows(search, (l, r) => mul * (l.individuals - r.individuals));
+            } else if (property === "introduced") {
+                sortAndReplaceTableRows(search, (l, r) => mul * (l.firstVersion.getTime() - r.firstVersion.getTime()));
+            } else if (property === "updated") {
+                sortAndReplaceTableRows(search, (l, r) => mul * (l.lastVersion.getTime() - r.lastVersion.getTime()));
+            }
+        });
+    }
+
+    svg.load(init);
+</script>
+</body>
+</html>

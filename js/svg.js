@@ -38,7 +38,7 @@ Svg.prototype.findPaths = function (svg, resolver) {
 
 Svg.prototype.parseDate = function (text) {
     const parts = /([0-9]+)-([0-9]+)-([0-9]+)/.exec(text);
-    return new Date(parseInt(parts[1]), parseInt(parts[2]) + 1, parseInt(parts[3]));
+    return new Date(parseInt(parts[1]), parseInt(parts[2]) - 1, parseInt(parts[3]));
 };
 
 Svg.prototype.findCircles = function (svg, resolver) {
@@ -53,7 +53,7 @@ Svg.prototype.findCircles = function (svg, resolver) {
             instance: node.attributes['garden:instance'].value,
             version: parseInt(node.attributes['garden:version'].value),
             type: node.attributes['garden:type'].value,
-            description: node.attributes['garden:type'].description
+            description: node.attributes['garden:description'].value
         };
     });
 };
@@ -62,11 +62,17 @@ Svg.prototype.locateVersion = function (versions, date) {
     let i;
     for (i = 0; i < versions.length; i++) {
         // advance until target date is in the past
-        if (date.getTime() <= versions[i].date.getTime()) {
+        if (date.getTime() < versions[i].date.getTime()) {
             break;
         }
     }
     return i === 0 ? null : versions[i - 1];
+};
+
+Svg.prototype.forEachInstance = function (species, callback) {
+    for (const instance in this.index[species]) {
+        callback(this.index[species][instance]);
+    }
 };
 
 Svg.prototype.forEachCircle = function (callback, date) {
@@ -97,6 +103,29 @@ Svg.prototype.index = function (circles) {
         instance.sort((l, r) => l.version - r.version);
     });
     return index;
+};
+
+Svg.prototype.firstVersion = function (species) {
+    const instances = this.index[species];
+    let min = null;
+    for (const instance in instances) {
+        if (min === null || instances[instance][0].date.getTime() < min.getTime()) {
+            min = instances[instance][0].date;
+        }
+    }
+    return min;
+};
+
+Svg.prototype.lastVersion = function (species) {
+    const instances = this.index[species];
+    let max = null;
+    for (const instance in instances) {
+        const arr = instances[instance];
+        if (max === null || arr[arr.length - 1].date.getTime() < max.getTime()) {
+            max = arr[arr.length - 1].date;
+        }
+    }
+    return max;
 };
 
 Svg.prototype.versions = function (species, instance) {
