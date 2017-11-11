@@ -4,7 +4,8 @@ GardenSpecies.Type = {
     Shrub: "Shrub",
     Perennial: "Perennial",
     Grass: "Grass",
-    Tree: "Tree"
+    Tree: "Tree",
+    Succulent: "Succulent"
 };
 
 GardenSpecies.Catalog = [
@@ -67,6 +68,54 @@ GardenSpecies.Catalog = [
         scientificName: "Liquidambar styraciflua",
         commonName: "Sweet Gum",
         type: GardenSpecies.Type.Tree
+    },
+    {
+        id: "ray",
+        scientificName: "Fraxinus oxycarpa 'Raywood'",
+        commonName: "Raywood Ash",
+        type: GardenSpecies.Type.Tree
+    },
+    {
+        id: "icy",
+        scientificName: "Cupressus sempervirens 'Glauca'",
+        commonName: "Italian Cypress",
+        type: GardenSpecies.Type.Tree
+    },
+    {
+        id: "lil",
+        scientificName: "Hemerocallis",
+        commonName: "Daylily",
+        type: GardenSpecies.Type.Perennial
+    },
+    {
+        id: "ses",
+        scientificName: "Sesleria 'Greenlee'",
+        commonName: "John Greenlee's Moor Grass",
+        type: GardenSpecies.Type.Grass
+    },
+    {
+        id: "ole",
+        scientificName: "Olea europaea 'Montra'",
+        commonName: "Little Olive",
+        type: GardenSpecies.Type.Shrub
+    },
+    {
+        id: "aga",
+        scientificName: "Agave desmettiana 'Variegata'",
+        commonName: "Variegated Dwarf Agave",
+        type: GardenSpecies.Type.Succulent
+    },
+    {
+        id: "rud",
+        scientificName: "Rudbeckia fulgida sullivantii 'Goldsturm'",
+        commonName: "Black-Eyed Susan",
+        type: GardenSpecies.Type.Perennial
+    },
+    {
+        id: "kar",
+        scientificName: "Calamagrostis x acutiflora 'Karl Foerster'",
+        commonName: "Feather Reed Grass",
+        type: GardenSpecies.Type.Grass
     }
 ];
 

@@ -355,19 +355,37 @@
        id="circle3493"
        cx="1085.0974"
        cy="458.84909"
-       r="10" />
+       r="10"
+       garden:date="2016-04-13"
+       garden:species="lom"
+       garden:instance="3"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        r="10"
        cy="485.66599"
        cx="1087.4293"
        id="circle3495"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2016-04-13"
+       garden:species="lom"
+       garden:instance="4"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="circle3497"
        cx="1081.5996"
        cy="510.15097"
-       r="10" />
+       r="10"
+       garden:date="2016-04-13"
+       garden:species="lom"
+       garden:instance="5"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        r="11"
        cy="532.88702"
@@ -493,19 +511,37 @@
        id="circle3395"
        cx="1110.8827"
        cy="465.3241"
-       r="6" />
+       r="6"
+       garden:date="2016-05-11"
+       garden:species="ses"
+       garden:instance="4"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        r="6"
        cy="444.22473"
        cx="1109.677"
        id="circle3397"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2016-05-11"
+       garden:species="ses"
+       garden:instance="5"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="circle3399"
        cx="1131.3793"
        cy="435.18213"
-       r="6" />
+       r="6"
+       garden:date="2016-05-11"
+       garden:species="ses"
+       garden:instance="6"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        r="6"
        cy="385.74927"
@@ -517,13 +553,25 @@
        id="circle3407"
        cx="1012.6199"
        cy="224.79108"
-       r="6" />
+       r="6"
+       garden:date="2016-05-11"
+       garden:species="ses"
+       garden:instance="3"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        r="6"
        cy="203.69168"
        cx="1004.1801"
        id="circle3409"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2016-05-11"
+       garden:species="ses"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="circle3459"
@@ -715,7 +763,13 @@
        id="circle3411"
        cx="1028.2937"
        cy="205.5002"
-       r="6" />
+       r="6"
+       garden:date="2016-05-11"
+       garden:species="ses"
+       garden:instance="2"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        r="5"
        cy="193.25771"
@@ -745,19 +799,37 @@
        id="circle3415"
        cx="1209.1455"
        cy="347.16754"
-       r="7" />
+       r="7"
+       garden:date="2016-05-11"
+       garden:species="rud"
+       garden:instance="4"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        r="7"
        cy="333.30219"
        cx="1235.6704"
        id="circle3417"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2016-05-11"
+       garden:species="rud"
+       garden:instance="5"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="circle3419"
        cx="1237.479"
        cy="304.36591"
-       r="7" />
+       r="7"
+       garden:date="2016-05-11"
+       garden:species="rud"
+       garden:instance="6"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="circle3403"
@@ -925,7 +997,13 @@
        cy="148.24251"
        cx="1092.7422"
        id="circle3426"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2016-05-11"
+       garden:species="aga"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="circle3428"
@@ -937,19 +1015,37 @@
        cy="138.38551"
        cx="1207.1576"
        id="circle3460"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2016-05-11"
+       garden:species="kar"
+       garden:instance="3"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="circle3464"
        cx="1163.4344"
        cy="113.31755"
-       r="9" />
+       r="9"
+       garden:date="2016-05-11"
+       garden:species="kar"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="circle3462"
        cx="1196.0811"
        cy="109.81969"
-       r="9" />
+       r="9"
+       garden:date="2016-05-11"
+       garden:species="kar"
+       garden:instance="2"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        r="9"
        cy="101.73147"
@@ -967,25 +1063,49 @@
        cy="142.70563"
        cx="979.7312"
        id="circle3487"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:type="add"
+       garden:version="1"
+       garden:instance="3"
+       garden:species="lil"
+       garden:description="Plant was present when we moved in."
+       garden:date="2014-04-19"/>
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="circle3489"
        cx="983.81207"
        cy="120.55254"
-       r="8" />
+       r="8"
+       garden:type="add"
+       garden:version="1"
+       garden:instance="1"
+       garden:species="lil"
+       garden:description="Plant was present when we moved in."
+       garden:date="2014-04-19"/>
     <circle
        r="8"
        cy="135.12694"
        cx="1001.8843"
        id="circle3491"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:type="add"
+       garden:version="1"
+       garden:instance="2"
+       garden:species="lil"
+       garden:description="Plant was present when we moved in."
+       garden:date="2014-04-19"/>
     <circle
        r="11"
        cy="49.356663"
        cx="936.00677"
        id="circle3434"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2016-05-11"
+       garden:species="ole"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="circle3476"
@@ -1777,67 +1897,133 @@
        id="circle3483"
        cx="969.8194"
        cy="100.65855"
-       r="11" />
+       r="11"
+       garden:type="add"
+       garden:version="1"
+       garden:instance="1"
+       garden:species="icy"
+       garden:description="Tree was present when we moved in."
+       garden:date="2014-04-19"/>
     <circle
        r="11"
        cy="168.28375"
        cx="989.64056"
        id="circle3485"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:type="add"
+       garden:version="1"
+       garden:instance="2"
+       garden:species="icy"
+       garden:description="Tree was present when we moved in."
+       garden:date="2014-04-19"/>
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="circle3436"
        cx="966.51154"
        cy="50.181114"
-       r="11" />
+       r="11"
+       garden:date="2016-05-11"
+       garden:species="ole"
+       garden:instance="2"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        r="11"
        cy="51.417793"
        cx="995.36737"
        id="circle3438"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2016-05-11"
+       garden:species="ole"
+       garden:instance="3"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="circle3440"
        cx="1024.2233"
        cy="53.0667"
-       r="11" />
+       r="11"
+       garden:date="2016-05-11"
+       garden:species="ole"
+       garden:instance="4"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        r="11"
        cy="65.021263"
        cx="1051.4302"
        id="circle3442"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2016-05-11"
+       garden:species="ole"
+       garden:instance="5"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="circle3444"
        cx="1078.2249"
        cy="55.952286"
-       r="11" />
+       r="11"
+       garden:date="2016-05-11"
+       garden:species="ole"
+       garden:instance="6"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        r="11"
        cy="69.143524"
        cx="1104.1951"
        id="circle3446"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2016-05-11"
+       garden:species="ole"
+       garden:instance="7"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="circle3448"
        cx="1129.3408"
        cy="56.36451"
-       r="11" />
+       r="11"
+       garden:date="2016-05-11"
+       garden:species="ole"
+       garden:instance="8"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        r="11"
        cy="72.853561"
        cx="1151.1888"
        id="circle3450"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2016-05-11"
+       garden:species="ole"
+       garden:instance="9"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="circle3452"
        cx="1174.6858"
        cy="58.013416"
-       r="11" />
+       r="11"
+       garden:date="2016-05-11"
+       garden:species="ole"
+       garden:instance="10"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        r="11"
        cy="76.975822"
@@ -1849,7 +2035,13 @@
        id="circle3456"
        cx="1201.0682"
        cy="76.975822"
-       r="11" />
+       r="11"
+       garden:date="2016-05-11"
+       garden:species="ole"
+       garden:instance="11"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        r="11"
        cy="342.22989"
@@ -1879,7 +2071,13 @@
        cy="61.818447"
        cx="1226.4277"
        id="circle3458"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2016-05-11"
+       garden:species="ole"
+       garden:instance="12"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="circle3503"
@@ -1891,7 +2089,13 @@
        cy="99.711884"
        cx="1235.1724"
        id="circle3509"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:type="add"
+       garden:version="1"
+       garden:instance="1"
+       garden:species="ray"
+       garden:description="Tree was present when we moved in."
+       garden:date="2014-04-19"/>
     <circle
        r="7"
        cy="169.77289"
@@ -1921,19 +2125,37 @@
        cy="146.86497"
        cx="1061.4739"
        id="circle3408"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2016-05-11"
+       garden:species="rud"
+       garden:instance="3"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="circle3410"
        cx="1063.2823"
        cy="120.94288"
-       r="7.7625475" />
+       r="7.7625475"
+       garden:date="2016-05-11"
+       garden:species="rud"
+       garden:instance="2"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        r="7.7625475"
        cy="102.25486"
        cx="1045.1973"
        id="circle3412"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2016-05-11"
+       garden:species="rud"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add"/>
     <circle
        r="7.7625475"
        cy="86.954918"

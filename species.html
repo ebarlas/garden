@@ -85,7 +85,7 @@
             <td><a href="index.html#species=${species.id}">${species.scientificName}</a></td>
             <td>${species.commonName}</td>
             <td>${species.type}</td>
-            <td><a href="individuals.html#species=${species.id}">${Object.keys(svg.index[species.id]).length}</a></td>
+            <td><a href="individuals.html#species=${species.id}">${species.individuals}</a></td>
             <td><a href="index.html#date=${dateParam(species.firstVersion)}">${formatDate(species.firstVersion)}</a></td>
             <td><a href="index.html#date=${dateParam(species.lastVersion)}">${formatDate(species.lastVersion)}</a></td>
         </tr>`;
@@ -112,8 +112,15 @@
 
     function init() {
         GardenSpecies.Catalog.forEach(s => {
+            const instances = svg.index[s.id];
+
+            // no occurrences for species
+            if (!instances) {
+                return;
+            }
+
             const species = {
-                individuals: Object.keys(svg.index[s.id]).length,
+                individuals: Object.keys(instances).length,
                 firstVersion: svg.firstVersion(s.id),
                 lastVersion: svg.lastVersion(s.id)
             };
