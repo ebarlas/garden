@@ -151,10 +151,16 @@ Garden.prototype.onWheel = function (evt) {
 Garden.prototype.init = function (species, instance) {
     const garden = this;
 
+    // compute sun position
+    const sun = SunCalc.getPosition(this.date, this.svg.size.latitude, this.svg.size.longitude);
+
+    // convert angle orientation from [south to west] to [east to north]
+    sun.azimuth = 3 * Math.PI / 2 - sun.azimuth;
+
     this.sun = new GardenSun({
         date: this.date,
-        latitude: this.svg.size.latitude,
-        longitude: this.svg.size.longitude
+        image: 'imgSun',
+        position: sun
     });
 
     const resize = () => garden.onWindowResize();

@@ -1,3 +1,7 @@
+/**
+ * Utilities for dealing with url fragment that follows hash mark (#).
+ */
+
 function Fragment() {
     const hash = window.location.hash;
     this.fragments = {};
