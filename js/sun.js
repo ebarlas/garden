@@ -47,6 +47,18 @@ GardenSun.prototype.render = function (ctx) {
         return;
     }
 
+    ctx.save();
+    ctx.beginPath();
+    ctx.setLineDash([1, 4]);
+    ctx.moveTo(this.width / 2, 0);
+    ctx.lineTo(this.width / 2, this.height / 2);
+    ctx.lineTo(sun.x, sun.y);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(this.width / 2, this.height / 2, 50, 3 * Math.PI / 2, -this.position.azimuth, false);
+    ctx.stroke();
+    ctx.restore();
+
     const image = document.getElementById(this.image);
     ctx.drawImage(image, sun.x - this.radius, sun.y - this.radius, this.radius * 2, this.radius * 2);
 
