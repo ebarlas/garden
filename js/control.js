@@ -11,6 +11,7 @@ GardenControl.TimeSelection = {
 
 GardenControl.prototype.syncFromModel = function() {
     this.txtShowHideSun.setText([(this.showSun ? "Hide" : "Show") + " Sun"]);
+    this.txtShowHideMoon.setText([(this.showMoon ? "Hide" : "Show") + " Moon"]);
     this.txtShowHideScale.setText([(this.showScale ? "Hide" : "Show") + " Scale"]);
     this.txtYear.setText([this.astro.getYear()]);
     this.txtMonth.setText([this.astro.getMonth() + 1]);
@@ -29,6 +30,7 @@ function GardenControl(canvas, astro) {
     this.ctx = canvas.getContext('2d');
     this.opened = false;
     this.showSun = true;
+    this.showMoon = true;
     this.showScale = true;
     this.astro = astro;
     this.dateSelection = GardenControl.DateSelection.Day;
@@ -51,7 +53,13 @@ function GardenControl(canvas, astro) {
         .setText([(this.showSun ? "Hide" : "Show") + " Sun"])
         .setStyle(Textbox.UpperRight);
 
-    const txtShowHideScaleY = txtShowHideSunY + this.txtShowHideSun.getHeight() + 10;
+    const txtShowHideMoonY = txtShowHideSunY + this.txtShowHideSun.getHeight() + 10;
+    this.txtShowHideMoon = new Textbox()
+        .setPosition({x: this.canvas.width - 20, y: txtShowHideMoonY})
+        .setText([(this.showMoon ? "Hide" : "Show") + " Moon"])
+        .setStyle(Textbox.UpperRight);
+
+    const txtShowHideScaleY = txtShowHideMoonY + this.txtShowHideMoon.getHeight() + 10;
     this.txtShowHideScale = new Textbox()
         .setPosition({x: this.canvas.width - 20, y: txtShowHideScaleY})
         .setText([(this.showScale ? "Hide" : "Show") + " Scale"])
@@ -119,6 +127,10 @@ GardenControl.prototype.onTap = function (click) {
         }
         if (this.txtShowHideSun.contains(this.ctx, click.x, click.y)) {
             this.showSun = !this.showSun;
+            result = true;
+        }
+        if (this.txtShowHideMoon.contains(this.ctx, click.x, click.y)) {
+            this.showMoon = !this.showMoon;
             result = true;
         }
         if (this.txtShowHideScale.contains(this.ctx, click.x, click.y)) {
@@ -203,6 +215,7 @@ GardenControl.prototype.render = function () {
     if (this.opened) {
         this.txtClose.render(this.ctx);
         this.txtShowHideSun.render(this.ctx);
+        this.txtShowHideMoon.render(this.ctx);
         this.txtShowHideScale.render(this.ctx);
         this.txtDateNext.render(this.ctx);
         this.txtDatePrev.render(this.ctx);

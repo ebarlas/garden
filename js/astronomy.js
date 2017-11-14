@@ -1,3 +1,31 @@
+Astro.MoonPhase = [
+    'New Moon',
+    'Waxing Crescent',
+    'First Quarter',
+    'Waxing Gibbous',
+    'Full Moon',
+    'Waning Gibbous',
+    'Last Quarter',
+    'Waning Crescent',
+    'New Moon'
+];
+
+Astro.moonPhase = function (phase) {
+    for (let i=1; i<Astro.MoonPhase.length; i++) {
+        const prev = (i-1) * 0.125;
+        const next = i * 0.125;
+        if (phase >= prev && phase <= next) {
+            const pdist = phase - prev;
+            const ndist = next - phase;
+            return pdist < ndist
+                ? Astro.MoonPhase[i-1]
+                : Astro.MoonPhase[i];
+        }
+    }
+
+    return 'None';
+};
+
 /**
  * SunCalc JS wrapper that synchronizes sun and moon calculations with date changes.
  */
@@ -9,16 +37,17 @@ function Astro(latitude, longitude, date) {
     this.update();
 }
 
-Astro.prototype.update = function() {
-    this.sun = SunCalc.getPosition(date, this.latitude, this.longitude);
-    this.moon = SunCalc.getMoonPosition(date, this.latitude, this.longitude);
+Astro.prototype.update = function () {
+    this.sun = SunCalc.getPosition(this.date, this.latitude, this.longitude);
+    this.moon = SunCalc.getMoonPosition(this.date, this.latitude, this.longitude);
+    this.moonIllumination = SunCalc.getMoonIllumination(this.date);
 };
 
 Astro.prototype.getYear = function () {
     return this.date.getFullYear();
 };
 
-Astro.prototype.getMonth = function() {
+Astro.prototype.getMonth = function () {
     return this.date.getMonth();
 };
 

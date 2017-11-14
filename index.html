@@ -12,6 +12,7 @@
 <canvas id="gardenCanvas"></canvas>
 <div style="display:none;">
     <img id="imgSun" src="img/sun.svg">
+    <img id="imgMoon" src="img/moon.svg">
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/suncalc/1.8.0/suncalc.min.js"></script>
@@ -33,11 +34,15 @@
     const species = fragment.get("species");
     const instance = fragment.get("instance");
 
+    let garden;
+
     svg.load(() => {
         const canvas = document.getElementById("gardenCanvas");
         const imgSun = document.getElementById("imgSun");
+        const imgMoon = document.getElementById("imgMoon");
 
-        new Garden(canvas, imgSun, svg, date).emphasize(species, instance);
+        garden = new Garden(canvas, imgSun, imgMoon, svg, date);
+        garden.emphasize(species, instance);
     });
 </script>
 </body>

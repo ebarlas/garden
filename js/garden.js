@@ -1,6 +1,6 @@
 Garden.DateFormat = {month: '2-digit', day: '2-digit', year: 'numeric'};
 
-function Garden(canvas, sunImage, svg, date) {
+function Garden(canvas, sunImage, moonImage, svg, date) {
     this.canvas = canvas;
     this.ctx = canvas.getContext('2d');
     this.svg = svg;
@@ -23,7 +23,8 @@ function Garden(canvas, sunImage, svg, date) {
     this.colorPalette = ['#a6cee3', '#1f78b4', '#b2df8a', '#33a02c', '#fb9a99', '#e31a1c', '#fdbf6f', '#ff7f00', '#cab2d6', '#6a3d9a', '#ffff99', '#b15928'];
 
     this.astro = new Astro(svg.size.latitude, svg.size.longitude, date);
-    this.sun = new GardenSun(canvas, sunImage, this.astro);
+    this.sun = new GardenSun(canvas, sunImage, this.astro, GardenSun.Type.Sun);
+    this.moon = new GardenSun(canvas, moonImage, this.astro, GardenSun.Type.Moon);
 
     window.addEventListener('resize', () => this.onWindowResize(), false);
 
@@ -165,6 +166,10 @@ Garden.prototype.onTap = function (evt) {
         if (this.control.showSun) {
             this.sun.onTap(click);
         }
+
+        if (this.control.showMoon) {
+            this.moon.onTap(click);
+        }
     }
 
     this.render();
@@ -261,6 +266,10 @@ Garden.prototype.render = function () {
 
     if (this.control.showSun) {
         this.sun.render();
+    }
+
+    if (this.control.showMoon) {
+        this.moon.render();
     }
 
     if (this.control.showScale) {

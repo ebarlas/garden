@@ -1,12 +1,18 @@
 GardenSun.DateFormat = {month: '2-digit', day: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit'};
 
-function GardenSun(canvas, image, astro) {
+GardenSun.Type = {
+    Sun: 1,
+    Moon: 2
+};
+
+function GardenSun(canvas, image, astro, type) {
     this.radius = 75;
     this.margin = 20;
     this.canvas = canvas;
     this.ctx = canvas.getContext('2d');
     this.astro = astro;
     this.image = image;
+    this.type = type || GardenSun.Type.Sun;
     this.showText = false;
 }
 
@@ -15,7 +21,7 @@ GardenSun.prototype.computePosition = function () {
     const height = this.canvas.height;
 
     // convert angle orientation from [south to west] to [east to north]
-    const azimuth = 3 * Math.PI / 2 - this.astro.sun.azimuth;
+    const azimuth = 3 * Math.PI / 2 - (this.type === GardenSun.Type.Sun ? this.astro.sun.azimuth : this.astro.moon.azimuth);
 
     // find border intercept
     const i = GardenBorder.intercept(width, height, azimuth);
@@ -25,7 +31,7 @@ GardenSun.prototype.computePosition = function () {
         x: width / 2 + i.x,
         y: height / 2 - i.y,
         azimuth: azimuth,
-        altitude: this.astro.sun.altitude
+        altitude: (this.type === GardenSun.Type.Sun ? this.astro.sun.altitude : this.astro.moon.altitude)
     };
 };
 
@@ -73,6 +79,10 @@ GardenSun.prototype.render = function () {
             "Altitude " + altitude + '\u00B0',
             "Azimuth " + azimuth + '\u00B0 ' + GardenAngle.toDirection(azimuth)
         ];
+
+        if (this.type === GardenSun.Type.Moon) {
+            lines.push(Astro.moonPhase(this.astro.moonIllumination.phase));
+        }
 
         let style;
         let position;
