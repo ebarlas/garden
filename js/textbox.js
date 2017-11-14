@@ -13,7 +13,13 @@ function Textbox(opts = {}) {
     this.margin = opts.margin || 10;
     this.fontSize = opts.fontSize || 16;
     this.lineHeight = opts.lineHeight || 10;
+    this.fill = opts.fill === undefined || opts.fill === null || opts.fill;
 }
+
+Textbox.prototype.setFill = function (fill) {
+    this.fill = fill;
+    return this;
+};
 
 Textbox.prototype.setText = function (lines) {
     this.lines = lines;
@@ -30,12 +36,16 @@ Textbox.prototype.setStyle = function (style) {
     return this;
 };
 
-Textbox.prototype.render = function (ctx) {
+Textbox.prototype.getHeight = function() {
+   return this.lineHeight * (2 * this.lines.length + 1);
+};
+
+Textbox.prototype.boundingBox = function(ctx) {
     ctx.font = this.fontSize + 'px serif';
 
     const maxTextWidth = Textbox.maxWidth(this.lines, ctx);
     const width = maxTextWidth + this.margin * 2;
-    const height = this.lineHeight * (2 * this.lines.length + 1);
+    const height = this.getHeight();
 
     let x, y;
     if (this.style === Textbox.UpperLeft) {
@@ -52,12 +62,26 @@ Textbox.prototype.render = function (ctx) {
         y = this.position.y - height;
     }
 
-    ctx.lineWidth = 1;
-    ctx.fillStyle = 'white';
-    ctx.fillRect(x, y, width, height);
-    ctx.fillStyle = 'black';
-    ctx.strokeRect(x, y, width, height);
+    return {x: x, y: y, width: width, height: height};
+};
+
+Textbox.prototype.contains = function(ctx, x, y) {
+    const box = this.boundingBox(ctx);
+    return x >= box.x && x <= box.x + box.width && y >= box.y && y <= box.y + box.height;
+};
+
+Textbox.prototype.render = function (ctx) {
+    const box = this.boundingBox(ctx);
+
+    if (this.fill) {
+        ctx.lineWidth = 1;
+        ctx.fillStyle = 'white';
+        ctx.fillRect(box.x, box.y, box.width, box.height);
+        ctx.fillStyle = 'black';
+        ctx.strokeRect(box.x, box.y, box.width, box.height);
+    }
+
     for (let i = 0; i < this.lines.length; i++) {
-        ctx.fillText(this.lines[i], x + this.margin, y + this.lineHeight * (2 * (i + 1)));
+        ctx.fillText(this.lines[i], box.x + this.margin, box.y + this.lineHeight * (2 * (i + 1)));
     }
 };

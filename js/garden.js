@@ -1,21 +1,19 @@
 Garden.DateFormat = {month: '2-digit', day: '2-digit', year: 'numeric'};
 
-function Garden(config) {
-    this.svg = config.svg;
-    this.date = config.date;
-    this.canvas = config.canvas;
-    this.ctx = config.canvas.getContext('2d');
+function Garden(canvas, sunImage, svg, date) {
+    this.canvas = canvas;
+    this.ctx = canvas.getContext('2d');
+    this.svg = svg;
+
+    // click tracking for pan
     this.pan = {x: 0, y: 0};
-    this.scale = null;
-    this.scaleRange = null;
-    this.translation = null;
-    this.selection = null;
+
     this.framesPerPeriod = 30;
     this.frameInterval = 50;
-    this.highlights = [];
-    this.intervalId = null;
-    this.sun = null;
     this.zoomOpts = {pinch: 1.05, wheel: 1.05, tap: 1.0, max: 12};
+
+    this.emphasized = [];
+
     /*
     http://colorbrewer2.org
     this.colorPalette = ['#8dd3c7', '#ffffb3', '#bebada', '#fb8072', '#80b1d3', '#fdb462', '#b3de69', '#fccde5', '#d9d9d9', '#bc80bd', '#ccebc5', '#ffed6f'];
@@ -23,7 +21,43 @@ function Garden(config) {
     this.colorPalette = ['#1b9e77', '#d95f02', '#7570b3', '#e7298a', '#66a61e', '#e6ab02', '#a6761d', '#666666'];
     */
     this.colorPalette = ['#a6cee3', '#1f78b4', '#b2df8a', '#33a02c', '#fb9a99', '#e31a1c', '#fdbf6f', '#ff7f00', '#cab2d6', '#6a3d9a', '#ffff99', '#b15928'];
+
+    this.astro = new Astro(svg.size.latitude, svg.size.longitude, date);
+    this.sun = new GardenSun(canvas, sunImage, this.astro);
+
+    window.addEventListener('resize', () => this.onWindowResize(), false);
+
+    canvas.addEventListener('wheel', (evt) => this.onWheel(evt));
+
+    const hammertime = new Hammer(canvas, {threshold: 1});
+    hammertime.get('pan').set({threshold: 0, direction: Hammer.DIRECTION_ALL});
+    hammertime.get('pinch').set({enable: true});
+    hammertime.on('panmove', (evt) => this.onPanMove(evt));
+    hammertime.on('panend', (evt) => this.onPanEnd(evt));
+    hammertime.on('tap', (evt) => this.onTap(evt));
+    hammertime.on('pinchin', (evt) => this.onPinchIn(evt));
+    hammertime.on('pinchout', (evt) => this.onPinchOut(evt));
+
+    this.onWindowResize();
 }
+
+Garden.prototype.emphasize = function(species, instance) {
+    const garden = this;
+
+    if (species) {
+        if (instance) {
+            this.emphasized = [svg.versionAt(species, instance, this.astro.date)];
+        } else {
+            this.emphasized = svg.versionsAt(species, this.astro.date);
+        }
+
+        this.frame = 0;
+        this.intervalId = window.setInterval(() => {
+            garden.render();
+            this.frame = (this.frame + 1) % this.framesPerPeriod;
+        }, this.frameInterval);
+    }
+};
 
 Garden.prototype.canvasCenter = function () {
     return {x: this.canvas.width / 2, y: this.canvas.height / 2};
@@ -36,6 +70,7 @@ Garden.prototype.feetPerPixel = function () {
 Garden.prototype.onWindowResize = function () {
     this.canvas.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     this.canvas.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+    this.control = new GardenControl(this.canvas, this.astro);
     this.resetScale();
     this.render();
 };
@@ -69,7 +104,7 @@ Garden.prototype.findTouchedIndividual = function (click, grace) {
             min = rad;
             match = c;
         }
-    }, this.date);
+    }, this.astro.date);
 
     return match;
 };
@@ -109,22 +144,28 @@ Garden.prototype.onPanEnd = function (evt) {
 Garden.prototype.onTap = function (evt) {
     const click = this.clickCoordinates(evt.srcEvent);
 
-    this.selection = this.findTouchedIndividual(click, 1);
-    if (!this.selection) {
-        this.selection = this.findTouchedIndividual(click, 2);
-    }
+    let touchedControl = this.control.onTap(click);
 
-    if (evt.tapCount === 2) {
-        this.zoom(true, this.zoomOpts.tap, click);
-    } else {
-        if (this.intervalId) {
-            clearInterval(this.intervalId);
-            this.highlights = [];
-            this.intervalId = null;
+    if (!touchedControl) {
+        this.selection = this.findTouchedIndividual(click, 1);
+        if (!this.selection) {
+            this.selection = this.findTouchedIndividual(click, 2);
+        }
+
+        if (evt.tapCount === 2) {
+            this.zoom(true, this.zoomOpts.tap, click);
+        } else {
+            if (this.intervalId) {
+                clearInterval(this.intervalId);
+                this.emphasized = [];
+                this.intervalId = null;
+            }
+        }
+
+        if (this.control.showSun) {
+            this.sun.onTap(click);
         }
     }
-
-    this.sun.onTap(click);
 
     this.render();
 };
@@ -146,51 +187,6 @@ Garden.prototype.onWheel = function (evt) {
     }
 
     evt.preventDefault();
-};
-
-Garden.prototype.init = function (species, instance) {
-    const garden = this;
-
-    // compute sun position
-    const sun = SunCalc.getPosition(this.date, this.svg.size.latitude, this.svg.size.longitude);
-
-    // convert angle orientation from [south to west] to [east to north]
-    sun.azimuth = 3 * Math.PI / 2 - sun.azimuth;
-
-    this.sun = new GardenSun({
-        date: this.date,
-        image: 'imgSun',
-        position: sun
-    });
-
-    const resize = () => garden.onWindowResize();
-    window.addEventListener('resize', resize, false);
-    resize();
-
-    this.canvas.addEventListener('wheel', (evt) => garden.onWheel(evt));
-
-    const hammertime = new Hammer(this.canvas, {threshold: 1});
-    hammertime.get('pan').set({threshold: 0, direction: Hammer.DIRECTION_ALL});
-    hammertime.get('pinch').set({enable: true});
-    hammertime.on('panmove', (evt) => garden.onPanMove(evt));
-    hammertime.on('panend', (evt) => garden.onPanEnd(evt));
-    hammertime.on('tap', (evt) => garden.onTap(evt));
-    hammertime.on('pinchin', (evt) => garden.onPinchIn(evt));
-    hammertime.on('pinchout', (evt) => garden.onPinchOut(evt));
-
-    if (species) {
-        if (instance) {
-            this.highlights = [this.svg.versionAt(species, instance, this.date)];
-        } else {
-            this.highlights = this.svg.versionsAt(species, this.date);
-        }
-
-        this.frame = 0;
-        this.intervalId = window.setInterval(() => {
-            garden.render();
-            this.frame = (this.frame + 1) % this.framesPerPeriod;
-        }, this.frameInterval);
-    }
 };
 
 Garden.prototype.renderIndividualDetails = function () {
@@ -217,7 +213,7 @@ Garden.prototype.renderIndividualDetails = function () {
 };
 
 Garden.prototype.pulsate = function (ctx) {
-    this.highlights.forEach(h => {
+    this.emphasized.forEach(h => {
         const r = this.interpolate(this.frame / this.framesPerPeriod);
         ctx.beginPath();
         ctx.arc(h.cx, h.cy, r * 100, 0, Math.PI * 2, false);
@@ -257,17 +253,21 @@ Garden.prototype.render = function () {
         ctx.arc(c.cx, c.cy, c.r, 0, Math.PI * 2, false);
         ctx.fillStyle = this.colorPalette[species.index % this.colorPalette.length];
         ctx.fill();
-    }, this.date);
+    }, this.astro.date);
 
     this.renderIndividualDetails();
 
     ctx.restore();
 
-    this.sun
-        .setSize(this.canvas.width, this.canvas.height)
-        .render(this.ctx);
+    if (this.control.showSun) {
+        this.sun.render();
+    }
 
-    new Scale()
-        .setSize(this.canvas.width, this.canvas.height)
-        .render(this.ctx, this.feetPerPixel() / this.scale);
+    if (this.control.showScale) {
+        new Scale()
+            .setSize(this.canvas.width, this.canvas.height)
+            .render(this.ctx, this.feetPerPixel() / this.scale);
+    }
+
+    this.control.render();
 };

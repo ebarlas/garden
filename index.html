@@ -20,29 +20,24 @@
 <script src="js/scale.js"></script>
 <script src="js/intercept.js"></script>
 <script src="js/angle.js"></script>
+<script src="js/astronomy.js"></script>
+<script src="js/control.js"></script>
 <script src="js/sun.js"></script>
 <script src="js/garden.js"></script>
 <script src="js/species.js"></script>
 <script src="js/fragment.js"></script>
 <script>
     const fragment = new Fragment();
-
     const svg = new Svg(fragment.get("svg") || "img/property.svg");
     const date = fragment.getDate("date") || new Date();
     const species = fragment.get("species");
     const instance = fragment.get("instance");
 
-    const config = {
-        svg: svg,
-        canvas: document.getElementById("gardenCanvas"),
-        date: date,
-        speciesCatalog: GardenSpecies.Catalog
-    };
-
-    const garden = new Garden(config);
-
     svg.load(() => {
-        garden.init(species, instance);
+        const canvas = document.getElementById("gardenCanvas");
+        const imgSun = document.getElementById("imgSun");
+
+        new Garden(canvas, imgSun, svg, date).emphasize(species, instance);
     });
 </script>
 </body>

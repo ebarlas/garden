@@ -4,8 +4,8 @@
 
 function Scale(opts = {}) {
     this.fontSize = opts.fontSize || 14;
-    this.lineWidth = opts.lineWidth || 150;
-    this.sideMargin = opts.sideMargin || 20;
+    this.lineWidth = opts.lineWidth || 200;
+    this.sideMargin = opts.sideMargin || 25;
     this.endHeight = opts.endHeight || 10;
 }
 
