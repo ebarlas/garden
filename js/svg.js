@@ -133,14 +133,18 @@ Svg.prototype.versions = function (species, instance) {
 };
 
 Svg.prototype.versionAt = function (species, instance, date) {
-    return this.locateVersion(this.versions(species, instance) || [], date);
+    const v = this.locateVersion(this.versions(species, instance) || [], date);
+    return v && v.type !== 'remove' ? [v] : [];
 };
 
 Svg.prototype.versionsAt = function (species, date) {
     const instances = this.index[species];
     const versions = [];
     for (const instance in instances) {
-        versions.push(this.locateVersion(instances[instance], date));
+        const v = this.locateVersion(instances[instance], date);
+        if (v && v.type !== 'remove') {
+            versions.push(v);
+        }
     }
     return versions;
 };

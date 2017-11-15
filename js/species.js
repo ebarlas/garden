@@ -116,6 +116,54 @@ GardenSpecies.Catalog = [
         scientificName: "Calamagrostis x acutiflora 'Karl Foerster'",
         commonName: "Feather Reed Grass",
         type: GardenSpecies.Type.Grass
+    },
+    {
+        id: "eup",
+        scientificName: "Euphorbia myrsinites",
+        commonName: "Myrtle Spurge",
+        type: GardenSpecies.Type.Succulent
+    },
+    {
+        id: "zeb",
+        scientificName: "Miscanthus sinensis 'Zebrinus'",
+        commonName: "Zebra Grass",
+        type: GardenSpecies.Type.Grass
+    },
+    {
+        id: "ang",
+        scientificName: "Angelicum Stonecrop",
+        commonName: "Sedum angelicum",
+        type: GardenSpecies.Type.Grass
+    },
+    {
+        id: "cal",
+        scientificName: "Eschscholzia californica",
+        commonName: "California poppy",
+        type: GardenSpecies.Type.Perennial
+    },
+    {
+        id: "wen",
+        scientificName: "Salvia 'Wendy's Wish'",
+        commonName: "Wendy's Wish Sage",
+        type: GardenSpecies.Type.Shrub
+    },
+    {
+        id: "hea",
+        scientificName: "Coleonema pulchellum 'Sunset Gold'",
+        commonName: "Golden Breath of Heaven",
+        type: GardenSpecies.Type.Shrub
+    },
+    {
+        id: "pap",
+        scientificName: "Achillea millefolium 'Paprika'",
+        commonName: "Paprika Yarrow",
+        type: GardenSpecies.Type.Perennial
+    },
+    {
+        id: "ice",
+        scientificName: "Delosperma nubigenum",
+        commonName: "Hardy Yellow Ice Plant",
+        type: GardenSpecies.Type.Succulent
     }
 ];
 

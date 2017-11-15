@@ -20,6 +20,7 @@ function Garden(canvas, sunImage, moonImage, svg, date) {
     this.colorPalette = ['#f7fcf5', '#e5f5e0', '#c7e9c0', '#a1d99b', '#74c476', '#41ab5d', '#238b45', '#006d2c', '#00441b'];
     this.colorPalette = ['#1b9e77', '#d95f02', '#7570b3', '#e7298a', '#66a61e', '#e6ab02', '#a6761d', '#666666'];
     */
+
     this.colorPalette = ['#a6cee3', '#1f78b4', '#b2df8a', '#33a02c', '#fb9a99', '#e31a1c', '#fdbf6f', '#ff7f00', '#cab2d6', '#6a3d9a', '#ffff99', '#b15928'];
 
     this.astro = new Astro(svg.size.latitude, svg.size.longitude, date);
@@ -47,7 +48,7 @@ Garden.prototype.emphasize = function(species, instance) {
 
     if (species) {
         if (instance) {
-            this.emphasized = [svg.versionAt(species, instance, this.astro.date)];
+            this.emphasized = svg.versionAt(species, instance, this.astro.date);
         } else {
             this.emphasized = svg.versionsAt(species, this.astro.date);
         }
@@ -100,7 +101,7 @@ Garden.prototype.findTouchedIndividual = function (click, grace) {
     this.svg.forEachCircle((c) => {
         const xDiff = click.x - (c.cx * scale + translation.x);
         const yDiff = click.y - (c.cy * scale + translation.y);
-        const rad = c.r * grace * scale;
+        const rad = (c.r + grace) * scale;
         if (xDiff * xDiff + yDiff * yDiff <= rad * rad && (!min || rad < min)) {
             min = rad;
             match = c;
@@ -148,9 +149,9 @@ Garden.prototype.onTap = function (evt) {
     let touchedControl = this.control.onTap(click);
 
     if (!touchedControl) {
-        this.selection = this.findTouchedIndividual(click, 1);
+        this.selection = this.findTouchedIndividual(click, 0);
         if (!this.selection) {
-            this.selection = this.findTouchedIndividual(click, 2);
+            this.selection = this.findTouchedIndividual(click, 20);
         }
 
         if (evt.tapCount === 2) {
@@ -252,13 +253,17 @@ Garden.prototype.render = function () {
 
     ctx.globalAlpha = 0.9;
 
-    svg.forEachCircle(c => {
+    const circles = [];
+    svg.forEachCircle(c => circles.push(c), this.astro.date);
+    circles.sort((l, r) => r.r - l.r);
+
+    circles.forEach(c => {
         const species = GardenSpecies.index[c.species];
         ctx.beginPath();
         ctx.arc(c.cx, c.cy, c.r, 0, Math.PI * 2, false);
         ctx.fillStyle = this.colorPalette[species.index % this.colorPalette.length];
         ctx.fill();
-    }, this.astro.date);
+    });
 
     this.renderIndividualDetails();
 
