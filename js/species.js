@@ -5,7 +5,8 @@ GardenSpecies.Type = {
     Perennial: "Perennial",
     Grass: "Grass",
     Tree: "Tree",
-    Succulent: "Succulent"
+    Succulent: "Succulent",
+    Fern: "Fern"
 };
 
 GardenSpecies.Catalog = [
@@ -164,6 +165,72 @@ GardenSpecies.Catalog = [
         scientificName: "Delosperma nubigenum",
         commonName: "Hardy Yellow Ice Plant",
         type: GardenSpecies.Type.Succulent
+    },
+    {
+        id: "sto",
+        scientificName: "Sedum spathulifolium 'Cape Blanco'",
+        commonName: "Cape Blanco Stonecrop",
+        type: GardenSpecies.Type.Succulent
+    },
+    {
+        id: "aco",
+        scientificName: "Acorus gramineus 'Ogon'",
+        commonName: "Yellow-leaved Calamus",
+        type: GardenSpecies.Type.Grass
+    },
+    {
+        id: "sun",
+        scientificName: "Choisya ternata 'Sundance'",
+        commonName: "Sundance Mexican Orange Blossom",
+        type: GardenSpecies.Type.Shrub
+    },
+    {
+        id: "pur",
+        scientificName: "Heuchera 'Purple Mountain Majesty'",
+        commonName: "Coral Bells",
+        type: GardenSpecies.Type.Perennial
+    },
+    {
+        id: "bir",
+        scientificName: "Betula papyrifera",
+        commonName: "Paper Birch",
+        type: GardenSpecies.Type.Tree
+    },
+    {
+        id: "max",
+        scientificName: "Heuchera maxima",
+        commonName: "Island Alum Root",
+        type: GardenSpecies.Type.Perennial
+    },
+    {
+        id: "fer",
+        scientificName: "Polystichum polyblepharum",
+        commonName: "Tassel Fern",
+        type: GardenSpecies.Type.Fern
+    },
+    {
+        id: "pit",
+        scientificName: "Pittosporum tenuifolium 'Gold Star'",
+        commonName: "Gold Star Kohuhu",
+        type: GardenSpecies.Type.Shrub
+    },
+    {
+        id: "cam",
+        scientificName: "Campanula 'Dickson's Gold'",
+        commonName: "Bellflower",
+        type: GardenSpecies.Type.Perennial
+    },
+    {
+        id: "haw",
+        scientificName: "Rhaphiolepis indica 'Ballerina'",
+        commonName: "Ballerina Indian Hawthorn",
+        type: GardenSpecies.Type.Shrub
+    },
+    {
+        id: "fra",
+        scientificName: "Photinia x fraseri",
+        commonName: "Fraser's Photinia",
+        type: GardenSpecies.Type.Shrub
     }
 ];
 
