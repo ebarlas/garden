@@ -24,8 +24,11 @@ function Garden(canvas, sunImage, moonImage, svg, date) {
     this.colorPalette = ['#a6cee3', '#1f78b4', '#b2df8a', '#33a02c', '#fb9a99', '#e31a1c', '#fdbf6f', '#ff7f00', '#cab2d6', '#6a3d9a', /*'#ffff99',*/ '#b15928'];
 
     this.astro = new Astro(svg.latitude, svg.longitude, date);
+
     this.sun = new GardenSun(canvas, sunImage, this.astro, GardenSun.Type.Sun);
     this.moon = new GardenSun(canvas, moonImage, this.astro, GardenSun.Type.Moon);
+    this.control = new GardenControl(canvas, this.astro);
+    this.gardenScale = new Scale(canvas);
 
     window.addEventListener('resize', () => this.onWindowResize(), false);
 
@@ -68,7 +71,7 @@ Garden.prototype.canvasCenter = function () {
 Garden.prototype.onWindowResize = function () {
     this.canvas.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     this.canvas.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-    this.control = new GardenControl(this.canvas, this.astro);
+    this.control.resize();
     this.resetScale();
     this.render();
 };
@@ -197,7 +200,7 @@ Garden.prototype.renderIndividualDetails = function () {
     }
 
     const ind = this.selection;
-    const species = GardenSpecies.index[ind.species];
+    const species = this.svg.getSpecies(ind.species);
     const versions = this.svg.versions(ind.species, ind.instance);
 
     const lines = [
@@ -254,7 +257,7 @@ Garden.prototype.render = function () {
     circles.sort((l, r) => r.r - l.r);
 
     circles.forEach(c => {
-        const species = GardenSpecies.index[c.species];
+        const species = svg.getSpecies(c.species);
         ctx.beginPath();
         ctx.arc(c.cx, c.cy, c.r, 0, Math.PI * 2, false);
         ctx.fillStyle = this.colorPalette[species.index % this.colorPalette.length];
@@ -274,9 +277,7 @@ Garden.prototype.render = function () {
     }
 
     if (this.control.showScale) {
-        new Scale()
-            .setSize(this.canvas.width, this.canvas.height)
-            .render(this.ctx, this.svg.feetPerPixel() / this.scale);
+        this.gardenScale.render(this.svg.feetPerPixel() / this.scale);
     }
 
     this.control.render();

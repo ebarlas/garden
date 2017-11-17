@@ -3633,4 +3633,69 @@
      id="path3422"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="ccccccccccccccc" />
+  <garden:contents>
+    <garden:species garden:id="teu" garden:scientificName="Teucrium Chamaedrys" garden:commonName="Germander" garden:type="Shrub" />
+    <garden:species garden:id="pho" garden:scientificName="Phormium 'Yellow Wave'" garden:commonName="New Zealand Flax" garden:type="Perennial" />
+    <garden:species garden:id="lom" garden:scientificName="Lomandra longifolia Breeze" garden:commonName="Dwarf Mat Rush" garden:type="Grass" />
+    <garden:species garden:id="pen" garden:scientificName="Penstemon 'Garnet'" garden:commonName="Beard Tongue" garden:type="Perennial" />
+    <garden:species garden:id="lav" garden:scientificName="Lavandula angustifolia 'Hidcote'" garden:commonName="English Lavender" garden:type="Shrub" />
+    <garden:species garden:id="mey" garden:scientificName="Citrus limon 'Improved Meyer'" garden:commonName="Dwarf Meyer Lemon" garden:type="Tree" />
+    <garden:species garden:id="ace" garden:scientificName="Acer palmatum 'Bloodgood'" garden:commonName="Japanese Maple 'Bloodgood'" garden:type="Tree" />
+    <garden:species garden:id="ros" garden:scientificName="Rosmarinus officinalis 'Tuscan Blue'" garden:commonName="Upright Rosemary" garden:type="Shrub" />
+    <garden:species garden:id="tex" garden:scientificName="Ligustrum japonicum 'Texanum'" garden:commonName="Waxleaf Privet" garden:type="Shrub" />
+    <garden:species garden:id="gum" garden:scientificName="Liquidambar styraciflua" garden:commonName="Sweet Gum" garden:type="Tree" />
+    <garden:species garden:id="icy" garden:scientificName="Cupressus sempervirens 'Glauca'" garden:commonName="Italian Cypress" garden:type="Tree" />
+    <garden:species garden:id="lil" garden:scientificName="Hemerocallis" garden:commonName="Daylily" garden:type="Perennial" />
+    <garden:species garden:id="ses" garden:scientificName="Sesleria 'Greenlee'" garden:commonName="John Greenlee's Moor Grass" garden:type="Grass" />
+    <garden:species garden:id="ray" garden:scientificName="Fraxinus oxycarpa 'Raywood'" garden:commonName="Raywood Ash" garden:type="Tree" />
+    <garden:species garden:id="ole" garden:scientificName="Olea europaea 'Montra'" garden:commonName="Little Olive" garden:type="Shrub" />
+    <garden:species garden:id="aga" garden:scientificName="Agave desmettiana 'Variegata'" garden:commonName="Variegated Dwarf Agave" garden:type="Succulent" />
+    <garden:species garden:id="rud" garden:scientificName="Rudbeckia fulgida sullivantii 'Goldsturm'" garden:commonName="Black-Eyed Susan" garden:type="Perennial" />
+    <garden:species garden:id="kar" garden:scientificName="Calamagrostis x acutiflora 'Karl Foerster'" garden:commonName="Feather Reed Grass" garden:type="Grass" />
+    <garden:species garden:id="eup" garden:scientificName="Euphorbia myrsinites" garden:commonName="Myrtle Spurge" garden:type="Succulent" />
+    <garden:species garden:id="zeb" garden:scientificName="Miscanthus sinensis 'Zebrinus'" garden:commonName="Zebra Grass" garden:type="Grass" />
+    <garden:species garden:id="ang" garden:scientificName="Angelicum Stonecrop" garden:commonName="Sedum angelicum" garden:type="Grass" />
+    <garden:species garden:id="cal" garden:scientificName="Eschscholzia californica" garden:commonName="California poppy" garden:type="Perennial" />
+    <garden:species garden:id="wen" garden:scientificName="Salvia 'Wendy's Wish'" garden:commonName="Wendy's Wish Sage" garden:type="Shrub" />
+    <garden:species garden:id="hea" garden:scientificName="Coleonema pulchellum 'Sunset Gold'" garden:commonName="Golden Breath of Heaven" garden:type="Shrub" />
+    <garden:species garden:id="pap" garden:scientificName="Achillea millefolium 'Paprika'" garden:commonName="Paprika Yarrow" garden:type="Perennial" />
+    <garden:species garden:id="ice" garden:scientificName="Delosperma nubigenum" garden:commonName="Hardy Yellow Ice Plant" garden:type="Succulent" />
+    <garden:species garden:id="sto" garden:scientificName="Sedum spathulifolium 'Cape Blanco'" garden:commonName="Cape Blanco Stonecrop" garden:type="Succulent" />
+    <garden:species garden:id="aco" garden:scientificName="Acorus gramineus 'Ogon'" garden:commonName="Yellow-leaved Calamus" garden:type="Grass" />
+    <garden:species garden:id="sun" garden:scientificName="Choisya ternata 'Sundance'" garden:commonName="Sundance Mexican Orange Blossom" garden:type="Shrub" />
+    <garden:species garden:id="pur" garden:scientificName="Heuchera 'Purple Mountain Majesty'" garden:commonName="Coral Bells" garden:type="Perennial" />
+    <garden:species garden:id="bir" garden:scientificName="Betula papyrifera" garden:commonName="Paper Birch" garden:type="Tree" />
+    <garden:species garden:id="max" garden:scientificName="Heuchera maxima" garden:commonName="Island Alum Root" garden:type="Perennial" />
+    <garden:species garden:id="fer" garden:scientificName="Polystichum polyblepharum" garden:commonName="Tassel Fern" garden:type="Fern" />
+    <garden:species garden:id="pit" garden:scientificName="Pittosporum tenuifolium 'Gold Star'" garden:commonName="Gold Star Kohuhu" garden:type="Shrub" />
+    <garden:species garden:id="cam" garden:scientificName="Campanula 'Dickson's Gold'" garden:commonName="Bellflower" garden:type="Perennial" />
+    <garden:species garden:id="haw" garden:scientificName="Rhaphiolepis indica 'Ballerina'" garden:commonName="Ballerina Indian Hawthorn" garden:type="Shrub" />
+    <garden:species garden:id="fra" garden:scientificName="Photinia x fraseri" garden:commonName="Fraser's Photinia" garden:type="Shrub" />
+    <garden:species garden:id="mon" garden:scientificName="Monarda 'Balmy Rose'" garden:commonName="Bee Balm" garden:type="Perennial" />
+    <garden:species garden:id="mim" garden:scientificName="Mimulus 'Jelly Bean White'" garden:commonName="White Monkeyflower" garden:type="Shrub" />
+    <garden:species garden:id="nec" garden:scientificName="Prunus persica 'Independence'" garden:commonName="Independence Nectarine" garden:type="Tree" />
+    <garden:species garden:id="cli" garden:scientificName="Rosa 'New Dawn'" garden:commonName="New Dawn Climbing Rose" garden:type="Vine" />
+    <garden:species garden:id="cot" garden:scientificName="Cotoneaster Horizontalis" garden:commonName="Rock Cotoneaster" garden:type="Shrub" />
+    <garden:species garden:id="oli" garden:scientificName="Olea europaea 'Fruitless'" garden:commonName="Wilson Fruitless Olive" garden:type="Tree" />
+    <garden:species garden:id="pis" garden:scientificName="Pistacia chinensis" garden:commonName="Chinese Pistachio" garden:type="Tree" />
+    <garden:species garden:id="yan" garden:scientificName="Ceanothus griseus horizontalis" garden:commonName="Yankee Point Ceanothus" garden:type="Shrub" />
+    <garden:species garden:id="ley" garden:scientificName="Cupressocyparis leylandii" garden:commonName="Leyland Cypress" garden:type="Tree" />
+    <garden:species garden:id="elm" garden:scientificName="Ulmus parvifolia" garden:commonName="Chinese Elm" garden:type="Tree" />
+    <garden:species garden:id="cof" garden:scientificName="Rhamnus californica 'Eve Case'" garden:commonName="Coffeeberry" garden:type="Shrub" />
+    <garden:species garden:id="gra" garden:scientificName="Malus pumila 'Gravenstein'" garden:commonName="Gravenstein Apple" garden:type="Tree" />
+    <garden:species garden:id="del" garden:scientificName="Malus pumila 'Golden Delicious'" garden:commonName="Golden Delicious Apple" garden:type="Tree" />
+    <garden:species garden:id="apr" garden:scientificName="Prunus armeniaca 'Blenheim'" garden:commonName="Blenheim Apricot" garden:type="Tree" />
+    <garden:species garden:id="fuj" garden:scientificName="Malus pumila 'Fuji'" garden:commonName="Fuji Apple" garden:type="Tree" />
+    <garden:species garden:id="plu" garden:scientificName="Prunus salicina 'Santa Rosa'" garden:commonName="Santa Rosa Plum" garden:type="Tree" />
+    <garden:species garden:id="smi" garden:scientificName="Malus pumila 'Granny Smith'" garden:commonName="Granny Smith Apple" garden:type="Tree" />
+    <garden:species garden:id="fuy" garden:scientificName="Diospyros kaki 'Fuyu'" garden:commonName="Fuyu Japanese Persimmon" garden:type="Tree" />
+    <garden:species garden:id="val" garden:scientificName="Quercus lobata" garden:commonName="Valley Oak" garden:type="Tree" />
+    <garden:species garden:id="str" garden:scientificName="Arbutus 'Marina'" garden:commonName="Marina Strawberry Tree" garden:type="Tree" />
+    <garden:species garden:id="car" garden:scientificName="Gelsemium sempervirens" garden:commonName="Carolina Jessamine" garden:type="Vine" />
+    <garden:species garden:id="cra" garden:scientificName="Lagerstroemia indica" garden:commonName="Crape Myrtle" garden:type="Tree" />
+    <garden:species garden:id="dai" garden:scientificName="Euryops pectinatus 'Viridis'" garden:commonName="Shrub Daisy" garden:type="Shrub" />
+    <garden:species garden:id="man" garden:scientificName="Arctostaphylos 'Emerald Carpet'" garden:commonName="Carpet Manzanita" garden:type="Shrub" />
+    <garden:species garden:id="dar" garden:scientificName="Ceanothus 'Dark Star'" garden:commonName="Dark Star Ceanothus" garden:type="Shrub" />
+    <garden:species garden:id="vio" garden:scientificName="Ceanothus maritimus 'Valley Violet'" garden:commonName="Valley Violet ceanothus" garden:type="Shrub" />
+  </garden:contents>
 </svg>

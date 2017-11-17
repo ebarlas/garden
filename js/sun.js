@@ -1,3 +1,12 @@
+/**
+ * Component for visually rendering sun and moon based on position from SunCalc.
+ *
+ * Dependencies:
+ *   - Astro (astro.js)
+ *   - Textbox (textbox.js)
+ *   - GardenAngle (angle.js)
+ */
+
 GardenSun.DateFormat = {month: '2-digit', day: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit'};
 
 GardenSun.Type = {
