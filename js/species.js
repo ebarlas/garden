@@ -6,7 +6,8 @@ GardenSpecies.Type = {
     Grass: "Grass",
     Tree: "Tree",
     Succulent: "Succulent",
-    Fern: "Fern"
+    Fern: "Fern",
+    Vine: "Vine"
 };
 
 GardenSpecies.Catalog = [
@@ -71,12 +72,6 @@ GardenSpecies.Catalog = [
         type: GardenSpecies.Type.Tree
     },
     {
-        id: "ray",
-        scientificName: "Fraxinus oxycarpa 'Raywood'",
-        commonName: "Raywood Ash",
-        type: GardenSpecies.Type.Tree
-    },
-    {
         id: "icy",
         scientificName: "Cupressus sempervirens 'Glauca'",
         commonName: "Italian Cypress",
@@ -93,6 +88,12 @@ GardenSpecies.Catalog = [
         scientificName: "Sesleria 'Greenlee'",
         commonName: "John Greenlee's Moor Grass",
         type: GardenSpecies.Type.Grass
+    },
+    {
+        id: "ray",
+        scientificName: "Fraxinus oxycarpa 'Raywood'",
+        commonName: "Raywood Ash",
+        type: GardenSpecies.Type.Tree
     },
     {
         id: "ole",
@@ -231,6 +232,66 @@ GardenSpecies.Catalog = [
         scientificName: "Photinia x fraseri",
         commonName: "Fraser's Photinia",
         type: GardenSpecies.Type.Shrub
+    },
+    {
+        id: "mon",
+        scientificName: "Monarda 'Balmy Rose'",
+        commonName: "Bee Balm",
+        type: GardenSpecies.Type.Perennial
+    },
+    {
+        id: "mim",
+        scientificName: "Mimulus 'Jelly Bean White'",
+        commonName: "White Monkeyflower",
+        type: GardenSpecies.Type.Shrub
+    },
+    {
+        id: "nec",
+        scientificName: "Prunus persica 'Independence'",
+        commonName: "Independence Nectarine",
+        type: GardenSpecies.Type.Tree
+    },
+    {
+        id: "cli",
+        scientificName: "Rosa 'New Dawn'",
+        commonName: "New Dawn Climbing Rose",
+        type: GardenSpecies.Type.Vine
+    },
+    {
+        id: "cot",
+        scientificName: "Cotoneaster Horizontalis",
+        commonName: "Rock Cotoneaster",
+        type: GardenSpecies.Type.Shrub
+    },
+    {
+        id: "oli",
+        scientificName: "Olea europaea 'Fruitless'",
+        commonName: "Wilson Fruitless Olive",
+        type: GardenSpecies.Type.Tree
+    },
+    {
+        id: "pis",
+        scientificName: "Pistacia chinensis",
+        commonName: "Chinese Pistachio",
+        type: GardenSpecies.Type.Tree
+    },
+    {
+        id: "yan",
+        scientificName: "Ceanothus griseus horizontalis",
+        commonName: "Yankee Point Ceanothus",
+        type: GardenSpecies.Type.Shrub
+    },
+    {
+        id: "ley",
+        scientificName: "Cupressocyparis leylandii",
+        commonName: "Leyland Cypress",
+        type: GardenSpecies.Type.Tree
+    },
+    {
+        id: "elm",
+        scientificName: "Ulmus parvifolia",
+        commonName: "Chinese Elm",
+        type: GardenSpecies.Type.Tree
     }
 ];
 
