@@ -89,34 +89,34 @@ GardenSun.prototype.render = function () {
         if (sun.x === 0) {
             if (sun.y < this.canvas.height / 2) {
                 position = {x: sun.x + this.radius, y: sun.y + this.radius};
-                style = Textbox.UpperLeft;
+                style = Textbox.Anchor.UpperLeft;
             } else {
                 position = {x: sun.x + this.radius, y: sun.y - this.radius};
-                style = Textbox.LowerLeft;
+                style = Textbox.Anchor.LowerLeft;
             }
         } else if (sun.x === this.canvas.width) {
             if (sun.y < this.canvas.height / 2) {
                 position = {x: sun.x - this.radius, y: sun.y + this.radius};
-                style = Textbox.UpperRight;
+                style = Textbox.Anchor.UpperRight;
             } else {
                 position = {x: sun.x - this.radius, y: sun.y - this.radius};
-                style = Textbox.LowerRight;
+                style = Textbox.Anchor.LowerRight;
             }
         } else if (sun.x < this.canvas.width / 2) {
             if (sun.y === 0) {
                 position = {x: sun.x + this.radius, y: sun.y + this.radius};
-                style = Textbox.UpperLeft;
+                style = Textbox.Anchor.UpperLeft;
             } else {
                 position = {x: sun.x + this.radius, y: sun.y - this.radius};
-                style = Textbox.LowerLeft;
+                style = Textbox.Anchor.LowerLeft;
             }
         } else {
             if (sun.y === 0) {
                 position = {x: sun.x - this.radius, y: sun.y + this.radius};
-                style = Textbox.UpperRight;
+                style = Textbox.Anchor.UpperRight;
             } else {
                 position = {x: sun.x - this.radius, y: sun.y - this.radius};
-                style = Textbox.LowerRight;
+                style = Textbox.Anchor.LowerRight;
             }
         }
 

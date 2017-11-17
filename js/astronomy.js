@@ -1,3 +1,11 @@
+/**
+ * Convenience wrapper around SunCalc for synchronizing date and sun/moon calculations.
+ *
+ * Dependencies:
+ *   - SunCalc
+ *   - GardenRange (range.js)
+ */
+
 Astro.MoonPhase = [
     'New Moon',
     'Waxing Crescent',
@@ -7,28 +15,11 @@ Astro.MoonPhase = [
     'Waning Gibbous',
     'Last Quarter',
     'Waning Crescent',
-    'New Moon'
 ];
 
 Astro.moonPhase = function (phase) {
-    for (let i=1; i<Astro.MoonPhase.length; i++) {
-        const prev = (i-1) * 0.125;
-        const next = i * 0.125;
-        if (phase >= prev && phase <= next) {
-            const pdist = phase - prev;
-            const ndist = next - phase;
-            return pdist < ndist
-                ? Astro.MoonPhase[i-1]
-                : Astro.MoonPhase[i];
-        }
-    }
-
-    return 'None';
+    return GardenRange.find(Astro.MoonPhase, 1.0, phase);
 };
-
-/**
- * SunCalc JS wrapper that synchronizes sun and moon calculations with date changes.
- */
 
 function Astro(latitude, longitude, date) {
     this.latitude = latitude;

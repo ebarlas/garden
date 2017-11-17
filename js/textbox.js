@@ -1,7 +1,13 @@
-Textbox.UpperLeft = 1;
-Textbox.LowerLeft = 2;
-Textbox.UpperRight = 3;
-Textbox.LowerRight = 4;
+/**
+ * Utility for sizing and rendering a textbox given lines of text.
+ */
+
+Textbox.Anchor = {
+    UpperLeft: 1,
+    LowerLeft: 2,
+    UpperRight: 3,
+    LowerRight: 4
+};
 
 Textbox.maxWidth = function (lines, ctx) {
     let max = 0;
@@ -48,16 +54,16 @@ Textbox.prototype.boundingBox = function(ctx) {
     const height = this.getHeight();
 
     let x, y;
-    if (this.style === Textbox.UpperLeft) {
+    if (this.style === Textbox.Anchor.UpperLeft) {
         x = this.position.x;
         y = this.position.y;
-    } else if (this.style === Textbox.LowerLeft) {
+    } else if (this.style === Textbox.Anchor.LowerLeft) {
         x = this.position.x;
         y = this.position.y - height;
-    } else if (this.style === Textbox.UpperRight) {
+    } else if (this.style === Textbox.Anchor.UpperRight) {
         x = this.position.x - width;
         y = this.position.y;
-    } else if (this.style === Textbox.LowerRight) {
+    } else if (this.style === Textbox.Anchor.LowerRight) {
         x = this.position.x - width;
         y = this.position.y - height;
     }

@@ -1,3 +1,10 @@
+/**
+ * Simple control panel for garden preferences.
+ *
+ * Dependencies:
+ *   - Textbox (textbox.js)
+ */
+
 GardenControl.DateSelection = {
     Year: 0,
     Month: 1,
@@ -39,83 +46,83 @@ function GardenControl(canvas, astro) {
     this.txtOpen = new Textbox()
         .setPosition({x: this.canvas.width - 20, y: 20})
         .setText(["<"])
-        .setStyle(Textbox.UpperRight);
+        .setStyle(Textbox.Anchor.UpperRight);
 
     const txtCloseY = 20;
     this.txtClose = new Textbox()
         .setPosition({x: this.canvas.width - 20, y: txtCloseY})
         .setText([">"])
-        .setStyle(Textbox.UpperRight);
+        .setStyle(Textbox.Anchor.UpperRight);
 
     const txtShowHideSunY = txtCloseY + this.txtClose.getHeight() + 10;
     this.txtShowHideSun = new Textbox()
         .setPosition({x: this.canvas.width - 20, y: txtShowHideSunY})
         .setText([(this.showSun ? "Hide" : "Show") + " Sun"])
-        .setStyle(Textbox.UpperRight);
+        .setStyle(Textbox.Anchor.UpperRight);
 
     const txtShowHideMoonY = txtShowHideSunY + this.txtShowHideSun.getHeight() + 10;
     this.txtShowHideMoon = new Textbox()
         .setPosition({x: this.canvas.width - 20, y: txtShowHideMoonY})
         .setText([(this.showMoon ? "Hide" : "Show") + " Moon"])
-        .setStyle(Textbox.UpperRight);
+        .setStyle(Textbox.Anchor.UpperRight);
 
     const txtShowHideScaleY = txtShowHideMoonY + this.txtShowHideMoon.getHeight() + 10;
     this.txtShowHideScale = new Textbox()
         .setPosition({x: this.canvas.width - 20, y: txtShowHideScaleY})
         .setText([(this.showScale ? "Hide" : "Show") + " Scale"])
-        .setStyle(Textbox.UpperRight);
+        .setStyle(Textbox.Anchor.UpperRight);
 
     const txtDateY = txtShowHideScaleY + this.txtShowHideScale.getHeight() + 10;
     this.txtDateNext = new Textbox()
         .setPosition({x: this.canvas.width - 20, y: txtDateY})
         .setText([">"])
-        .setStyle(Textbox.UpperRight);
+        .setStyle(Textbox.Anchor.UpperRight);
     this.txtDatePrev = new Textbox()
         .setPosition({x: this.txtDateNext.boundingBox(this.ctx).x - 10, y: txtDateY})
         .setText(["<"])
-        .setStyle(Textbox.UpperRight);
+        .setStyle(Textbox.Anchor.UpperRight);
     this.txtYear = new Textbox({fill: this.dateSelection === GardenControl.DateSelection.Year})
         .setPosition({x: this.txtDatePrev.boundingBox(this.ctx).x - 10, y: txtDateY})
         .setText([astro.getYear()])
-        .setStyle(Textbox.UpperRight);
+        .setStyle(Textbox.Anchor.UpperRight);
     this.txtMonthYearSlash = new Textbox({fill: false, margin: 0})
         .setPosition({x: this.txtYear.boundingBox(this.ctx).x, y: txtDateY})
         .setText(["/"])
-        .setStyle(Textbox.UpperRight);
+        .setStyle(Textbox.Anchor.UpperRight);
     this.txtDay = new Textbox({fill: this.dateSelection === GardenControl.DateSelection.Day})
         .setPosition({x: this.txtMonthYearSlash.boundingBox(this.ctx).x, y: txtDateY})
         .setText([astro.getDay()])
-        .setStyle(Textbox.UpperRight);
+        .setStyle(Textbox.Anchor.UpperRight);
     this.txtDayMonthSlash = new Textbox({fill: false, margin: 0})
         .setPosition({x: this.txtDay.boundingBox(this.ctx).x, y: txtDateY})
         .setText(["/"])
-        .setStyle(Textbox.UpperRight);
+        .setStyle(Textbox.Anchor.UpperRight);
     this.txtMonth = new Textbox({fill: this.dateSelection === GardenControl.DateSelection.Month})
         .setPosition({x: this.txtDayMonthSlash.boundingBox(this.ctx).x, y: txtDateY})
         .setText([astro.getMonth() + 1])
-        .setStyle(Textbox.UpperRight);
+        .setStyle(Textbox.Anchor.UpperRight);
 
     const txtTimeY = txtDateY + this.txtDateNext.getHeight() + 10;
     this.txtTimeNext = new Textbox()
         .setPosition({x: this.canvas.width - 20, y: txtTimeY})
         .setText([">"])
-        .setStyle(Textbox.UpperRight);
+        .setStyle(Textbox.Anchor.UpperRight);
     this.txtTimePrev = new Textbox()
         .setPosition({x: this.txtTimeNext.boundingBox(this.ctx).x - 10, y: txtTimeY})
         .setText(["<"])
-        .setStyle(Textbox.UpperRight);
+        .setStyle(Textbox.Anchor.UpperRight);
     this.txtMinutes = new Textbox({fill: this.timeSelection === GardenControl.TimeSelection.Minute})
         .setPosition({x: this.txtTimePrev.boundingBox(this.ctx).x - 10, y: txtTimeY})
         .setText([astro.getMinutes()])
-        .setStyle(Textbox.UpperRight);
+        .setStyle(Textbox.Anchor.UpperRight);
     this.txtSlash = new Textbox({fill: false, margin: 0})
         .setPosition({x: this.txtMinutes.boundingBox(this.ctx).x, y: txtTimeY})
         .setText([":"])
-        .setStyle(Textbox.UpperRight);
+        .setStyle(Textbox.Anchor.UpperRight);
     this.txtHours = new Textbox({fill: this.timeSelection === GardenControl.TimeSelection.Hour})
         .setPosition({x: this.txtSlash.boundingBox(this.ctx).x, y: txtTimeY})
         .setText([astro.getHours()])
-        .setStyle(Textbox.UpperRight);
+        .setStyle(Textbox.Anchor.UpperRight);
 }
 
 GardenControl.prototype.onTap = function (click) {

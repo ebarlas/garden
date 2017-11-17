@@ -1,8 +1,40 @@
+/**
+ * Garden SVG loading and storing utility.
+ *
+ * Stores three types of garden svg data elements:
+ * - Dimensions, sizes, etc
+ * - Paths (structures)
+ * - Circles (plant individuals)
+ *
+ * Circles are stored in an obj-obj-array index as follows:
+ * {
+ *   <species-code>: {
+ *     <individual>: [
+ *       <version 1>, <version 2>, ...
+ *     ]
+ *   }
+ * }
+ *
+ * For example:
+ * {
+ *   teu: {
+ *     1: [
+ *       {
+ *         id: <id>,
+ *         version: 1,
+ *         cx: <x>,
+ *         cy: <y>,
+ *         r: <radius>,
+ *         ...
+ *       }, ...
+ *     ]
+ *   }
+ * }
+ *
+ */
+
 function Svg(resource) {
     this.resource = resource;
-    this.size = null;
-    this.paths = null;
-    this.circles = null;
 }
 
 Svg.prototype.iterator = function (svg, resolver, xpath, mapper) {
@@ -15,7 +47,12 @@ Svg.prototype.iterator = function (svg, resolver, xpath, mapper) {
     return elems;
 };
 
-Svg.prototype.findSize = function (svg, resolver) {
+Svg.prototype.parseDate = function (text) {
+    const parts = /([0-9]+)-([0-9]+)-([0-9]+)/.exec(text);
+    return new Date(parseInt(parts[1]), parseInt(parts[2]) - 1, parseInt(parts[3]));
+};
+
+Svg.prototype.findDimensions = function (svg, resolver) {
     return this.iterator(svg, resolver, '//svg:svg', node => {
         return {
             width: parseFloat(node.attributes.width.value),
@@ -34,11 +71,6 @@ Svg.prototype.findPaths = function (svg, resolver) {
             d: node.attributes.d.value
         };
     });
-};
-
-Svg.prototype.parseDate = function (text) {
-    const parts = /([0-9]+)-([0-9]+)-([0-9]+)/.exec(text);
-    return new Date(parseInt(parts[1]), parseInt(parts[2]) - 1, parseInt(parts[3]));
 };
 
 Svg.prototype.findCircles = function (svg, resolver) {
@@ -69,23 +101,31 @@ Svg.prototype.locateVersion = function (versions, date) {
     return i === 0 ? null : versions[i - 1];
 };
 
+/**
+ * -> species
+ * <- entire versions list for each individual of species
+ */
 Svg.prototype.forEachInstance = function (species, callback) {
     for (const instance in this.index[species]) {
         callback(this.index[species][instance]);
     }
 };
 
+/**
+ * -> date
+ * <- correct version for each individual of each species
+ */
 Svg.prototype.forEachCircle = function (callback, date) {
-    Object.keys(this.index).forEach(id => {
-        const species = this.index[id];
-        Object.keys(species).forEach(instance => {
-            const versions = species[instance];
+    for (const species in this.index) {
+        const instances = this.index[species];
+        for (const instance in instances) {
+            const versions = instances[instance];
             const version = date ? this.locateVersion(versions, date) : versions[versions.length - 1];
             if (version && version.type !== 'remove') {
                 callback(version);
             }
-        });
-    });
+        }
+    }
 };
 
 Svg.prototype.index = function (circles) {
@@ -105,6 +145,10 @@ Svg.prototype.index = function (circles) {
     return index;
 };
 
+/**
+ * -> species
+ * <- earliest version among all versions of all individuals of given species
+ */
 Svg.prototype.firstVersion = function (species) {
     const instances = this.index[species];
     let min = null;
@@ -116,6 +160,10 @@ Svg.prototype.firstVersion = function (species) {
     return min;
 };
 
+/**
+ * -> species
+ * <- latest version among all versions of all individuals of given species
+ */
 Svg.prototype.lastVersion = function (species) {
     const instances = this.index[species];
     let max = null;
@@ -128,16 +176,28 @@ Svg.prototype.lastVersion = function (species) {
     return max;
 };
 
+/**
+ * -> species, instance
+ * <- all versions of given individual of given species
+ */
 Svg.prototype.versions = function (species, instance) {
     return (this.index[species] || {})[instance];
 };
 
-Svg.prototype.versionAt = function (species, instance, date) {
+/**
+ * -> species, instance, date
+ * <- correct, visible version of given individual of given species
+ */
+Svg.prototype.visibleVersionAt = function (species, instance, date) {
     const v = this.locateVersion(this.versions(species, instance) || [], date);
     return v && v.type !== 'remove' ? [v] : [];
 };
 
-Svg.prototype.versionsAt = function (species, date) {
+/**
+ * -> species, date
+ * <- correct, visible versions of each individual of given species
+ */
+Svg.prototype.visibleVersionsAt = function (species, date) {
     const instances = this.index[species];
     const versions = [];
     for (const instance in instances) {
@@ -158,10 +218,14 @@ Svg.prototype.load = function (callback) {
         const resolver = res.createNSResolver(res.ownerDocument === null
             ? res.documentElement
             : res.ownerDocument.documentElement);
-        svg.size = svg.findSize(res, resolver);
+        const dims = svg.findDimensions(res, resolver);
+        svg.latitude = dims.latitude;
+        svg.longitude = dims.longitude;
+        svg.width = dims.width;
+        svg.height = dims.height;
+        svg.gardenWidth = dims.gardenWidth;
         svg.paths = svg.findPaths(res, resolver);
-        svg.circles = svg.findCircles(res, resolver);
-        svg.index = svg.index(svg.circles);
+        svg.index = svg.index(svg.findCircles(res, resolver));
         callback(svg);
     });
     xhr.open("GET", this.resource);

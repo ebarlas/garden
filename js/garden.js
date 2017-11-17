@@ -23,7 +23,7 @@ function Garden(canvas, sunImage, moonImage, svg, date) {
 
     this.colorPalette = ['#a6cee3', '#1f78b4', '#b2df8a', '#33a02c', '#fb9a99', '#e31a1c', '#fdbf6f', '#ff7f00', '#cab2d6', '#6a3d9a', /*'#ffff99',*/ '#b15928'];
 
-    this.astro = new Astro(svg.size.latitude, svg.size.longitude, date);
+    this.astro = new Astro(svg.latitude, svg.longitude, date);
     this.sun = new GardenSun(canvas, sunImage, this.astro, GardenSun.Type.Sun);
     this.moon = new GardenSun(canvas, moonImage, this.astro, GardenSun.Type.Moon);
 
@@ -48,9 +48,9 @@ Garden.prototype.emphasize = function(species, instance) {
 
     if (species) {
         if (instance) {
-            this.emphasized = svg.versionAt(species, instance, this.astro.date);
+            this.emphasized = svg.visibleVersionAt(species, instance, this.astro.date);
         } else {
-            this.emphasized = svg.versionsAt(species, this.astro.date);
+            this.emphasized = svg.visibleVersionsAt(species, this.astro.date);
         }
 
         this.frame = 0;
@@ -66,7 +66,7 @@ Garden.prototype.canvasCenter = function () {
 };
 
 Garden.prototype.feetPerPixel = function () {
-    return this.svg.size.gardenWidth / this.svg.size.width;
+    return this.svg.gardenWidth / this.svg.width;
 };
 
 Garden.prototype.onWindowResize = function () {
@@ -78,16 +78,16 @@ Garden.prototype.onWindowResize = function () {
 };
 
 Garden.prototype.resetScale = function () {
-    const widthScale = this.canvas.width / this.svg.size.width;
-    const heightScale = this.canvas.height / this.svg.size.height;
+    const widthScale = this.canvas.width / this.svg.width;
+    const heightScale = this.canvas.height / this.svg.height;
 
     this.scale = Math.min(widthScale, heightScale);
     this.scaleRange = {min: this.scale, max: this.scale * this.zoomOpts.max};
 
     if (this.scale === widthScale) {
-        this.translation = {x: 0, y: (this.canvas.height - (this.svg.size.height * this.scale)) / 2.0};
+        this.translation = {x: 0, y: (this.canvas.height - (this.svg.height * this.scale)) / 2.0};
     } else {
-        this.translation = {x: (this.canvas.width - (this.svg.size.width * this.scale)) / 2.0, y: 0};
+        this.translation = {x: (this.canvas.width - (this.svg.width * this.scale)) / 2.0, y: 0};
     }
 };
 
@@ -214,7 +214,7 @@ Garden.prototype.renderIndividualDetails = function () {
     new Textbox()
         .setPosition({x: ind.cx + ind.r, y: ind.cy - ind.r})
         .setText(lines)
-        .setStyle(Textbox.LowerLeft)
+        .setStyle(Textbox.Anchor.LowerLeft)
         .render(this.ctx);
 };
 
@@ -243,7 +243,7 @@ Garden.prototype.render = function () {
     ctx.translate(this.translation.x, this.translation.y);
     ctx.scale(this.scale, this.scale);
 
-    ctx.strokeRect(0, 0, svg.size.width, svg.size.height);
+    ctx.strokeRect(0, 0, svg.width, svg.height);
 
     svg.paths.forEach(p => {
         ctx.stroke(new Path2D(p.d));
