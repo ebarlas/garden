@@ -292,6 +292,102 @@ GardenSpecies.Catalog = [
         scientificName: "Ulmus parvifolia",
         commonName: "Chinese Elm",
         type: GardenSpecies.Type.Tree
+    },
+    {
+        id: "cof",
+        scientificName: "Rhamnus californica 'Eve Case'",
+        commonName: "Coffeeberry",
+        type: GardenSpecies.Type.Shrub
+    },
+    {
+        id: "gra",
+        scientificName: "Malus pumila 'Gravenstein'",
+        commonName: "Gravenstein Apple",
+        type: GardenSpecies.Type.Tree
+    },
+    {
+        id: "del",
+        scientificName: "Malus pumila 'Golden Delicious'",
+        commonName: "Golden Delicious Apple",
+        type: GardenSpecies.Type.Tree
+    },
+    {
+        id: "apr",
+        scientificName: "Prunus armeniaca 'Blenheim'",
+        commonName: "Blenheim Apricot",
+        type: GardenSpecies.Type.Tree
+    },
+    {
+        id: "fuj",
+        scientificName: "Malus pumila 'Fuji'",
+        commonName: "Fuji Apple",
+        type: GardenSpecies.Type.Tree
+    },
+    {
+        id: "plu",
+        scientificName: "Prunus salicina 'Santa Rosa'",
+        commonName: "Santa Rosa Plum",
+        type: GardenSpecies.Type.Tree
+    },
+    {
+        id: "smi",
+        scientificName: "Malus pumila 'Granny Smith'",
+        commonName: "Granny Smith Apple",
+        type: GardenSpecies.Type.Tree
+    },
+    {
+        id: "fuy",
+        scientificName: "Diospyros kaki 'Fuyu'",
+        commonName: "Fuyu Japanese Persimmon",
+        type: GardenSpecies.Type.Tree
+    },
+    {
+        id: "val",
+        scientificName: "Quercus lobata",
+        commonName: "Valley Oak",
+        type: GardenSpecies.Type.Tree
+    },
+    {
+        id: "str",
+        scientificName: "Arbutus 'Marina'",
+        commonName: "Marina Strawberry Tree",
+        type: GardenSpecies.Type.Tree
+    },
+    {
+        id: "car",
+        scientificName: "Gelsemium sempervirens",
+        commonName: "Carolina Jessamine",
+        type: GardenSpecies.Type.Vine
+    },
+    {
+        id: "cra",
+        scientificName: "Lagerstroemia indica",
+        commonName: "Crape Myrtle",
+        type: GardenSpecies.Type.Tree
+    },
+    {
+        id: "dai",
+        scientificName: "Euryops pectinatus 'Viridis'",
+        commonName: "Shrub Daisy",
+        type: GardenSpecies.Type.Shrub
+    },
+    {
+        id: "man",
+        scientificName: "Arctostaphylos 'Emerald Carpet'",
+        commonName: "Carpet Manzanita",
+        type: GardenSpecies.Type.Shrub
+    },
+    {
+        id: "dar",
+        scientificName: "Ceanothus 'Dark Star'",
+        commonName: "Dark Star Ceanothus",
+        type: GardenSpecies.Type.Shrub
+    },
+    {
+        id: "vio",
+        scientificName: "Ceanothus maritimus 'Valley Violet'",
+        commonName: "Valley Violet ceanothus",
+        type: GardenSpecies.Type.Shrub
     }
 ];
 
