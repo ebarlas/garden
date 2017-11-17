@@ -3,6 +3,7 @@
  *
  * Dependencies:
  *   - Textbox (textbox.js)
+ *   - Astro (astronomy.js)
  */
 
 GardenControl.DateSelection = {

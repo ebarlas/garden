@@ -65,10 +65,6 @@ Garden.prototype.canvasCenter = function () {
     return {x: this.canvas.width / 2, y: this.canvas.height / 2};
 };
 
-Garden.prototype.feetPerPixel = function () {
-    return this.svg.gardenWidth / this.svg.width;
-};
-
 Garden.prototype.onWindowResize = function () {
     this.canvas.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     this.canvas.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
@@ -280,7 +276,7 @@ Garden.prototype.render = function () {
     if (this.control.showScale) {
         new Scale()
             .setSize(this.canvas.width, this.canvas.height)
-            .render(this.ctx, this.feetPerPixel() / this.scale);
+            .render(this.ctx, this.svg.feetPerPixel() / this.scale);
     }
 
     this.control.render();

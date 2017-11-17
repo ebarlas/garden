@@ -209,6 +209,10 @@ Svg.prototype.visibleVersionsAt = function (species, date) {
     return versions;
 };
 
+Svg.prototype.feetPerPixel = function () {
+    return this.gardenWidth / this.width;
+};
+
 Svg.prototype.load = function (callback) {
     const svg = this;
 
