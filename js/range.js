@@ -1,5 +1,6 @@
 /**
  * Simple utility for mapping a value to an array entry based on number ranges.
+ *
  * Consider the following example
  * Values: ['North', 'East', 'South', 'West']
  * Range 360

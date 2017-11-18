@@ -1,3 +1,16 @@
+/**
+ * Main entry point for garden js application.
+ *
+ * Dependencies:
+ *   - Svg (svg.js)
+ *   - Astro (astronomy.js)
+ *   - GardenSun (sun.js)
+ *   - GardenControl (control.js)
+ *   - Scale (scale.js)
+ *   - Textbox (textbox.js)
+ *   - Hammer
+ */
+
 Garden.DateFormat = {month: '2-digit', day: '2-digit', year: 'numeric'};
 
 function Garden(canvas, sunImage, moonImage, svg, date) {
