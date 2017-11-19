@@ -30,14 +30,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4857332"
-     inkscape:cx="268.29923"
-     inkscape:cy="760.22317"
+     inkscape:zoom="2.101144"
+     inkscape:cx="1050.4115"
+     inkscape:cy="867.35368"
      inkscape:document-units="px"
      inkscape:current-layer="layer11"
      showgrid="true"
-     inkscape:window-width="1917"
-     inkscape:window-height="1072"
+     inkscape:window-width="1440"
+     inkscape:window-height="856"
      inkscape:window-x="0"
      inkscape:window-y="1"
      inkscape:window-maximized="0"
@@ -84,6 +84,7 @@
      style="display:inline;opacity:0.38800001"
      sodipodi:insensitive="true">
     <image
+       sodipodi:absref="/Users/elliotb/Code/personal/garden/img/googleimg.png"
        xlink:href="googleimg.png"
        width="1400"
        height="1400"
@@ -390,6 +391,30 @@
        garden:date="2014-04-19"
        garden:species="fra"
        garden:instance="1"
+       garden:version="1"
+       garden:description="Shrub present when we moved in."
+       garden:type="add" />
+    <circle
+       garden:type="add"
+       garden:description="Shrub present when we moved in."
+       garden:instance="2"
+       garden:version="1"
+       garden:species="ush"
+       garden:date="2014-04-19"
+       r="12"
+       cy="489.68271"
+       cx="1030.9171"
+       id="ush_2_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <circle
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ush_3_1"
+       cx="1006.1686"
+       cy="496.82169"
+       r="12"
+       garden:date="2014-04-19"
+       garden:species="ush"
+       garden:instance="3"
        garden:version="1"
        garden:description="Shrub present when we moved in."
        garden:type="add" />
@@ -1712,7 +1737,7 @@
        garden:instance="1"
        garden:version="1"
        garden:description="Planted by Mitchell Landscapes."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        r="12"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1808,7 +1833,7 @@
        garden:instance="2"
        garden:version="1"
        garden:description="Grass clump was present when we moved in."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="569.79877"
        cx="455.74063"
@@ -1820,7 +1845,7 @@
        garden:instance="1"
        garden:version="1"
        garden:description="Grass clump was present when we moved in."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        r="12"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1832,7 +1857,7 @@
        garden:instance="2"
        garden:version="1"
        garden:description="Planted by Mitchell Landscapes."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="515.32141"
        cx="414.13971"
@@ -1844,7 +1869,7 @@
        garden:instance="4"
        garden:version="1"
        garden:description="Planted by Mitchell Landscapes."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="328.11728"
        cx="448.80713"
@@ -1856,7 +1881,7 @@
        garden:instance="22"
        garden:version="1"
        garden:description="Shrub was present when we moved in."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="tex_21_1"
@@ -1868,7 +1893,7 @@
        garden:instance="21"
        garden:version="1"
        garden:description="Shrub was present when we moved in."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        r="9"
        cy="255.58479"
@@ -2120,7 +2145,7 @@
        garden:instance="23"
        garden:version="1"
        garden:description="Shrub was present when we moved in."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="417.26208"
        cx="522.104"
@@ -2132,7 +2157,7 @@
        garden:instance="9"
        garden:version="1"
        garden:description="Planted with Dad. Plant from Cottage Gardens."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        r="7"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2144,7 +2169,7 @@
        garden:instance="11"
        garden:version="1"
        garden:description="Planted with Dad. Plant from Cottage Gardens."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="492.53992"
        cx="537.95197"
@@ -2156,7 +2181,7 @@
        garden:instance="2"
        garden:version="1"
        garden:description="Planted by Mitchell Landscapes."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        r="10"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2168,7 +2193,7 @@
        garden:instance="3"
        garden:version="1"
        garden:description="Planted by Mitchell Landscapes."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        r="7"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2180,7 +2205,7 @@
        garden:instance="14"
        garden:version="1"
        garden:description="Planted with Dad. Plant from Cottage Gardens."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="550.97931"
        cx="564.69543"
@@ -2192,7 +2217,7 @@
        garden:instance="16"
        garden:version="1"
        garden:description="Planted with Dad. Plant from Cottage Gardens."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="477.68246"
        cx="454.75018"
@@ -2204,7 +2229,7 @@
        garden:instance="5"
        garden:version="1"
        garden:description="Planted by Mitchell Landscapes."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        r="12"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2216,7 +2241,7 @@
        garden:instance="3"
        garden:version="1"
        garden:description="Planted by Mitchell Landscapes."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="618.33319"
        cx="494.37009"
@@ -2228,7 +2253,7 @@
        garden:instance="1"
        garden:version="1"
        garden:description="Planted by Mitchell Landscapes."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        r="14"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2240,7 +2265,7 @@
        garden:instance="1"
        garden:version="1"
        garden:description="Planted by Mitchell Landscapes."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="621.30469"
        cx="268.53653"
@@ -2252,7 +2277,7 @@
        garden:instance="1"
        garden:version="1"
        garden:description="Planted by Mitchell Landscapes."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        r="14"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2264,7 +2289,7 @@
        garden:instance="1"
        garden:version="1"
        garden:description="Planted by Mitchell Landscapes."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="866.44556"
        cx="252.15071"
@@ -2276,7 +2301,7 @@
        garden:instance="1"
        garden:version="1"
        garden:description="Planted by Mitchell Landscapes."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        r="15"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2288,7 +2313,7 @@
        garden:instance="1"
        garden:version="1"
        garden:description="Planted by Mitchell Landscapes."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="886.75818"
        cx="395.32031"
@@ -2300,7 +2325,7 @@
        garden:instance="1"
        garden:version="1"
        garden:description="Planted by Mitchell Landscapes."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        r="14"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2312,7 +2337,7 @@
        garden:instance="1"
        garden:version="1"
        garden:description="Planted by Mitchell Landscapes."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="900.64221"
        cx="521.43628"
@@ -2324,7 +2349,7 @@
        garden:instance="1"
        garden:version="1"
        garden:description="Planted by us. Plant provided by Mitchell Landscapes."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        r="10"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2336,7 +2361,7 @@
        garden:instance="3"
        garden:version="1"
        garden:description="Planted by us. Plant provided by Mitchell Landscapes."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        r="10"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2348,7 +2373,7 @@
        garden:instance="4"
        garden:version="1"
        garden:description="Planted by us. Plant provided by Mitchell Landscapes."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="836.25977"
        cx="522.42682"
@@ -2360,7 +2385,7 @@
        garden:instance="2"
        garden:version="1"
        garden:description="Planted by us. Plant provided by Mitchell Landscapes."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="825.36432"
        cx="631.38159"
@@ -2372,7 +2397,7 @@
        garden:instance="5"
        garden:version="1"
        garden:description="Planted by us. Plant provided by Mitchell Landscapes."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        r="13"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2384,7 +2409,7 @@
        garden:instance="15"
        garden:version="1"
        garden:description="Planted by us. Plant from Cottage Gardens."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="719.34583"
        cx="680.18646"
@@ -2396,7 +2421,7 @@
        garden:instance="2"
        garden:version="1"
        garden:description="Planted by us. Plant from Cottage Gardens."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        r="13"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2408,7 +2433,7 @@
        garden:instance="1"
        garden:version="1"
        garden:description="Planted by us. Plant from Cottage Gardens."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="999.67487"
        cx="506.25607"
@@ -2420,7 +2445,7 @@
        garden:instance="1"
        garden:version="1"
        garden:description="Planted with Dad. Plants from Urban Tree Farm."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        r="10"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2432,7 +2457,7 @@
        garden:instance="2"
        garden:version="1"
        garden:description="Planted with Dad. Plants from Urban Tree Farm."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="917.4635"
        cx="607.2868"
@@ -2444,7 +2469,7 @@
        garden:instance="3"
        garden:version="1"
        garden:description="Planted with Dad. Plants from Urban Tree Farm."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        r="10"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2456,7 +2481,7 @@
        garden:instance="4"
        garden:version="1"
        garden:description="Planted with Dad. Plants from Urban Tree Farm."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="792.66077"
        cx="754.87097"
@@ -2468,7 +2493,7 @@
        garden:instance="5"
        garden:version="1"
        garden:description="Planted with Dad. Plants from Urban Tree Farm."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="559.8938"
        cx="380.46283"
@@ -2480,7 +2505,7 @@
        garden:instance="1"
        garden:version="1"
        garden:description="Planted by Mitchell Landscapes."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="643.09564"
        cx="410.17776"
@@ -2492,7 +2517,7 @@
        garden:instance="1"
        garden:version="1"
        garden:description="Planted by Mitchell Landscapes."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="426.17657"
        cx="310.13748"
@@ -2540,7 +2565,7 @@
        garden:instance="7"
        garden:version="1"
        garden:description="Planted with Dad. Plant from Cottage Gardens."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="347.92725"
        cx="536.96149"
@@ -2552,7 +2577,7 @@
        garden:instance="6"
        garden:version="1"
        garden:description="Planted with Dad. Plant from Cottage Gardens."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        r="7"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2564,7 +2589,7 @@
        garden:instance="4"
        garden:version="1"
        garden:description="Planted with Dad. Plant from Cottage Gardens."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="258.45218"
        cx="517.92426"
@@ -2576,7 +2601,7 @@
        garden:instance="3"
        garden:version="1"
        garden:description="Planted with Dad. Plant from Cottage Gardens."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        r="7"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2588,7 +2613,7 @@
        garden:instance="2"
        garden:version="1"
        garden:description="Planted with Dad. Plant from Cottage Gardens."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="180.7261"
        cx="524.02972"
@@ -2600,7 +2625,7 @@
        garden:instance="1"
        garden:version="1"
        garden:description="Planted with Dad. Plant from Cottage Gardens."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="man_5_1"
@@ -2612,7 +2637,7 @@
        garden:instance="5"
        garden:version="1"
        garden:description="Planted with Dad. Plant from Cottage Gardens."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        r="7"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2624,7 +2649,7 @@
        garden:instance="8"
        garden:version="1"
        garden:description="Planted with Dad. Plant from Cottage Gardens."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="436.08154"
        cx="558.75244"
@@ -2636,7 +2661,7 @@
        garden:instance="10"
        garden:version="1"
        garden:description="Planted with Dad. Plant from Cottage Gardens."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        r="7"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2648,7 +2673,7 @@
        garden:instance="12"
        garden:version="1"
        garden:description="Planted with Dad. Plant from Cottage Gardens."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="502.44492"
        cx="581.53387"
@@ -2660,7 +2685,7 @@
        garden:instance="13"
        garden:version="1"
        garden:description="Planted with Dad. Plant from Cottage Gardens."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        r="7"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2672,7 +2697,7 @@
        garden:instance="15"
        garden:version="1"
        garden:description="Planted with Dad. Plant from Cottage Gardens."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="557.91284"
        cx="603.32483"
@@ -2684,7 +2709,7 @@
        garden:instance="17"
        garden:version="1"
        garden:description="Planted with Dad. Plant from Cottage Gardens."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        r="7"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2696,7 +2721,7 @@
        garden:instance="18"
        garden:version="1"
        garden:description="Planted with Dad. Plant from Cottage Gardens."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="618.33319"
        cx="628.08728"
@@ -2708,7 +2733,7 @@
        garden:instance="19"
        garden:version="1"
        garden:description="Planted with Dad. Plant from Cottage Gardens."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="453.91049"
        cx="152.64822"
@@ -3020,7 +3045,7 @@
        garden:version="1"
        garden:species="ush"
        garden:description="Mature shrub was present when we moved in."
-       garden:date="2014-04-19"/>
+       garden:date="2014-04-19" />
     <circle
        r="70"
        cy="99.711884"
@@ -3127,7 +3152,7 @@
        garden:species="teu"
        garden:instance="7"
        garden:version="1"
-       garden:description="Planted by Mitchell Landscapes to replace dead plant."
+       garden:description="Planted by Mitchell Landscapes. Replacement for dead California poppy."
        garden:type="add" />
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -3139,20 +3164,32 @@
        garden:species="teu"
        garden:instance="8"
        garden:version="1"
-       garden:description="Planted by Mitchell Landscapes to replace dead plant."
+       garden:description="Planted by Mitchell Landscapes. Replacement for dead California poppy."
        garden:type="add" />
     <circle
        r="7"
        cy="132.12114"
-       cx="1245.3956"
+       cx="1255.3901"
        id="teu_9_1"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        garden:date="2017-02-01"
        garden:species="teu"
        garden:instance="9"
        garden:version="1"
-       garden:description="Planted by Mitchell Landscapes to replace dead plant."
+       garden:description="Planted by Mitchell Landscapes. Replacement for dead California poppy."
        garden:type="add" />
+    <circle
+       garden:type="add"
+       garden:description="Planted by us. Plant from Cottage Gardens."
+       garden:version="1"
+       garden:instance="13"
+       garden:species="teu"
+       garden:date="2017-05-27"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="teu_13_1"
+       cx="1233.9733"
+       cy="138.78418"
+       r="7" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -3415,7 +3452,7 @@
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="cal_6_1"
        cy="132.12114"
-       cx="1245.3956"
+       cx="1255.3901"
        r="7"
        garden:date="2016-05-11"
        garden:species="cal"
@@ -3427,7 +3464,7 @@
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="cal_6_2"
        cy="132.12114"
-       cx="1245.3956"
+       cx="1255.3901"
        r="7"
        garden:date="2017-02-01"
        garden:species="cal"
@@ -3507,7 +3544,7 @@
        garden:version="2"
        garden:description="Dead plant removed by Mitchell Landscapes. Replaced by breath of heaven."
        garden:type="remove" />
-  <circle
+    <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="max_3_1"
        cx="760.68256"
@@ -3626,7 +3663,7 @@
        garden:instance="6"
        garden:version="1"
        garden:description="Planted by us. Plant provided by Mitchell Landscapes."
-       garden:type="add"/>
+       garden:type="add" />
     <circle
        cy="769.89642"
        cx="634.35309"
@@ -3638,7 +3675,7 @@
        garden:instance="6"
        garden:version="2"
        garden:description="Plant died. Appears to be due to gopher activity."
-       garden:type="remove"/>
+       garden:type="remove" />
   </g>
   <path
      style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -3653,70 +3690,330 @@
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="ccccccccccccccc" />
   <garden:contents>
-    <garden:species garden:id="teu" garden:scientificName="Teucrium Chamaedrys" garden:commonName="Germander" garden:type="Shrub" />
-    <garden:species garden:id="pho" garden:scientificName="Phormium 'Yellow Wave'" garden:commonName="New Zealand Flax" garden:type="Perennial" />
-    <garden:species garden:id="lom" garden:scientificName="Lomandra longifolia Breeze" garden:commonName="Dwarf Mat Rush" garden:type="Grass" />
-    <garden:species garden:id="pen" garden:scientificName="Penstemon 'Garnet'" garden:commonName="Beard Tongue" garden:type="Perennial" />
-    <garden:species garden:id="lav" garden:scientificName="Lavandula angustifolia 'Hidcote'" garden:commonName="English Lavender" garden:type="Shrub" />
-    <garden:species garden:id="mey" garden:scientificName="Citrus limon 'Improved Meyer'" garden:commonName="Dwarf Meyer Lemon" garden:type="Tree" />
-    <garden:species garden:id="ace" garden:scientificName="Acer palmatum 'Bloodgood'" garden:commonName="Japanese Maple 'Bloodgood'" garden:type="Tree" />
-    <garden:species garden:id="ros" garden:scientificName="Rosmarinus officinalis 'Tuscan Blue'" garden:commonName="Upright Rosemary" garden:type="Shrub" />
-    <garden:species garden:id="tex" garden:scientificName="Ligustrum japonicum 'Texanum'" garden:commonName="Waxleaf Privet" garden:type="Shrub" />
-    <garden:species garden:id="gum" garden:scientificName="Liquidambar styraciflua" garden:commonName="Sweet Gum" garden:type="Tree" />
-    <garden:species garden:id="icy" garden:scientificName="Cupressus sempervirens 'Glauca'" garden:commonName="Italian Cypress" garden:type="Tree" />
-    <garden:species garden:id="lil" garden:scientificName="Hemerocallis" garden:commonName="Daylily" garden:type="Perennial" />
-    <garden:species garden:id="ses" garden:scientificName="Sesleria 'Greenlee'" garden:commonName="John Greenlee's Moor Grass" garden:type="Grass" />
-    <garden:species garden:id="ray" garden:scientificName="Fraxinus oxycarpa 'Raywood'" garden:commonName="Raywood Ash" garden:type="Tree" />
-    <garden:species garden:id="ole" garden:scientificName="Olea europaea 'Montra'" garden:commonName="Little Olive" garden:type="Shrub" />
-    <garden:species garden:id="aga" garden:scientificName="Agave desmettiana 'Variegata'" garden:commonName="Variegated Dwarf Agave" garden:type="Succulent" />
-    <garden:species garden:id="rud" garden:scientificName="Rudbeckia fulgida sullivantii 'Goldsturm'" garden:commonName="Black-Eyed Susan" garden:type="Perennial" />
-    <garden:species garden:id="kar" garden:scientificName="Calamagrostis x acutiflora 'Karl Foerster'" garden:commonName="Feather Reed Grass" garden:type="Grass" />
-    <garden:species garden:id="eup" garden:scientificName="Euphorbia myrsinites" garden:commonName="Myrtle Spurge" garden:type="Succulent" />
-    <garden:species garden:id="zeb" garden:scientificName="Miscanthus sinensis 'Zebrinus'" garden:commonName="Zebra Grass" garden:type="Grass" />
-    <garden:species garden:id="ang" garden:scientificName="Angelicum Stonecrop" garden:commonName="Sedum angelicum" garden:type="Grass" />
-    <garden:species garden:id="cal" garden:scientificName="Eschscholzia californica" garden:commonName="California poppy" garden:type="Perennial" />
-    <garden:species garden:id="wen" garden:scientificName="Salvia 'Wendy's Wish'" garden:commonName="Wendy's Wish Sage" garden:type="Shrub" />
-    <garden:species garden:id="hea" garden:scientificName="Coleonema pulchellum 'Sunset Gold'" garden:commonName="Golden Breath of Heaven" garden:type="Shrub" />
-    <garden:species garden:id="pap" garden:scientificName="Achillea millefolium 'Paprika'" garden:commonName="Paprika Yarrow" garden:type="Perennial" />
-    <garden:species garden:id="ice" garden:scientificName="Delosperma nubigenum" garden:commonName="Hardy Yellow Ice Plant" garden:type="Succulent" />
-    <garden:species garden:id="sto" garden:scientificName="Sedum spathulifolium 'Cape Blanco'" garden:commonName="Cape Blanco Stonecrop" garden:type="Succulent" />
-    <garden:species garden:id="aco" garden:scientificName="Acorus gramineus 'Ogon'" garden:commonName="Yellow-leaved Calamus" garden:type="Grass" />
-    <garden:species garden:id="sun" garden:scientificName="Choisya ternata 'Sundance'" garden:commonName="Sundance Mexican Orange Blossom" garden:type="Shrub" />
-    <garden:species garden:id="pur" garden:scientificName="Heuchera 'Purple Mountain Majesty'" garden:commonName="Coral Bells" garden:type="Perennial" />
-    <garden:species garden:id="bir" garden:scientificName="Betula papyrifera" garden:commonName="Paper Birch" garden:type="Tree" />
-    <garden:species garden:id="max" garden:scientificName="Heuchera maxima" garden:commonName="Island Alum Root" garden:type="Perennial" />
-    <garden:species garden:id="fer" garden:scientificName="Polystichum polyblepharum" garden:commonName="Tassel Fern" garden:type="Fern" />
-    <garden:species garden:id="pit" garden:scientificName="Pittosporum tenuifolium 'Gold Star'" garden:commonName="Gold Star Kohuhu" garden:type="Shrub" />
-    <garden:species garden:id="cam" garden:scientificName="Campanula 'Dickson's Gold'" garden:commonName="Bellflower" garden:type="Perennial" />
-    <garden:species garden:id="haw" garden:scientificName="Rhaphiolepis indica 'Ballerina'" garden:commonName="Ballerina Indian Hawthorn" garden:type="Shrub" />
-    <garden:species garden:id="fra" garden:scientificName="Photinia x fraseri" garden:commonName="Fraser's Photinia" garden:type="Shrub" />
-    <garden:species garden:id="mon" garden:scientificName="Monarda 'Balmy Rose'" garden:commonName="Bee Balm" garden:type="Perennial" />
-    <garden:species garden:id="mim" garden:scientificName="Mimulus 'Jelly Bean White'" garden:commonName="White Monkeyflower" garden:type="Shrub" />
-    <garden:species garden:id="nec" garden:scientificName="Prunus persica 'Independence'" garden:commonName="Independence Nectarine" garden:type="Tree" />
-    <garden:species garden:id="cli" garden:scientificName="Rosa 'New Dawn'" garden:commonName="New Dawn Climbing Rose" garden:type="Vine" />
-    <garden:species garden:id="cot" garden:scientificName="Cotoneaster Horizontalis" garden:commonName="Rock Cotoneaster" garden:type="Shrub" />
-    <garden:species garden:id="oli" garden:scientificName="Olea europaea 'Fruitless'" garden:commonName="Wilson Fruitless Olive" garden:type="Tree" />
-    <garden:species garden:id="pis" garden:scientificName="Pistacia chinensis" garden:commonName="Chinese Pistachio" garden:type="Tree" />
-    <garden:species garden:id="yan" garden:scientificName="Ceanothus griseus horizontalis" garden:commonName="Yankee Point Ceanothus" garden:type="Shrub" />
-    <garden:species garden:id="ley" garden:scientificName="Cupressocyparis leylandii" garden:commonName="Leyland Cypress" garden:type="Tree" />
-    <garden:species garden:id="elm" garden:scientificName="Ulmus parvifolia" garden:commonName="Chinese Elm" garden:type="Tree" />
-    <garden:species garden:id="cof" garden:scientificName="Rhamnus californica 'Eve Case'" garden:commonName="Coffeeberry" garden:type="Shrub" />
-    <garden:species garden:id="gra" garden:scientificName="Malus pumila 'Gravenstein'" garden:commonName="Gravenstein Apple" garden:type="Tree" />
-    <garden:species garden:id="del" garden:scientificName="Malus pumila 'Golden Delicious'" garden:commonName="Golden Delicious Apple" garden:type="Tree" />
-    <garden:species garden:id="apr" garden:scientificName="Prunus armeniaca 'Blenheim'" garden:commonName="Blenheim Apricot" garden:type="Tree" />
-    <garden:species garden:id="fuj" garden:scientificName="Malus pumila 'Fuji'" garden:commonName="Fuji Apple" garden:type="Tree" />
-    <garden:species garden:id="plu" garden:scientificName="Prunus salicina 'Santa Rosa'" garden:commonName="Santa Rosa Plum" garden:type="Tree" />
-    <garden:species garden:id="smi" garden:scientificName="Malus pumila 'Granny Smith'" garden:commonName="Granny Smith Apple" garden:type="Tree" />
-    <garden:species garden:id="fuy" garden:scientificName="Diospyros kaki 'Fuyu'" garden:commonName="Fuyu Japanese Persimmon" garden:type="Tree" />
-    <garden:species garden:id="val" garden:scientificName="Quercus lobata" garden:commonName="Valley Oak" garden:type="Tree" />
-    <garden:species garden:id="str" garden:scientificName="Arbutus 'Marina'" garden:commonName="Marina Strawberry Tree" garden:type="Tree" />
-    <garden:species garden:id="car" garden:scientificName="Gelsemium sempervirens" garden:commonName="Carolina Jessamine" garden:type="Vine" />
-    <garden:species garden:id="cra" garden:scientificName="Lagerstroemia indica" garden:commonName="Crape Myrtle" garden:type="Tree" />
-    <garden:species garden:id="dai" garden:scientificName="Euryops pectinatus 'Viridis'" garden:commonName="Shrub Daisy" garden:type="Shrub" />
-    <garden:species garden:id="man" garden:scientificName="Arctostaphylos 'Emerald Carpet'" garden:commonName="Carpet Manzanita" garden:type="Shrub" />
-    <garden:species garden:id="dar" garden:scientificName="Ceanothus 'Dark Star'" garden:commonName="Dark Star Ceanothus" garden:type="Shrub" />
-    <garden:species garden:id="vio" garden:scientificName="Ceanothus maritimus 'Valley Violet'" garden:commonName="Valley Violet ceanothus" garden:type="Shrub" />
-    <garden:species garden:id="ugr" garden:scientificName="Unidentified Grass" garden:commonName="Unidentified Grass" garden:type="Grass" />
-    <garden:species garden:id="ush" garden:scientificName="Unidentified Shrub" garden:commonName="Unidentified Shrub" garden:type="Shrub" />
+    <garden:species
+       garden:id="teu"
+       garden:scientificName="Teucrium Chamaedrys"
+       garden:commonName="Germander"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="pho"
+       garden:scientificName="Phormium 'Yellow Wave'"
+       garden:commonName="New Zealand Flax"
+       garden:type="Perennial" />
+    <garden:species
+       garden:id="lom"
+       garden:scientificName="Lomandra longifolia Breeze"
+       garden:commonName="Dwarf Mat Rush"
+       garden:type="Grass" />
+    <garden:species
+       garden:id="pen"
+       garden:scientificName="Penstemon 'Garnet'"
+       garden:commonName="Beard Tongue"
+       garden:type="Perennial" />
+    <garden:species
+       garden:id="lav"
+       garden:scientificName="Lavandula angustifolia 'Hidcote'"
+       garden:commonName="English Lavender"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="mey"
+       garden:scientificName="Citrus limon 'Improved Meyer'"
+       garden:commonName="Dwarf Meyer Lemon"
+       garden:type="Tree" />
+    <garden:species
+       garden:id="ace"
+       garden:scientificName="Acer palmatum 'Bloodgood'"
+       garden:commonName="Japanese Maple 'Bloodgood'"
+       garden:type="Tree" />
+    <garden:species
+       garden:id="ros"
+       garden:scientificName="Rosmarinus officinalis 'Tuscan Blue'"
+       garden:commonName="Upright Rosemary"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="tex"
+       garden:scientificName="Ligustrum japonicum 'Texanum'"
+       garden:commonName="Waxleaf Privet"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="gum"
+       garden:scientificName="Liquidambar styraciflua"
+       garden:commonName="Sweet Gum"
+       garden:type="Tree" />
+    <garden:species
+       garden:id="icy"
+       garden:scientificName="Cupressus sempervirens 'Glauca'"
+       garden:commonName="Italian Cypress"
+       garden:type="Tree" />
+    <garden:species
+       garden:id="lil"
+       garden:scientificName="Hemerocallis"
+       garden:commonName="Daylily"
+       garden:type="Perennial" />
+    <garden:species
+       garden:id="ses"
+       garden:scientificName="Sesleria 'Greenlee'"
+       garden:commonName="John Greenlee's Moor Grass"
+       garden:type="Grass" />
+    <garden:species
+       garden:id="ray"
+       garden:scientificName="Fraxinus oxycarpa 'Raywood'"
+       garden:commonName="Raywood Ash"
+       garden:type="Tree" />
+    <garden:species
+       garden:id="ole"
+       garden:scientificName="Olea europaea 'Montra'"
+       garden:commonName="Little Olive"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="aga"
+       garden:scientificName="Agave desmettiana 'Variegata'"
+       garden:commonName="Variegated Dwarf Agave"
+       garden:type="Succulent" />
+    <garden:species
+       garden:id="rud"
+       garden:scientificName="Rudbeckia fulgida sullivantii 'Goldsturm'"
+       garden:commonName="Black-Eyed Susan"
+       garden:type="Perennial" />
+    <garden:species
+       garden:id="kar"
+       garden:scientificName="Calamagrostis x acutiflora 'Karl Foerster'"
+       garden:commonName="Feather Reed Grass"
+       garden:type="Grass" />
+    <garden:species
+       garden:id="eup"
+       garden:scientificName="Euphorbia myrsinites"
+       garden:commonName="Myrtle Spurge"
+       garden:type="Succulent" />
+    <garden:species
+       garden:id="zeb"
+       garden:scientificName="Miscanthus sinensis 'Zebrinus'"
+       garden:commonName="Zebra Grass"
+       garden:type="Grass" />
+    <garden:species
+       garden:id="ang"
+       garden:scientificName="Angelicum Stonecrop"
+       garden:commonName="Sedum angelicum"
+       garden:type="Grass" />
+    <garden:species
+       garden:id="cal"
+       garden:scientificName="Eschscholzia californica"
+       garden:commonName="California poppy"
+       garden:type="Perennial" />
+    <garden:species
+       garden:id="wen"
+       garden:scientificName="Salvia 'Wendy's Wish'"
+       garden:commonName="Wendy's Wish Sage"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="hea"
+       garden:scientificName="Coleonema pulchellum 'Sunset Gold'"
+       garden:commonName="Golden Breath of Heaven"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="pap"
+       garden:scientificName="Achillea millefolium 'Paprika'"
+       garden:commonName="Paprika Yarrow"
+       garden:type="Perennial" />
+    <garden:species
+       garden:id="ice"
+       garden:scientificName="Delosperma nubigenum"
+       garden:commonName="Hardy Yellow Ice Plant"
+       garden:type="Succulent" />
+    <garden:species
+       garden:id="sto"
+       garden:scientificName="Sedum spathulifolium 'Cape Blanco'"
+       garden:commonName="Cape Blanco Stonecrop"
+       garden:type="Succulent" />
+    <garden:species
+       garden:id="aco"
+       garden:scientificName="Acorus gramineus 'Ogon'"
+       garden:commonName="Yellow-leaved Calamus"
+       garden:type="Grass" />
+    <garden:species
+       garden:id="sun"
+       garden:scientificName="Choisya ternata 'Sundance'"
+       garden:commonName="Sundance Mexican Orange Blossom"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="pur"
+       garden:scientificName="Heuchera 'Purple Mountain Majesty'"
+       garden:commonName="Coral Bells"
+       garden:type="Perennial" />
+    <garden:species
+       garden:id="bir"
+       garden:scientificName="Betula papyrifera"
+       garden:commonName="Paper Birch"
+       garden:type="Tree" />
+    <garden:species
+       garden:id="max"
+       garden:scientificName="Heuchera maxima"
+       garden:commonName="Island Alum Root"
+       garden:type="Perennial" />
+    <garden:species
+       garden:id="fer"
+       garden:scientificName="Polystichum polyblepharum"
+       garden:commonName="Tassel Fern"
+       garden:type="Fern" />
+    <garden:species
+       garden:id="pit"
+       garden:scientificName="Pittosporum tenuifolium 'Gold Star'"
+       garden:commonName="Gold Star Kohuhu"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="cam"
+       garden:scientificName="Campanula 'Dickson's Gold'"
+       garden:commonName="Bellflower"
+       garden:type="Perennial" />
+    <garden:species
+       garden:id="haw"
+       garden:scientificName="Rhaphiolepis indica 'Ballerina'"
+       garden:commonName="Ballerina Indian Hawthorn"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="fra"
+       garden:scientificName="Photinia x fraseri"
+       garden:commonName="Fraser's Photinia"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="mon"
+       garden:scientificName="Monarda 'Balmy Rose'"
+       garden:commonName="Bee Balm"
+       garden:type="Perennial" />
+    <garden:species
+       garden:id="mim"
+       garden:scientificName="Mimulus 'Jelly Bean White'"
+       garden:commonName="White Monkeyflower"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="nec"
+       garden:scientificName="Prunus persica 'Independence'"
+       garden:commonName="Independence Nectarine"
+       garden:type="Tree" />
+    <garden:species
+       garden:id="cli"
+       garden:scientificName="Rosa 'New Dawn'"
+       garden:commonName="New Dawn Climbing Rose"
+       garden:type="Vine" />
+    <garden:species
+       garden:id="cot"
+       garden:scientificName="Cotoneaster Horizontalis"
+       garden:commonName="Rock Cotoneaster"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="oli"
+       garden:scientificName="Olea europaea 'Fruitless'"
+       garden:commonName="Wilson Fruitless Olive"
+       garden:type="Tree" />
+    <garden:species
+       garden:id="pis"
+       garden:scientificName="Pistacia chinensis"
+       garden:commonName="Chinese Pistachio"
+       garden:type="Tree" />
+    <garden:species
+       garden:id="yan"
+       garden:scientificName="Ceanothus griseus horizontalis"
+       garden:commonName="Yankee Point Ceanothus"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="ley"
+       garden:scientificName="Cupressocyparis leylandii"
+       garden:commonName="Leyland Cypress"
+       garden:type="Tree" />
+    <garden:species
+       garden:id="elm"
+       garden:scientificName="Ulmus parvifolia"
+       garden:commonName="Chinese Elm"
+       garden:type="Tree" />
+    <garden:species
+       garden:id="cof"
+       garden:scientificName="Rhamnus californica 'Eve Case'"
+       garden:commonName="Coffeeberry"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="gra"
+       garden:scientificName="Malus pumila 'Gravenstein'"
+       garden:commonName="Gravenstein Apple"
+       garden:type="Tree" />
+    <garden:species
+       garden:id="del"
+       garden:scientificName="Malus pumila 'Golden Delicious'"
+       garden:commonName="Golden Delicious Apple"
+       garden:type="Tree" />
+    <garden:species
+       garden:id="apr"
+       garden:scientificName="Prunus armeniaca 'Blenheim'"
+       garden:commonName="Blenheim Apricot"
+       garden:type="Tree" />
+    <garden:species
+       garden:id="fuj"
+       garden:scientificName="Malus pumila 'Fuji'"
+       garden:commonName="Fuji Apple"
+       garden:type="Tree" />
+    <garden:species
+       garden:id="plu"
+       garden:scientificName="Prunus salicina 'Santa Rosa'"
+       garden:commonName="Santa Rosa Plum"
+       garden:type="Tree" />
+    <garden:species
+       garden:id="smi"
+       garden:scientificName="Malus pumila 'Granny Smith'"
+       garden:commonName="Granny Smith Apple"
+       garden:type="Tree" />
+    <garden:species
+       garden:id="fuy"
+       garden:scientificName="Diospyros kaki 'Fuyu'"
+       garden:commonName="Fuyu Japanese Persimmon"
+       garden:type="Tree" />
+    <garden:species
+       garden:id="val"
+       garden:scientificName="Quercus lobata"
+       garden:commonName="Valley Oak"
+       garden:type="Tree" />
+    <garden:species
+       garden:id="str"
+       garden:scientificName="Arbutus 'Marina'"
+       garden:commonName="Marina Strawberry Tree"
+       garden:type="Tree" />
+    <garden:species
+       garden:id="car"
+       garden:scientificName="Gelsemium sempervirens"
+       garden:commonName="Carolina Jessamine"
+       garden:type="Vine" />
+    <garden:species
+       garden:id="cra"
+       garden:scientificName="Lagerstroemia indica"
+       garden:commonName="Crape Myrtle"
+       garden:type="Tree" />
+    <garden:species
+       garden:id="dai"
+       garden:scientificName="Euryops pectinatus 'Viridis'"
+       garden:commonName="Shrub Daisy"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="man"
+       garden:scientificName="Arctostaphylos 'Emerald Carpet'"
+       garden:commonName="Carpet Manzanita"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="dar"
+       garden:scientificName="Ceanothus 'Dark Star'"
+       garden:commonName="Dark Star Ceanothus"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="vio"
+       garden:scientificName="Ceanothus maritimus 'Valley Violet'"
+       garden:commonName="Valley Violet ceanothus"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="ugr"
+       garden:scientificName="Unidentified Grass"
+       garden:commonName="Unidentified Grass"
+       garden:type="Grass" />
+    <garden:species
+       garden:id="ush"
+       garden:scientificName="Unidentified Shrub"
+       garden:commonName="Unidentified Shrub"
+       garden:type="Shrub" />
   </garden:contents>
 </svg>
