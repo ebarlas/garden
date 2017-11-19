@@ -230,6 +230,7 @@ Garden.prototype.updateSelection = function () {
     const lines = [
         species.scientificName,
         species.commonName,
+        "Individual " + ind.instance,
         "Version " + ind.version + " of " + versions.length,
         "Introduced " + versions[0].date.toLocaleDateString('en', Garden.DateFormat)
     ];
