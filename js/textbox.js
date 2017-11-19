@@ -9,18 +9,19 @@ Textbox.Anchor = {
     LowerRight: 4
 };
 
-Textbox.maxWidth = function (lines, ctx) {
-    let max = 0;
-    lines.forEach(line => max = Math.max(ctx.measureText(line).width, max));
-    return max;
-};
-
-function Textbox(opts = {}) {
+function Textbox(ctx, opts = {}) {
+    this.ctx = ctx;
     this.margin = opts.margin || 10;
     this.fontSize = opts.fontSize || 16;
     this.lineHeight = opts.lineHeight || 10;
     this.fill = opts.fill === undefined || opts.fill === null || opts.fill;
 }
+
+Textbox.prototype.maxWidth = function (lines) {
+    let max = 0;
+    lines.forEach(line => max = Math.max(this.ctx.measureText(line).width, max));
+    return max;
+};
 
 Textbox.prototype.setFill = function (fill) {
     this.fill = fill;
@@ -46,10 +47,10 @@ Textbox.prototype.getHeight = function() {
    return this.lineHeight * (2 * this.lines.length + 1);
 };
 
-Textbox.prototype.boundingBox = function(ctx) {
-    ctx.font = this.fontSize + 'px serif';
+Textbox.prototype.boundingBox = function() {
+    this.ctx.font = this.fontSize + 'px serif';
 
-    const maxTextWidth = Textbox.maxWidth(this.lines, ctx);
+    const maxTextWidth = this.maxWidth(this.lines);
     const width = maxTextWidth + this.margin * 2;
     const height = this.getHeight();
 
@@ -71,23 +72,32 @@ Textbox.prototype.boundingBox = function(ctx) {
     return {x: x, y: y, width: width, height: height};
 };
 
-Textbox.prototype.contains = function(ctx, x, y) {
-    const box = this.boundingBox(ctx);
+Textbox.prototype.contains = function(x, y) {
+    const box = this.boundingBox();
     return x >= box.x && x <= box.x + box.width && y >= box.y && y <= box.y + box.height;
 };
 
-Textbox.prototype.render = function (ctx) {
-    const box = this.boundingBox(ctx);
+Textbox.prototype.scaledContains = function(x, y, scale, translation) {
+    const box = this.boundingBox();
+    const bx = box.x * scale + translation.x;
+    const by = box.y * scale + translation.y;
+    const bw = box.width * scale;
+    const bh = box.height * scale;
+    return x >= bx && x <= bx + bw && y >= by && y <= by + bh;
+};
+
+Textbox.prototype.render = function () {
+    const box = this.boundingBox();
 
     if (this.fill) {
-        ctx.lineWidth = 1;
-        ctx.fillStyle = 'white';
-        ctx.fillRect(box.x, box.y, box.width, box.height);
-        ctx.fillStyle = 'black';
-        ctx.strokeRect(box.x, box.y, box.width, box.height);
+        this.ctx.lineWidth = 1;
+        this.ctx.fillStyle = 'white';
+        this.ctx.fillRect(box.x, box.y, box.width, box.height);
+        this.ctx.fillStyle = 'black';
+        this.ctx.strokeRect(box.x, box.y, box.width, box.height);
     }
 
     for (let i = 0; i < this.lines.length; i++) {
-        ctx.fillText(this.lines[i], box.x + this.margin, box.y + this.lineHeight * (2 * (i + 1)));
+        this.ctx.fillText(this.lines[i], box.x + this.margin, box.y + this.lineHeight * (2 * (i + 1)));
     }
 };

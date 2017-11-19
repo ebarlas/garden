@@ -42,6 +42,7 @@ function Garden(canvas, sunImage, moonImage, svg, date) {
     this.moon = new GardenSun(canvas, moonImage, this.astro, GardenSun.Type.Moon);
     this.control = new GardenControl(canvas, this.astro);
     this.gardenScale = new Scale(canvas);
+    this.selectionBox = new Textbox(this.ctx);
 
     window.addEventListener('resize', () => this.onWindowResize(), false);
 
@@ -161,10 +162,20 @@ Garden.prototype.onTap = function (evt) {
     let touchedControl = this.control.onTap(click);
 
     if (!touchedControl) {
+        if (this.selection) {
+            if (this.selectionBox.scaledContains(click.x, click.y, this.scale, this.translation)) {
+                console.log('clicked!');
+                window.location.href = `individuals.html#species=${this.selection.species}`;
+                return;
+            }
+        }
+
         this.selection = this.findTouchedIndividual(click, 0);
         if (!this.selection) {
             this.selection = this.findTouchedIndividual(click, 20);
         }
+
+        this.updateSelection();
 
         if (evt.tapCount === 2) {
             this.zoom(true, this.zoomOpts.tap, click);
@@ -207,7 +218,7 @@ Garden.prototype.onWheel = function (evt) {
     evt.preventDefault();
 };
 
-Garden.prototype.renderIndividualDetails = function () {
+Garden.prototype.updateSelection = function () {
     if (!this.selection) {
         return;
     }
@@ -223,11 +234,10 @@ Garden.prototype.renderIndividualDetails = function () {
         "Introduced " + versions[0].date.toLocaleDateString('en', Garden.DateFormat)
     ];
 
-    new Textbox()
+    this.selectionBox
         .setPosition({x: ind.cx + ind.r, y: ind.cy - ind.r})
         .setText(lines)
-        .setStyle(Textbox.Anchor.LowerLeft)
-        .render(this.ctx);
+        .setStyle(Textbox.Anchor.LowerLeft);
 };
 
 Garden.prototype.pulsate = function (ctx) {
@@ -277,7 +287,9 @@ Garden.prototype.render = function () {
         ctx.fill();
     });
 
-    this.renderIndividualDetails();
+    if (this.selection) {
+        this.selectionBox.render();
+    }
 
     ctx.restore();
 

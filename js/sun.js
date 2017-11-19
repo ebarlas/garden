@@ -129,10 +129,10 @@ GardenSun.prototype.render = function () {
             }
         }
 
-        new Textbox()
+        new Textbox(ctx)
             .setText(lines)
             .setPosition(position)
             .setStyle(style)
-            .render(ctx);
+            .render();
     }
 };

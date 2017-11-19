@@ -44,12 +44,12 @@
     <table class="table">
         <thead>
         <tr>
-            <th>Scientific Name<button id="btnSciName" data-property="scientificName" type="button" class="btn btn-sm"><i class="fa fa-sort-asc"></i></button></th>
-            <th>Common Name<button data-property="commonName" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
-            <th>Type<button data-property="type" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
-            <th>Individuals<button data-property="individuals" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
-            <th>Introduced<button data-property="introduced" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
-            <th>Updated<button data-property="updated" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
+            <th>Scientific Name <button id="btnSciName" data-property="scientificName" type="button" class="btn btn-sm"><i class="fa fa-sort-asc"></i></button></th>
+            <th>Common Name <button data-property="commonName" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
+            <th>Type <button data-property="type" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
+            <th>Individuals <button data-property="individuals" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
+            <th>Introduced <button data-property="introduced" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
+            <th>Updated <button data-property="updated" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
         </tr>
         </thead>
         <tbody id="tbodySpecies">
@@ -80,7 +80,7 @@
     function speciesTableRow(species) {
         return `
         <tr data-species="${species.id}">
-            <td><a href="index.html#species=${species.id}">${species.scientificName}</a></td>
+            <td><a href="index.html#species=${species.id}">${species.scientificName}</a> <a href="https://www.google.com/search?q=${encodeURIComponent(species.scientificName)}"><i class="fa fa-search"></i></a></td>
             <td>${species.commonName}</td>
             <td>${species.type}</td>
             <td><a href="individuals.html#species=${species.id}">${species.individuals}</a></td>
