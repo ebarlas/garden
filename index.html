@@ -1,49 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <style type="text/css">
-        html, body {
-            overflow: hidden;
-            margin: 0;
+    <title>Garden Species</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <style>
+        body {
+            padding-top: 5rem;
         }
     </style>
 </head>
 <body>
-<canvas id="gardenCanvas"></canvas>
-<div style="display:none;">
-    <img id="imgSun" src="img/sun.svg">
-    <img id="imgMoon" src="img/moon.svg">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="species.html">Species</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Individuals</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="garden.html">Garden</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1>Cambridge Garden</h1>
+        <p class="lead">Explore species catalog, list of plant individuals, and interactive garden map.</p>
+        <p><a class="btn btn-lg btn-success" href="garden.html" role="button">View Garden</a></p>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Plant Individuals</h2>
+            <ul id="listIndividuals">
+            </ul>
+            <p><a class="btn btn-primary" href="#" role="button">View details</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Sunlight Times</h2>
+            <ul id="listSunlight">
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h2>Sun Position</h2>
+            <ul id="listSunpos">
+            </ul>
+        </div>
+    </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/suncalc/1.8.0/suncalc.min.js"></script>
-<script src="js/svg.js"></script>
-<script src="js/textbox.js"></script>
-<script src="js/scale.js"></script>
-<script src="js/intercept.js"></script>
 <script src="js/range.js"></script>
 <script src="js/angle.js"></script>
-<script src="js/astronomy.js"></script>
-<script src="js/control.js"></script>
-<script src="js/sun.js"></script>
-<script src="js/garden.js"></script>
+<script src="js/svg.js"></script>
 <script src="js/fragment.js"></script>
 <script>
-    const fragment = new Fragment();
-    const svg = new Svg(fragment.get("svg") || "img/property.svg");
-    const date = fragment.getDate("date") || new Date();
-    const species = fragment.get("species");
-    const instance = fragment.get("instance");
+    const dateFormat = {month: '2-digit', day: '2-digit', year: 'numeric'};
+    const timeFormat = {hour: '2-digit', minute: '2-digit'};
 
-    let garden;
+    const svg = new Svg("img/property.svg");
 
-    svg.load(() => {
-        const canvas = document.getElementById("gardenCanvas");
-        const imgSun = document.getElementById("imgSun");
-        const imgMoon = document.getElementById("imgMoon");
+    function formatDate(date) {
+        return date.toLocaleDateString('en', dateFormat);
+    }
 
-        garden = new Garden(canvas, imgSun, imgMoon, svg, date);
-        garden.emphasize(species, instance);
-    });
+    function formatTime(date) {
+        return date.toLocaleDateString('en', timeFormat);
+    }
+
+    function init() {
+        const date = new Date();
+        const sunpos = SunCalc.getPosition(date, svg.latitude, svg.longitude);
+        const sunlight = SunCalc.getTimes(date, svg.latitude, svg.longitude);
+        const azimuth = GardenAngle.normalizeDegrees(GardenAngle.toDegrees(3 * Math.PI / 2 - sunpos.azimuth)).toFixed(2);
+        const altitude = GardenAngle.toDegrees(sunpos.altitude).toFixed(2);
+
+        $("#listIndividuals").append(`<li><strong>${svg.countAllIndividuals(false)}</strong> Total Individuals</li>
+                <li><strong>${svg.countAllSpecies(false)}</strong> Total Species</li>
+                <li><strong>${svg.countAllIndividuals(true)}</strong> Current Individuals</li>
+                <li><strong>${svg.countAllSpecies(true)}</strong> Current Species</li>
+                <li><strong>${formatDate(svg.lastUpdate())}</strong> Last Update</li>`);
+
+        $("#listSunlight").append(`<li><strong>${formatTime(sunlight.sunrise)}</strong> Sunrise</li>
+                <li><strong>${formatTime(sunlight.solarNoon)}</strong> Solar noon</li>
+                <li><strong>${formatTime(sunlight.sunset)}</strong> Sunset</li>
+                <li><strong>${formatTime(sunlight.dusk)}</strong> Civil Dusk</li>
+                <li><strong>${formatTime(sunlight.nauticalDusk)}</strong> Nautical Dusk</li>`);
+
+        $("#listSunpos").append(`<li><strong>${altitude}&#176;</strong> Altitude</li>
+                <li><strong>${azimuth}&#176; S</strong> Azimuth</li>`);
+    }
+
+    svg.load(init);
 </script>
 </body>
 </html>

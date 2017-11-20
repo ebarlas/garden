@@ -190,7 +190,7 @@ Svg.prototype.lastVersion = function (species) {
     let max = null;
     for (const instance in instances) {
         const arr = instances[instance];
-        if (max === null || arr[arr.length - 1].date.getTime() < max.getTime()) {
+        if (max === null || arr[arr.length - 1].date.getTime() > max.getTime()) {
             max = arr[arr.length - 1].date;
         }
     }
@@ -232,6 +232,52 @@ Svg.prototype.visibleVersionsAt = function (species, date) {
 
 Svg.prototype.countIndividuals = function (species) {
     return Object.keys(this.individuals[species] || {}).length;
+};
+
+Svg.prototype.countAllSpecies = function (visibleOnly) {
+    let count = 0;
+    outer: for (const species in this.individuals) {
+        const instances = this.individuals[species];
+        for (const instance in instances) {
+            const versions = instances[instance];
+            const version = versions[versions.length - 1];
+            if (!visibleOnly || version.type !== 'remove') {
+                count++;
+                continue outer;
+            }
+        }
+    }
+    return count;
+};
+
+Svg.prototype.countAllIndividuals = function (visibleOnly) {
+    let count = 0;
+    for (const species in this.individuals) {
+        const instances = this.individuals[species];
+        for (const instance in instances) {
+            const versions = instances[instance];
+            const version = versions[versions.length - 1];
+            if (!visibleOnly || version.type !== 'remove') {
+                count++;
+            }
+        }
+    }
+    return count;
+};
+
+Svg.prototype.lastUpdate = function () {
+    let max = null;
+    for (const species in this.individuals) {
+        const instances = this.individuals[species];
+        for (const instance in instances) {
+            const versions = instances[instance];
+            const version = versions[versions.length - 1];
+            if (max === null || version.date.getTime() > max.getTime()) {
+                max = version.date;
+            }
+        }
+    }
+    return max;
 };
 
 Svg.prototype.forEachSpecies = function (callback) {

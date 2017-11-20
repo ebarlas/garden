@@ -24,13 +24,16 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="species.html">Species</a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="#">Individuals</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.html">Garden</a>
+                <a class="nav-link" href="garden.html">Garden</a>
             </li>
         </ul>
     </div>
@@ -79,7 +82,7 @@
             <tr>
                 ${i === 0 ? '<td rowspan="' + versions.length + '">' + versions[i].instance + '</td>' : ''}
                 <td>${versions[i].version}</td>
-                <td><a href="index.html#species=${versions[i].species}&instance=${versions[i].instance}&date=${dateParam(versions[i].date)}">${formatDate(versions[i].date)}</a></td>
+                <td><a href="garden.html#species=${versions[i].species}&instance=${versions[i].instance}&date=${dateParam(versions[i].date)}">${formatDate(versions[i].date)}</a></td>
                 <td>${versions[i].type}</td>
                 <td>${versions[i].description}</td>
             </tr>

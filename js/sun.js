@@ -7,8 +7,6 @@
  *   - GardenAngle (angle.js)
  */
 
-GardenSun.DateFormat = {month: '2-digit', day: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit'};
-
 GardenSun.Type = {
     Sun: 1,
     Moon: 2
@@ -46,10 +44,6 @@ GardenSun.prototype.computePosition = function () {
 
 GardenSun.prototype.onTap = function (click) {
     const sun = this.computePosition();
-    if (sun.altitude <= 0) {
-        return;
-    }
-
     const xDiff = click.x - sun.x;
     const yDiff = click.y - sun.y;
     this.showText = xDiff * xDiff + yDiff * yDiff <= this.radius * this.radius;
@@ -57,10 +51,6 @@ GardenSun.prototype.onTap = function (click) {
 
 GardenSun.prototype.render = function () {
     const sun = this.computePosition();
-    if (sun.altitude <= 0) {
-        return;
-    }
-
     const ctx = this.ctx;
 
     ctx.save();
@@ -84,13 +74,12 @@ GardenSun.prototype.render = function () {
         const azimuth = Math.round(GardenAngle.normalizeDegrees(90 - GardenAngle.toDegrees(sun.azimuth)));
 
         const lines = [
-            this.astro.date.toLocaleDateString('en', GardenSun.DateFormat),
             "Altitude " + altitude + '\u00B0',
             "Azimuth " + azimuth + '\u00B0 ' + GardenAngle.toDirection(azimuth)
         ];
 
         if (this.type === GardenSun.Type.Moon) {
-            lines.push(Astro.moonPhase(this.astro.moonIllumination.phase));
+            lines.splice(0, 0, Astro.moonPhase(this.astro.moonIllumination.phase));
         }
 
         let style;

@@ -24,6 +24,9 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
             <li class="nav-item active">
                 <a class="nav-link" href="#">Species</a>
             </li>
@@ -31,7 +34,7 @@
                 <a class="nav-link disabled" href="#">Individuals</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.html">Garden</a>
+                <a class="nav-link" href="garden.html">Garden</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -80,7 +83,7 @@
     function speciesTableRow(species) {
         return `
         <tr data-species="${species.id}">
-            <td><a href="index.html#species=${species.id}">${species.scientificName}</a> <a href="https://www.google.com/search?q=${encodeURIComponent(species.scientificName)}"><i class="fa fa-search"></i></a></td>
+            <td><a href="garden.html#species=${species.id}">${species.scientificName}</a> <a href="https://www.google.com/search?q=${encodeURIComponent(species.scientificName)}"><i class="fa fa-search"></i></a></td>
             <td>${species.commonName}</td>
             <td>${species.type}</td>
             <td><a href="individuals.html#species=${species.id}">${species.individuals}</a></td>
