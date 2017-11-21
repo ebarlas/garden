@@ -164,24 +164,30 @@
     updateTitle();
     updateLinks();
 
-    svg.load(() => {
-        updateContent();
+    function loadSvg() {
+        svg.load(() => {
+            updateContent();
 
-        GardenWeather.load(svg.latitude, svg.longitude).done(function (res) {
-            const obs = res.current_observation;
-            const date = formatTime(new Date(obs.observation_epoch * 1000));
-            const html = `<img src="${obs.icon_url}">
-                <span>${obs.temp_f}&#176; ${obs.weather}</span>
-                <ul class="list-group">
-                <li class="list-group-item"><strong>${date}</strong> observation</li>
-                <li class="list-group-item"><strong>${obs.wind_degrees}&#176; ${GardenAngle.toDirection(obs.wind_degrees)}</strong> wind</li>
-                <li class="list-group-item"><strong>${obs.wind_mph}</strong> mph wind</li>
-                <li class="list-group-item"><strong>${obs.wind_gust_mph}</strong> mph gust</li>
-                </ul>`;
+            divWeather.find("img").remove();
+            divWeather.find("span").remove();
+            divWeather.find("ul").remove();
 
-            divWeather.append(html);
+            GardenWeather.load(svg.latitude, svg.longitude).done(function (res) {
+                const obs = res.current_observation;
+                const date = formatTime(new Date(obs.observation_epoch * 1000));
+                const html = `<img src="${obs.icon_url}">
+                    <span>${obs.temp_f}&#176; ${obs.weather}</span>
+                    <ul class="list-group">
+                    <li class="list-group-item"><strong>${date}</strong> observation</li>
+                    <li class="list-group-item"><strong>${obs.wind_degrees}&#176; ${GardenAngle.toDirection(obs.wind_degrees)}</strong> wind</li>
+                    <li class="list-group-item"><strong>${obs.wind_mph}</strong> mph wind</li>
+                    <li class="list-group-item"><strong>${obs.wind_gust_mph}</strong> mph gust</li>
+                    </ul>`;
+
+                divWeather.append(html);
+            });
         });
-    });
+    }
 
     $('a.dropdown-item').click(function (e) {
         svgName = $(this).attr('data-svg');
@@ -192,11 +198,10 @@
 
         updateTitle();
         updateLinks();
-
-        svg.load(() => {
-            updateContent();
-        });
+        loadSvg();
     });
+
+    loadSvg();
 </script>
 </body>
 </html>
