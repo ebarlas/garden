@@ -25,7 +25,7 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link garden-link" data-target="index.html" href="#">Home</a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="#">Species</a>
@@ -34,7 +34,7 @@
                 <a class="nav-link disabled" href="#">Individuals</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="garden.html">Garden</a>
+                <a class="nav-link garden-link" data-target="garden.html" href="#">Garden</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -65,12 +65,28 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="js/fragment.js"></script>
 <script src="js/svg.js"></script>
 <script>
     const format = {month: '2-digit', day: '2-digit', year: 'numeric'};
-    const svg = new Svg("img/property.svg");
+    const fragment = new Fragment();
+    let svgName = fragment.get("svg") || "cambridge";
+    let svg = new Svg(`img/${svgName}.svg`);
 
     let speciesList = [];
+
+    let gardenLinks = $(".garden-link");
+    let speciesTableBody = $("#tbodySpecies");
+    let searchInput = $("#txtSearch");
+
+    function updateLinks() {
+        gardenLinks.each((i, g) => {
+            const target = $(g).attr('data-target');
+            $(g).attr('href', `${target}#svg=${svgName}`)
+        });
+    }
+
+    updateLinks();
 
     function dateParam(date) {
         return date.getFullYear() + '-' + (date.getMonth() + 1) + "-" + date.getDate();
@@ -81,14 +97,13 @@
     }
 
     function speciesTableRow(species) {
-        return `
-        <tr data-species="${species.id}">
-            <td><a href="garden.html#species=${species.id}">${species.scientificName}</a> <a href="https://www.google.com/search?q=${encodeURIComponent(species.scientificName)}"><i class="fa fa-search"></i></a></td>
+        return `<tr>
+            <td><a href="garden.html#svg=${svgName}&species=${species.id}">${species.scientificName}</a> <a href="https://www.google.com/search?q=${encodeURIComponent(species.scientificName)}"><i class="fa fa-search"></i></a></td>
             <td>${species.commonName}</td>
             <td>${species.type}</td>
-            <td><a href="individuals.html#species=${species.id}">${species.individuals}</a></td>
-            <td><a href="index.html#date=${dateParam(species.firstVersion)}">${formatDate(species.firstVersion)}</a></td>
-            <td><a href="index.html#date=${dateParam(species.lastVersion)}">${formatDate(species.lastVersion)}</a></td>
+            <td><a href="individuals.html#svg=${svgName}&species=${species.id}">${species.individuals}</a></td>
+            <td><a href="garden.html#svg=${svgName}&date=${dateParam(species.firstVersion)}">${formatDate(species.firstVersion)}</a></td>
+            <td><a href="garden.html#svg=${svgName}&date=${dateParam(species.lastVersion)}">${formatDate(species.lastVersion)}</a></td>
         </tr>`;
     }
 
@@ -102,8 +117,8 @@
             }
         });
 
-        $("#tbodySpecies tr").remove();
-        $("#tbodySpecies").append(html);
+        speciesTableBody.find('tr').remove();
+        speciesTableBody.append(html);
     }
 
     function sortAndReplaceTableRows(input, comparator) {
@@ -124,7 +139,7 @@
 
         sortAndReplaceTableRows("", (l, r) => l.scientificName.localeCompare(r.scientificName));
 
-        $("#txtSearch").keyup(function () {
+        searchInput.keyup(function () {
             replaceTableRows($(this).val().toLowerCase());
         });
 
@@ -133,7 +148,7 @@
             const property = $(this).attr("data-property");
             const asc = i.hasClass("fa-sort-asc");
             const mul = (asc ? -1 : 1);
-            const search = $("#txtSearch").val();
+            const search = searchInput.val();
 
             $("thead th button i").removeClass("fa-sort-asc").removeClass("fa-sort-desc").addClass("fa-sort");
             i.removeClass("fa-sort").addClass(asc ? "fa-sort-desc" : "fa-sort-asc");

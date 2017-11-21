@@ -29,7 +29,8 @@
 <script src="js/fragment.js"></script>
 <script>
     const fragment = new Fragment();
-    const svg = new Svg(fragment.get("svg") || "img/property.svg");
+    const svgName = fragment.get("svg") || "cambridge";
+    const svg = new Svg(`img/${svgName}.svg`);
     const date = fragment.getDate("date") || new Date();
     const species = fragment.get("species");
     const instance = fragment.get("instance");

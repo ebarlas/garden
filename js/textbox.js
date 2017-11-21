@@ -11,9 +11,9 @@ Textbox.Anchor = {
 
 function Textbox(ctx, opts = {}) {
     this.ctx = ctx;
-    this.margin = opts.margin || 10;
-    this.fontSize = opts.fontSize || 16;
-    this.lineHeight = opts.lineHeight || 10;
+    this.margin = opts.margin || 12;
+    this.fontSize = opts.fontSize || 18;
+    this.lineHeight = opts.lineHeight || 12;
     this.fill = opts.fill === undefined || opts.fill === null || opts.fill;
 }
 

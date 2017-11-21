@@ -17,7 +17,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="property.svg"
+   sodipodi:docname="cambridge.svg"
    garden:latitude="38.221946"
    garden:longitude="-122.659924"
    garden:width="175">
@@ -84,8 +84,8 @@
      style="display:inline;opacity:0.38800001"
      sodipodi:insensitive="true">
     <image
-       sodipodi:absref="/Users/elliotb/Code/personal/garden/img/googleimg.png"
-       xlink:href="googleimg.png"
+       sodipodi:absref="/Users/elliotb/Code/personal/garden/img/cambridge.png"
+       xlink:href="cambridge.png"
        width="1400"
        height="1400"
        preserveAspectRatio="none"

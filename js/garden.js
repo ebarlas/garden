@@ -156,46 +156,66 @@ Garden.prototype.onPanEnd = function (evt) {
     this.pan.y = 0;
 };
 
-Garden.prototype.onTap = function (evt) {
-    const click = this.clickCoordinates(evt.srcEvent);
+Garden.prototype.findClickTarget = function (click, double) {
+    // control overlay clicked
+    if(this.control.onTap(click)) {
+        return;
+    }
 
-    let touchedControl = this.control.onTap(click);
-
-    if (!touchedControl) {
-        if (this.selection) {
-            if (this.selectionBox.scaledContains(click.x, click.y, this.scale, this.translation)) {
-                console.log('clicked!');
-                window.location.href = `individuals.html#species=${this.selection.species}`;
-                return;
-            }
-        }
-
-        this.selection = this.findTouchedIndividual(click, 0);
-        if (!this.selection) {
-            this.selection = this.findTouchedIndividual(click, 20);
-        }
-
-        this.updateSelection();
-
-        if (evt.tapCount === 2) {
-            this.zoom(true, this.zoomOpts.tap, click);
-        } else {
-            if (this.intervalId) {
-                clearInterval(this.intervalId);
-                this.emphasized = [];
-                this.intervalId = null;
-            }
-        }
-
-        if (this.control.showSun) {
-            this.sun.onTap(click);
-        }
-
-        if (this.control.showMoon) {
-            this.moon.onTap(click);
+    // individual selection box clicked
+    if (this.selection) {
+        if (this.selectionBox.scaledContains(click.x, click.y, this.scale, this.translation)) {
+            window.location.href = `individuals.html#species=${this.selection.species}`;
+            return;
         }
     }
 
+    // sun clicked
+    if (this.control.showSun && this.sun.onTap(click)) {
+        return;
+    }
+
+    // moon clicked
+    if (this.control.showMoon && this.moon.onTap(click)) {
+        return;
+    }
+
+    // individual plant clicked within radius
+    if (this.selection = this.findTouchedIndividual(click, 0)) {
+        return;
+    }
+
+    // individual plant clicked within radius + grace
+    if (this.selection = this.findTouchedIndividual(click, 20)) {
+        return;
+    }
+
+    if (double) {
+        this.zoom(true, this.zoomOpts.tap, click);
+        return;
+    }
+
+    if (this.intervalId) {
+        clearInterval(this.intervalId);
+        this.emphasized = [];
+        this.intervalId = null;
+    }
+};
+
+Garden.prototype.onTap = function (evt) {
+    // convert event to click coordinates
+    const click = this.clickCoordinates(evt.srcEvent);
+
+    // clear selection
+    this.selection = null;
+
+    // find click target
+    const handled = this.findClickTarget(click, evt.tapCount === 2);
+
+    // update individual selection details textbox
+    this.updateSelection();
+
+    // re-render canvas
     this.render();
 };
 

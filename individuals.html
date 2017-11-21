@@ -64,8 +64,9 @@
 <script src="js/fragment.js"></script>
 <script>
     const format = {month: '2-digit', day: '2-digit', year: 'numeric'};
-    const svg = new Svg("img/property.svg");
     const fragment = new Fragment();
+    let svgName = fragment.get("svg") || "cambridge";
+    let svg = new Svg(`img/${svgName}.svg`);
 
     function dateParam(date) {
         return date.getFullYear() + '-' + (date.getMonth() + 1) + "-" + date.getDate();

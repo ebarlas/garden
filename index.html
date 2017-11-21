@@ -27,13 +27,18 @@
                 <a class="nav-link active" href="#">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="species.html">Species</a>
+                <a class="nav-link garden-link" data-target="species.html" href="#">Species</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link disabled" href="#">Individuals</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="garden.html">Garden</a>
+                <a class="nav-link garden-link" data-target="garden.html" href="#">Garden</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Property</a>
+                <div id="svgMenu" class="dropdown-menu">
+                </div>
             </li>
         </ul>
     </div>
@@ -41,16 +46,16 @@
 
 <div class="container">
     <div class="jumbotron">
-        <h1>Cambridge Garden</h1>
+        <h1 id="title"></h1>
         <p class="lead">Explore species catalog, list of plant individuals, and interactive garden map.</p>
-        <p><a class="btn btn-lg btn-success" href="garden.html" role="button">View Garden</a></p>
+        <p><a class="btn btn-lg btn-success garden-link" data-target="garden.html" href="#" role="button">View Garden</a></p>
     </div>
     <div class="row">
         <div class="col-md-4">
             <h2>Plant Individuals</h2>
             <ul id="listIndividuals">
             </ul>
-            <p><a class="btn btn-primary" href="#" role="button">View details</a></p>
+            <p><a class="btn btn-primary garden-link" data-target="species.html" href="#" role="button">View details</a></p>
         </div>
         <div class="col-md-4">
             <h2>Sunlight Times</h2>
@@ -71,6 +76,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/suncalc/1.8.0/suncalc.min.js"></script>
+<script src="js/conf.js"></script>
+<script src="js/fragment.js"></script>
 <script src="js/range.js"></script>
 <script src="js/angle.js"></script>
 <script src="js/svg.js"></script>
@@ -79,7 +86,17 @@
     const dateFormat = {month: '2-digit', day: '2-digit', year: 'numeric'};
     const timeFormat = {hour: '2-digit', minute: '2-digit'};
 
-    const svg = new Svg("img/property.svg");
+    const fragment = new Fragment();
+
+    let svgName = fragment.get("svg") || "cambridge";
+    let svg = new Svg(`img/${svgName}.svg`);
+
+    let listIndividuals = $("#listIndividuals");
+    let listSunlight = $("#listSunlight");
+    let listSunpos = $("#listSunpos");
+    let title = $("#title");
+    let gardenLinks = $(".garden-link");
+    let svgMenu = $("#svgMenu");
 
     function formatDate(date) {
         return date.toLocaleDateString('en', dateFormat);
@@ -89,30 +106,70 @@
         return date.toLocaleDateString('en', timeFormat);
     }
 
-    function init() {
+    function updateContent() {
         const date = new Date();
         const sunpos = SunCalc.getPosition(date, svg.latitude, svg.longitude);
         const sunlight = SunCalc.getTimes(date, svg.latitude, svg.longitude);
-        const azimuth = GardenAngle.normalizeDegrees(GardenAngle.toDegrees(3 * Math.PI / 2 - sunpos.azimuth)).toFixed(2);
+        const azimuth = GardenAngle.normalizeDegrees(90 - GardenAngle.toDegrees(3 * Math.PI / 2 - sunpos.azimuth)).toFixed(2);
         const altitude = GardenAngle.toDegrees(sunpos.altitude).toFixed(2);
 
-        $("#listIndividuals").append(`<li><strong>${svg.countAllIndividuals(false)}</strong> Total Individuals</li>
+        listIndividuals.find("li").remove();
+        listIndividuals.append(`<li><strong>${svg.countAllIndividuals(false)}</strong> Total Individuals</li>
                 <li><strong>${svg.countAllSpecies(false)}</strong> Total Species</li>
                 <li><strong>${svg.countAllIndividuals(true)}</strong> Current Individuals</li>
                 <li><strong>${svg.countAllSpecies(true)}</strong> Current Species</li>
                 <li><strong>${formatDate(svg.lastUpdate())}</strong> Last Update</li>`);
 
-        $("#listSunlight").append(`<li><strong>${formatTime(sunlight.sunrise)}</strong> Sunrise</li>
+        listSunlight.find("li").remove();
+        listSunlight.append(`<li><strong>${formatTime(sunlight.sunrise)}</strong> Sunrise</li>
                 <li><strong>${formatTime(sunlight.solarNoon)}</strong> Solar noon</li>
-                <li><strong>${formatTime(sunlight.sunset)}</strong> Sunset</li>
-                <li><strong>${formatTime(sunlight.dusk)}</strong> Civil Dusk</li>
-                <li><strong>${formatTime(sunlight.nauticalDusk)}</strong> Nautical Dusk</li>`);
+                <li><strong>${formatTime(sunlight.sunset)}</strong> <a href="img/twilight.png">Sunset</a></li>
+                <li><strong>${formatTime(sunlight.dusk)}</strong> <a href="img/twilight.png">Civil Dusk</a></li>
+                <li><strong>${formatTime(sunlight.nauticalDusk)}</strong> <a href="img/twilight.png">Nautical Dusk</a></li>`);
 
-        $("#listSunpos").append(`<li><strong>${altitude}&#176;</strong> Altitude</li>
+        listSunpos.find("li").remove();
+        listSunpos.append(`<li><strong>${altitude}&#176;</strong> Altitude</li>
                 <li><strong>${azimuth}&#176; S</strong> Azimuth</li>`);
     }
 
-    svg.load(init);
+    function initMenu() {
+        html = "";
+        GardenConfig.svgs.forEach(s => {
+            html += `<a class="dropdown-item" data-svg="${s.id}" href="#">${s.label}</a>`;
+        });
+        svgMenu.append(html);
+    }
+
+    function updateTitle() {
+        title.html(`${GardenConfig.findLabel(svgName)}`);
+    }
+
+    function updateLinks() {
+        gardenLinks.each((i, g) => {
+            const target = $(g).attr('data-target');
+            $(g).attr('href', `${target}#svg=${svgName}`)
+        });
+    }
+
+    initMenu();
+    updateTitle();
+    updateLinks();
+
+    svg.load(() => {
+        updateContent();
+    });
+
+    $('a.dropdown-item').click(function () {
+        svgName = $(this).attr('data-svg');
+        svg = new Svg(`img/${svgName}.svg`);
+
+        updateTitle();
+        updateLinks();
+
+        svg.load(() => {
+            updateContent();
+        });
+    });
 </script>
 </body>
 </html>

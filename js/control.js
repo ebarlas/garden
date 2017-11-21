@@ -38,7 +38,7 @@ function GardenControl(canvas, astro) {
     this.canvas = canvas;
     this.ctx = canvas.getContext('2d');
     this.opened = false;
-    this.showSun = true;
+    this.showSun = astro.sun.altitude >= 0;
     this.showMoon = false;
     this.showScale = true;
     this.astro = astro;

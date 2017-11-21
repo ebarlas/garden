@@ -46,7 +46,7 @@ GardenSun.prototype.onTap = function (click) {
     const sun = this.computePosition();
     const xDiff = click.x - sun.x;
     const yDiff = click.y - sun.y;
-    this.showText = xDiff * xDiff + yDiff * yDiff <= this.radius * this.radius;
+    return this.showText = xDiff * xDiff + yDiff * yDiff <= this.radius * this.radius;
 };
 
 GardenSun.prototype.render = function () {
