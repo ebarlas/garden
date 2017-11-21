@@ -13,6 +13,10 @@
         body {
             padding-top: 5rem;
         }
+
+        div.row > div {
+            padding-bottom: 2rem;
+        }
     </style>
 </head>
 <body>
@@ -53,18 +57,21 @@
     <div class="row">
         <div class="col-md-4">
             <h2>Plant Individuals</h2>
-            <ul id="listIndividuals">
+            <ul id="listIndividuals" class="list-group">
             </ul>
-            <p><a class="btn btn-primary garden-link" data-target="species.html" href="#" role="button">View details</a></p>
+            <a style="margin-top: 10px" class="btn btn-primary garden-link" data-target="species.html" href="#" role="button">View details</a>
+        </div>
+        <div id="divWeather" class="col-md-4">
+            <h2>Weather</h2>
         </div>
         <div class="col-md-4">
             <h2>Sunlight Times</h2>
-            <ul id="listSunlight">
+            <ul id="listSunlight" class="list-group">
             </ul>
         </div>
         <div class="col-md-4">
             <h2>Sun Position</h2>
-            <ul id="listSunpos">
+            <ul id="listSunpos" class="list-group">
             </ul>
         </div>
     </div>
@@ -72,11 +79,12 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/suncalc/1.8.0/suncalc.min.js"></script>
 <script src="js/conf.js"></script>
+<script src="js/weather.js"></script>
 <script src="js/fragment.js"></script>
 <script src="js/range.js"></script>
 <script src="js/angle.js"></script>
@@ -97,13 +105,14 @@
     let title = $("#title");
     let gardenLinks = $(".garden-link");
     let svgMenu = $("#svgMenu");
+    let divWeather = $("#divWeather");
 
     function formatDate(date) {
         return date.toLocaleDateString('en', dateFormat);
     }
 
     function formatTime(date) {
-        return date.toLocaleDateString('en', timeFormat);
+        return date.toLocaleTimeString('en', timeFormat);
     }
 
     function updateContent() {
@@ -114,22 +123,22 @@
         const altitude = GardenAngle.toDegrees(sunpos.altitude).toFixed(2);
 
         listIndividuals.find("li").remove();
-        listIndividuals.append(`<li><strong>${svg.countAllIndividuals(false)}</strong> Total Individuals</li>
-                <li><strong>${svg.countAllSpecies(false)}</strong> Total Species</li>
-                <li><strong>${svg.countAllIndividuals(true)}</strong> Current Individuals</li>
-                <li><strong>${svg.countAllSpecies(true)}</strong> Current Species</li>
-                <li><strong>${formatDate(svg.lastUpdate())}</strong> Last Update</li>`);
+        listIndividuals.append(`<li class="list-group-item"><strong>${svg.countAllIndividuals(false)}</strong> Total Individuals</li>
+                <li class="list-group-item"><strong>${svg.countAllSpecies(false)}</strong> total species</li>
+                <li class="list-group-item"><strong>${svg.countAllIndividuals(true)}</strong> current individuals</li>
+                <li class="list-group-item"><strong>${svg.countAllSpecies(true)}</strong> current species</li>
+                <li class="list-group-item"><strong>${formatDate(svg.lastUpdate())}</strong> last update</li>`);
 
         listSunlight.find("li").remove();
-        listSunlight.append(`<li><strong>${formatTime(sunlight.sunrise)}</strong> Sunrise</li>
-                <li><strong>${formatTime(sunlight.solarNoon)}</strong> Solar noon</li>
-                <li><strong>${formatTime(sunlight.sunset)}</strong> <a href="img/twilight.png">Sunset</a></li>
-                <li><strong>${formatTime(sunlight.dusk)}</strong> <a href="img/twilight.png">Civil Dusk</a></li>
-                <li><strong>${formatTime(sunlight.nauticalDusk)}</strong> <a href="img/twilight.png">Nautical Dusk</a></li>`);
+        listSunlight.append(`<li class="list-group-item"><strong>${formatTime(sunlight.sunrise)}</strong> sunrise</li>
+                <li class="list-group-item"><strong>${formatTime(sunlight.solarNoon)}</strong> solar noon</li>
+                <li class="list-group-item"><strong>${formatTime(sunlight.sunset)}</strong> <a href="img/twilight.png">sunset</a></li>
+                <li class="list-group-item"><strong>${formatTime(sunlight.dusk)}</strong> <a href="img/twilight.png">civil dusk</a></li>
+                <li class="list-group-item"><strong>${formatTime(sunlight.nauticalDusk)}</strong> <a href="img/twilight.png">nautical dusk</a></li>`);
 
         listSunpos.find("li").remove();
-        listSunpos.append(`<li><strong>${altitude}&#176;</strong> Altitude</li>
-                <li><strong>${azimuth}&#176; S</strong> Azimuth</li>`);
+        listSunpos.append(`<li class="list-group-item"><strong>${altitude}&#176;</strong> altitude</li>
+                <li class="list-group-item"><strong>${azimuth}&#176; ${GardenAngle.toDirection(azimuth)}</strong> azimuth</li>`);
     }
 
     function initMenu() {
@@ -157,6 +166,21 @@
 
     svg.load(() => {
         updateContent();
+
+        GardenWeather.load(svg.latitude, svg.longitude).done(function (res) {
+            const obs = res.current_observation;
+            const date = formatTime(new Date(obs.observation_epoch * 1000));
+            const html = `<img src="${obs.icon_url}">
+                <span>${obs.temp_f}&#176; ${obs.weather}</span>
+                <ul class="list-group">
+                <li class="list-group-item"><strong>${date}</strong> observation</li>
+                <li class="list-group-item"><strong>${obs.wind_degrees}&#176; ${GardenAngle.toDirection(obs.wind_degrees)}</strong> wind</li>
+                <li class="list-group-item"><strong>${obs.wind_mph}</strong> mph wind</li>
+                <li class="list-group-item"><strong>${obs.wind_gust_mph}</strong> mph gust</li>
+                </ul>`;
+
+            divWeather.append(html);
+        });
     });
 
     $('a.dropdown-item').click(function (e) {
