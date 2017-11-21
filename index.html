@@ -159,9 +159,12 @@
         updateContent();
     });
 
-    $('a.dropdown-item').click(function () {
+    $('a.dropdown-item').click(function (e) {
         svgName = $(this).attr('data-svg');
         svg = new Svg(`img/${svgName}.svg`);
+
+        e.preventDefault();
+        history.pushState({}, "Garden", `#svg=${svgName}`);
 
         updateTitle();
         updateLinks();

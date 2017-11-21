@@ -18,8 +18,8 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="barlaslane.svg"
-   garden:latitude="38.265236"
-   garden:longitude="-122.673561"
+   garden:latitude="38.235294"
+   garden:longitude="-122.637760"
    garden:width="371">
   <defs
      id="defs4" />
@@ -30,14 +30,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.101144"
-     inkscape:cx="1054.3883"
-     inkscape:cy="917.12706"
+     inkscape:zoom="2.9714663"
+     inkscape:cx="1027.2073"
+     inkscape:cy="675.89518"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer3"
      showgrid="true"
-     inkscape:window-width="1440"
-     inkscape:window-height="856"
+     inkscape:window-width="1920"
+     inkscape:window-height="1083"
      inkscape:window-x="0"
      inkscape:window-y="1"
      inkscape:window-maximized="0"
@@ -45,19 +45,19 @@
      inkscape:snap-global="false"
      inkscape:object-paths="true"
      inkscape:snap-bbox="true"
-     inkscape:bbox-paths="false"
-     inkscape:bbox-nodes="false"
-     inkscape:snap-bbox-edge-midpoints="false"
-     inkscape:snap-bbox-midpoints="false"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
      inkscape:snap-intersection-paths="true"
      inkscape:object-nodes="true"
      inkscape:snap-smooth-nodes="true"
      inkscape:snap-midpoints="true"
      inkscape:snap-object-midpoints="true"
      inkscape:snap-center="true"
-     inkscape:snap-page="false"
+     inkscape:snap-page="true"
      inkscape:snap-others="true"
-     inkscape:snap-grids="false"
+     inkscape:snap-grids="true"
      inkscape:snap-to-guides="false"
      inkscape:snap-nodes="true"
      inkscape:snap-text-baseline="true">
@@ -86,17 +86,35 @@
     <image
        sodipodi:absref="/Users/elliotb/Code/personal/garden/img/barlaslane.png"
        xlink:href="barlaslane.png"
-       y="0"
-       x="0"
-       id="image3400"
-       preserveAspectRatio="none"
+       width="1520"
        height="1430"
-       width="1520" />
+       preserveAspectRatio="none"
+       id="image3400"
+       x="0"
+       y="0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="paths">
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 877.81428,789.42051 964.23663,815.09688 976.4137,773.60921 994.22029,778.92611 997.01814,770.97468 1041.2319,782.69974 1048.4187,754.99015 1142.7108,779.40204 1182.689,628.05592 1169.2475,624.38787 1189.828,546.19575 1113.679,522.39919 1124.6254,477.66165 1027.0595,449.58171 995.17215,581.89059 979.94236,577.13128 976.61084,590.45735 881.90053,565.233 856.20024,645.66537 886.65984,656.13586 869.52632,716.10319 898.08219,725.14588 Z"
+       id="path3675"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccccccccccccc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 1022.0974,470.17068 836.30203,425.23232 817.105,373.95573 758.54805,356.45595 722.87543,402.89767 698.64497,427.8012 658.93393,447.99325 592.97323,465.49303 511.53196,491.06963 403.84102,547.60737 180.38232,676.8365 150.76731,689.6248 118.46003,691.644 96.921845,688.27866 76.729794,672.12501 0,590 0,690 149.42118,912.41043 159.85373,909.04509 187.78607,894.91065 191.82448,890.19917 179.70925,855.87268 176.34391,831.64222 180.38232,795.29653 187.78607,767.02766 206.63199,735.39344 234.90086,712.50912 317.40948,658.10607 422.01387,590.68375 489.3207,550.97271 542.4931,526.74225 590.28096,516.64623 641.43415,510.58861 709.41406,523.37691 793.54761,540.20362 881.90053,565.233 976.61084,590.45735 979.94236,577.13128 995.17215,581.89059 Z"
+       id="path3677"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccccscccccccccccccccccccccccccccc" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="plants">
+     inkscape:label="plants"
+     sodipodi:insensitive="true">
     <circle
        style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.84486413;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="ace_1_1"
@@ -108,13 +126,13 @@
        garden:instance="1"
        garden:version="1"
        garden:description="Planted by Dad."
-       garden:type="add"/>
+       garden:type="add" />
   </g>
   <garden:contents>
-      <garden:species
-              garden:id="ace"
-              garden:scientificName="Acer palmatum"
-              garden:commonName="Japanese Maple"
-              garden:type="Tree" />
+    <garden:species
+       garden:id="ace"
+       garden:scientificName="Acer palmatum"
+       garden:commonName="Japanese Maple"
+       garden:type="Tree" />
   </garden:contents>
 </svg>
