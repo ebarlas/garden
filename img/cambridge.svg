@@ -30,9 +30,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.101144"
-     inkscape:cx="1050.4115"
-     inkscape:cy="867.35368"
+     inkscape:zoom="1.4857332"
+     inkscape:cx="427.34712"
+     inkscape:cy="400.6609"
      inkscape:document-units="px"
      inkscape:current-layer="layer11"
      showgrid="true"
@@ -45,10 +45,10 @@
      inkscape:snap-global="false"
      inkscape:object-paths="true"
      inkscape:snap-bbox="true"
-     inkscape:bbox-paths="false"
-     inkscape:bbox-nodes="false"
-     inkscape:snap-bbox-edge-midpoints="false"
-     inkscape:snap-bbox-midpoints="false"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
      inkscape:snap-intersection-paths="true"
      inkscape:object-nodes="true"
      inkscape:snap-smooth-nodes="true"
@@ -86,12 +86,12 @@
     <image
        sodipodi:absref="/Users/elliotb/Code/personal/garden/img/cambridge.png"
        xlink:href="cambridge.png"
-       width="1400"
-       height="1400"
-       preserveAspectRatio="none"
-       id="image3400"
+       y="0"
        x="0"
-       y="0" />
+       id="image3400"
+       preserveAspectRatio="none"
+       height="1400"
+       width="1400" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -212,8 +212,8 @@
      inkscape:groupmode="layer"
      id="layer12"
      inkscape:label="steps"
-     sodipodi:insensitive="true"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 591.45763,183.16281 583.71235,140.64884 585,55 505,55 505,80 550,80 550,145 557.52841,191.4205 Z"
@@ -232,6 +232,42 @@
        id="path3479"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccccccccccccccccc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 514.16902,80 514.95757,160.67514 516.86129,231.11296 518.76502,273.47083 534.47075,357.23473 547.79682,431.00406 576.82862,512.3883 619.82575,632.65949 645.67533,701.33299 674.83662,770.27707 657.22718,779.28594 627.03236,707.99603 571.59338,558.55363 541.60971,471.45822 527.80771,429.57627 509.72232,330.10665 498.7759,269.18745 494.01909,79.989602 Z"
+       id="path3656"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccccccccc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 657.22718,779.28594 470.69596,908.36306 462.03524,891.77559 649.9568,762.12058 Z"
+       id="path3658"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 187.5169,931.6837 390.03816,800.39279 399.22676,817.99421 189.89654,954.05246 Z"
+       id="path3660"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 208.58082,941.86773 247.86641,1088.7031 231.11768,1100.0003 189.89654,954.05246 Z"
+       id="path3662"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 470.69596,908.36306 452.31777,919.69385 248.86418,529.96393 248.67025,502.9506 272.83275,505.13193 272.79024,530.55533 Z"
+       id="path3666"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 195.78198,1123.8345 220.94566,1161.1412 283.12348,1119.2017 257.9598,1081.895 Z"
+       id="path4462"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -2147,8 +2183,8 @@
        garden:description="Shrub was present when we moved in."
        garden:type="add" />
     <circle
-       cy="417.26208"
-       cx="522.104"
+       cy="418.68988"
+       cx="516.39282"
        id="man_9_1"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        r="7"
@@ -2162,8 +2198,8 @@
        r="7"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="man_11_1"
-       cx="530.02802"
-       cy="460.84399"
+       cx="526.69647"
+       cy="460.36807"
        garden:date="2017-04-01"
        garden:species="man"
        garden:instance="11"
@@ -2172,7 +2208,7 @@
        garden:type="add" />
     <circle
        cy="492.53992"
-       cx="537.95197"
+       cx="536.04822"
        id="dai_2_1"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        r="10"
@@ -2186,8 +2222,8 @@
        r="10"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="dai_3_1"
-       cx="576.58142"
-       cy="587.62775"
+       cx="567.5387"
+       cy="590.00739"
        garden:date="2016-08-27"
        garden:species="dai"
        garden:instance="3"
@@ -2198,8 +2234,8 @@
        r="7"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="man_14_1"
-       cx="550.82843"
-       cy="523.24536"
+       cx="546.54504"
+       cy="525.14905"
        garden:date="2017-04-01"
        garden:species="man"
        garden:instance="14"
@@ -2207,8 +2243,8 @@
        garden:description="Planted with Dad. Plant from Cottage Gardens."
        garden:type="add" />
     <circle
-       cy="550.97931"
-       cx="564.69543"
+       cy="555.2627"
+       cx="558.98425"
        id="man_16_1"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        r="7"
@@ -2305,15 +2341,15 @@
     <circle
        r="15"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="val_1_1"
-       cx="249.45844"
-       cy="1046.8279"
-       garden:date="2016-08-27"
+       id="val_1_2"
+       cx="337.63037"
+       cy="1052.8855"
+       garden:date="2017-11-27"
        garden:species="val"
        garden:instance="1"
-       garden:version="1"
-       garden:description="Planted by Mitchell Landscapes."
-       garden:type="add" />
+       garden:version="2"
+       garden:description="Transplanted by Mitchell Landscapes to accommodate deck."
+       garden:type="update" />
     <circle
        cy="886.75818"
        cx="395.32031"
@@ -2366,8 +2402,8 @@
        r="10"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="vio_4_1"
-       cx="578.88519"
-       cy="801.59235"
+       cx="569.36652"
+       cy="794.92932"
        garden:date="2017-04-05"
        garden:species="vio"
        garden:instance="4"
@@ -2375,8 +2411,8 @@
        garden:description="Planted by us. Plant provided by Mitchell Landscapes."
        garden:type="add" />
     <circle
-       cy="836.25977"
-       cx="522.42682"
+       cy="831.02448"
+       cx="516.23975"
        id="vio_2_1"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        r="10"
@@ -2558,8 +2594,8 @@
        r="7"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="man_7_1"
-       cx="512.19904"
-       cy="376.65167"
+       cx="506.01193"
+       cy="377.12759"
        garden:date="2017-04-01"
        garden:species="man"
        garden:instance="7"
@@ -2568,7 +2604,7 @@
        garden:type="add" />
     <circle
        cy="347.92725"
-       cx="536.96149"
+       cx="545.52826"
        id="man_6_1"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        r="7"
@@ -2582,7 +2618,7 @@
        r="7"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="man_4_1"
-       cx="525.53912"
+       cx="535.53369"
        cy="301.28601"
        garden:date="2017-04-01"
        garden:species="man"
@@ -2592,7 +2628,7 @@
        garden:type="add" />
     <circle
        cy="258.45218"
-       cx="517.92426"
+       cx="529.34662"
        id="man_3_1"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        r="7"
@@ -2606,7 +2642,7 @@
        r="7"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="man_2_1"
-       cx="522.12598"
+       cx="527.36121"
        cy="217.68541"
        garden:date="2017-04-01"
        garden:species="man"
@@ -2615,8 +2651,8 @@
        garden:description="Planted with Dad. Plant from Cottage Gardens."
        garden:type="add" />
     <circle
-       cy="180.7261"
-       cx="524.02972"
+       cy="180.25017"
+       cx="527.36127"
        id="man_1_1"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        r="7"
@@ -2629,8 +2665,8 @@
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="man_5_1"
-       cx="500.79071"
-       cy="330.79373"
+       cx="496.0314"
+       cy="331.26965"
        r="7"
        garden:date="2017-04-01"
        garden:species="man"
@@ -2642,8 +2678,8 @@
        r="7"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="man_8_1"
-       cx="547.85693"
-       cy="393.49014"
+       cx="551.66437"
+       cy="393.01422"
        garden:date="2017-04-01"
        garden:species="man"
        garden:instance="8"
@@ -2651,8 +2687,8 @@
        garden:description="Planted with Dad. Plant from Cottage Gardens."
        garden:type="add" />
     <circle
-       cy="436.08154"
-       cx="558.75244"
+       cy="431.79816"
+       cx="562.55988"
        id="man_10_1"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        r="7"
@@ -2666,7 +2702,7 @@
        r="7"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="man_12_1"
-       cx="568.65741"
+       cx="571.98895"
        cy="466.78699"
        garden:date="2017-04-01"
        garden:species="man"
@@ -2675,8 +2711,8 @@
        garden:description="Planted with Dad. Plant from Cottage Gardens."
        garden:type="add" />
     <circle
-       cy="502.44492"
-       cx="581.53387"
+       cy="501.96899"
+       cx="584.38947"
        id="man_13_1"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        r="7"
@@ -2700,7 +2736,7 @@
        garden:type="add" />
     <circle
        cy="557.91284"
-       cx="603.32483"
+       cx="604.75262"
        id="man_17_1"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        r="7"
@@ -2714,8 +2750,8 @@
        r="7"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="man_18_1"
-       cx="616.20129"
-       cy="589.60876"
+       cx="618.10498"
+       cy="590.08466"
        garden:date="2017-04-01"
        garden:species="man"
        garden:instance="18"
@@ -2723,8 +2759,8 @@
        garden:description="Planted with Dad. Plant from Cottage Gardens."
        garden:type="add" />
     <circle
-       cy="618.33319"
-       cx="628.08728"
+       cy="622.14062"
+       cx="632.84662"
        id="man_19_1"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        r="7"
@@ -3195,7 +3231,8 @@
      inkscape:groupmode="layer"
      id="layer14"
      inkscape:label="previous-plants"
-     style="display:none">
+     style="display:none"
+     sodipodi:insensitive="true">
     <circle
        garden:type="add"
        garden:version="1"
@@ -3653,8 +3690,8 @@
        cx="256.96509"
        cy="395.88849" />
     <circle
-       cy="769.89642"
-       cx="634.35309"
+       cy="762.28149"
+       cx="627.21411"
        id="vio_6_1"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        r="10"
@@ -3665,8 +3702,8 @@
        garden:description="Planted by us. Plant provided by Mitchell Landscapes."
        garden:type="add" />
     <circle
-       cy="769.89642"
-       cx="634.35309"
+       cy="762.28149"
+       cx="627.21411"
        id="vio_6_2"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        r="10"
@@ -3676,6 +3713,18 @@
        garden:version="2"
        garden:description="Plant died. Appears to be due to gopher activity."
        garden:type="remove" />
+    <circle
+       r="15"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="val_1_1"
+       cx="249.45844"
+       cy="1046.8279"
+       garden:date="2016-08-27"
+       garden:species="val"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add" />
   </g>
   <path
      style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
