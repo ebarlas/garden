@@ -157,15 +157,20 @@ Garden.prototype.onPanEnd = function (evt) {
 };
 
 Garden.prototype.findClickTarget = function (click, double) {
+    const prevSelection = this.selection;
+
+    // clear selection
+    this.selection = null;
+
     // control overlay clicked
     if(this.control.onTap(click)) {
         return;
     }
 
     // individual selection box clicked
-    if (this.selection) {
+    if (prevSelection) {
         if (this.selectionBox.scaledContains(click.x, click.y, this.scale, this.translation)) {
-            window.location.href = `individuals.html#species=${this.selection.species}`;
+            window.location.href = `individuals.html#species=${prevSelection.species}`;
             return;
         }
     }
@@ -206,11 +211,8 @@ Garden.prototype.onTap = function (evt) {
     // convert event to click coordinates
     const click = this.clickCoordinates(evt.srcEvent);
 
-    // clear selection
-    this.selection = null;
-
     // find click target
-    const handled = this.findClickTarget(click, evt.tapCount === 2);
+    this.findClickTarget(click, evt.tapCount === 2);
 
     // update individual selection details textbox
     this.updateSelection();
