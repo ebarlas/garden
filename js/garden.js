@@ -13,7 +13,7 @@
 
 Garden.DateFormat = {month: '2-digit', day: '2-digit', year: 'numeric'};
 
-function Garden(canvas, sunImage, moonImage, svg, date) {
+function Garden(canvas, sunImage, moonImage, svg, mo) {
     this.canvas = canvas;
     this.ctx = canvas.getContext('2d');
     this.svg = svg;
@@ -36,7 +36,7 @@ function Garden(canvas, sunImage, moonImage, svg, date) {
 
     this.colorPalette = ['#a6cee3', '#1f78b4', '#b2df8a', '#33a02c', '#fb9a99', '#e31a1c', '#fdbf6f', '#ff7f00', '#cab2d6', '#6a3d9a', /*'#ffff99',*/ '#b15928'];
 
-    this.astro = new Astro(svg.latitude, svg.longitude, date);
+    this.astro = new Astro(svg.latitude, svg.longitude, mo);
 
     this.sun = new GardenSun(canvas, sunImage, this.astro, GardenSun.Type.Sun);
     this.moon = new GardenSun(canvas, moonImage, this.astro, GardenSun.Type.Moon);
@@ -65,9 +65,9 @@ Garden.prototype.emphasize = function(species, instance) {
 
     if (species) {
         if (instance) {
-            this.emphasized = svg.visibleVersionAt(species, instance, this.astro.date);
+            this.emphasized = svg.visibleVersionAt(species, instance, this.astro.getDate());
         } else {
-            this.emphasized = svg.visibleVersionsAt(species, this.astro.date);
+            this.emphasized = svg.visibleVersionsAt(species, this.astro.getDate());
         }
 
         this.frame = 0;
@@ -119,7 +119,7 @@ Garden.prototype.findTouchedIndividual = function (click, grace) {
             min = rad;
             match = c;
         }
-    }, this.astro.date);
+    }, this.astro.getDate());
 
     return match;
 };
@@ -299,7 +299,7 @@ Garden.prototype.render = function () {
     ctx.globalAlpha = 0.9;
 
     const circles = [];
-    svg.forEachCircle(c => circles.push(c), this.astro.date);
+    svg.forEachCircle(c => circles.push(c), this.astro.getDate());
     circles.sort((l, r) => r.r - l.r);
 
     circles.forEach(c => {

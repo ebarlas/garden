@@ -1,6 +1,9 @@
 /**
  * Garden SVG loading and storing utility.
  *
+ * Dependencies:
+ *   - Moment
+ *
  * Stores three types of garden svg data elements:
  * - Dimensions, sizes, etc
  * - Paths (structures)
@@ -47,11 +50,6 @@ Svg.prototype.iterator = function (svg, resolver, xpath, mapper) {
     return elems;
 };
 
-Svg.prototype.parseDate = function (text) {
-    const parts = /([0-9]+)-([0-9]+)-([0-9]+)/.exec(text);
-    return new Date(parseInt(parts[1]), parseInt(parts[2]) - 1, parseInt(parts[3]));
-};
-
 Svg.prototype.findDimensions = function (svg, resolver) {
     return this.iterator(svg, resolver, '//svg:svg', node => {
         return {
@@ -80,7 +78,8 @@ Svg.prototype.findCircles = function (svg, resolver) {
             cx: parseFloat(node.attributes.cx.value),
             cy: parseFloat(node.attributes.cy.value),
             r: parseFloat(node.attributes.r.value),
-            date: this.parseDate(node.attributes['garden:date'].value),
+            dateString: node.attributes['garden:date'].value,
+            date: moment.tz(node.attributes['garden:date'].value, "America/Los_Angeles").toDate(),
             species: node.attributes['garden:species'].value,
             instance: node.attributes['garden:instance'].value,
             version: parseInt(node.attributes['garden:version'].value),
@@ -174,8 +173,11 @@ Svg.prototype.firstVersion = function (species) {
     const instances = this.individuals[species];
     let min = null;
     for (const instance in instances) {
-        if (min === null || instances[instance][0].date.getTime() < min.getTime()) {
-            min = instances[instance][0].date;
+        if (min === null || instances[instance][0].date.getTime() < min.date.getTime()) {
+            min = {
+                date: instances[instance][0].date,
+                dateString: instances[instance][0].dateString
+            };
         }
     }
     return min;
@@ -190,8 +192,11 @@ Svg.prototype.lastVersion = function (species) {
     let max = null;
     for (const instance in instances) {
         const arr = instances[instance];
-        if (max === null || arr[arr.length - 1].date.getTime() > max.getTime()) {
-            max = arr[arr.length - 1].date;
+        if (max === null || arr[arr.length - 1].date.getTime() > max.date.getTime()) {
+            max = {
+                date: arr[arr.length - 1].date,
+                dateString: arr[arr.length - 1].dateString
+            };
         }
     }
     return max;

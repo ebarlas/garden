@@ -65,10 +65,11 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone-with-data.min.js"></script>
 <script src="js/fragment.js"></script>
 <script src="js/svg.js"></script>
 <script>
-    const format = {month: '2-digit', day: '2-digit', year: 'numeric'};
     const fragment = new Fragment();
     let svgName = fragment.get("svg") || "cambridge";
     let svg = new Svg(`img/${svgName}.svg`);
@@ -88,22 +89,14 @@
 
     updateLinks();
 
-    function dateParam(date) {
-        return date.getFullYear() + '-' + (date.getMonth() + 1) + "-" + date.getDate();
-    }
-
-    function formatDate(date) {
-        return date.toLocaleDateString('en', format);
-    }
-
     function speciesTableRow(species) {
         return `<tr>
             <td><a href="garden.html#svg=${svgName}&species=${species.id}">${species.scientificName}</a> <a href="https://www.google.com/search?q=${encodeURIComponent(species.scientificName)}"><i class="fa fa-search"></i></a></td>
             <td>${species.commonName}</td>
             <td>${species.type}</td>
             <td><a href="individuals.html#svg=${svgName}&species=${species.id}">${species.individuals}</a></td>
-            <td><a href="garden.html#svg=${svgName}&date=${dateParam(species.firstVersion)}">${formatDate(species.firstVersion)}</a></td>
-            <td><a href="garden.html#svg=${svgName}&date=${dateParam(species.lastVersion)}">${formatDate(species.lastVersion)}</a></td>
+            <td><a href="garden.html#svg=${svgName}&date=${species.firstVersion.dateString}">${species.firstVersion.dateString}</a></td>
+            <td><a href="garden.html#svg=${svgName}&date=${species.lastVersion.dateString}">${species.lastVersion.dateString}</a></td>
         </tr>`;
     }
 
@@ -162,9 +155,9 @@
             } else if (property === "individuals") {
                 sortAndReplaceTableRows(search, (l, r) => mul * (l.individuals - r.individuals));
             } else if (property === "introduced") {
-                sortAndReplaceTableRows(search, (l, r) => mul * (l.firstVersion.getTime() - r.firstVersion.getTime()));
+                sortAndReplaceTableRows(search, (l, r) => mul * (l.firstVersion.date.getTime() - r.firstVersion.date.getTime()));
             } else if (property === "updated") {
-                sortAndReplaceTableRows(search, (l, r) => mul * (l.lastVersion.getTime() - r.lastVersion.getTime()));
+                sortAndReplaceTableRows(search, (l, r) => mul * (l.lastVersion.date.getTime() - r.lastVersion.date.getTime()));
             }
         });
     }

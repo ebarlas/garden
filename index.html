@@ -83,6 +83,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/suncalc/1.8.0/suncalc.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone-with-data.min.js"></script>
 <script src="js/conf.js"></script>
 <script src="js/weather.js"></script>
 <script src="js/fragment.js"></script>
@@ -91,9 +93,6 @@
 <script src="js/svg.js"></script>
 <script src="js/fragment.js"></script>
 <script>
-    const dateFormat = {month: '2-digit', day: '2-digit', year: 'numeric'};
-    const timeFormat = {hour: '2-digit', minute: '2-digit'};
-
     const fragment = new Fragment();
 
     let svgName = fragment.get("svg") || "cambridge";
@@ -108,11 +107,15 @@
     let divWeather = $("#divWeather");
 
     function formatDate(date) {
-        return date.toLocaleDateString('en', dateFormat);
+        return moment(date, "America/Los_Angeles").format('L');
     }
 
     function formatTime(date) {
-        return date.toLocaleTimeString('en', timeFormat);
+        return moment(date, "America/Los_Angeles").format('LT');
+    }
+
+    function timeAgo(date) {
+        return moment(date, "America/Los_Angeles").fromNow();
     }
 
     function updateContent() {
@@ -174,7 +177,7 @@
 
             GardenWeather.load(svg.latitude, svg.longitude).done(function (res) {
                 const obs = res.current_observation;
-                const date = formatTime(new Date(obs.observation_epoch * 1000));
+                const date = timeAgo(new Date(obs.observation_epoch * 1000));
                 const html = `<img src="${obs.icon_url}">
                     <span>${obs.temp_f}&#176; ${obs.weather}</span>
                     <ul class="list-group">

@@ -16,6 +16,8 @@
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/suncalc/1.8.0/suncalc.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone-with-data.min.js"></script>
 <script src="js/svg.js"></script>
 <script src="js/textbox.js"></script>
 <script src="js/scale.js"></script>
@@ -28,10 +30,11 @@
 <script src="js/garden.js"></script>
 <script src="js/fragment.js"></script>
 <script>
+    const tz = "America/Los_Angeles";
     const fragment = new Fragment();
     const svgName = fragment.get("svg") || "cambridge";
     const svg = new Svg(`img/${svgName}.svg`);
-    const date = fragment.getDate("date") || new Date();
+    const mo = fragment.map("date", v => v ? moment.tz(v, tz) : moment.tz(tz));
     const species = fragment.get("species");
     const instance = fragment.get("instance");
 
@@ -42,7 +45,7 @@
         const imgSun = document.getElementById("imgSun");
         const imgMoon = document.getElementById("imgMoon");
 
-        garden = new Garden(canvas, imgSun, imgMoon, svg, date);
+        garden = new Garden(canvas, imgSun, imgMoon, svg, mo);
         garden.emphasize(species, instance);
     });
 </script>

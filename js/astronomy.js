@@ -3,6 +3,7 @@
  *
  * Dependencies:
  *   - SunCalc
+ *   - Moment
  *   - GardenRange (range.js)
  */
 
@@ -21,60 +22,65 @@ Astro.moonPhase = function (phase) {
     return GardenRange.find(Astro.MoonPhase, 1.0, phase);
 };
 
-function Astro(latitude, longitude, date) {
+function Astro(latitude, longitude, mo) {
     this.latitude = latitude;
     this.longitude = longitude;
-    this.date = date;
+    this.mo = mo;
     this.update();
 }
 
 Astro.prototype.update = function () {
-    this.sun = SunCalc.getPosition(this.date, this.latitude, this.longitude);
-    this.moon = SunCalc.getMoonPosition(this.date, this.latitude, this.longitude);
-    this.moonIllumination = SunCalc.getMoonIllumination(this.date);
+    const date = this.mo.toDate();
+    this.sun = SunCalc.getPosition(date, this.latitude, this.longitude);
+    this.moon = SunCalc.getMoonPosition(date, this.latitude, this.longitude);
+    this.moonIllumination = SunCalc.getMoonIllumination(date);
 };
 
 Astro.prototype.getYear = function () {
-    return this.date.getFullYear();
+    return this.mo.year();
 };
 
 Astro.prototype.getMonth = function () {
-    return this.date.getMonth();
+    return this.mo.month();
 };
 
 Astro.prototype.getDay = function () {
-    return this.date.getDate();
+    return this.mo.date();
 };
 
 Astro.prototype.getHours = function () {
-    return this.date.getHours();
+    return this.mo.hours();
 };
 
 Astro.prototype.getMinutes = function () {
-    return this.date.getMinutes();
+    return this.mo.minutes();
+};
+
+Astro.prototype.getDate = function () {
+    return this.mo.toDate();
 };
 
 Astro.prototype.addYear = function (n) {
-    this.date.setFullYear(this.date.getFullYear() + n);
+    this.mo.year(this.mo.year() + n);
     this.update();
 };
 
 Astro.prototype.addMonth = function (n) {
-    this.date.setMonth(this.date.getMonth() + n);
+    this.mo.month(this.mo.month() + n);
     this.update();
 };
 
 Astro.prototype.addDay = function (n) {
-    this.date.setDate(this.date.getDate() + n);
+    this.mo.date(this.mo.date() + n);
     this.update();
 };
 
 Astro.prototype.addHours = function (n) {
-    this.date.setHours(this.date.getHours() + n);
+    this.mo.hours(this.mo.hours() + n);
     this.update();
 };
 
 Astro.prototype.addMinutes = function (n) {
-    this.date.setMinutes(this.date.getMinutes() + n);
+    this.mo.minutes(this.mo.minutes() + n);
     this.update();
 };
