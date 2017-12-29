@@ -31,12 +31,12 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.101144"
-     inkscape:cx="478.78392"
-     inkscape:cy="511.61811"
+     inkscape:cx="554.93291"
+     inkscape:cy="644.87885"
      inkscape:document-units="px"
      inkscape:current-layer="layer11"
      showgrid="true"
-     inkscape:window-width="1922"
+     inkscape:window-width="1920"
      inkscape:window-height="1088"
      inkscape:window-x="0"
      inkscape:window-y="1"
@@ -86,12 +86,12 @@
     <image
        sodipodi:absref="/Users/elliotb/Code/personal/garden/img/cambridge.png"
        xlink:href="cambridge.png"
-       width="1400"
-       height="1400"
-       preserveAspectRatio="none"
-       id="image3400"
+       y="0"
        x="0"
-       y="0" />
+       id="image3400"
+       preserveAspectRatio="none"
+       height="1400"
+       width="1400" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -2495,6 +2495,18 @@
        garden:description="Planted by us. Plant from Cottage Gardens."
        garden:type="add" />
     <circle
+       garden:type="add"
+       garden:description="Planted by us. Plant from Cottage Gardens."
+       garden:version="1"
+       garden:instance="1"
+       garden:species="wes"
+       garden:date="2017-12-28"
+       r="13"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="wes_1_1"
+       cx="607.84491"
+       cy="739.33496" />
+    <circle
        r="13"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="dar_1_1"
@@ -4099,6 +4111,11 @@
        garden:id="ush"
        garden:scientificName="Unidentified Shrub"
        garden:commonName="Unidentified Shrub"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="wes"
+       garden:scientificName="Westringia 'Mundi'"
+       garden:commonName="Mundi Coast Rosemary"
        garden:type="Shrub" />
   </garden:contents>
 </svg>
