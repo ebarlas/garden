@@ -30,9 +30,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.101144"
-     inkscape:cx="501.39065"
-     inkscape:cy="644.87885"
+     inkscape:zoom="1.4857332"
+     inkscape:cx="449.61052"
+     inkscape:cy="892.36308"
      inkscape:document-units="px"
      inkscape:current-layer="layer11"
      showgrid="true"
@@ -40,7 +40,7 @@
      inkscape:window-height="1088"
      inkscape:window-x="0"
      inkscape:window-y="1"
-     inkscape:window-maximized="0"
+     inkscape:window-maximized="1"
      units="px"
      inkscape:snap-global="false"
      inkscape:object-paths="true"
@@ -86,12 +86,12 @@
     <image
        sodipodi:absref="/Users/elliotb/Code/personal/garden/img/cambridge.png"
        xlink:href="cambridge.png"
-       width="1400"
-       height="1400"
-       preserveAspectRatio="none"
-       id="image3400"
+       y="0"
        x="0"
-       y="0" />
+       id="image3400"
+       preserveAspectRatio="none"
+       height="1400"
+       width="1400" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -1883,6 +1883,30 @@
        garden:description="Grass clump was present when we moved in."
        garden:type="add" />
     <circle
+       garden:type="add"
+       garden:description="Planted by Elliot. Plant from Cottage Gardens. Mango mulch compost. No gopher basket."
+       garden:version="1"
+       garden:instance="6"
+       garden:species="lom"
+       garden:date="2018-01-01"
+       r="10"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="lom_6_1"
+       cx="515.64374"
+       cy="559.70276" />
+    <circle
+       cy="435.18509"
+       cx="483.33646"
+       id="lom_7_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="10"
+       garden:date="2018-01-01"
+       garden:species="lom"
+       garden:instance="1"
+       garden:version="7"
+       garden:description="Planted by Elliot. Plant from Cottage Gardens. Mango mulch compost. No gopher basket."
+       garden:type="add" />
+    <circle
        r="12"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="cra_2_1"
@@ -2183,8 +2207,8 @@
        garden:description="Shrub was present when we moved in."
        garden:type="add" />
     <circle
-       cy="418.68988"
-       cx="516.39282"
+       cy="411.28613"
+       cx="509.66217"
        id="man_9_1"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        r="7"
@@ -2198,8 +2222,8 @@
        r="7"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="man_11_1"
-       cx="526.69647"
-       cy="460.36807"
+       cx="521.98499"
+       cy="452.29126"
        garden:date="2017-04-01"
        garden:species="man"
        garden:instance="11"
@@ -2400,7 +2424,7 @@
        garden:type="add" />
     <circle
        garden:type="add"
-       garden:description="Planted by us. Plant from Cottage Gardens. No gopher basket."
+       garden:description="Planted by Elliot. Plant from Cottage Gardens. Mango mulch compost. No gopher basket."
        garden:version="1"
        garden:instance="7"
        garden:species="vio"
@@ -2420,11 +2444,11 @@
        garden:species="vio"
        garden:instance="8"
        garden:version="1"
-       garden:description="Planted by us. Plant from Cottage Gardens. Gopher basket."
+       garden:description="Planted by Elliot. Plant from Cottage Gardens. Mango mulch compost. Gopher basket."
        garden:type="add" />
     <circle
        garden:type="add"
-       garden:description="Planted by us. Plant from Cottage Gardens. No gopher basket."
+       garden:description="Planted by Elliot. Plant from Cottage Gardens. Mango mulch compost. No gopher basket."
        garden:version="1"
        garden:instance="9"
        garden:species="vio"
@@ -2496,7 +2520,7 @@
        garden:type="add" />
     <circle
        garden:type="add"
-       garden:description="Planted by us. Plant from Cottage Gardens. No gopher basket."
+       garden:description="Planted by Elliot. Plant from Cottage Gardens. Mango mulch compost. No gopher basket."
        garden:version="1"
        garden:instance="2"
        garden:species="wes"
@@ -2508,7 +2532,7 @@
        cy="759.79999" />
     <circle
        garden:type="add"
-       garden:description="Planted by us. Plant from Cottage Gardens. No gopher basket."
+       garden:description="Planted by Elliot. Plant from Cottage Gardens. Mango mulch compost. No gopher basket."
        garden:version="1"
        garden:instance="1"
        garden:species="wes"
@@ -2654,8 +2678,8 @@
        r="7"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="man_7_1"
-       cx="506.01193"
-       cy="377.12759"
+       cx="502.64661"
+       cy="370.39691"
        garden:date="2017-04-01"
        garden:species="man"
        garden:instance="7"
