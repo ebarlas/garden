@@ -30,14 +30,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4857332"
-     inkscape:cx="449.61052"
-     inkscape:cy="892.36308"
+     inkscape:zoom="2.101144"
+     inkscape:cx="392.49878"
+     inkscape:cy="480.07618"
      inkscape:document-units="px"
      inkscape:current-layer="layer11"
      showgrid="true"
      inkscape:window-width="1920"
-     inkscape:window-height="1088"
+     inkscape:window-height="1083"
      inkscape:window-x="0"
      inkscape:window-y="1"
      inkscape:window-maximized="1"
@@ -86,12 +86,12 @@
     <image
        sodipodi:absref="/Users/elliotb/Code/personal/garden/img/cambridge.png"
        xlink:href="cambridge.png"
-       y="0"
-       x="0"
-       id="image3400"
-       preserveAspectRatio="none"
+       width="1400"
        height="1400"
-       width="1400" />
+       preserveAspectRatio="none"
+       id="image3400"
+       x="0"
+       y="0" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -466,6 +466,30 @@
        garden:version="1"
        garden:description="Planted by Mitchell Landscapes."
        garden:type="add" />
+    <circle
+       garden:type="add"
+       garden:description="Planted by Elliot. Individual from Costco. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Gopher basket."
+       garden:version="1"
+       garden:instance="1"
+       garden:species="rai"
+       garden:date="2018-02-17"
+       r="12"
+       cy="929.9834"
+       cx="270.33298"
+       id="circle5276"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <circle
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle5278"
+       cx="297.93698"
+       cy="824.80261"
+       r="12"
+       garden:type="add"
+       garden:description="Planted by Elliot. Individual from Costco. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Gopher basket."
+       garden:version="1"
+       garden:instance="2"
+       garden:species="rai"
+       garden:date="2018-02-17" />
     <circle
        r="12"
        cy="646.5141"
@@ -3831,6 +3855,11 @@
     <garden:species
        garden:id="pho"
        garden:scientificName="Phormium 'Yellow Wave'"
+       garden:commonName="New Zealand Flax"
+       garden:type="Perennial" />
+    <garden:species
+       garden:id="rai"
+       garden:scientificName="Phormium 'Rainbow Queen'"
        garden:commonName="New Zealand Flax"
        garden:type="Perennial" />
     <garden:species
