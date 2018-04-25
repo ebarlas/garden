@@ -30,14 +30,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4857332"
-     inkscape:cx="313.41325"
-     inkscape:cy="480.07618"
+     inkscape:zoom="2.9714664"
+     inkscape:cx="1022.4908"
+     inkscape:cy="1247.3741"
      inkscape:document-units="px"
      inkscape:current-layer="layer11"
      showgrid="true"
      inkscape:window-width="1440"
-     inkscape:window-height="801"
+     inkscape:window-height="856"
      inkscape:window-x="0"
      inkscape:window-y="1"
      inkscape:window-maximized="1"
@@ -86,12 +86,12 @@
     <image
        sodipodi:absref="/Users/elliotb/Code/personal/garden/img/cambridge.png"
        xlink:href="cambridge.png"
-       y="0"
-       x="0"
-       id="image3400"
-       preserveAspectRatio="none"
+       width="1400"
        height="1400"
-       width="1400" />
+       preserveAspectRatio="none"
+       id="image3400"
+       x="0"
+       y="0" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -1950,8 +1950,8 @@
        r="10"
        garden:date="2018-01-01"
        garden:species="lom"
-       garden:instance="1"
-       garden:version="7"
+       garden:instance="7"
+       garden:version="1"
        garden:description="Planted by Elliot. Plant from Cottage Gardens. Mango mulch compost. No gopher basket."
        garden:type="add" />
     <circle
@@ -3276,8 +3276,8 @@
        garden:type="add" />
     <circle
        r="7"
-       cy="146.86497"
-       cx="1061.4739"
+       cy="143.83617"
+       cx="1067.868"
        id="rud_3_1"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        garden:date="2016-05-11"
@@ -3289,8 +3289,8 @@
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rud_2_1"
-       cx="1063.2823"
-       cy="120.94288"
+       cx="1067.6573"
+       cy="118.58714"
        r="7"
        garden:date="2016-05-11"
        garden:species="rud"
@@ -3299,9 +3299,69 @@
        garden:description="Planted by Mitchell Landscapes."
        garden:type="add" />
     <circle
+       garden:type="add"
+       garden:description="Planted by Elliot. Individual from Cottage Gardens. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Rigid gopher basket."
+       garden:version="1"
+       garden:instance="4"
+       garden:species="sti"
+       garden:date="2018-04-10"
+       r="6"
+       cy="122.28901"
+       cx="1046.7922"
+       id="sti_4_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <circle
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="sti_5_1"
+       cx="1052.5133"
+       cy="137.43304"
+       r="6"
+       garden:date="2018-04-10"
+       garden:species="sti"
+       garden:instance="5"
+       garden:version="1"
+       garden:description="Planted by Elliot. Individual from Cottage Gardens. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Rigid gopher basket."
+       garden:type="add" />
+    <circle
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="sti_3_1"
+       cx="1040.3982"
+       cy="107.48151"
+       r="6"
+       garden:date="2018-04-10"
+       garden:species="sti"
+       garden:instance="3"
+       garden:version="1"
+       garden:description="Planted by Elliot. Individual from Cottage Gardens. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Rigid gopher basket."
+       garden:type="add" />
+    <circle
+       garden:type="add"
+       garden:description="Planted by Elliot. Individual from Cottage Gardens. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Rigid gopher basket."
+       garden:version="1"
+       garden:instance="2"
+       garden:species="sti"
+       garden:date="2018-04-10"
+       r="6"
+       cy="91.664406"
+       cx="1034.004"
+       id="sti_2_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <circle
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="sti_1_1"
+       cx="1026.2637"
+       cy="76.18383"
+       r="6"
+       garden:date="2018-04-10"
+       garden:species="sti"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by Elliot. Individual from Cottage Gardens. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Rigid gopher basket."
+       garden:type="add" />
+    <circle
        r="7"
-       cy="102.25486"
-       cx="1045.1973"
+       cy="97.543388"
+       cx="1053.274"
        id="rud_1_1"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        garden:date="2016-05-11"
@@ -4210,6 +4270,11 @@
        garden:id="ltb"
        garden:scientificName="Lomandra Tropicbelle"
        garden:commonName="Tropic Belle Mat Rush"
+       garden:type="Grass" />
+    <garden:species
+       garden:id="sti"
+       garden:scientificName="Stipa Tenuissima"
+       garden:commonName="Mexican Feather Grass"
        garden:type="Grass" />
   </garden:contents>
 </svg>
