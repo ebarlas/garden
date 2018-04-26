@@ -74,6 +74,11 @@
             <ul id="listSunpos" class="list-group">
             </ul>
         </div>
+        <div class="col-md-4">
+            <h2>Moon Position</h2>
+            <ul id="listMoonpos" class="list-group">
+            </ul>
+        </div>
     </div>
 </div>
 
@@ -92,6 +97,7 @@
 <script src="js/angle.js"></script>
 <script src="js/svg.js"></script>
 <script src="js/fragment.js"></script>
+<script src="js/astronomy.js"></script>
 <script>
     const fragment = new Fragment();
 
@@ -101,6 +107,7 @@
     let listIndividuals = $("#listIndividuals");
     let listSunlight = $("#listSunlight");
     let listSunpos = $("#listSunpos");
+    let listMoonpos = $("#listMoonpos");
     let title = $("#title");
     let gardenLinks = $(".garden-link");
     let svgMenu = $("#svgMenu");
@@ -122,8 +129,14 @@
         const date = new Date();
         const sunpos = SunCalc.getPosition(date, svg.latitude, svg.longitude);
         const sunlight = SunCalc.getTimes(date, svg.latitude, svg.longitude);
+        const moonpos = SunCalc.getMoonPosition(date, svg.latitude, svg.longitude);
+        const moonlight = SunCalc.getMoonIllumination(date);
         const azimuth = GardenAngle.normalizeDegrees(90 - GardenAngle.toDegrees(3 * Math.PI / 2 - sunpos.azimuth)).toFixed(2);
+        const moonazimuth = GardenAngle.normalizeDegrees(90 - GardenAngle.toDegrees(3 * Math.PI / 2 - moonpos.azimuth)).toFixed(2);
         const altitude = GardenAngle.toDegrees(sunpos.altitude).toFixed(2);
+        const moonaltitude = GardenAngle.toDegrees(moonpos.altitude).toFixed(2);
+
+        const imgPath = "img/moon-phase-" + Astro.moonPhase(moonlight.phase).toLowerCase().replace(" ", "") + ".png";
 
         listIndividuals.find("li").remove();
         listIndividuals.append(`<li class="list-group-item"><strong>${svg.countAllIndividuals(false)}</strong> Total Individuals</li>
@@ -142,6 +155,11 @@
         listSunpos.find("li").remove();
         listSunpos.append(`<li class="list-group-item"><strong>${altitude}&#176;</strong> altitude</li>
                 <li class="list-group-item"><strong>${azimuth}&#176; ${GardenAngle.toDirection(azimuth)}</strong> azimuth</li>`);
+
+        listMoonpos.find("li").remove();
+        listMoonpos.before(`<img style="margin: 10px" width="40" height="40" src="${imgPath}"> ${Astro.moonPhase(moonlight.phase)}`);
+        listMoonpos.append(`<li class="list-group-item"><strong>${moonaltitude}&#176;</strong> altitude</li>
+                <li class="list-group-item"><strong>${moonazimuth}&#176; ${GardenAngle.toDirection(moonazimuth)}</strong> azimuth</li>`);
     }
 
     function initMenu() {
