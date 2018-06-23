@@ -30,14 +30,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.9714664"
+     inkscape:zoom="1.4857332"
      inkscape:cx="559.75631"
      inkscape:cy="520.46028"
      inkscape:document-units="px"
      inkscape:current-layer="layer11"
      showgrid="true"
      inkscape:window-width="1440"
-     inkscape:window-height="856"
+     inkscape:window-height="793"
      inkscape:window-x="0"
      inkscape:window-y="1"
      inkscape:window-maximized="1"
@@ -86,12 +86,12 @@
     <image
        sodipodi:absref="/Users/elliotb/Code/personal/garden/img/cambridge.png"
        xlink:href="cambridge.png"
-       y="0"
-       x="0"
-       id="image3400"
-       preserveAspectRatio="none"
+       width="1400"
        height="1400"
-       width="1400" />
+       preserveAspectRatio="none"
+       id="image3400"
+       x="0"
+       y="0" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -791,18 +791,6 @@
        garden:description="Planted by Mitchell Landscapes."
        garden:type="add" />
     <circle
-       r="6"
-       cy="172.69896"
-       cx="550.71234"
-       id="mon_1_1"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       garden:date="2017-05-17"
-       garden:species="mon"
-       garden:instance="1"
-       garden:version="1"
-       garden:description="Planted by us. Plant from Cottage Gardens."
-       garden:type="add" />
-    <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="mim_2_1"
        cx="549.36615"
@@ -825,18 +813,6 @@
        garden:instance="1"
        garden:version="1"
        garden:description="Planted by us. Plant from North Coast Native Nursery through Mulch Madness city program."
-       garden:type="add" />
-    <circle
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="mon_2_1"
-       cx="552.75739"
-       cy="185.24512"
-       r="6"
-       garden:date="2017-05-17"
-       garden:species="mon"
-       garden:instance="2"
-       garden:version="1"
-       garden:description="Planted by us. Plant from Cottage Gardens."
        garden:type="add" />
     <circle
        r="7"
@@ -3287,18 +3263,6 @@
        garden:description="Planted by Mitchell Landscapes."
        garden:type="add" />
     <circle
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rud_2_1"
-       cx="1067.6573"
-       cy="118.58714"
-       r="7"
-       garden:date="2016-05-11"
-       garden:species="rud"
-       garden:instance="2"
-       garden:version="1"
-       garden:description="Planted by Mitchell Landscapes."
-       garden:type="add" />
-    <circle
        garden:type="add"
        garden:description="Planted by Elliot. Individual from Cottage Gardens. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Rigid gopher basket."
        garden:version="1"
@@ -3357,18 +3321,6 @@
        garden:instance="1"
        garden:version="1"
        garden:description="Planted by Elliot. Individual from Cottage Gardens. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Rigid gopher basket."
-       garden:type="add" />
-    <circle
-       r="7"
-       cy="97.543388"
-       cx="1053.274"
-       id="rud_1_1"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       garden:date="2016-05-11"
-       garden:species="rud"
-       garden:instance="1"
-       garden:version="1"
-       garden:description="Planted by Mitchell Landscapes."
        garden:type="add" />
     <circle
        r="7"
@@ -3452,8 +3404,32 @@
        r="10"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="mai_5_1"
-       cx="574.94525"
-       cy="853.86401" />
+       cx="572.25299"
+       cy="855.21021" />
+    <circle
+       cy="840.40265"
+       cx="593.1181"
+       id="mex_1_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="10"
+       garden:date="2018-06-22"
+       garden:species="mex"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by Elliot. Individual from Cottage Gardens. Amended soil with Soil Booster from Cottage Gardens. Topped with Ultimate Recipe potting soil. Rigid gopher basket."
+       garden:type="add" />
+    <circle
+       garden:type="add"
+       garden:description="Planted by Elliot. Individual from Cottage Gardens. Amended soil with Soil Booster from Cottage Gardens. Topped with Ultimate Recipe potting soil. Rigid gopher basket."
+       garden:version="1"
+       garden:instance="2"
+       garden:species="mex"
+       garden:date="2018-06-22"
+       r="10"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="mex_2_1"
+       cx="613.98322"
+       cy="824.24896" />
     <circle
        garden:type="add"
        garden:description="Planted by Elliot. Individual from Cottage Gardens. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Topped with rich potting soil. Rigid gopher basket."
@@ -3468,7 +3444,7 @@
        cy="885.83466" />
     <circle
        cy="869.68115"
-       cx="551.72437"
+       cx="549.70514"
        id="mai_4_1"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        r="10"
@@ -3478,6 +3454,54 @@
        garden:instance="4"
        garden:species="mai"
        garden:date="2018-04-22" />
+    <circle
+       r="6"
+       cy="172.69896"
+       cx="550.71234"
+       id="sis_1_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2018-04-28"
+       garden:species="sis"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by Elliot. Individual from Cottage Gardens. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Rigid gopher basket."
+       garden:type="add" />
+    <circle
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="sis_2_1"
+       cx="552.75739"
+       cy="185.24512"
+       r="6"
+       garden:date="2018-04-28"
+       garden:species="sis"
+       garden:instance="2"
+       garden:version="1"
+       garden:description="Planted by Elliot. Individual from Cottage Gardens. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Rigid gopher basket."
+       garden:type="add" />
+    <circle
+       r="7"
+       cy="97.543388"
+       cx="1053.274"
+       id="tas_1_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2018-06-21"
+       garden:species="tas"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by Elliot. Individual from Cottage Gardens. Amended soil with Soil Booster from Cottage Gardens. Topped with Ultimate Recipe potting soil. Rigid gopher basket."
+       garden:type="add" />
+    <circle
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="tas_2_1"
+       cx="1067.6573"
+       cy="118.58714"
+       r="7"
+       garden:date="2018-06-21"
+       garden:species="tas"
+       garden:instance="2"
+       garden:version="1"
+       garden:description="Planted by Elliot. Individual from Cottage Gardens. Amended soil with Soil Booster from Cottage Gardens. Topped with Ultimate Recipe potting soil. Rigid gopher basket."
+       garden:type="add" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -3977,6 +4001,102 @@
        garden:version="1"
        garden:description="Planted by Mitchell Landscapes."
        garden:type="add" />
+    <circle
+       r="7"
+       cy="97.543388"
+       cx="1053.274"
+       id="rud_1_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2016-05-11"
+       garden:species="rud"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add" />
+    <circle
+       r="7"
+       cy="97.543388"
+       cx="1053.274"
+       id="rud_1_2"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2018-06-21"
+       garden:species="rud"
+       garden:instance="1"
+       garden:version="2"
+       garden:description="Planted died. Likely due to lack of sun exposure."
+       garden:type="remove" />
+    <circle
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rud_2_1"
+       cx="1067.6573"
+       cy="118.58714"
+       r="7"
+       garden:date="2016-05-11"
+       garden:species="rud"
+       garden:instance="2"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add" />
+    <circle
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle4459"
+       cx="1067.6573"
+       cy="118.58714"
+       r="7"
+       garden:date="2018-06-21"
+       garden:species="rud"
+       garden:instance="2"
+       garden:version="2"
+       garden:description="Planted died. Likely due to lack of sun exposure."
+       garden:type="remove" />
+    <circle
+       r="6"
+       cy="172.69896"
+       cx="550.71234"
+       id="mon_1_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2017-05-17"
+       garden:species="mon"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by us. Plant from Cottage Gardens."
+       garden:type="add" />
+    <circle
+       r="6"
+       cy="172.69896"
+       cx="550.71234"
+       id="mon_1_2"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2017-04-28"
+       garden:species="mon"
+       garden:instance="1"
+       garden:version="2"
+       garden:description="Planted died. Likely due to gopher activity or lack of sun exposure."
+       garden:type="remove" />
+    <circle
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="mon_2_1"
+       cx="552.75739"
+       cy="185.24512"
+       r="6"
+       garden:date="2017-05-17"
+       garden:species="mon"
+       garden:instance="2"
+       garden:version="1"
+       garden:description="Planted by us. Plant from Cottage Gardens."
+       garden:type="add" />
+    <circle
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="mon_2_2"
+       cx="552.75739"
+       cy="185.24512"
+       r="6"
+       garden:date="2017-05-17"
+       garden:species="mon"
+       garden:instance="2"
+       garden:version="2"
+       garden:description="Planted died. Likely due to gopher activity or lack of sun exposure."
+       garden:type="remove" />
   </g>
   <path
      style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -4341,5 +4461,20 @@
        garden:scientificName="Miscanthus sinensis 'Rigoletto'"
        garden:commonName="Maiden Grass"
        garden:type="Grass" />
+    <garden:species
+       garden:id="sis"
+       garden:scientificName="Sisyrinchium angustifolium 'Lucerne'"
+       garden:commonName="Blue-Eyed Grass"
+       garden:type="Grass" />
+    <garden:species
+       garden:id="tas"
+       garden:scientificName="Dianella tasmanica 'Wyeena'"
+       garden:commonName="White Striped Tasman Flax Lily"
+       garden:type="Grass" />
+    <garden:species
+       garden:id="mex"
+       garden:scientificName="Salvia leucantha"
+       garden:commonName="Mexican Bush Sage"
+       garden:type="Shrub" />
   </garden:contents>
 </svg>
