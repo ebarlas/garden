@@ -30,14 +30,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4857332"
-     inkscape:cx="559.75631"
-     inkscape:cy="520.46028"
+     inkscape:zoom="2.9714664"
+     inkscape:cx="151.20382"
+     inkscape:cy="1085.8377"
      inkscape:document-units="px"
      inkscape:current-layer="layer11"
      showgrid="true"
-     inkscape:window-width="1440"
-     inkscape:window-height="793"
+     inkscape:window-width="1920"
+     inkscape:window-height="1089"
      inkscape:window-x="0"
      inkscape:window-y="1"
      inkscape:window-maximized="1"
@@ -86,12 +86,12 @@
     <image
        sodipodi:absref="/Users/elliotb/Code/personal/garden/img/cambridge.png"
        xlink:href="cambridge.png"
-       width="1400"
-       height="1400"
-       preserveAspectRatio="none"
-       id="image3400"
+       y="0"
        x="0"
-       y="0" />
+       id="image3400"
+       preserveAspectRatio="none"
+       height="1400"
+       width="1400" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -1727,6 +1727,54 @@
        garden:description="Planted by Mitchell Landscapes."
        garden:type="add" />
     <circle
+       garden:type="add"
+       garden:description="Planted by Elliot. Individual from Cottage Gardens. Amended soil with Soil Booster from Cottage Gardens. Topped with Ultimate Recipe potting soil. Rigid gopher basket."
+       garden:version="1"
+       garden:instance="1"
+       garden:species="con"
+       garden:date="2018-08-05"
+       r="7"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="con_1_1"
+       cx="244.83951"
+       cy="342.21497" />
+    <circle
+       cy="315.62875"
+       cx="247.19525"
+       id="con_2_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="7"
+       garden:date="2018-08-05"
+       garden:species="con"
+       garden:instance="2"
+       garden:version="1"
+       garden:description="Planted by Elliot. Individual from Cottage Gardens. Amended soil with Soil Booster from Cottage Gardens. Topped with Ultimate Recipe potting soil. Rigid gopher basket."
+       garden:type="add" />
+    <circle
+       garden:type="add"
+       garden:description="Planted by Elliot. Individual from Cottage Gardens. Amended soil with Soil Booster from Cottage Gardens. Topped with Ultimate Recipe potting soil. Rigid gopher basket."
+       garden:version="1"
+       garden:instance="3"
+       garden:species="tas"
+       garden:date="2018-08-04"
+       r="7"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="tas_3_1"
+       cx="250.89713"
+       cy="288.36951" />
+    <circle
+       cy="261.11023"
+       cx="257.96429"
+       id="tas_4_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="7"
+       garden:date="2018-08-04"
+       garden:species="tas"
+       garden:instance="4"
+       garden:version="1"
+       garden:description="Planted by Elliot. Individual from Cottage Gardens. Amended soil with Soil Booster from Cottage Gardens. Topped with Ultimate Recipe potting soil. Rigid gopher basket."
+       garden:type="add" />
+    <circle
        r="9"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="yan_4_1"
@@ -3215,6 +3263,30 @@
        garden:description="Planted by Mitchell Landscapes."
        garden:type="add" />
     <circle
+       garden:type="add"
+       garden:description="Planted by Elliot. Individual from Cottage Gardens. Amended soil with Soil Booster from Cottage Gardens. Topped with Ultimate Recipe potting soil. Rigid gopher basket."
+       garden:version="1"
+       garden:instance="1"
+       garden:species="maj"
+       garden:date="2018-07-31"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="maj_1_1"
+       cx="1132.9663"
+       cy="163.04221"
+       r="6" />
+    <circle
+       r="6"
+       cy="146.55203"
+       cx="1141.3796"
+       id="maj_2_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2018-07-31"
+       garden:species="maj"
+       garden:instance="2"
+       garden:version="1"
+       garden:description="Planted by Elliot. Individual from Cottage Gardens. Amended soil with Soil Booster from Cottage Gardens. Topped with Ultimate Recipe potting soil. Planted over tree roots. Unable to fit gopher basket."
+       garden:type="add" />
+    <circle
        r="7"
        cy="322.89417"
        cx="1296.5814"
@@ -4475,6 +4547,16 @@
        garden:id="mex"
        garden:scientificName="Salvia leucantha"
        garden:commonName="Mexican Bush Sage"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="con"
+       garden:scientificName="Convolvulus mauritanicus"
+       garden:commonName="Ground Morning Glory"
+       garden:type="Perennial" />
+    <garden:species
+       garden:id="maj"
+       garden:scientificName="Teucrium majoricum"
+       garden:commonName="Majorcan Germander"
        garden:type="Shrub" />
   </garden:contents>
 </svg>
