@@ -30,14 +30,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.9714664"
-     inkscape:cx="151.20382"
-     inkscape:cy="1085.8377"
+     inkscape:zoom="1.4857332"
+     inkscape:cx="924.22282"
+     inkscape:cy="1031.9922"
      inkscape:document-units="px"
      inkscape:current-layer="layer11"
      showgrid="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1089"
+     inkscape:window-width="1440"
+     inkscape:window-height="799"
      inkscape:window-x="0"
      inkscape:window-y="1"
      inkscape:window-maximized="1"
@@ -86,12 +86,12 @@
     <image
        sodipodi:absref="/Users/elliotb/Code/personal/garden/img/cambridge.png"
        xlink:href="cambridge.png"
-       y="0"
-       x="0"
-       id="image3400"
-       preserveAspectRatio="none"
+       width="1400"
        height="1400"
-       width="1400" />
+       preserveAspectRatio="none"
+       id="image3400"
+       x="0"
+       y="0" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -431,6 +431,18 @@
        garden:description="Shrub present when we moved in."
        garden:type="add" />
     <circle
+      garden:date="2018-08-12"
+       garden:species="cra"
+       garden:instance="6"
+       garden:version="1"
+       garden:description="Planted by Dad. 15 gallon tree from Urban Tree Farm. Gopher basket from Cottage Gardens. Mixed native soil with soil from Dad. Two green 2-gph emitters."
+       garden:type="add"
+       r="15"
+       cy="462.55942"
+       cx="1140.416"
+       id="cra_6_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <circle
        garden:type="add"
        garden:description="Shrub present when we moved in."
        garden:instance="2"
@@ -523,18 +535,6 @@
        garden:date="2016-03-16"
        garden:species="pho"
        garden:instance="2"
-       garden:version="1"
-       garden:description="Planted by Mitchell Landscapes."
-       garden:type="add" />
-    <circle
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="pho_4_1"
-       cx="934.25055"
-       cy="596.32941"
-       r="12"
-       garden:date="2016-03-16"
-       garden:species="pho"
-       garden:instance="4"
        garden:version="1"
        garden:description="Planted by Mitchell Landscapes."
        garden:type="add" />
@@ -4168,6 +4168,30 @@
        garden:instance="2"
        garden:version="2"
        garden:description="Planted died. Likely due to gopher activity or lack of sun exposure."
+       garden:type="remove" />
+    <circle
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="pho_4_1"
+       cx="934.25055"
+       cy="596.32941"
+       r="12"
+       garden:date="2016-03-16"
+       garden:species="pho"
+       garden:instance="4"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add" />
+    <circle
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="pho_4_2"
+       cx="934.25055"
+       cy="596.32941"
+       r="12"
+       garden:date="2018-07-30"
+       garden:species="pho"
+       garden:instance="4"
+       garden:version="2"
+       garden:description="Plant died. Perhaps due to insufficient sunlight. Quite shady next to the hedges and under the liquid amber."
        garden:type="remove" />
   </g>
   <path
