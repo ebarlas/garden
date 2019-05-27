@@ -31,13 +31,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4857332"
-     inkscape:cx="924.22282"
-     inkscape:cy="1031.9922"
+     inkscape:cx="255.44394"
+     inkscape:cy="419.30186"
      inkscape:document-units="px"
      inkscape:current-layer="layer11"
      showgrid="true"
      inkscape:window-width="1440"
-     inkscape:window-height="799"
+     inkscape:window-height="802"
      inkscape:window-x="0"
      inkscape:window-y="1"
      inkscape:window-maximized="1"
@@ -86,12 +86,12 @@
     <image
        sodipodi:absref="/Users/elliotb/Code/personal/garden/img/cambridge.png"
        xlink:href="cambridge.png"
-       width="1400"
-       height="1400"
-       preserveAspectRatio="none"
-       id="image3400"
+       y="0"
        x="0"
-       y="0" />
+       id="image3400"
+       preserveAspectRatio="none"
+       height="1400"
+       width="1400" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -431,7 +431,7 @@
        garden:description="Shrub present when we moved in."
        garden:type="add" />
     <circle
-      garden:date="2018-08-12"
+       garden:date="2018-08-12"
        garden:species="cra"
        garden:instance="6"
        garden:version="1"
@@ -486,15 +486,15 @@
        garden:species="rai"
        garden:date="2018-02-17"
        r="12"
-       cy="942.09863"
-       cx="278.40979"
+       cy="941.42554"
+       cx="281.10205"
        id="circle5276"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="ltb_1_1"
-       cx="316.10165"
-       cy="921.90656"
+       cx="318.79391"
+       cy="920.56042"
        r="12"
        garden:date="2018-03-29"
        garden:species="ltb"
@@ -510,8 +510,8 @@
        garden:species="ltb"
        garden:date="2018-03-29"
        r="12"
-       cy="900.36835"
-       cx="353.79346"
+       cy="899.69525"
+       cx="355.13959"
        id="ltb_2_1"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <circle
@@ -1595,6 +1595,30 @@
        garden:description="Planted by Mitchell Landscapes."
        garden:type="add" />
     <circle
+       garden:date="2019-04-28"
+       garden:species="yan"
+       garden:instance="16"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket"
+       garden:type="add"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="yan_16_1"
+       cx="147.34013"
+       cy="596.20129"
+       r="9" />
+    <circle
+       r="9"
+       cy="631.20087"
+       cx="145.32092"
+       id="yan_17_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2019-04-28"
+       garden:species="yan"
+       garden:instance="17"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket"
+       garden:type="add" />
+    <circle
        r="9"
        cy="94.359756"
        cx="172.45822"
@@ -2411,6 +2435,30 @@
        garden:description="Planted by Mitchell Landscapes."
        garden:type="add" />
     <circle
+       garden:type="add"
+       garden:version="1"
+       garden:instance="1"
+       garden:species="coy"
+       garden:description="Native shrub was present when we moved in."
+       garden:date="2014-04-19"
+       r="14"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="coy_1_1"
+       cx="195.84515"
+       cy="767.36047" />
+    <circle
+       cy="805.05231"
+       cx="135.269"
+       id="coy_2_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="14"
+       garden:type="add"
+       garden:version="1"
+       garden:instance="2"
+       garden:species="coy"
+       garden:description="Native shrub was present when we moved in."
+       garden:date="2014-04-19" />
+    <circle
        r="14"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="plu_1_1"
@@ -2423,8 +2471,8 @@
        garden:description="Planted by Mitchell Landscapes."
        garden:type="add" />
     <circle
-       cy="866.44556"
-       cx="252.15071"
+       cy="862.40717"
+       cx="248.78537"
        id="fuy_1_1"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        r="14"
@@ -2469,18 +2517,6 @@
        garden:instance="1"
        garden:version="1"
        garden:description="Planted by Mitchell Landscapes."
-       garden:type="add" />
-    <circle
-       cy="913.09399"
-       cx="529.51312"
-       id="vio_1_1"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       r="10"
-       garden:date="2017-04-05"
-       garden:species="vio"
-       garden:instance="1"
-       garden:version="1"
-       garden:description="Planted by us. Plant provided by Mitchell Landscapes."
        garden:type="add" />
     <circle
        r="10"
@@ -2637,6 +2673,42 @@
        garden:instance="1"
        garden:version="1"
        garden:description="Planted with Dad. Plants from Urban Tree Farm."
+       garden:type="add" />
+    <circle
+       garden:date="2019-04-28"
+       garden:species="pot"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add"
+       r="10"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="pot_1_1"
+       cx="454.8555"
+       cy="1039.6531" />
+    <circle
+       cy="1081.535"
+       cx="402.50305"
+       id="pot_2_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="10"
+       garden:date="2019-04-28"
+       garden:species="pot"
+       garden:instance="2"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add" />
+    <circle
+       cy="1162.4434"
+       cx="302.55753"
+       id="pot_3_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="10"
+       garden:date="2019-04-28"
+       garden:species="pot"
+       garden:instance="3"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
        garden:type="add" />
     <circle
        r="10"
@@ -2878,6 +2950,426 @@
        garden:version="1"
        garden:description="Planted with Dad. Plant from Cottage Gardens."
        garden:type="add" />
+    <circle
+       garden:date="2019-04-20"
+       garden:species="ero"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add"
+       r="7"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ero_1_1"
+       cx="275.45108"
+       cy="677.63989" />
+    <circle
+       cy="726.77386"
+       cx="299.00848"
+       id="ero_2_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="7"
+       garden:date="2019-04-20"
+       garden:species="ero"
+       garden:instance="2"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add" />
+    <circle
+       garden:date="2019-04-20"
+       garden:species="eri"
+       garden:instance="3"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add"
+       r="7"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="eri_3_1"
+       cx="268.7204"
+       cy="746.96588" />
+    <circle
+       cy="697.15881"
+       cx="243.81686"
+       id="but_4_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="7"
+       garden:date="2019-04-20"
+       garden:species="but"
+       garden:instance="4"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add" />
+    <circle
+       cy="759.75421"
+       cx="235.74005"
+       id="eri_4_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="7"
+       garden:date="2019-04-20"
+       garden:species="eri"
+       garden:instance="4"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add" />
+    <circle
+       garden:date="2019-04-20"
+       garden:species="dym"
+       garden:instance="4"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add"
+       r="7"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="dym_4_1"
+       cx="220.25946"
+       cy="716.0047" />
+    <circle
+       cy="665.5246"
+       cx="225.64401"
+       id="dym_3_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="7"
+       garden:date="2019-04-20"
+       garden:species="dym"
+       garden:instance="3"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add" />
+    <circle
+       garden:date="2019-04-20"
+       garden:species="dym"
+       garden:instance="2"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="dym_2_1"
+       cx="194.0098"
+       cy="692.44739"
+       r="7" />
+    <circle
+       r="7"
+       cy="714.65863"
+       cx="140.8374"
+       id="dym_5_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2019-04-28"
+       garden:species="dym"
+       garden:instance="5"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add" />
+    <circle
+       garden:date="2019-04-28"
+       garden:species="lou"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="lou_1_1"
+       cx="130.06831"
+       cy="901.09857"
+       r="7" />
+    <circle
+       r="7"
+       cy="975.80914"
+       cx="124.68376"
+       id="dym_6_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2019-04-28"
+       garden:species="dym"
+       garden:instance="6"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add" />
+    <circle
+       garden:date="2019-04-28"
+       garden:species="dym"
+       garden:instance="7"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="dym_7_1"
+       cx="120.64535"
+       cy="1055.2312"
+       r="7" />
+    <circle
+       r="7"
+       cy="1125.9033"
+       cx="115.2608"
+       id="dym_8_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2019-04-28"
+       garden:species="dym"
+       garden:instance="8"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add" />
+    <circle
+       garden:date="2019-04-28"
+       garden:species="dym"
+       garden:instance="9"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="dym_9_1"
+       cx="111.2224"
+       cy="1201.287"
+       r="7" />
+    <circle
+       cy="1066.0002"
+       cx="198.72128"
+       id="ham_1_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2019-04-21"
+       garden:species="ham"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add"
+       r="7" />
+    <circle
+       r="7"
+       garden:date="2019-04-21"
+       garden:species="heb"
+       garden:instance="3"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="heb_3_1"
+       cx="174.49083"
+       cy="1092.923" />
+    <circle
+       cy="1199.2677"
+       cx="216.89413"
+       id="heb_1_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2019-04-21"
+       garden:species="heb"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add"
+       r="7" />
+    <circle
+       r="7"
+       garden:date="2019-04-21"
+       garden:species="heb"
+       garden:instance="2"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="heb_2_1"
+       cx="181.22151"
+       cy="1231.575" />
+    <circle
+       cy="1167.6334"
+       cx="181.89458"
+       id="ham_2_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2019-04-21"
+       garden:species="ham"
+       garden:instance="2"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add"
+       r="7" />
+    <circle
+       r="7"
+       cy="656.77478"
+       cx="195.35594"
+       id="dym_1_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:date="2019-04-20"
+       garden:species="dym"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add" />
+    <circle
+       garden:date="2019-04-20"
+       garden:species="but"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add"
+       r="7"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="but_1_1"
+       cx="290.25861"
+       cy="784.65771" />
+    <circle
+       cy="799.46521"
+       cx="250.54756"
+       id="but_2_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="7"
+       garden:date="2019-04-20"
+       garden:species="but"
+       garden:instance="2"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add" />
+    <circle
+       garden:date="2019-04-20"
+       garden:species="toy"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant raised from seedling found under leland cypress tree for two years by Elliot. Soil amended with Grab N Go Organic Compost. 2 1-gph emitters on half inch tubing."
+       garden:type="add"
+       r="7"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="toy_1_1"
+       cx="222.2787"
+       cy="821.67645" />
+    <circle
+       cy="821.67645"
+       cx="189.97142"
+       id="coa_1_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="8"
+       garden:date="2019-04-28"
+       garden:species="coa"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant raised from seedling by Elliot for two years. Soil amended with Grab N Go Organic Compost. 2 1-gph emitters on half inch tubing."
+       garden:type="add" />
+    <circle
+       cy="891.0025"
+       cx="220.93257"
+       id="eri_1_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="7"
+       garden:date="2019-04-20"
+       garden:species="eri"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add" />
+    <circle
+       garden:date="2019-04-28"
+       garden:species="man"
+       garden:instance="21"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add"
+       r="7"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="man_21_1"
+       cx="232.37474"
+       cy="952.9248" />
+    <circle
+       cy="982.53979"
+       cx="241.12463"
+       id="man_22_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="7"
+       garden:date="2019-04-28"
+       garden:species="man"
+       garden:instance="22"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add" />
+    <circle
+       garden:date="2019-04-28"
+       garden:species="man"
+       garden:instance="20"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add"
+       r="7"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="man_20_1"
+       cx="255.93214"
+       cy="935.42505" />
+    <circle
+       garden:date="2019-04-20"
+       garden:species="eri"
+       garden:instance="2"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add"
+       r="7"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="eri_2_1"
+       cx="191.99063"
+       cy="906.48309" />
+    <circle
+       cy="866.77203"
+       cx="194.68289"
+       id="but_3_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="7"
+       garden:date="2019-04-20"
+       garden:species="but"
+       garden:instance="3"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add" />
+    <circle
+       garden:date="2019-04-20"
+       garden:species="hel"
+       garden:instance="2"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add"
+       r="8"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="hel_2_1"
+       cx="358.91156"
+       cy="797.44604" />
+    <circle
+       cy="596.8717"
+       cx="233.72086"
+       id="hel_3_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="8"
+       garden:date="2019-04-20"
+       garden:species="hel"
+       garden:instance="3"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add" />
+    <circle
+       garden:date="2019-04-20"
+       garden:species="hel"
+       garden:instance="4"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add"
+       r="8"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="hel_4_1"
+       cx="199.39436"
+       cy="606.29468" />
+    <circle
+       cy="811.58051"
+       cx="331.31577"
+       id="hel_1_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="8"
+       garden:date="2019-04-20"
+       garden:species="hel"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add" />
+    <circle
+       garden:date="2019-04-28"
+       garden:species="coa"
+       garden:instance="2"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant raised from seedling by Elliot for two years. Soil amended with Soil Booster. 2 1-gph emitters on half inch tubing."
+       garden:type="add"
+       r="8"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="coa_2_1"
+       cx="143.52969"
+       cy="668.21698" />
     <circle
        r="7"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -3309,6 +3801,30 @@
        garden:instance="1"
        garden:version="1"
        garden:description="Planted by us. Plant from Cottage Gardens."
+       garden:type="add" />
+    <circle
+       garden:date="2019-04-28"
+       garden:species="hel"
+       garden:instance="6"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket"
+       garden:type="add"
+       r="7"
+       cy="444.6741"
+       cx="1167.8596"
+       id="hel_6_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <circle
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="hel_5_1"
+       cx="1293.9814"
+       cy="344.25262"
+       r="7"
+       garden:date="2019-04-28"
+       garden:species="hel"
+       garden:instance="5"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket"
        garden:type="add" />
     <circle
        r="7"
@@ -4193,6 +4709,30 @@
        garden:version="2"
        garden:description="Plant died. Perhaps due to insufficient sunlight. Quite shady next to the hedges and under the liquid amber."
        garden:type="remove" />
+    <circle
+       cy="913.09399"
+       cx="529.51312"
+       id="vio_1_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="10"
+       garden:date="2017-04-05"
+       garden:species="vio"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by us. Plant provided by Mitchell Landscapes."
+       garden:type="add" />
+    <circle
+       cy="913.09399"
+       cx="529.51312"
+       id="vio_1_2"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="10"
+       garden:date="2019-01-01"
+       garden:species="vio"
+       garden:instance="1"
+       garden:version="2"
+       garden:description="Planted died. The valley violets have struggled consistently."
+       garden:type="remove" />
   </g>
   <path
      style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -4581,6 +5121,66 @@
        garden:id="maj"
        garden:scientificName="Teucrium majoricum"
        garden:commonName="Majorcan Germander"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="hel"
+       garden:scientificName="Helianthemum 'Henfield Brilliant'"
+       garden:commonName="Sunrose"
+       garden:type="Perennial" />
+    <garden:species
+       garden:id="eri"
+       garden:scientificName="Erigeron karvinskianus"
+       garden:commonName="Santa Barbara Daisy"
+       garden:type="Perennial" />
+    <garden:species
+       garden:id="ero"
+       garden:scientificName="Erodium 'Flore Pleno'"
+       garden:commonName="Dwarf Heronsbill"
+       garden:type="Perennial" />
+    <garden:species
+       garden:id="but"
+       garden:scientificName="Buddleia 'Pugster Blue'"
+       garden:commonName="Butterfly Bush"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="toy"
+       garden:scientificName="Heteromeles arbutifolia"
+       garden:commonName="Toyon"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="dym"
+       garden:scientificName="Dymondia margaretae"
+       garden:commonName="Silver Carpet"
+       garden:type="Perennial" />
+    <garden:species
+       garden:id="lou"
+       garden:scientificName="Arctostaphylos 'Louis Edmunds'"
+       garden:commonName="Manzanita"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="ham"
+       garden:scientificName="Pennisetum 'HameIn'"
+       garden:commonName="Dwarf Fountain Grass"
+       garden:type="Grass" />
+    <garden:species
+       garden:id="heb"
+       garden:scientificName="Hebe pimeleoides 'Quicksilver'"
+       garden:commonName="Quicksilver"
+       garden:type="Shrub" />
+    <garden:species
+       garden:id="coa"
+       garden:scientificName="Quercus agrifolia"
+       garden:commonName="Coast Live Oak"
+       garden:type="Tree" />
+    <garden:species
+       garden:id="pot"
+       garden:scientificName="Solanum jasminoides"
+       garden:commonName="Potato Vine"
+       garden:type="Vine" />
+    <garden:species
+       garden:id="coy"
+       garden:scientificName="Baccharis pilularis"
+       garden:commonName="Coyote Bush"
        garden:type="Shrub" />
   </garden:contents>
 </svg>
