@@ -17,13 +17,28 @@ GardenWeather.load = function (latitude, longitude) {
     }
 
     const promise = $.ajax({
-        url: `http://api.wunderground.com/api/f555adf106ea2fcd/conditions/q/${latitude},${longitude}.json`
+        url: `https://w1.weather.gov/xml/current_obs/KO69.xml`
     });
 
-    promise.done(function (res) {
-        localStorage.setItem(keyWeather, JSON.stringify(res));
+    const obs = promise.then(function (data, status, resp) {
+        function extractFromXml(tag) {
+            return new RegExp(`<${tag}>(.*)</${tag}>`).exec(resp.responseText)[1]
+        }
+
+        return {
+            'time': new Date(extractFromXml('observation_time_rfc822')).getTime(),
+            'windSpeed': extractFromXml('wind_mph'),
+            'windDirection': extractFromXml('wind_degrees'),
+            'weather': extractFromXml('weather'),
+            'temp': extractFromXml('temp_f'),
+            'icon': extractFromXml('icon_url_base') + extractFromXml('icon_url_name'),
+        }
+    });
+
+    obs.done(function (obj) {
+        localStorage.setItem(keyWeather, JSON.stringify(obj));
         localStorage.setItem(keyTime, now);
     });
 
-    return promise;
+    return obs;
 };
