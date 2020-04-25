@@ -1150,18 +1150,6 @@
        garden:description="Mature tree was present when we moved in."
        garden:type="add" />
     <circle
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="mey_1_1"
-       cx="801.26117"
-       cy="546.77197"
-       r="15"
-       garden:date="2016-03-16"
-       garden:species="mey"
-       garden:instance="1"
-       garden:version="1"
-       garden:description="Planted by Mitchell Landscapes."
-       garden:type="add" />
-    <circle
        r="15"
        cy="556.41742"
        cx="766.29645"
@@ -4900,6 +4888,30 @@
        cx="264.68414"
        id="sis_2_2"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <circle
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="mey_1_1"
+       cx="801.26117"
+       cy="546.77197"
+       r="15"
+       garden:date="2016-03-16"
+       garden:species="mey"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by Mitchell Landscapes."
+       garden:type="add" />
+    <circle
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="mey_1_2"
+       cx="801.26117"
+       cy="546.77197"
+       r="15"
+       garden:date="2019-10-01"
+       garden:species="mey"
+       garden:instance="1"
+       garden:version="2"
+       garden:description="Tree died, likely due to damage or stress from staking the tree, which was leaning badly prior."
+       garden:type="remove" />
   </g>
   <path
      style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
