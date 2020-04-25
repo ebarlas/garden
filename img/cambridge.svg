@@ -2866,18 +2866,6 @@
        garden:description="Planted with Dad. Plant from Cottage Gardens."
        garden:type="add" />
     <circle
-       garden:date="2019-04-20"
-       garden:species="ero"
-       garden:instance="1"
-       garden:version="1"
-       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
-       garden:type="add"
-       r="7"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="ero_1_1"
-       cx="275.45108"
-       cy="677.63989" />
-    <circle
        cy="726.77386"
        cx="299.00848"
        id="ero_2_1"
@@ -4840,6 +4828,30 @@
        garden:version="1"
        garden:description="Planted by Elliot. Individual from Cottage Gardens. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Rigid gopher basket."
        garden:type="add" />
+    <circle
+       garden:date="2019-04-20"
+       garden:species="ero"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:type="add"
+       r="7"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ero_1_1"
+       cx="275.45108"
+       cy="677.63989" />
+    <circle
+       garden:date="2019-04-20"
+       garden:species="ero"
+       garden:instance="1"
+       garden:version="2"
+       garden:description="Killed accidentally by Elliot during a weed-pulling session on the hillside.."
+       garden:type="remove"
+       r="7"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ero_1_2"
+       cx="275.45108"
+       cy="677.63989" />
   </g>
   <path
      style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
