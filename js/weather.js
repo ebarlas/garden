@@ -22,7 +22,8 @@ GardenWeather.load = function (latitude, longitude) {
 
     const obs = promise.then(function (data, status, resp) {
         function extractFromXml(tag) {
-            return new RegExp(`<${tag}>(.*)</${tag}>`).exec(resp.responseText)[1]
+            const arr = new RegExp(`<${tag}>(.*)</${tag}>`).exec(resp.responseText);
+            return arr ? arr[1] : null;
         }
 
         return {
