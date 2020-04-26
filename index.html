@@ -195,12 +195,13 @@
 
             GardenWeather.load(svg.latitude, svg.longitude).done(function (obs) {
                 const date = timeAgo(new Date(obs.time));
+                const wind = obs.windDirection === '999' ? 'Variable' : `${obs.windDirection}&#176; ${GardenAngle.toDirection(obs.windDirection)}`
                 const html = `<img src="${obs.icon}">
                     <span>${obs.temp}&#176; ${obs.weather}</span>
                     <ul class="list-group">
                     <li class="list-group-item"><strong>${date}</strong> observation</li>
-                    <li class="list-group-item"><strong>${obs.windDirection}&#176; ${GardenAngle.toDirection(obs.windDirection)}</strong> wind</li>
-                    <li class="list-group-item"><strong>${obs.windSpeed}</strong> mph wind</li>
+                    <li class="list-group-item"><strong>${wind}</strong> wind direction</li>
+                    <li class="list-group-item"><strong>${obs.windSpeed}</strong> mph wind speed</li>
                     </ul>`;
 
                 divWeather.append(html);
