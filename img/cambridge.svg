@@ -5386,6 +5386,102 @@
        id="ero_2_2"
        cx="299.00848"
        cy="726.77386" />
+    <circle
+       garden:type="remove"
+       garden:description="Hedge row was removed by Mitchell Landscape during deck replacement."
+       garden:version="2"
+       garden:instance="13"
+       garden:species="tex"
+       garden:date="2020-06-23"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="tex_13_2"
+       cx="571.32465"
+       cy="255.58479"
+       r="9" />
+    <circle
+       garden:type="remove"
+       garden:description="Hedge row was removed by Mitchell Landscape during deck replacement."
+       garden:version="2"
+       garden:instance="14"
+       garden:species="tex"
+       garden:date="2020-06-23"
+       r="9"
+       cy="282.6312"
+       cx="574.18024"
+       id="tex_14_2"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <circle
+       garden:type="remove"
+       garden:description="Hedge row was removed by Mitchell Landscape during deck replacement."
+       garden:version="2"
+       garden:instance="15"
+       garden:species="tex"
+       garden:date="2020-06-23"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="tex_15_2"
+       cx="577.87219"
+       cy="309.84097"
+       r="9" />
+    <circle
+       garden:type="remove"
+       garden:description="Hedge row was removed by Mitchell Landscape during deck replacement."
+       garden:version="2"
+       garden:instance="16"
+       garden:species="tex"
+       garden:date="2020-06-23"
+       r="9"
+       cy="337.44495"
+       cx="582.63159"
+       id="tex_16_2"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <circle
+       garden:type="remove"
+       garden:description="Hedge row was removed by Mitchell Landscape during deck replacement."
+       garden:version="2"
+       garden:instance="17"
+       garden:species="tex"
+       garden:date="2020-06-23"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="tex_17_2"
+       cx="589.29456"
+       cy="364.37589"
+       r="9" />
+    <circle
+       garden:type="remove"
+       garden:description="Hedge row was removed by Mitchell Landscape during deck replacement."
+       garden:version="2"
+       garden:instance="18"
+       garden:species="tex"
+       garden:date="2020-06-23"
+       r="9"
+       cy="392.2587"
+       cx="596.23645"
+       id="tex_18_2"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <circle
+       garden:type="remove"
+       garden:description="Hedge row was removed by Mitchell Landscape during deck replacement."
+       garden:version="2"
+       garden:instance="19"
+       garden:species="tex"
+       garden:date="2020-06-23"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="tex_19_2"
+       cx="605.47632"
+       cy="419.97821"
+       r="9" />
+    <circle
+       garden:type="remove"
+       garden:description="Hedge row was removed by Mitchell Landscape during deck replacement."
+       garden:version="2"
+       garden:instance="20"
+       garden:species="tex"
+       garden:date="2020-06-23"
+       r="9"
+       cy="445.67847"
+       cx="614.32184"
+       id="tex_20_2"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <garden:contents>
     <garden:species
