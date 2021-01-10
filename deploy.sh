@@ -1,6 +1,6 @@
 #!/bin/bash
 
-aws s3 cp . s3://www.barlasgarden.com/ --recursive \
+aws s3 cp . s3://barlasgarden/garden/ --recursive \
 --exclude "*" \
 --include "favicon*" \
 --include "*.js" \
