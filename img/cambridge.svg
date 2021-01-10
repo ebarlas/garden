@@ -5482,6 +5482,18 @@
        cx="614.32184"
        id="tex_20_2"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <circle
+       r="7"
+       cy="901.09857"
+       cx="130.06831"
+       id="lou_1_2"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       garden:type="remove"
+       garden:description="Plant died apparently due to gopher activity. It was toppled."
+       garden:version="2"
+       garden:instance="1"
+       garden:species="lou"
+       garden:date="2020-11-01" />
   </g>
   <garden:contents>
     <garden:species
