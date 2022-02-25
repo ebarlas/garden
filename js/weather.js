@@ -18,8 +18,10 @@ GardenWeather.load = function (latitude, longitude) {
 
     const promise = $.ajax({
         // Petaluma Airport weather observations stopped updating on 2021-01-06
-        // url: `https://w1.weather.gov/xml/current_obs/KO69.xml`
-        url: `https://w1.weather.gov/xml/current_obs/KDVO.xml`
+        // It seems to be available again
+        url: `https://w1.weather.gov/xml/current_obs/KO69.xml`
+        // Novato alternative:
+        // url: `https://w1.weather.gov/xml/current_obs/KDVO.xml`
     });
 
     const obs = promise.then(function (data, status, resp) {

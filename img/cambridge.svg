@@ -43,17 +43,17 @@
      inkscape:object-paths="true"
      inkscape:snap-global="false"
      units="px"
-     inkscape:window-maximized="1"
-     inkscape:window-y="23"
-     inkscape:window-x="0"
-     inkscape:window-height="2040"
-     inkscape:window-width="3840"
+     inkscape:window-maximized="0"
+     inkscape:window-y="25"
+     inkscape:window-x="99"
+     inkscape:window-height="1748"
+     inkscape:window-width="3274"
      showgrid="true"
      inkscape:current-layer="layer11"
      inkscape:document-units="px"
-     inkscape:cy="1065.1384"
-     inkscape:cx="438.95027"
-     inkscape:zoom="2.101144"
+     inkscape:cy="370.16986"
+     inkscape:cx="1296.8127"
+     inkscape:zoom="2.9714663"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -2381,18 +2381,6 @@
        cy="999.67487" />
     <circle
        garden:type="add"
-       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
-       garden:version="1"
-       garden:instance="3"
-       garden:species="pot"
-       garden:date="2019-04-28"
-       r="10"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="pot_3_1"
-       cx="302.55753"
-       cy="1162.4434" />
-    <circle
-       garden:type="add"
        garden:description="Planted with Dad. Plants from Urban Tree Farm."
        garden:version="1"
        garden:instance="2"
@@ -2847,18 +2835,6 @@
        id="but_3_1"
        cx="194.68289"
        cy="866.77203" />
-    <circle
-       cy="797.44604"
-       cx="358.91156"
-       id="hel_2_1"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       r="8"
-       garden:type="add"
-       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
-       garden:version="1"
-       garden:instance="2"
-       garden:species="hel"
-       garden:date="2019-04-20" />
     <circle
        garden:type="add"
        garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
@@ -3316,18 +3292,6 @@
        cy="322.89417"
        r="7" />
     <circle
-       garden:type="add"
-       garden:description="Planted by us. Plant from Cottage Gardens."
-       garden:version="1"
-       garden:instance="1"
-       garden:species="ice"
-       garden:date="2017-05-27"
-       r="7"
-       cy="402.31622"
-       cx="1217.8324"
-       id="ice_1_1"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="hel_6_1"
        cx="1167.8596"
@@ -3351,18 +3315,6 @@
        cx="1293.9814"
        id="hel_5_1"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <circle
-       garden:type="add"
-       garden:description="Planted by us. Plant from Cottage Gardens"
-       garden:version="1"
-       garden:instance="2"
-       garden:species="ice"
-       garden:date="2017-05-27"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="ice_2_1"
-       cx="1260.2357"
-       cy="367.98975"
-       r="7" />
     <circle
        garden:type="add"
        garden:description="Planted by Mitchell Landscapes."
@@ -3639,30 +3591,6 @@
        id="ver_2_1"
        cx="287.68094"
        cy="650.44366" />
-    <circle
-       cy="690.1272"
-       cx="308.05118"
-       id="leo_2_1"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       r="7"
-       garden:date="2020-04-11"
-       garden:species="leo"
-       garden:instance="2"
-       garden:version="1"
-       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket."
-       garden:type="add" />
-    <circle
-       garden:type="add"
-       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket."
-       garden:version="1"
-       garden:instance="1"
-       garden:species="leo"
-       garden:date="2020-04-11"
-       r="7"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="leo_1_1"
-       cx="275.45108"
-       cy="677.63989" />
     <circle
        cy="524.79785"
        cx="189.63911"
@@ -4083,6 +4011,66 @@
        id="dru_2_1"
        cx="281.32217"
        cy="838.29919" />
+    <circle
+       garden:type="add"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens."
+       garden:version="1"
+       garden:instance="1"
+       garden:species="ari"
+       garden:date="2021-07-31"
+       r="10"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ari_1_1"
+       cx="302.55753"
+       cy="1162.4434" />
+    <circle
+       cy="1137.6949"
+       cx="333.01712"
+       id="ari_2_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="10"
+       garden:date="2021-07-31"
+       garden:species="ari"
+       garden:instance="2"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens."
+       garden:type="add" />
+    <circle
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="plm_1_1"
+       cx="1321.5957"
+       cy="309.58771"
+       r="7"
+       garden:date="2021-07-31"
+       garden:species="plm"
+       garden:instance="1"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Individual from Cottage Gardens."
+       garden:type="add" />
+    <circle
+       garden:type="add"
+       garden:description="Planted by Sebastian. Individual from Cottage Gardens."
+       garden:version="1"
+       garden:instance="2"
+       garden:species="plm"
+       garden:date="2021-07-31"
+       r="7"
+       cy="325.06827"
+       cx="1317.2207"
+       id="plm_2_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <circle
+       garden:type="add"
+       garden:description="Replacement for ice plant. Plant from Cottage Gardens. Installed by Sebastian."
+       garden:version="1"
+       garden:instance="2"
+       garden:species="cas"
+       garden:date="2021-07-31"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="cas_2_1"
+       cx="1260.2357"
+       cy="367.98975"
+       r="7" />
   </g>
   <g
      sodipodi:insensitive="true"
@@ -5743,7 +5731,7 @@
        garden:date="2019-04-28"
        r="10"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="pot_2_1"
+       id="circle1324"
        cx="402.50305"
        cy="1081.535" />
     <circle
@@ -5758,6 +5746,174 @@
        id="pot_2_2"
        cx="402.50305"
        cy="1081.535" />
+    <circle
+       garden:type="add"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:version="1"
+       garden:instance="3"
+       garden:species="pot"
+       garden:date="2019-04-28"
+       r="10"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="pot_3_1"
+       cx="302.55753"
+       cy="1162.4434" />
+    <circle
+       garden:type="remove"
+       garden:description="Plant died due to unknown causes. Perhaps the basin housing the plant was too shallow."
+       garden:version="2"
+       garden:instance="3"
+       garden:species="pot"
+       garden:date="2021-07-28"
+       r="10"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="pot_3_2"
+       cx="302.55753"
+       cy="1162.4434" />
+    <circle
+       garden:type="add"
+       garden:description="Planted by us. Plant from Cottage Gardens."
+       garden:version="1"
+       garden:instance="1"
+       garden:species="ice"
+       garden:date="2017-05-27"
+       r="7"
+       cy="402.31622"
+       cx="1217.8324"
+       id="ice_1_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <circle
+       garden:type="remove"
+       garden:description="Electively removed due to unsightliness. Carried out by Sebastian."
+       garden:version="2"
+       garden:instance="1"
+       garden:species="ice"
+       garden:date="2021-07-30"
+       r="7"
+       cy="402.31622"
+       cx="1217.8324"
+       id="ice_1_2"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <circle
+       garden:type="add"
+       garden:description="Planted by us. Plant from Cottage Gardens"
+       garden:version="1"
+       garden:instance="2"
+       garden:species="ice"
+       garden:date="2017-05-27"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ice_2_1"
+       cx="1260.2357"
+       cy="367.98975"
+       r="7" />
+    <circle
+       garden:type="remove"
+       garden:description="Electively removed due to unsightliness. Carried out by Sebastian."
+       garden:version="2"
+       garden:instance="2"
+       garden:species="ice"
+       garden:date="2021-07-30"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ice_2_2"
+       cx="1260.2357"
+       cy="367.98975"
+       r="7" />
+    <circle
+       cy="690.1272"
+       cx="308.05118"
+       id="leo_2_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="7"
+       garden:date="2020-04-11"
+       garden:species="leo"
+       garden:instance="2"
+       garden:version="1"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket."
+       garden:type="add" />
+    <circle
+       cy="690.1272"
+       cx="308.05118"
+       id="leo_2_2"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="7"
+       garden:date="2022-02-25"
+       garden:species="leo"
+       garden:instance="2"
+       garden:version="2"
+       garden:description="Plant died. It was never appealing. Going to be replaced by Owen's crew."
+       garden:type="remove" />
+    <circle
+       garden:type="add"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket."
+       garden:version="1"
+       garden:instance="1"
+       garden:species="leo"
+       garden:date="2020-04-11"
+       r="7"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="leo_1_1"
+       cx="275.45108"
+       cy="677.63989" />
+    <circle
+       garden:type="remove"
+       garden:description="Plant died. It was never appealing. Going to be replaced by Owen's crew."
+       garden:version="2"
+       garden:instance="1"
+       garden:species="leo"
+       garden:date="2022-02-25"
+       r="7"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="leo_1_2"
+       cx="275.45108"
+       cy="677.63989" />
+    <circle
+       cy="797.44604"
+       cx="358.91156"
+       id="hel_2_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="8"
+       garden:type="add"
+       garden:description="Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
+       garden:version="1"
+       garden:instance="2"
+       garden:species="hel"
+       garden:date="2019-04-20" />
+    <circle
+       cy="797.44604"
+       cx="358.91156"
+       id="hel_2_2"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       r="8"
+       garden:type="remove"
+       garden:description="Plant died. Cause unknown."
+       garden:version="2"
+       garden:instance="2"
+       garden:species="hel"
+       garden:date="2022-02-25" />
+    <circle
+       garden:type="add"
+       garden:description="Replacement for ice plant. Plant from Cottage Gardens. Installed by Sebastian."
+       garden:version="1"
+       garden:instance="1"
+       garden:species="cas"
+       garden:date="2021-07-31"
+       r="7"
+       cy="402.31622"
+       cx="1217.8324"
+       id="cas_1_1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <circle
+       garden:type="remove"
+       garden:description="Plant died. What a short life! Cause unknown."
+       garden:version="2"
+       garden:instance="1"
+       garden:species="cas"
+       garden:date="2022-02-25"
+       r="7"
+       cy="402.31622"
+       cx="1217.8324"
+       id="cas_1_2"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
   <garden:contents>
     <garden:species
@@ -6265,5 +6421,20 @@
        garden:commonName="Sundrops"
        garden:scientificName="Calylophus drummondii"
        garden:id="dru" />
+    <garden:species
+       garden:type="Vine"
+       garden:commonName="Arizona Brownie"
+       garden:scientificName="Thunbergia alata"
+       garden:id="ari" />
+    <garden:species
+       garden:type="Perennial"
+       garden:commonName="Verbena 'Royale Plum Wine'"
+       garden:scientificName="Glandularia 'Superbena Royale Plum Wine'"
+       garden:id="plm" />
+    <garden:species
+       garden:type="Shrub"
+       garden:commonName="Butterfly Bush"
+       garden:scientificName="Buddleia 'Grand Cascade'"
+       garden:id="cas" />
   </garden:contents>
 </svg>
