@@ -1564,18 +1564,6 @@
        garden:description="Planted by Elliot. Individual from Cottage Gardens. Amended soil with Soil Booster from Cottage Gardens. Topped with Ultimate Recipe potting soil. Rigid gopher basket."
        garden:type="add" />
     <circle
-       garden:type="add"
-       garden:description="Planted by Elliot. Individual from Cottage Gardens. Amended soil with Soil Booster from Cottage Gardens. Topped with Ultimate Recipe potting soil. Rigid gopher basket."
-       garden:version="1"
-       garden:instance="2"
-       garden:species="con"
-       garden:date="2018-08-05"
-       r="7"
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="con_2_1"
-       cx="247.19525"
-       cy="315.62875" />
-    <circle
        cy="288.36951"
        cx="250.89713"
        id="tas_3_1"
@@ -5962,6 +5950,30 @@
        id="vio_8_2"
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        r="10" />
+    <circle
+       garden:type="add"
+       garden:description="Planted by Elliot. Individual from Cottage Gardens. Amended soil with Soil Booster from Cottage Gardens. Topped with Ultimate Recipe potting soil. Rigid gopher basket."
+       garden:version="1"
+       garden:instance="2"
+       garden:species="con"
+       garden:date="2018-08-05"
+       r="7"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="con_2_1"
+       cx="247.19525"
+       cy="315.62875" />
+    <circle
+       garden:type="remove"
+       garden:description="Plant died. Cause unknown. 1 gph emitter and gopher basket intact."
+       garden:version="2"
+       garden:instance="2"
+       garden:species="con"
+       garden:date="2022-02-27"
+       r="7"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="con_2_2"
+       cx="247.19525"
+       cy="315.62875" />
   </g>
   <garden:contents>
     <garden:species
