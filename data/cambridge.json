@@ -1,0 +1,5375 @@
+{
+  "map": {
+    "latitude": "38.235294",
+    "longitude": "-122.637760",
+    "width": 175
+  },
+  "species": [
+    {
+      "id": "teu",
+      "type": "Shrub",
+      "commonName": "Germander",
+      "scientificName": "Teucrium Chamaedrys"
+    },
+    {
+      "id": "pho",
+      "type": "Perennial",
+      "commonName": "New Zealand Flax",
+      "scientificName": "Phormium 'Yellow Wave'"
+    },
+    {
+      "id": "rai",
+      "type": "Perennial",
+      "commonName": "New Zealand Flax",
+      "scientificName": "Phormium 'Rainbow Queen'"
+    },
+    {
+      "id": "lom",
+      "type": "Grass",
+      "commonName": "Dwarf Mat Rush",
+      "scientificName": "Lomandra longifolia Breeze"
+    },
+    {
+      "id": "pen",
+      "type": "Perennial",
+      "commonName": "Beard Tongue",
+      "scientificName": "Penstemon 'Garnet'"
+    },
+    {
+      "id": "lav",
+      "type": "Shrub",
+      "commonName": "English Lavender",
+      "scientificName": "Lavandula angustifolia 'Hidcote'"
+    },
+    {
+      "id": "mey",
+      "type": "Tree",
+      "commonName": "Dwarf Meyer Lemon",
+      "scientificName": "Citrus limon 'Improved Meyer'"
+    },
+    {
+      "id": "ace",
+      "type": "Tree",
+      "commonName": "Japanese Maple 'Bloodgood'",
+      "scientificName": "Acer palmatum 'Bloodgood'"
+    },
+    {
+      "id": "ros",
+      "type": "Shrub",
+      "commonName": "Upright Rosemary",
+      "scientificName": "Rosmarinus officinalis 'Tuscan Blue'"
+    },
+    {
+      "id": "tex",
+      "type": "Shrub",
+      "commonName": "Waxleaf Privet",
+      "scientificName": "Ligustrum japonicum 'Texanum'"
+    },
+    {
+      "id": "gum",
+      "type": "Tree",
+      "commonName": "Sweet Gum",
+      "scientificName": "Liquidambar styraciflua"
+    },
+    {
+      "id": "icy",
+      "type": "Tree",
+      "commonName": "Italian Cypress",
+      "scientificName": "Cupressus sempervirens 'Glauca'"
+    },
+    {
+      "id": "lil",
+      "type": "Perennial",
+      "commonName": "Daylily",
+      "scientificName": "Hemerocallis"
+    },
+    {
+      "id": "ses",
+      "type": "Grass",
+      "commonName": "John Greenlee's Moor Grass",
+      "scientificName": "Sesleria 'Greenlee'"
+    },
+    {
+      "id": "ray",
+      "type": "Tree",
+      "commonName": "Raywood Ash",
+      "scientificName": "Fraxinus oxycarpa 'Raywood'"
+    },
+    {
+      "id": "ole",
+      "type": "Shrub",
+      "commonName": "Little Olive",
+      "scientificName": "Olea europaea 'Montra'"
+    },
+    {
+      "id": "aga",
+      "type": "Succulent",
+      "commonName": "Variegated Dwarf Agave",
+      "scientificName": "Agave desmettiana 'Variegata'"
+    },
+    {
+      "id": "rud",
+      "type": "Perennial",
+      "commonName": "Black-Eyed Susan",
+      "scientificName": "Rudbeckia fulgida sullivantii 'Goldsturm'"
+    },
+    {
+      "id": "kar",
+      "type": "Grass",
+      "commonName": "Feather Reed Grass",
+      "scientificName": "Calamagrostis x acutiflora 'Karl Foerster'"
+    },
+    {
+      "id": "eup",
+      "type": "Succulent",
+      "commonName": "Myrtle Spurge",
+      "scientificName": "Euphorbia myrsinites"
+    },
+    {
+      "id": "zeb",
+      "type": "Grass",
+      "commonName": "Zebra Grass",
+      "scientificName": "Miscanthus sinensis 'Zebrinus'"
+    },
+    {
+      "id": "ang",
+      "type": "Grass",
+      "commonName": "Sedum angelicum",
+      "scientificName": "Angelicum Stonecrop"
+    },
+    {
+      "id": "cal",
+      "type": "Perennial",
+      "commonName": "California poppy",
+      "scientificName": "Eschscholzia californica"
+    },
+    {
+      "id": "wen",
+      "type": "Shrub",
+      "commonName": "Wendy's Wish Sage",
+      "scientificName": "Salvia 'Wendy's Wish'"
+    },
+    {
+      "id": "hea",
+      "type": "Shrub",
+      "commonName": "Golden Breath of Heaven",
+      "scientificName": "Coleonema pulchellum 'Sunset Gold'"
+    },
+    {
+      "id": "pap",
+      "type": "Perennial",
+      "commonName": "Paprika Yarrow",
+      "scientificName": "Achillea millefolium 'Paprika'"
+    },
+    {
+      "id": "ice",
+      "type": "Succulent",
+      "commonName": "Hardy Yellow Ice Plant",
+      "scientificName": "Delosperma nubigenum"
+    },
+    {
+      "id": "sto",
+      "type": "Succulent",
+      "commonName": "Cape Blanco Stonecrop",
+      "scientificName": "Sedum spathulifolium 'Cape Blanco'"
+    },
+    {
+      "id": "aco",
+      "type": "Grass",
+      "commonName": "Yellow-leaved Calamus",
+      "scientificName": "Acorus gramineus 'Ogon'"
+    },
+    {
+      "id": "sun",
+      "type": "Shrub",
+      "commonName": "Sundance Mexican Orange Blossom",
+      "scientificName": "Choisya ternata 'Sundance'"
+    },
+    {
+      "id": "pur",
+      "type": "Perennial",
+      "commonName": "Coral Bells",
+      "scientificName": "Heuchera 'Purple Mountain Majesty'"
+    },
+    {
+      "id": "bir",
+      "type": "Tree",
+      "commonName": "Paper Birch",
+      "scientificName": "Betula papyrifera"
+    },
+    {
+      "id": "max",
+      "type": "Perennial",
+      "commonName": "Island Alum Root",
+      "scientificName": "Heuchera maxima"
+    },
+    {
+      "id": "fer",
+      "type": "Fern",
+      "commonName": "Tassel Fern",
+      "scientificName": "Polystichum polyblepharum"
+    },
+    {
+      "id": "pit",
+      "type": "Shrub",
+      "commonName": "Gold Star Kohuhu",
+      "scientificName": "Pittosporum tenuifolium 'Gold Star'"
+    },
+    {
+      "id": "cam",
+      "type": "Perennial",
+      "commonName": "Bellflower",
+      "scientificName": "Campanula 'Dickson's Gold'"
+    },
+    {
+      "id": "haw",
+      "type": "Shrub",
+      "commonName": "Ballerina Indian Hawthorn",
+      "scientificName": "Rhaphiolepis indica 'Ballerina'"
+    },
+    {
+      "id": "fra",
+      "type": "Shrub",
+      "commonName": "Fraser's Photinia",
+      "scientificName": "Photinia x fraseri"
+    },
+    {
+      "id": "mon",
+      "type": "Perennial",
+      "commonName": "Bee Balm",
+      "scientificName": "Monarda 'Balmy Rose'"
+    },
+    {
+      "id": "mim",
+      "type": "Shrub",
+      "commonName": "White Monkeyflower",
+      "scientificName": "Mimulus 'Jelly Bean White'"
+    },
+    {
+      "id": "nec",
+      "type": "Tree",
+      "commonName": "Independence Nectarine",
+      "scientificName": "Prunus persica 'Independence'"
+    },
+    {
+      "id": "cli",
+      "type": "Vine",
+      "commonName": "New Dawn Climbing Rose",
+      "scientificName": "Rosa 'New Dawn'"
+    },
+    {
+      "id": "cot",
+      "type": "Shrub",
+      "commonName": "Rock Cotoneaster",
+      "scientificName": "Cotoneaster Horizontalis"
+    },
+    {
+      "id": "oli",
+      "type": "Tree",
+      "commonName": "Wilson Fruitless Olive",
+      "scientificName": "Olea europaea 'Fruitless'"
+    },
+    {
+      "id": "pis",
+      "type": "Tree",
+      "commonName": "Chinese Pistachio",
+      "scientificName": "Pistacia chinensis"
+    },
+    {
+      "id": "yan",
+      "type": "Shrub",
+      "commonName": "Yankee Point Ceanothus",
+      "scientificName": "Ceanothus griseus horizontalis"
+    },
+    {
+      "id": "ley",
+      "type": "Tree",
+      "commonName": "Leyland Cypress",
+      "scientificName": "Cupressocyparis leylandii"
+    },
+    {
+      "id": "elm",
+      "type": "Tree",
+      "commonName": "Chinese Elm",
+      "scientificName": "Ulmus parvifolia"
+    },
+    {
+      "id": "cof",
+      "type": "Shrub",
+      "commonName": "Coffeeberry",
+      "scientificName": "Rhamnus californica 'Eve Case'"
+    },
+    {
+      "id": "gra",
+      "type": "Tree",
+      "commonName": "Gravenstein Apple",
+      "scientificName": "Malus pumila 'Gravenstein'"
+    },
+    {
+      "id": "del",
+      "type": "Tree",
+      "commonName": "Golden Delicious Apple",
+      "scientificName": "Malus pumila 'Golden Delicious'"
+    },
+    {
+      "id": "apr",
+      "type": "Tree",
+      "commonName": "Blenheim Apricot",
+      "scientificName": "Prunus armeniaca 'Blenheim'"
+    },
+    {
+      "id": "fuj",
+      "type": "Tree",
+      "commonName": "Fuji Apple",
+      "scientificName": "Malus pumila 'Fuji'"
+    },
+    {
+      "id": "plu",
+      "type": "Tree",
+      "commonName": "Santa Rosa Plum",
+      "scientificName": "Prunus salicina 'Santa Rosa'"
+    },
+    {
+      "id": "smi",
+      "type": "Tree",
+      "commonName": "Granny Smith Apple",
+      "scientificName": "Malus pumila 'Granny Smith'"
+    },
+    {
+      "id": "fuy",
+      "type": "Tree",
+      "commonName": "Fuyu Japanese Persimmon",
+      "scientificName": "Diospyros kaki 'Fuyu'"
+    },
+    {
+      "id": "val",
+      "type": "Tree",
+      "commonName": "Valley Oak",
+      "scientificName": "Quercus lobata"
+    },
+    {
+      "id": "str",
+      "type": "Tree",
+      "commonName": "Marina Strawberry Tree",
+      "scientificName": "Arbutus 'Marina'"
+    },
+    {
+      "id": "car",
+      "type": "Vine",
+      "commonName": "Carolina Jessamine",
+      "scientificName": "Gelsemium sempervirens"
+    },
+    {
+      "id": "cra",
+      "type": "Tree",
+      "commonName": "Crape Myrtle",
+      "scientificName": "Lagerstroemia indica"
+    },
+    {
+      "id": "dai",
+      "type": "Shrub",
+      "commonName": "Shrub Daisy",
+      "scientificName": "Euryops pectinatus 'Viridis'"
+    },
+    {
+      "id": "man",
+      "type": "Shrub",
+      "commonName": "Carpet Manzanita",
+      "scientificName": "Arctostaphylos 'Emerald Carpet'"
+    },
+    {
+      "id": "dar",
+      "type": "Shrub",
+      "commonName": "Dark Star Ceanothus",
+      "scientificName": "Ceanothus 'Dark Star'"
+    },
+    {
+      "id": "vio",
+      "type": "Shrub",
+      "commonName": "Valley Violet ceanothus",
+      "scientificName": "Ceanothus maritimus 'Valley Violet'"
+    },
+    {
+      "id": "ugr",
+      "type": "Grass",
+      "commonName": "Unidentified Grass",
+      "scientificName": "Unidentified Grass"
+    },
+    {
+      "id": "ush",
+      "type": "Shrub",
+      "commonName": "Unidentified Shrub",
+      "scientificName": "Unidentified Shrub"
+    },
+    {
+      "id": "wes",
+      "type": "Shrub",
+      "commonName": "Mundi Coast Rosemary",
+      "scientificName": "Westringia 'Mundi'"
+    },
+    {
+      "id": "ltb",
+      "type": "Grass",
+      "commonName": "Tropic Belle Mat Rush",
+      "scientificName": "Lomandra Tropicbelle"
+    },
+    {
+      "id": "sti",
+      "type": "Grass",
+      "commonName": "Mexican Feather Grass",
+      "scientificName": "Stipa Tenuissima"
+    },
+    {
+      "id": "mai",
+      "type": "Grass",
+      "commonName": "Maiden Grass",
+      "scientificName": "Miscanthus sinensis 'Rigoletto'"
+    },
+    {
+      "id": "sis",
+      "type": "Grass",
+      "commonName": "Blue-Eyed Grass",
+      "scientificName": "Sisyrinchium angustifolium 'Lucerne'"
+    },
+    {
+      "id": "tas",
+      "type": "Grass",
+      "commonName": "White Striped Tasman Flax Lily",
+      "scientificName": "Dianella tasmanica 'Wyeena'"
+    },
+    {
+      "id": "mex",
+      "type": "Shrub",
+      "commonName": "Mexican Bush Sage",
+      "scientificName": "Salvia leucantha"
+    },
+    {
+      "id": "con",
+      "type": "Perennial",
+      "commonName": "Ground Morning Glory",
+      "scientificName": "Convolvulus mauritanicus"
+    },
+    {
+      "id": "maj",
+      "type": "Shrub",
+      "commonName": "Majorcan Germander",
+      "scientificName": "Teucrium majoricum"
+    },
+    {
+      "id": "hel",
+      "type": "Perennial",
+      "commonName": "Sunrose",
+      "scientificName": "Helianthemum 'Henfield Brilliant'"
+    },
+    {
+      "id": "eri",
+      "type": "Perennial",
+      "commonName": "Santa Barbara Daisy",
+      "scientificName": "Erigeron karvinskianus"
+    },
+    {
+      "id": "ero",
+      "type": "Perennial",
+      "commonName": "Dwarf Heronsbill",
+      "scientificName": "Erodium 'Flore Pleno'"
+    },
+    {
+      "id": "but",
+      "type": "Shrub",
+      "commonName": "Butterfly Bush",
+      "scientificName": "Buddleia 'Pugster Blue'"
+    },
+    {
+      "id": "toy",
+      "type": "Shrub",
+      "commonName": "Toyon",
+      "scientificName": "Heteromeles arbutifolia"
+    },
+    {
+      "id": "dym",
+      "type": "Perennial",
+      "commonName": "Silver Carpet",
+      "scientificName": "Dymondia margaretae"
+    },
+    {
+      "id": "lou",
+      "type": "Shrub",
+      "commonName": "Manzanita",
+      "scientificName": "Arctostaphylos 'Louis Edmunds'"
+    },
+    {
+      "id": "ham",
+      "type": "Grass",
+      "commonName": "Dwarf Fountain Grass",
+      "scientificName": "Pennisetum 'HameIn'"
+    },
+    {
+      "id": "heb",
+      "type": "Shrub",
+      "commonName": "Quicksilver",
+      "scientificName": "Hebe pimeleoides 'Quicksilver'"
+    },
+    {
+      "id": "coa",
+      "type": "Tree",
+      "commonName": "Coast Live Oak",
+      "scientificName": "Quercus agrifolia"
+    },
+    {
+      "id": "pot",
+      "type": "Vine",
+      "commonName": "Potato Vine",
+      "scientificName": "Solanum jasminoides"
+    },
+    {
+      "id": "coy",
+      "type": "Shrub",
+      "commonName": "Coyote Bush",
+      "scientificName": "Baccharis pilularis"
+    },
+    {
+      "id": "ver",
+      "type": "Perennial",
+      "commonName": "Verbena 'Superbena Dark Blue'",
+      "scientificName": "Glandularia 'Superbena Dark Blue'"
+    },
+    {
+      "id": "leo",
+      "type": "Perennial",
+      "commonName": "Edelweiss",
+      "scientificName": "Leontopodium Alpinum'Blossom of Snow'"
+    },
+    {
+      "id": "tul",
+      "type": "Grass",
+      "commonName": "Society Garlic",
+      "scientificName": "Tulbaghia violacea"
+    },
+    {
+      "id": "set",
+      "type": "Shrub",
+      "commonName": "Rockrose",
+      "scientificName": "Cistus 'Sunset'"
+    },
+    {
+      "id": "cri",
+      "type": "Shrub",
+      "commonName": "Crimson Spot Rockrose",
+      "scientificName": "Cistus ladanifer"
+    },
+    {
+      "id": "sho",
+      "type": "Grass",
+      "commonName": "Mat Rush",
+      "scientificName": "Lomandra confertifolia 'Shorty'"
+    },
+    {
+      "id": "fel",
+      "type": "Perennial",
+      "commonName": "Blue Felicia Daisy",
+      "scientificName": "Felicia x 'Cape Town Blue'"
+    },
+    {
+      "id": "ora",
+      "type": "Tree",
+      "commonName": "Semi-Dwarf Washington Navel Orange",
+      "scientificName": "Citrus sinensis"
+    },
+    {
+      "id": "mel",
+      "type": "Grass",
+      "commonName": "Pink Crystals",
+      "scientificName": "Melinis nerviglumis"
+    },
+    {
+      "id": "roy",
+      "type": "Perennial",
+      "commonName": "Verbena 'Superbena Royale Whitecap'",
+      "scientificName": "Glandularia 'Superbena Royale Whitecap'"
+    },
+    {
+      "id": "lan",
+      "type": "Shrub",
+      "commonName": "Lantana 'New Gold'",
+      "scientificName": "Lantana montevidensis"
+    },
+    {
+      "id": "mas",
+      "type": "Shrub",
+      "commonName": "Massachusetts Kinnikinnik",
+      "scientificName": "Arctostaphylos 'Massachusetts'"
+    },
+    {
+      "id": "tru",
+      "type": "Vine",
+      "commonName": "Lavender Trumpet Vine",
+      "scientificName": "Clytostoma callistegioides"
+    },
+    {
+      "id": "dru",
+      "type": "Perennial",
+      "commonName": "Sundrops",
+      "scientificName": "Calylophus drummondii"
+    },
+    {
+      "id": "ari",
+      "type": "Vine",
+      "commonName": "Arizona Brownie",
+      "scientificName": "Thunbergia alata"
+    },
+    {
+      "id": "plm",
+      "type": "Perennial",
+      "commonName": "Verbena 'Royale Plum Wine'",
+      "scientificName": "Glandularia 'Superbena Royale Plum Wine'"
+    },
+    {
+      "id": "cas",
+      "type": "Shrub",
+      "commonName": "Butterfly Bush",
+      "scientificName": "Buddleia 'Grand Cascade'"
+    }
+  ],
+  "events": [
+    {
+      "type": "inherit",
+      "species": "haw",
+      "individual": "haw_1",
+      "date": "2014-04-19",
+      "description": "Shrub present when we moved in.",
+      "x": 1060.0295,
+      "y": 532.88702,
+      "r": 11
+    },
+    {
+      "type": "inherit",
+      "species": "fra",
+      "individual": "fra_1",
+      "date": "2014-04-19",
+      "description": "Shrub present when we moved in.",
+      "x": 1023.3021,
+      "y": 556.789,
+      "r": 15
+    },
+    {
+      "type": "inherit",
+      "species": "ush",
+      "individual": "ush_2",
+      "date": "2014-04-19",
+      "description": "Shrub present when we moved in.",
+      "x": 1030.9171,
+      "y": 489.68271,
+      "r": 12
+    },
+    {
+      "type": "inherit",
+      "species": "ush",
+      "individual": "ush_3",
+      "date": "2014-04-19",
+      "description": "Shrub present when we moved in.",
+      "x": 1006.1686,
+      "y": 496.82169,
+      "r": 12
+    },
+    {
+      "type": "inherit",
+      "species": "gum",
+      "individual": "gum_1",
+      "date": "2014-04-19",
+      "description": "Mature tree was present when we moved in.",
+      "x": 968.59277,
+      "y": 622.83759,
+      "r": 30
+    },
+    {
+      "type": "inherit",
+      "species": "ley",
+      "individual": "ley_2",
+      "date": "2014-04-19",
+      "description": "Mature tree was present when we moved in.",
+      "x": 354.20074,
+      "y": 292.68387,
+      "r": 50
+    },
+    {
+      "type": "inherit",
+      "species": "ley",
+      "individual": "ley_3",
+      "date": "2014-04-19",
+      "description": "Mature tree was present when we moved in.",
+      "x": 513.0827,
+      "y": 724.87189,
+      "r": 50
+    },
+    {
+      "type": "inherit",
+      "species": "ley",
+      "individual": "ley_1",
+      "date": "2014-04-19",
+      "description": "Mature tree was present when we moved in.",
+      "x": 441.65869,
+      "y": 200.85303,
+      "r": 50
+    },
+    {
+      "type": "inherit",
+      "species": "elm",
+      "individual": "elm_1",
+      "date": "2014-04-19",
+      "description": "Mature tree was present when we moved in.",
+      "x": 416.87894,
+      "y": 278.83633,
+      "r": 40
+    },
+    {
+      "type": "inherit",
+      "species": "ace",
+      "individual": "ace_2",
+      "date": "2014-04-19",
+      "description": "Mature tree was present when we moved in.",
+      "x": 894.10284,
+      "y": 519.17041,
+      "r": 20
+    },
+    {
+      "type": "inherit",
+      "species": "lil",
+      "individual": "lil_3",
+      "date": "2014-04-19",
+      "description": "Plant was present when we moved in.",
+      "x": 979.7312,
+      "y": 142.70563,
+      "r": 8
+    },
+    {
+      "type": "inherit",
+      "species": "lil",
+      "individual": "lil_1",
+      "date": "2014-04-19",
+      "description": "Plant was present when we moved in.",
+      "x": 983.81207,
+      "y": 120.55254,
+      "r": 8
+    },
+    {
+      "type": "inherit",
+      "species": "lil",
+      "individual": "lil_2",
+      "date": "2014-04-19",
+      "description": "Plant was present when we moved in.",
+      "x": 1001.8843,
+      "y": 135.12694,
+      "r": 8
+    },
+    {
+      "type": "inherit",
+      "species": "bir",
+      "individual": "bir_1",
+      "date": "2014-04-19",
+      "description": "Mature tree was present when we moved in.",
+      "x": 553.97192,
+      "y": 48.281471,
+      "r": 11
+    },
+    {
+      "type": "inherit",
+      "species": "bir",
+      "individual": "bir_2",
+      "date": "2014-04-19",
+      "description": "Mature tree was present when we moved in.",
+      "x": 599.83813,
+      "y": 48.281471,
+      "r": 11
+    },
+    {
+      "type": "inherit",
+      "species": "bir",
+      "individual": "bir_3",
+      "date": "2014-04-19",
+      "description": "Mature tree was present when we moved in.",
+      "x": 647.25043,
+      "y": 48.281471,
+      "r": 11
+    },
+    {
+      "type": "inherit",
+      "species": "bir",
+      "individual": "bir_4",
+      "date": "2014-04-19",
+      "description": "Mature tree was present when we moved in.",
+      "x": 694.66272,
+      "y": 48.281471,
+      "r": 11
+    },
+    {
+      "type": "inherit",
+      "species": "bir",
+      "individual": "bir_5",
+      "date": "2014-04-19",
+      "description": "Mature tree was present when we moved in.",
+      "x": 740.01355,
+      "y": 48.796822,
+      "r": 11
+    },
+    {
+      "type": "inherit",
+      "species": "cli",
+      "individual": "cli_1",
+      "date": "2014-04-19",
+      "description": "Vine was present when we moved in.",
+      "x": 421.21024,
+      "y": 35.857132,
+      "r": 15
+    },
+    {
+      "type": "inherit",
+      "species": "ugr",
+      "individual": "ugr_2",
+      "date": "2014-04-19",
+      "description": "Grass clump was present when we moved in.",
+      "x": 446.82614,
+      "y": 399.43314,
+      "r": 10
+    },
+    {
+      "type": "inherit",
+      "species": "ugr",
+      "individual": "ugr_1",
+      "date": "2014-04-19",
+      "description": "Grass clump was present when we moved in.",
+      "x": 455.74063,
+      "y": 569.79877,
+      "r": 10
+    },
+    {
+      "type": "inherit",
+      "species": "tex",
+      "individual": "tex_22",
+      "date": "2014-04-19",
+      "description": "Shrub was present when we moved in.",
+      "x": 448.80713,
+      "y": 328.11728,
+      "r": 12
+    },
+    {
+      "type": "inherit",
+      "species": "tex",
+      "individual": "tex_21",
+      "date": "2014-04-19",
+      "description": "Shrub was present when we moved in.",
+      "x": 483.47455,
+      "y": 281.56387,
+      "r": 12
+    },
+    {
+      "type": "inherit",
+      "species": "tex",
+      "individual": "tex_5",
+      "date": "2014-04-19",
+      "description": "Hedge row was present when we moved in.",
+      "x": 733.45496,
+      "y": 698.7522,
+      "r": 9
+    },
+    {
+      "type": "inherit",
+      "species": "tex",
+      "individual": "tex_6",
+      "date": "2014-04-19",
+      "description": "Hedge row was present when we moved in.",
+      "x": 851.24194,
+      "y": 714.90582,
+      "r": 9
+    },
+    {
+      "type": "inherit",
+      "species": "tex",
+      "individual": "tex_8",
+      "date": "2014-04-19",
+      "description": "Hedge row was present when we moved in.",
+      "x": 890.27991,
+      "y": 685.29083,
+      "r": 9
+    },
+    {
+      "type": "inherit",
+      "species": "tex",
+      "individual": "tex_9",
+      "date": "2014-04-19",
+      "description": "Hedge row was present when we moved in.",
+      "x": 907.77966,
+      "y": 669.13721,
+      "r": 9
+    },
+    {
+      "type": "inherit",
+      "species": "tex",
+      "individual": "tex_10",
+      "date": "2014-04-19",
+      "description": "Hedge row was present when we moved in.",
+      "x": 925.95251,
+      "y": 654.32971,
+      "r": 9
+    },
+    {
+      "type": "inherit",
+      "species": "tex",
+      "individual": "tex_11",
+      "date": "2014-04-19",
+      "description": "Hedge row was present when we moved in.",
+      "x": 948.83685,
+      "y": 574.90765,
+      "r": 9
+    },
+    {
+      "type": "inherit",
+      "species": "tex",
+      "individual": "tex_12",
+      "date": "2014-04-19",
+      "description": "Hedge row was present when we moved in.",
+      "x": 942.77924,
+      "y": 554.04254,
+      "r": 9
+    },
+    {
+      "type": "inherit",
+      "species": "tex",
+      "individual": "tex_7",
+      "date": "2014-04-19",
+      "description": "Hedge row was present when we moved in.",
+      "x": 871.43402,
+      "y": 699.42523,
+      "r": 9
+    },
+    {
+      "type": "inherit",
+      "species": "tex",
+      "individual": "tex_4",
+      "date": "2014-04-19",
+      "description": "Hedge row was present when we moved in.",
+      "x": 719.3205,
+      "y": 678.56012,
+      "r": 9
+    },
+    {
+      "type": "inherit",
+      "species": "tex",
+      "individual": "tex_3",
+      "date": "2014-04-19",
+      "description": "Hedge row was present when we moved in.",
+      "x": 705.18604,
+      "y": 657.69495,
+      "r": 9
+    },
+    {
+      "type": "inherit",
+      "species": "tex",
+      "individual": "tex_2",
+      "date": "2014-04-19",
+      "description": "Hedge row was present when we moved in.",
+      "x": 691.72473,
+      "y": 636.8299,
+      "r": 9
+    },
+    {
+      "type": "inherit",
+      "species": "tex",
+      "individual": "tex_1",
+      "date": "2014-04-19",
+      "description": "Hedge row was present when we moved in.",
+      "x": 677.59027,
+      "y": 615.96472,
+      "r": 9
+    },
+    {
+      "type": "inherit",
+      "species": "tex",
+      "individual": "tex_23",
+      "date": "2014-04-19",
+      "description": "Shrub was present when we moved in.",
+      "x": 571.62885,
+      "y": 653.00061,
+      "r": 12
+    },
+    {
+      "type": "inherit",
+      "species": "coy",
+      "individual": "coy_1",
+      "date": "2014-04-19",
+      "description": "Native shrub was present when we moved in.",
+      "x": 195.84515,
+      "y": 767.36047,
+      "r": 14
+    },
+    {
+      "type": "inherit",
+      "species": "coy",
+      "individual": "coy_2",
+      "date": "2014-04-19",
+      "description": "Native shrub was present when we moved in.",
+      "x": 133.2498,
+      "y": 813.12915,
+      "r": 14
+    },
+    {
+      "type": "inherit",
+      "species": "bir",
+      "individual": "bir_6",
+      "date": "2014-04-19",
+      "description": "Mature tree was present when we moved in.",
+      "x": 781.24164,
+      "y": 48.796822,
+      "r": 11
+    },
+    {
+      "type": "inherit",
+      "species": "icy",
+      "individual": "icy_1",
+      "date": "2014-04-19",
+      "description": "Tree was present when we moved in.",
+      "x": 969.8194,
+      "y": 100.65855,
+      "r": 11
+    },
+    {
+      "type": "inherit",
+      "species": "icy",
+      "individual": "icy_2",
+      "date": "2014-04-19",
+      "description": "Tree was present when we moved in.",
+      "x": 989.64056,
+      "y": 168.28375,
+      "r": 11
+    },
+    {
+      "type": "inherit",
+      "species": "ush",
+      "individual": "ush_1",
+      "date": "2014-04-19",
+      "description": "Mature shrub was present when we moved in.",
+      "x": 1262.5723,
+      "y": 54.239761,
+      "r": 20
+    },
+    {
+      "type": "inherit",
+      "species": "ray",
+      "individual": "ray_1",
+      "date": "2014-04-19",
+      "description": "Tree was present when we moved in.",
+      "x": 1235.1724,
+      "y": 99.711884,
+      "r": 70
+    },
+    {
+      "type": "inherit",
+      "species": "ros",
+      "individual": "ros_1",
+      "date": "2014-04-19",
+      "description": "Plant was present when we moved in.",
+      "x": 896.8717,
+      "y": 629.78186,
+      "r": 15
+    },
+    {
+      "type": "inherit",
+      "species": "tex",
+      "individual": "tex_13",
+      "date": "2014-04-19",
+      "description": "Hedge row was present when we moved in.",
+      "x": 571.32465,
+      "y": 255.58479,
+      "r": 9
+    },
+    {
+      "type": "inherit",
+      "species": "tex",
+      "individual": "tex_14",
+      "date": "2014-04-19",
+      "description": "Hedge row was present when we moved in.",
+      "x": 574.18024,
+      "y": 282.6312,
+      "r": 9
+    },
+    {
+      "type": "inherit",
+      "species": "tex",
+      "individual": "tex_15",
+      "date": "2014-04-19",
+      "description": "Hedge row was present when we moved in.",
+      "x": 577.87219,
+      "y": 309.84097,
+      "r": 9
+    },
+    {
+      "type": "inherit",
+      "species": "tex",
+      "individual": "tex_16",
+      "date": "2014-04-19",
+      "description": "Hedge row was present when we moved in.",
+      "x": 582.63159,
+      "y": 337.44495,
+      "r": 9
+    },
+    {
+      "type": "inherit",
+      "species": "tex",
+      "individual": "tex_17",
+      "date": "2014-04-19",
+      "description": "Hedge row was present when we moved in.",
+      "x": 589.29456,
+      "y": 364.37589,
+      "r": 9
+    },
+    {
+      "type": "inherit",
+      "species": "tex",
+      "individual": "tex_18",
+      "date": "2014-04-19",
+      "description": "Hedge row was present when we moved in.",
+      "x": 596.23645,
+      "y": 392.2587,
+      "r": 9
+    },
+    {
+      "type": "inherit",
+      "species": "tex",
+      "individual": "tex_19",
+      "date": "2014-04-19",
+      "description": "Hedge row was present when we moved in.",
+      "x": 605.47632,
+      "y": 419.97821,
+      "r": 9
+    },
+    {
+      "type": "inherit",
+      "species": "tex",
+      "individual": "tex_20",
+      "date": "2014-04-19",
+      "description": "Hedge row was present when we moved in.",
+      "x": 614.32184,
+      "y": 445.67847,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "teu",
+      "individual": "teu_1",
+      "date": "2016-03-16",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 829.17645,
+      "y": 539.55804,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "teu",
+      "individual": "teu_2",
+      "date": "2016-03-16",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 853.64148,
+      "y": 532.34399,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "teu",
+      "individual": "teu_3",
+      "date": "2016-03-16",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 877.47925,
+      "y": 526.69824,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "teu",
+      "individual": "teu_4",
+      "date": "2016-03-16",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 684.26819,
+      "y": 594.44757,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "teu",
+      "individual": "teu_5",
+      "date": "2016-03-16",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 723.78864,
+      "y": 610.44391,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "teu",
+      "individual": "teu_6",
+      "date": "2016-03-16",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 747.31268,
+      "y": 620.79449,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "lom",
+      "individual": "lom_2",
+      "date": "2016-03-16",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 848.93665,
+      "y": 660.31494,
+      "r": 11
+    },
+    {
+      "type": "add",
+      "species": "lom",
+      "individual": "lom_1",
+      "date": "2016-03-16",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 890.96631,
+      "y": 581.27405,
+      "r": 11
+    },
+    {
+      "type": "add",
+      "species": "pho",
+      "individual": "pho_1",
+      "date": "2016-03-16",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 701.02905,
+      "y": 613.08374,
+      "r": 12
+    },
+    {
+      "type": "add",
+      "species": "pho",
+      "individual": "pho_2",
+      "date": "2016-03-16",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 738.53027,
+      "y": 646.5141,
+      "r": 12
+    },
+    {
+      "type": "add",
+      "species": "pho",
+      "individual": "pho_3",
+      "date": "2016-03-16",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 916.05865,
+      "y": 626.44019,
+      "r": 12
+    },
+    {
+      "type": "add",
+      "species": "lav",
+      "individual": "lav_4",
+      "date": "2016-03-16",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 912.2948,
+      "y": 561.20007,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "lav",
+      "individual": "lav_5",
+      "date": "2016-03-16",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 928.86609,
+      "y": 562.59198,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "lav",
+      "individual": "lav_3",
+      "date": "2016-03-16",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 919.19519,
+      "y": 577.51007,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "lav",
+      "individual": "lav_2",
+      "date": "2016-03-16",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 909.15826,
+      "y": 597.58398,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "lav",
+      "individual": "lav_1",
+      "date": "2016-03-16",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 890.96631,
+      "y": 606.36627,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "ace",
+      "individual": "ace_1",
+      "date": "2016-03-16",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 781.81464,
+      "y": 721.16376,
+      "r": 20
+    },
+    {
+      "type": "move",
+      "species": "ros",
+      "individual": "ros_1",
+      "date": "2016-03-16",
+      "description": "Transplanted by Mitchell Landscapes.",
+      "x": 766.29645,
+      "y": 556.41742,
+      "r": 15
+    },
+    {
+      "type": "add",
+      "species": "pho",
+      "individual": "pho_4",
+      "date": "2016-03-16",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 934.25055,
+      "y": 596.32941,
+      "r": 12
+    },
+    {
+      "type": "add",
+      "species": "pen",
+      "individual": "pen_1",
+      "date": "2016-03-16",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 785.57849,
+      "y": 677.25214,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "pen",
+      "individual": "pen_2",
+      "date": "2016-03-16",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 887.20245,
+      "y": 638.98633,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "mey",
+      "individual": "mey_1",
+      "date": "2016-03-16",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 801.26117,
+      "y": 546.77197,
+      "r": 15
+    },
+    {
+      "type": "add",
+      "species": "lom",
+      "individual": "lom_3",
+      "date": "2016-04-13",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1085.0974,
+      "y": 458.84909,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "lom",
+      "individual": "lom_4",
+      "date": "2016-04-13",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1087.4293,
+      "y": 485.66599,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "lom",
+      "individual": "lom_5",
+      "date": "2016-04-13",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1081.5996,
+      "y": 510.15097,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "ses",
+      "individual": "ses_4",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1110.8827,
+      "y": 465.3241,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "ses",
+      "individual": "ses_5",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1109.677,
+      "y": 444.22473,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "ses",
+      "individual": "ses_6",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1131.3793,
+      "y": 435.18213,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "ses",
+      "individual": "ses_3",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1012.6199,
+      "y": 224.79108,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "ses",
+      "individual": "ses_1",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1004.1801,
+      "y": 203.69168,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "pur",
+      "individual": "pur_6",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 750.44415,
+      "y": 128.55498,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "max",
+      "individual": "max_1",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 736.41382,
+      "y": 65.60791,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "max",
+      "individual": "max_4",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 781.1593,
+      "y": 75.846283,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "max",
+      "individual": "max_5",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 788.1109,
+      "y": 59.83215,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "aco",
+      "individual": "aco_6",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 897.88068,
+      "y": 95.391357,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "aco",
+      "individual": "aco_1",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 884.99689,
+      "y": 60.3475,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "aco",
+      "individual": "aco_2",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 852.52979,
+      "y": 58.801445,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "aco",
+      "individual": "aco_3",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 839.64606,
+      "y": 67.562408,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "aco",
+      "individual": "aco_5",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 880.87408,
+      "y": 98.998817,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "aco",
+      "individual": "aco_4",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 864.38287,
+      "y": 102.60627,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "ses",
+      "individual": "ses_2",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1028.2937,
+      "y": 205.5002,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "rud",
+      "individual": "rud_4",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1209.1455,
+      "y": 347.16754,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "rud",
+      "individual": "rud_5",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1235.6704,
+      "y": 333.30219,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "rud",
+      "individual": "rud_6",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1237.479,
+      "y": 304.36591,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "ang",
+      "individual": "ang_4",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1266.4395,
+      "y": 303.6033,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "aga",
+      "individual": "aga_1",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1092.7422,
+      "y": 148.24251,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "kar",
+      "individual": "kar_3",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1207.1576,
+      "y": 138.38551,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "kar",
+      "individual": "kar_1",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1163.4344,
+      "y": 113.31755,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "kar",
+      "individual": "kar_2",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1196.0811,
+      "y": 109.81969,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "ole",
+      "individual": "ole_1",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 936.00677,
+      "y": 49.356663,
+      "r": 11
+    },
+    {
+      "type": "add",
+      "species": "sun",
+      "individual": "sun_1",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 759.24139,
+      "y": 63.271137,
+      "r": 8
+    },
+    {
+      "type": "add",
+      "species": "sun",
+      "individual": "sun_2",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 769.03308,
+      "y": 124.08253,
+      "r": 8
+    },
+    {
+      "type": "add",
+      "species": "sun",
+      "individual": "sun_3",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 808.19977,
+      "y": 115.83691,
+      "r": 8
+    },
+    {
+      "type": "add",
+      "species": "sun",
+      "individual": "sun_4",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 845.30505,
+      "y": 107.59129,
+      "r": 8
+    },
+    {
+      "type": "add",
+      "species": "ole",
+      "individual": "ole_2",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 966.51154,
+      "y": 50.181114,
+      "r": 11
+    },
+    {
+      "type": "add",
+      "species": "ole",
+      "individual": "ole_3",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 995.36737,
+      "y": 51.417793,
+      "r": 11
+    },
+    {
+      "type": "add",
+      "species": "ole",
+      "individual": "ole_4",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1024.2233,
+      "y": 53.0667,
+      "r": 11
+    },
+    {
+      "type": "add",
+      "species": "ole",
+      "individual": "ole_5",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1051.4302,
+      "y": 65.021263,
+      "r": 11
+    },
+    {
+      "type": "add",
+      "species": "ole",
+      "individual": "ole_6",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1078.2249,
+      "y": 55.952286,
+      "r": 11
+    },
+    {
+      "type": "add",
+      "species": "ole",
+      "individual": "ole_7",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1104.1951,
+      "y": 69.143524,
+      "r": 11
+    },
+    {
+      "type": "add",
+      "species": "ole",
+      "individual": "ole_8",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1129.3408,
+      "y": 56.36451,
+      "r": 11
+    },
+    {
+      "type": "add",
+      "species": "ole",
+      "individual": "ole_9",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1151.1888,
+      "y": 72.853561,
+      "r": 11
+    },
+    {
+      "type": "add",
+      "species": "ole",
+      "individual": "ole_10",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1174.6858,
+      "y": 58.013416,
+      "r": 11
+    },
+    {
+      "type": "add",
+      "species": "ole",
+      "individual": "ole_11",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1201.0682,
+      "y": 76.975822,
+      "r": 11
+    },
+    {
+      "type": "add",
+      "species": "zeb",
+      "individual": "zeb_4",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1269.2764,
+      "y": 342.22989,
+      "r": 11
+    },
+    {
+      "type": "add",
+      "species": "zeb",
+      "individual": "zeb_3",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1233.1318,
+      "y": 374.29358,
+      "r": 11
+    },
+    {
+      "type": "add",
+      "species": "zeb",
+      "individual": "zeb_1",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1153.2642,
+      "y": 420.93164,
+      "r": 11
+    },
+    {
+      "type": "add",
+      "species": "zeb",
+      "individual": "zeb_2",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1186.4938,
+      "y": 425.01248,
+      "r": 11
+    },
+    {
+      "type": "add",
+      "species": "ole",
+      "individual": "ole_12",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1226.4277,
+      "y": 61.818447,
+      "r": 11
+    },
+    {
+      "type": "add",
+      "species": "ang",
+      "individual": "ang_5",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1296.5814,
+      "y": 322.89417,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "rud",
+      "individual": "rud_3",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1067.868,
+      "y": 143.83617,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "eup",
+      "individual": "eup_2",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1076.4803,
+      "y": 174.61589,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "eup",
+      "individual": "eup_3",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1112.2422,
+      "y": 193.25771,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "eup",
+      "individual": "eup_4",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1189.8547,
+      "y": 400.21741,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "eup",
+      "individual": "eup_5",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1175.3866,
+      "y": 385.74927,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "eup",
+      "individual": "eup_6",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1189.8547,
+      "y": 368.86975,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "cal",
+      "individual": "cal_1",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1274.8792,
+      "y": 278.28403,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "cal",
+      "individual": "cal_2",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1305.6173,
+      "y": 268.87439,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "cal",
+      "individual": "cal_3",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1316.2815,
+      "y": 292.71213,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "cal",
+      "individual": "cal_4",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1266.7241,
+      "y": 86.954918,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "cal",
+      "individual": "cal_5",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1276.1338,
+      "y": 120.20227,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "cal",
+      "individual": "cal_6",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1255.3901,
+      "y": 132.12114,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "wen",
+      "individual": "wen_1",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1075.9222,
+      "y": 94.318619,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "wen",
+      "individual": "wen_2",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1114.2061,
+      "y": 101.73147,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "wen",
+      "individual": "wen_3",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1127.8728,
+      "y": 132.55576,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "max",
+      "individual": "max_3",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 760.68256,
+      "y": 79.259079,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "max",
+      "individual": "max_6",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 814.90924,
+      "y": 71.427544,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "rud",
+      "individual": "rud_1",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1053.274,
+      "y": 97.543388,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "rud",
+      "individual": "rud_2",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1067.6573,
+      "y": 118.58714,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "pur",
+      "individual": "pur_1",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 624.82849,
+      "y": 165.40372,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "pur",
+      "individual": "pur_2",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 648.42432,
+      "y": 159.23662,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "pur",
+      "individual": "pur_3",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 673.09259,
+      "y": 152.53326,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "pur",
+      "individual": "pur_4",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 697.22467,
+      "y": 146.63431,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "pur",
+      "individual": "pur_5",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 721.625,
+      "y": 139.93095,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "max",
+      "individual": "max_2",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 740.96417,
+      "y": 81.913475,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "eup",
+      "individual": "eup_1",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1080.1378,
+      "y": 200.67749,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "ang",
+      "individual": "ang_1",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1113.921,
+      "y": 165.55302,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "ang",
+      "individual": "ang_2",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1134.4176,
+      "y": 181.22685,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "ang",
+      "individual": "ang_3",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1169.9851,
+      "y": 169.77289,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "ang",
+      "individual": "ang_6",
+      "date": "2016-05-11",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 1295.3757,
+      "y": 289.73798,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "yan",
+      "individual": "yan_13",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 150.66727,
+      "y": 524.23584,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "yan",
+      "individual": "yan_14",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 148.68626,
+      "y": 561.87482,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "yan",
+      "individual": "yan_1",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 172.45822,
+      "y": 94.359756,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "yan",
+      "individual": "yan_7",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 159.58174,
+      "y": 305.33582,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "yan",
+      "individual": "yan_10",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 153.63875,
+      "y": 417.26208,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "yan",
+      "individual": "yan_4",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 165.52472,
+      "y": 196.38104,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "yan",
+      "individual": "yan_2",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 169.48671,
+      "y": 128.03668,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "yan",
+      "individual": "yan_5",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 163.54372,
+      "y": 232.03897,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "yan",
+      "individual": "yan_8",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 157.60072,
+      "y": 342.97473,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "yan",
+      "individual": "yan_9",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 155.61972,
+      "y": 378.63266,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "dai",
+      "individual": "dai_1",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 379.47226,
+      "y": 398.44263,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "pis",
+      "individual": "pis_1",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 216.27191,
+      "y": 149.59584,
+      "r": 12
+    },
+    {
+      "type": "add",
+      "species": "pis",
+      "individual": "pis_2",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 286.49539,
+      "y": 190.40999,
+      "r": 12
+    },
+    {
+      "type": "add",
+      "species": "pis",
+      "individual": "pis_3",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 322.20599,
+      "y": 141.65782,
+      "r": 12
+    },
+    {
+      "type": "add",
+      "species": "oli",
+      "individual": "oli_1",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 231.88808,
+      "y": 87.42627,
+      "r": 12
+    },
+    {
+      "type": "add",
+      "species": "oli",
+      "individual": "oli_2",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 271.508,
+      "y": 52.758842,
+      "r": 12
+    },
+    {
+      "type": "add",
+      "species": "oli",
+      "individual": "oli_3",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 326.97586,
+      "y": 58.701828,
+      "r": 12
+    },
+    {
+      "type": "add",
+      "species": "cra",
+      "individual": "cra_2",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 428.99716,
+      "y": 597.53271,
+      "r": 12
+    },
+    {
+      "type": "add",
+      "species": "cra",
+      "individual": "cra_4",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 414.13971,
+      "y": 515.32141,
+      "r": 12
+    },
+    {
+      "type": "add",
+      "species": "dai",
+      "individual": "dai_2",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 536.04822,
+      "y": 492.53992,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "dai",
+      "individual": "dai_3",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 567.5387,
+      "y": 590.00739,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "cra",
+      "individual": "cra_5",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 454.75018,
+      "y": 477.68246,
+      "r": 12
+    },
+    {
+      "type": "add",
+      "species": "cra",
+      "individual": "cra_3",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 473.56964,
+      "y": 548.00781,
+      "r": 12
+    },
+    {
+      "type": "add",
+      "species": "cra",
+      "individual": "cra_1",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 494.37009,
+      "y": 618.33319,
+      "r": 12
+    },
+    {
+      "type": "add",
+      "species": "del",
+      "individual": "del_1",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 363.62436,
+      "y": 480.65396,
+      "r": 14
+    },
+    {
+      "type": "add",
+      "species": "gra",
+      "individual": "gra_1",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 255.07516,
+      "y": 629.38153,
+      "r": 14
+    },
+    {
+      "type": "add",
+      "species": "plu",
+      "individual": "plu_1",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 332.91891,
+      "y": 770.86987,
+      "r": 14
+    },
+    {
+      "type": "add",
+      "species": "fuy",
+      "individual": "fuy_1",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 248.78537,
+      "y": 862.40717,
+      "r": 14
+    },
+    {
+      "type": "add",
+      "species": "smi",
+      "individual": "smi_1",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 393.97418,
+      "y": 878.68134,
+      "r": 14
+    },
+    {
+      "type": "add",
+      "species": "str",
+      "individual": "str_1",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 491.93192,
+      "y": 957.69153,
+      "r": 14
+    },
+    {
+      "type": "add",
+      "species": "apr",
+      "individual": "apr_1",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 380.46283,
+      "y": 559.8938,
+      "r": 14
+    },
+    {
+      "type": "add",
+      "species": "fuj",
+      "individual": "fuj_1",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 410.17776,
+      "y": 643.09564,
+      "r": 14
+    },
+    {
+      "type": "add",
+      "species": "cof",
+      "individual": "cof_1",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 310.13748,
+      "y": 426.17657,
+      "r": 8
+    },
+    {
+      "type": "add",
+      "species": "cof",
+      "individual": "cof_2",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 311.12799,
+      "y": 457.87253,
+      "r": 8
+    },
+    {
+      "type": "add",
+      "species": "yan",
+      "individual": "yan_11",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 152.64822,
+      "y": 453.91049,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "yan",
+      "individual": "yan_12",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 151.65773,
+      "y": 489.56842,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "yan",
+      "individual": "yan_6",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 161.56271,
+      "y": 268.68738,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "yan",
+      "individual": "yan_3",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 167.50571,
+      "y": 162.7041,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "cof",
+      "individual": "cof_3",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 256.96509,
+      "y": 395.88849,
+      "r": 8
+    },
+    {
+      "type": "add",
+      "species": "val",
+      "individual": "val_1",
+      "date": "2016-08-27",
+      "description": "Planted by Mitchell Landscapes.",
+      "x": 249.45844,
+      "y": 1046.8279,
+      "r": 15
+    },
+    {
+      "type": "add",
+      "species": "sto",
+      "individual": "sto_1",
+      "date": "2016-09-06",
+      "description": "Planted by us. Plant from North Coast Native Nursery through Mulch Madness city program.",
+      "x": 1154.7994,
+      "y": 154.7813,
+      "r": 5
+    },
+    {
+      "type": "remove",
+      "species": "cof",
+      "individual": "cof_3",
+      "date": "2016-10-27",
+      "description": "Plant died suddenly. No immediate replacement in this location.",
+      "x": 256.96509,
+      "y": 395.88849,
+      "r": 8
+    },
+    {
+      "type": "add",
+      "species": "ses",
+      "individual": "ses_8",
+      "date": "2017-02-01",
+      "description": "Planted by Mitchell Landscapes to replace dead plant.",
+      "x": 1175.3866,
+      "y": 385.74927,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "ses",
+      "individual": "ses_9",
+      "date": "2017-02-01",
+      "description": "Planted by Mitchell Landscapes to replace dead plant.",
+      "x": 1189.8547,
+      "y": 368.86975,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "ses",
+      "individual": "ses_7",
+      "date": "2017-02-01",
+      "description": "Planted by Mitchell Landscapes to replace dead plant.",
+      "x": 1189.8547,
+      "y": 400.21741,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "teu",
+      "individual": "teu_11",
+      "date": "2017-02-01",
+      "description": "Planted by Mitchell Landscapes to replace dead plant.",
+      "x": 1305.6173,
+      "y": 268.87439,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "teu",
+      "individual": "teu_12",
+      "date": "2017-02-01",
+      "description": "Planted by Mitchell Landscapes to replace dead plant.",
+      "x": 1316.2815,
+      "y": 292.71213,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "teu",
+      "individual": "teu_10",
+      "date": "2017-02-01",
+      "description": "Planted by Mitchell Landscapes to replace dead plant.",
+      "x": 1274.8792,
+      "y": 278.28403,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "hea",
+      "individual": "hea_3",
+      "date": "2017-02-01",
+      "description": "Planted by Mitchell Landscapes to replace dead plant.",
+      "x": 1127.8728,
+      "y": 132.55576,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "hea",
+      "individual": "hea_2",
+      "date": "2017-02-01",
+      "description": "Planted by Mitchell Landscapes to replace dead plant.",
+      "x": 1114.2061,
+      "y": 101.73147,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "hea",
+      "individual": "hea_1",
+      "date": "2017-02-01",
+      "description": "Planted by Mitchell Landscapes to replace dead plant.",
+      "x": 1075.9222,
+      "y": 94.318619,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "teu",
+      "individual": "teu_7",
+      "date": "2017-02-01",
+      "description": "Planted by Mitchell Landscapes. Replacement for dead California poppy.",
+      "x": 1266.7241,
+      "y": 86.954918,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "teu",
+      "individual": "teu_8",
+      "date": "2017-02-01",
+      "description": "Planted by Mitchell Landscapes. Replacement for dead California poppy.",
+      "x": 1276.1338,
+      "y": 120.20227,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "teu",
+      "individual": "teu_9",
+      "date": "2017-02-01",
+      "description": "Planted by Mitchell Landscapes. Replacement for dead California poppy.",
+      "x": 1255.3901,
+      "y": 132.12114,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "eup",
+      "individual": "eup_4",
+      "date": "2017-02-01",
+      "description": "Dead plant removed by Mitchell Landscapes. Replaced with sesleria greenlee.",
+      "x": 1189.8547,
+      "y": 400.21741,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "eup",
+      "individual": "eup_5",
+      "date": "2017-02-01",
+      "description": "Dead plant removed by Mitchell Landscapes. Replaced with sesleria greenlee.",
+      "x": 1175.3866,
+      "y": 385.74927,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "eup",
+      "individual": "eup_6",
+      "date": "2017-02-01",
+      "description": "Dead plant removed by Mitchell Landscapes. Replaced with sesleria greenlee.",
+      "x": 1189.8547,
+      "y": 368.86975,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "cal",
+      "individual": "cal_1",
+      "date": "2017-02-01",
+      "description": "Dead plant removed by Mitchell Landscapes. Replaced with teucrium chamaedrys.",
+      "x": 1274.8792,
+      "y": 278.28403,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "cal",
+      "individual": "cal_2",
+      "date": "2017-02-01",
+      "description": "Dead plant removed by Mitchell Landscapes. Replaced with teucrium chamaedrys.",
+      "x": 1305.6173,
+      "y": 268.87439,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "cal",
+      "individual": "cal_3",
+      "date": "2017-02-01",
+      "description": "Dead plant removed by Mitchell Landscapes. Replaced with teucrium chamaedrys.",
+      "x": 1316.2815,
+      "y": 292.71213,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "cal",
+      "individual": "cal_4",
+      "date": "2017-02-01",
+      "description": "Dead plant removed by Mitchell Landscapes. Replaced with teucrium chamaedrys.",
+      "x": 1266.7241,
+      "y": 86.954918,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "cal",
+      "individual": "cal_5",
+      "date": "2017-02-01",
+      "description": "Dead plant removed by Mitchell Landscapes. Replaced with teucrium chamaedrys.",
+      "x": 1276.1338,
+      "y": 120.20227,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "cal",
+      "individual": "cal_6",
+      "date": "2017-02-01",
+      "description": "Dead plant removed by Mitchell Landscapes. Replaced with teucrium chamaedrys.",
+      "x": 1255.3901,
+      "y": 132.12114,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "wen",
+      "individual": "wen_1",
+      "date": "2017-02-01",
+      "description": "Dead plant removed by Mitchell Landscapes. Replaced by breath of heaven.",
+      "x": 1075.9222,
+      "y": 94.318619,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "wen",
+      "individual": "wen_2",
+      "date": "2017-02-01",
+      "description": "Dead plant removed by Mitchell Landscapes. Replaced by breath of heaven.",
+      "x": 1114.2061,
+      "y": 101.73147,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "wen",
+      "individual": "wen_3",
+      "date": "2017-02-01",
+      "description": "Dead plant removed by Mitchell Landscapes. Replaced by breath of heaven.",
+      "x": 1127.8728,
+      "y": 132.55576,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "cam",
+      "individual": "cam_2",
+      "date": "2017-02-25",
+      "description": "Plant from Cottage Gardens.",
+      "x": 787.27728,
+      "y": 115.32947,
+      "r": 5
+    },
+    {
+      "type": "add",
+      "species": "cam",
+      "individual": "cam_1",
+      "date": "2017-02-25",
+      "description": "Plant from Cottage Gardens.",
+      "x": 868.50568,
+      "y": 61.893551,
+      "r": 5
+    },
+    {
+      "type": "remove",
+      "species": "max",
+      "individual": "max_6",
+      "date": "2017-02-25",
+      "description": "Dead plant removed by us. Replaced by Japanese tassel fern.",
+      "x": 814.90924,
+      "y": 71.427544,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "fer",
+      "individual": "fer_1",
+      "date": "2017-02-25",
+      "description": "Replacement for dead heuchera maxima.",
+      "x": 814.90924,
+      "y": 71.427544,
+      "r": 5
+    },
+    {
+      "type": "add",
+      "species": "fer",
+      "individual": "fer_2",
+      "date": "2017-02-25",
+      "description": "Plant added by us. Plant from Cottage Gardens.",
+      "x": 805.11755,
+      "y": 58.801445,
+      "r": 5
+    },
+    {
+      "type": "add",
+      "species": "fer",
+      "individual": "fer_3",
+      "date": "2017-02-25",
+      "description": "Plant added by us. Plant from Cottage Gardens.",
+      "x": 825.21625,
+      "y": 59.05912,
+      "r": 5
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_9",
+      "date": "2017-04-01",
+      "description": "Planted with Dad. Plant from Cottage Gardens.",
+      "x": 509.66217,
+      "y": 411.28613,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_11",
+      "date": "2017-04-01",
+      "description": "Planted with Dad. Plant from Cottage Gardens.",
+      "x": 521.98499,
+      "y": 452.29126,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_14",
+      "date": "2017-04-01",
+      "description": "Planted with Dad. Plant from Cottage Gardens.",
+      "x": 546.54504,
+      "y": 525.14905,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_16",
+      "date": "2017-04-01",
+      "description": "Planted with Dad. Plant from Cottage Gardens.",
+      "x": 558.98425,
+      "y": 555.2627,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "car",
+      "individual": "car_1",
+      "date": "2017-04-01",
+      "description": "Planted with Dad. Plants from Urban Tree Farm.",
+      "x": 506.25607,
+      "y": 999.67487,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "car",
+      "individual": "car_2",
+      "date": "2017-04-01",
+      "description": "Planted with Dad. Plants from Urban Tree Farm.",
+      "x": 557.76196,
+      "y": 958.07391,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "car",
+      "individual": "car_3",
+      "date": "2017-04-01",
+      "description": "Planted with Dad. Plants from Urban Tree Farm.",
+      "x": 607.2868,
+      "y": 917.4635,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "car",
+      "individual": "car_4",
+      "date": "2017-04-01",
+      "description": "Planted with Dad. Plants from Urban Tree Farm.",
+      "x": 659.7832,
+      "y": 874.87207,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "car",
+      "individual": "car_5",
+      "date": "2017-04-01",
+      "description": "Planted with Dad. Plants from Urban Tree Farm.",
+      "x": 754.87097,
+      "y": 792.66077,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_7",
+      "date": "2017-04-01",
+      "description": "Planted with Dad. Plant from Cottage Gardens.",
+      "x": 502.64661,
+      "y": 370.39691,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_6",
+      "date": "2017-04-01",
+      "description": "Planted with Dad. Plant from Cottage Gardens.",
+      "x": 545.52826,
+      "y": 347.92725,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_4",
+      "date": "2017-04-01",
+      "description": "Planted with Dad. Plant from Cottage Gardens.",
+      "x": 535.53369,
+      "y": 301.28601,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_3",
+      "date": "2017-04-01",
+      "description": "Planted with Dad. Plant from Cottage Gardens.",
+      "x": 529.34662,
+      "y": 258.45218,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_2",
+      "date": "2017-04-01",
+      "description": "Planted with Dad. Plant from Cottage Gardens.",
+      "x": 527.36121,
+      "y": 217.68541,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_1",
+      "date": "2017-04-01",
+      "description": "Planted with Dad. Plant from Cottage Gardens.",
+      "x": 527.36127,
+      "y": 180.25017,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_5",
+      "date": "2017-04-01",
+      "description": "Planted with Dad. Plant from Cottage Gardens.",
+      "x": 496.0314,
+      "y": 331.26965,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_8",
+      "date": "2017-04-01",
+      "description": "Planted with Dad. Plant from Cottage Gardens.",
+      "x": 551.66437,
+      "y": 393.01422,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_10",
+      "date": "2017-04-01",
+      "description": "Planted with Dad. Plant from Cottage Gardens.",
+      "x": 562.55988,
+      "y": 431.79816,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_12",
+      "date": "2017-04-01",
+      "description": "Planted with Dad. Plant from Cottage Gardens.",
+      "x": 571.98895,
+      "y": 466.78699,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_13",
+      "date": "2017-04-01",
+      "description": "Planted with Dad. Plant from Cottage Gardens.",
+      "x": 584.38947,
+      "y": 501.96899,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_15",
+      "date": "2017-04-01",
+      "description": "Planted with Dad. Plant from Cottage Gardens.",
+      "x": 594.41034,
+      "y": 528.19788,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_17",
+      "date": "2017-04-01",
+      "description": "Planted with Dad. Plant from Cottage Gardens.",
+      "x": 604.75262,
+      "y": 557.91284,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_18",
+      "date": "2017-04-01",
+      "description": "Planted with Dad. Plant from Cottage Gardens.",
+      "x": 618.10498,
+      "y": 590.08466,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_19",
+      "date": "2017-04-01",
+      "description": "Planted with Dad. Plant from Cottage Gardens.",
+      "x": 632.84662,
+      "y": 622.14062,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "nec",
+      "individual": "nec_1",
+      "date": "2017-04-03",
+      "description": "Planted by us. Small plant was found discarded north of retaining wall landing.",
+      "x": 514.55109,
+      "y": 47.58065,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "vio",
+      "individual": "vio_4",
+      "date": "2017-04-05",
+      "description": "Planted by us. Plant provided by Mitchell Landscapes.",
+      "x": 571.38574,
+      "y": 798.29468,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "vio",
+      "individual": "vio_2",
+      "date": "2017-04-05",
+      "description": "Planted by us. Plant provided by Mitchell Landscapes.",
+      "x": 517.58588,
+      "y": 835.06287,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "yan",
+      "individual": "yan_15",
+      "date": "2017-04-05",
+      "description": "Planted by us. Plant from Cottage Gardens.",
+      "x": 686.84949,
+      "y": 791.68738,
+      "r": 13
+    },
+    {
+      "type": "add",
+      "species": "vio",
+      "individual": "vio_6",
+      "date": "2017-04-05",
+      "description": "Planted by us. Plant provided by Mitchell Landscapes.",
+      "x": 627.21411,
+      "y": 762.28149,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "vio",
+      "individual": "vio_1",
+      "date": "2017-04-05",
+      "description": "Planted by us. Plant provided by Mitchell Landscapes.",
+      "x": 529.51312,
+      "y": 913.09399,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "vio",
+      "individual": "vio_3",
+      "date": "2017-04-05",
+      "description": "Planted by us. Plant provided by Mitchell Landscapes.",
+      "x": 585.75,
+      "y": 876.00739,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "vio",
+      "individual": "vio_5",
+      "date": "2017-04-05",
+      "description": "Planted by us. Plant provided by Mitchell Landscapes.",
+      "x": 637.47302,
+      "y": 835.46033,
+      "r": 10
+    },
+    {
+      "type": "remove",
+      "species": "eup",
+      "individual": "eup_2",
+      "date": "2017-04-09",
+      "description": "Dead plant removed by us. Replaced with paprika yarrow.",
+      "x": 1076.4803,
+      "y": 174.61589,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "eup",
+      "individual": "eup_3",
+      "date": "2017-04-09",
+      "description": "Dead plant removed by us. Replaced with paprika yarrow.",
+      "x": 1112.2422,
+      "y": 193.25771,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "pap",
+      "individual": "pap_2",
+      "date": "2017-04-09",
+      "description": "Planted by us. Replacement for dead euphorbia myrsinites. Plant from Cottage Gardens.",
+      "x": 1112.2422,
+      "y": 193.25771,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "pap",
+      "individual": "pap_1",
+      "date": "2017-04-09",
+      "description": "Planted by us. Replacement for dead euphorbia myrsinites. Plant from Cottage Gardens.",
+      "x": 1076.4803,
+      "y": 174.61589,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "mon",
+      "individual": "mon_1",
+      "date": "2017-04-28",
+      "description": "Planted died. Likely due to gopher activity or lack of sun exposure.",
+      "x": 550.71234,
+      "y": 172.69896,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "dar",
+      "individual": "dar_2",
+      "date": "2017-05-14",
+      "description": "Planted by us. Plant from Cottage Gardens.",
+      "x": 680.18646,
+      "y": 719.34583,
+      "r": 13
+    },
+    {
+      "type": "add",
+      "species": "dar",
+      "individual": "dar_1",
+      "date": "2017-05-14",
+      "description": "Planted by us. Plant from Cottage Gardens.",
+      "x": 648.77502,
+      "y": 666.99341,
+      "r": 13
+    },
+    {
+      "type": "add",
+      "species": "cof",
+      "individual": "cof_4",
+      "date": "2017-05-14",
+      "description": "Planted by us. Provided by Mitchell Landscapes.",
+      "x": 308.2724,
+      "y": 493.09143,
+      "r": 8
+    },
+    {
+      "type": "add",
+      "species": "pit",
+      "individual": "pit_2",
+      "date": "2017-05-17",
+      "description": "Replacement for transplated fern.",
+      "x": 805.11755,
+      "y": 58.801445,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "pit",
+      "individual": "pit_1",
+      "date": "2017-05-17",
+      "description": "Replacement for transplated fern.",
+      "x": 814.90924,
+      "y": 71.427544,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "pit",
+      "individual": "pit_3",
+      "date": "2017-05-17",
+      "description": "Replacement for transplated fern.",
+      "x": 825.21625,
+      "y": 59.05912,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "pit",
+      "individual": "pit_4",
+      "date": "2017-05-17",
+      "description": "Replacement for dead heuchera maxima.",
+      "x": 760.68256,
+      "y": 79.259079,
+      "r": 7
+    },
+    {
+      "type": "move",
+      "species": "fer",
+      "individual": "fer_2",
+      "date": "2017-05-17",
+      "description": "Transplant to opposite side of path with less sun exposure.",
+      "x": 789.65698,
+      "y": 126.27589,
+      "r": 5
+    },
+    {
+      "type": "add",
+      "species": "fer",
+      "individual": "fer_4",
+      "date": "2017-05-17",
+      "description": "Planted by us. Plant from Cottage Gardens.",
+      "x": 740.16016,
+      "y": 136.27043,
+      "r": 5
+    },
+    {
+      "type": "move",
+      "species": "fer",
+      "individual": "fer_3",
+      "date": "2017-05-17",
+      "description": "Transplant to opposite side of path with less sun exposure.",
+      "x": 825.82776,
+      "y": 106.7627,
+      "r": 5
+    },
+    {
+      "type": "move",
+      "species": "fer",
+      "individual": "fer_1",
+      "date": "2017-05-17",
+      "description": "Transplant to opposite side of path with less sun exposure.",
+      "x": 828.20746,
+      "y": 117.23318,
+      "r": 5
+    },
+    {
+      "type": "remove",
+      "species": "max",
+      "individual": "max_3",
+      "date": "2017-05-17",
+      "description": "Dead plant removed by us. Replaced by pittosporum tenuifolium.",
+      "x": 814.90924,
+      "y": 71.427544,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "mon",
+      "individual": "mon_1",
+      "date": "2017-05-17",
+      "description": "Planted by us. Plant from Cottage Gardens.",
+      "x": 550.71234,
+      "y": 172.69896,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "mon",
+      "individual": "mon_2",
+      "date": "2017-05-17",
+      "description": "Planted by us. Plant from Cottage Gardens.",
+      "x": 552.75739,
+      "y": 185.24512,
+      "r": 6
+    },
+    {
+      "type": "remove",
+      "species": "mon",
+      "individual": "mon_2",
+      "date": "2017-05-17",
+      "description": "Planted died. Likely due to gopher activity or lack of sun exposure.",
+      "x": 552.75739,
+      "y": 185.24512,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "mim",
+      "individual": "mim_2",
+      "date": "2017-05-17",
+      "description": "Planted by us. Plant from North Coast Native Nursery through Mulch Madness city program.",
+      "x": 549.36615,
+      "y": 159.75438,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "mim",
+      "individual": "mim_1",
+      "date": "2017-05-17",
+      "description": "Planted by us. Plant from North Coast Native Nursery through Mulch Madness city program.",
+      "x": 548.08765,
+      "y": 147.58141,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "teu",
+      "individual": "teu_13",
+      "date": "2017-05-27",
+      "description": "Planted by us. Plant from Cottage Gardens.",
+      "x": 1233.9733,
+      "y": 138.78418,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "ice",
+      "individual": "ice_1",
+      "date": "2017-05-27",
+      "description": "Planted by us. Plant from Cottage Gardens.",
+      "x": 1217.8324,
+      "y": 402.31622,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "ice",
+      "individual": "ice_2",
+      "date": "2017-05-27",
+      "description": "Planted by us. Plant from Cottage Gardens",
+      "x": 1260.2357,
+      "y": 367.98975,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "cot",
+      "individual": "cot_1",
+      "date": "2017-06-01",
+      "description": "Planted by us. Plant from Urban Tree Farm.",
+      "x": 457.06509,
+      "y": 101.0228,
+      "r": 8
+    },
+    {
+      "type": "add",
+      "species": "cot",
+      "individual": "cot_8",
+      "date": "2017-06-01",
+      "description": "Planted by us. Plant from Urban Tree Farm.",
+      "x": 300.00781,
+      "y": 75.32251,
+      "r": 8
+    },
+    {
+      "type": "add",
+      "species": "cot",
+      "individual": "cot_7",
+      "date": "2017-06-01",
+      "description": "Planted by us. Plant from Urban Tree Farm.",
+      "x": 268.59634,
+      "y": 94.359756,
+      "r": 8
+    },
+    {
+      "type": "add",
+      "species": "cot",
+      "individual": "cot_6",
+      "date": "2017-06-01",
+      "description": "Planted by us. Plant from Urban Tree Farm.",
+      "x": 240.04047,
+      "y": 120.06004,
+      "r": 8
+    },
+    {
+      "type": "add",
+      "species": "cot",
+      "individual": "cot_2",
+      "date": "2017-06-01",
+      "description": "Planted by us. Plant from Urban Tree Farm.",
+      "x": 410.42383,
+      "y": 106.73397,
+      "r": 8
+    },
+    {
+      "type": "add",
+      "species": "cot",
+      "individual": "cot_3",
+      "date": "2017-06-01",
+      "description": "Planted by us. Plant from Urban Tree Farm.",
+      "x": 363.78256,
+      "y": 119.10818,
+      "r": 8
+    },
+    {
+      "type": "add",
+      "species": "cot",
+      "individual": "cot_5",
+      "date": "2017-06-01",
+      "description": "Planted by us. Plant from Urban Tree Farm.",
+      "x": 269.54819,
+      "y": 230.47607,
+      "r": 8
+    },
+    {
+      "type": "add",
+      "species": "cot",
+      "individual": "cot_4",
+      "date": "2017-06-01",
+      "description": "Planted by us. Plant from Urban Tree Farm.",
+      "x": 299.05594,
+      "y": 161.94199,
+      "r": 8
+    },
+    {
+      "type": "remove",
+      "species": "vio",
+      "individual": "vio_6",
+      "date": "2017-08-01",
+      "description": "Plant died. Appears to be due to gopher activity.",
+      "x": 627.21411,
+      "y": 762.28149,
+      "r": 10
+    },
+    {
+      "type": "move",
+      "species": "val",
+      "individual": "val_1",
+      "date": "2017-11-27",
+      "description": "Transplanted by Mitchell Landscapes to accommodate deck.",
+      "x": 337.63037,
+      "y": 1052.8855,
+      "r": 15
+    },
+    {
+      "type": "add",
+      "species": "vio",
+      "individual": "vio_9",
+      "date": "2017-12-25",
+      "description": "Planted by Elliot. Plant from Cottage Gardens. Mango mulch compost. No gopher basket.",
+      "x": 664.44122,
+      "y": 815.9649,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "vio",
+      "individual": "vio_7",
+      "date": "2017-12-25",
+      "description": "Planted by Elliot. Plant from Cottage Gardens. Mango mulch compost. No gopher basket.",
+      "x": 557.67828,
+      "y": 894.45898,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "vio",
+      "individual": "vio_8",
+      "date": "2017-12-25",
+      "description": "Planted by Elliot. Plant from Cottage Gardens. Mango mulch compost. Gopher basket.",
+      "x": 611.86029,
+      "y": 854.27209,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "wes",
+      "individual": "wes_1",
+      "date": "2017-12-28",
+      "description": "Planted by Elliot. Plant from Cottage Gardens. Mango mulch compost. No gopher basket.",
+      "x": 607.84491,
+      "y": 739.33496,
+      "r": 13
+    },
+    {
+      "type": "add",
+      "species": "wes",
+      "individual": "wes_2",
+      "date": "2017-12-29",
+      "description": "Planted by Elliot. Plant from Cottage Gardens. Mango mulch compost. No gopher basket.",
+      "x": 710.64606,
+      "y": 759.79999,
+      "r": 13
+    },
+    {
+      "type": "add",
+      "species": "lom",
+      "individual": "lom_6",
+      "date": "2018-01-01",
+      "description": "Planted by Elliot. Plant from Cottage Gardens. Mango mulch compost. No gopher basket.",
+      "x": 515.64374,
+      "y": 559.70276,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "lom",
+      "individual": "lom_7",
+      "date": "2018-01-01",
+      "description": "Planted by Elliot. Plant from Cottage Gardens. Mango mulch compost. No gopher basket.",
+      "x": 483.33646,
+      "y": 435.18509,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "rai",
+      "individual": "rai_1",
+      "date": "2018-02-17",
+      "description": "Planted by Elliot. Individual from Costco. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Gopher basket.",
+      "x": 281.10205,
+      "y": 941.42554,
+      "r": 12
+    },
+    {
+      "type": "add",
+      "species": "rai",
+      "individual": "rai_2",
+      "date": "2018-02-17",
+      "description": "Planted by Elliot. Individual from Costco. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Gopher basket.",
+      "x": 297.93698,
+      "y": 824.80261,
+      "r": 12
+    },
+    {
+      "type": "add",
+      "species": "ltb",
+      "individual": "ltb_1",
+      "date": "2018-03-29",
+      "description": "Planted by Elliot. Individual from Cottage Gardens. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Mesh gopher basket.",
+      "x": 318.79391,
+      "y": 920.56042,
+      "r": 12
+    },
+    {
+      "type": "add",
+      "species": "ltb",
+      "individual": "ltb_2",
+      "date": "2018-03-29",
+      "description": "Planted by Elliot. Individual from Cottage Gardens. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Mesh gopher basket.",
+      "x": 355.13959,
+      "y": 899.69525,
+      "r": 12
+    },
+    {
+      "type": "add",
+      "species": "sti",
+      "individual": "sti_4",
+      "date": "2018-04-10",
+      "description": "Planted by Elliot. Individual from Cottage Gardens. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Rigid gopher basket.",
+      "x": 1046.7922,
+      "y": 122.28901,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "sti",
+      "individual": "sti_5",
+      "date": "2018-04-10",
+      "description": "Planted by Elliot. Individual from Cottage Gardens. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Rigid gopher basket.",
+      "x": 1052.5133,
+      "y": 137.43304,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "sti",
+      "individual": "sti_3",
+      "date": "2018-04-10",
+      "description": "Planted by Elliot. Individual from Cottage Gardens. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Rigid gopher basket.",
+      "x": 1040.3982,
+      "y": 107.48151,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "sti",
+      "individual": "sti_2",
+      "date": "2018-04-10",
+      "description": "Planted by Elliot. Individual from Cottage Gardens. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Rigid gopher basket.",
+      "x": 1034.004,
+      "y": 91.664406,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "sti",
+      "individual": "sti_1",
+      "date": "2018-04-10",
+      "description": "Planted by Elliot. Individual from Cottage Gardens. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Rigid gopher basket.",
+      "x": 1026.2637,
+      "y": 76.18383,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "mai",
+      "individual": "mai_1",
+      "date": "2018-04-22",
+      "description": "Planted by Elliot. Individual from Cottage Gardens. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Topped with rich potting soil. Rigid gopher basket.",
+      "x": 484.41751,
+      "y": 916.7959,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "mai",
+      "individual": "mai_2",
+      "date": "2018-04-22",
+      "description": "Planted by Elliot. Individual from Cottage Gardens. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Topped with rich potting soil. Rigid gopher basket.",
+      "x": 505.61914,
+      "y": 901.65186,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "mai",
+      "individual": "mai_5",
+      "date": "2018-04-22",
+      "description": "Planted by Elliot. Individual from Cottage Gardens. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Topped with rich potting soil. Rigid gopher basket.",
+      "x": 572.25299,
+      "y": 855.21021,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "mai",
+      "individual": "mai_3",
+      "date": "2018-04-22",
+      "description": "Planted by Elliot. Individual from Cottage Gardens. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Topped with rich potting soil. Rigid gopher basket.",
+      "x": 528.16693,
+      "y": 885.83466,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "mai",
+      "individual": "mai_4",
+      "date": "2018-04-22",
+      "description": "Planted by Elliot. Individual from Cottage Gardens. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Topped with rich potting soil. Rigid gopher basket.",
+      "x": 549.70514,
+      "y": 869.68115,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "sis",
+      "individual": "sis_1",
+      "date": "2018-04-28",
+      "description": "Planted by Elliot. Individual from Cottage Gardens. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Rigid gopher basket.",
+      "x": 550.71234,
+      "y": 172.69896,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "sis",
+      "individual": "sis_2",
+      "date": "2018-04-28",
+      "description": "Planted by Elliot. Individual from Cottage Gardens. Amended soil with Grab-N-Go Mango Mulch from Cottage Gardens. Rigid gopher basket.",
+      "x": 552.75739,
+      "y": 185.24512,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "tas",
+      "individual": "tas_1",
+      "date": "2018-06-21",
+      "description": "Planted by Elliot. Individual from Cottage Gardens. Amended soil with Soil Booster from Cottage Gardens. Topped with Ultimate Recipe potting soil. Rigid gopher basket.",
+      "x": 1053.274,
+      "y": 97.543388,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "tas",
+      "individual": "tas_2",
+      "date": "2018-06-21",
+      "description": "Planted by Elliot. Individual from Cottage Gardens. Amended soil with Soil Booster from Cottage Gardens. Topped with Ultimate Recipe potting soil. Rigid gopher basket.",
+      "x": 1067.6573,
+      "y": 118.58714,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "rud",
+      "individual": "rud_1",
+      "date": "2018-06-21",
+      "description": "Planted died. Likely due to lack of sun exposure.",
+      "x": 1053.274,
+      "y": 97.543388,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "rud",
+      "individual": "rud_2",
+      "date": "2018-06-21",
+      "description": "Planted died. Likely due to lack of sun exposure.",
+      "x": 1067.6573,
+      "y": 118.58714,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "mex",
+      "individual": "mex_1",
+      "date": "2018-06-22",
+      "description": "Planted by Elliot. Individual from Cottage Gardens. Amended soil with Soil Booster from Cottage Gardens. Topped with Ultimate Recipe potting soil. Rigid gopher basket.",
+      "x": 593.1181,
+      "y": 840.40265,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "mex",
+      "individual": "mex_2",
+      "date": "2018-06-22",
+      "description": "Planted by Elliot. Individual from Cottage Gardens. Amended soil with Soil Booster from Cottage Gardens. Topped with Ultimate Recipe potting soil. Rigid gopher basket.",
+      "x": 613.98322,
+      "y": 824.24896,
+      "r": 10
+    },
+    {
+      "type": "remove",
+      "species": "pho",
+      "individual": "pho_4",
+      "date": "2018-07-30",
+      "description": "Plant died. Perhaps due to insufficient sunlight. Quite shady next to the hedges and under the liquid amber.",
+      "x": 934.25055,
+      "y": 596.32941,
+      "r": 12
+    },
+    {
+      "type": "add",
+      "species": "maj",
+      "individual": "maj_1",
+      "date": "2018-07-31",
+      "description": "Planted by Elliot. Individual from Cottage Gardens. Amended soil with Soil Booster from Cottage Gardens. Topped with Ultimate Recipe potting soil. Rigid gopher basket.",
+      "x": 1132.9663,
+      "y": 163.04221,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "maj",
+      "individual": "maj_2",
+      "date": "2018-07-31",
+      "description": "Planted by Elliot. Individual from Cottage Gardens. Amended soil with Soil Booster from Cottage Gardens. Topped with Ultimate Recipe potting soil. Planted over tree roots. Unable to fit gopher basket.",
+      "x": 1141.3796,
+      "y": 146.55203,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "tas",
+      "individual": "tas_3",
+      "date": "2018-08-04",
+      "description": "Planted by Elliot. Individual from Cottage Gardens. Amended soil with Soil Booster from Cottage Gardens. Topped with Ultimate Recipe potting soil. Rigid gopher basket.",
+      "x": 250.89713,
+      "y": 288.36951,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "tas",
+      "individual": "tas_4",
+      "date": "2018-08-04",
+      "description": "Planted by Elliot. Individual from Cottage Gardens. Amended soil with Soil Booster from Cottage Gardens. Topped with Ultimate Recipe potting soil. Rigid gopher basket.",
+      "x": 257.96429,
+      "y": 261.11023,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "con",
+      "individual": "con_1",
+      "date": "2018-08-05",
+      "description": "Planted by Elliot. Individual from Cottage Gardens. Amended soil with Soil Booster from Cottage Gardens. Topped with Ultimate Recipe potting soil. Rigid gopher basket.",
+      "x": 244.83951,
+      "y": 342.21497,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "con",
+      "individual": "con_2",
+      "date": "2018-08-05",
+      "description": "Planted by Elliot. Individual from Cottage Gardens. Amended soil with Soil Booster from Cottage Gardens. Topped with Ultimate Recipe potting soil. Rigid gopher basket.",
+      "x": 247.19525,
+      "y": 315.62875,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "cra",
+      "individual": "cra_6",
+      "date": "2018-08-12",
+      "description": "Planted by Dad. 15 gallon tree from Urban Tree Farm. Gopher basket from Cottage Gardens. Mixed native soil with soil from Dad. Two green 2-gph emitters.",
+      "x": 1140.416,
+      "y": 462.55942,
+      "r": 15
+    },
+    {
+      "type": "remove",
+      "species": "vio",
+      "individual": "vio_1",
+      "date": "2019-01-01",
+      "description": "Planted died. The valley violets have struggled consistently.",
+      "x": 529.51312,
+      "y": 913.09399,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "eri",
+      "individual": "eri_3",
+      "date": "2019-04-20",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 268.7204,
+      "y": 746.96588,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "but",
+      "individual": "but_4",
+      "date": "2019-04-20",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 254.58595,
+      "y": 691.77429,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "eri",
+      "individual": "eri_4",
+      "date": "2019-04-20",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 235.74005,
+      "y": 759.75421,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "but",
+      "individual": "but_1",
+      "date": "2019-04-20",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 290.25861,
+      "y": 784.65771,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "but",
+      "individual": "but_2",
+      "date": "2019-04-20",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 250.54756,
+      "y": 799.46521,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "toy",
+      "individual": "toy_1",
+      "date": "2019-04-20",
+      "description": "Planted by Sebastian. Plant raised from seedling found under leland cypress tree for two years by Elliot. Soil amended with Grab N Go Organic Compost. 2 1-gph emitters on half inch tubing.",
+      "x": 222.2787,
+      "y": 821.67645,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "eri",
+      "individual": "eri_1",
+      "date": "2019-04-20",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 220.93257,
+      "y": 891.0025,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "eri",
+      "individual": "eri_2",
+      "date": "2019-04-20",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 191.99063,
+      "y": 906.48309,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "but",
+      "individual": "but_3",
+      "date": "2019-04-20",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 194.68289,
+      "y": 866.77203,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "hel",
+      "individual": "hel_3",
+      "date": "2019-04-20",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 233.72086,
+      "y": 596.8717,
+      "r": 8
+    },
+    {
+      "type": "add",
+      "species": "hel",
+      "individual": "hel_4",
+      "date": "2019-04-20",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 199.39436,
+      "y": 606.29468,
+      "r": 8
+    },
+    {
+      "type": "add",
+      "species": "hel",
+      "individual": "hel_1",
+      "date": "2019-04-20",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 331.31577,
+      "y": 811.58051,
+      "r": 8
+    },
+    {
+      "type": "add",
+      "species": "fel",
+      "individual": "fel_2",
+      "date": "2019-04-20",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket.",
+      "x": 213.52879,
+      "y": 676.2937,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "fel",
+      "individual": "fel_3",
+      "date": "2019-04-20",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket.",
+      "x": 206.12505,
+      "y": 704.56256,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "ero",
+      "individual": "ero_1",
+      "date": "2019-04-20",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 275.45108,
+      "y": 677.63989,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "dym",
+      "individual": "dym_2",
+      "date": "2019-04-20",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 194.0098,
+      "y": 692.44739,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "dym",
+      "individual": "dym_4",
+      "date": "2019-04-20",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 220.25946,
+      "y": 716.0047,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "dym",
+      "individual": "dym_3",
+      "date": "2019-04-20",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 225.64401,
+      "y": 665.5246,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "ero",
+      "individual": "ero_2",
+      "date": "2019-04-20",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 299.00848,
+      "y": 726.77386,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "dym",
+      "individual": "dym_1",
+      "date": "2019-04-20",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 193.33673,
+      "y": 652.06329,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "hel",
+      "individual": "hel_2",
+      "date": "2019-04-20",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 358.91156,
+      "y": 797.44604,
+      "r": 8
+    },
+    {
+      "type": "add",
+      "species": "ham",
+      "individual": "ham_1",
+      "date": "2019-04-21",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 198.72128,
+      "y": 1066.0002,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "heb",
+      "individual": "heb_3",
+      "date": "2019-04-21",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 174.49083,
+      "y": 1092.923,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "heb",
+      "individual": "heb_1",
+      "date": "2019-04-21",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 216.89413,
+      "y": 1199.2677,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "heb",
+      "individual": "heb_2",
+      "date": "2019-04-21",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 181.22151,
+      "y": 1231.575,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "ham",
+      "individual": "ham_2",
+      "date": "2019-04-21",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 181.89458,
+      "y": 1167.6334,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "yan",
+      "individual": "yan_16",
+      "date": "2019-04-28",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket.",
+      "x": 147.34013,
+      "y": 596.20129,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "yan",
+      "individual": "yan_17",
+      "date": "2019-04-28",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket.",
+      "x": 145.32092,
+      "y": 631.20087,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "coa",
+      "individual": "coa_1",
+      "date": "2019-04-28",
+      "description": "Planted by Sebastian. Plant raised from seedling by Elliot for two years. Soil amended with Grab N Go Organic Compost. 2 1-gph emitters on half inch tubing.",
+      "x": 189.97142,
+      "y": 821.67645,
+      "r": 8
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_21",
+      "date": "2019-04-28",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 232.37474,
+      "y": 952.9248,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_22",
+      "date": "2019-04-28",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 241.12463,
+      "y": 982.53979,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_20",
+      "date": "2019-04-28",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 255.93214,
+      "y": 935.42505,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "coa",
+      "individual": "coa_2",
+      "date": "2019-04-28",
+      "description": "Planted by Sebastian. Plant raised from seedling by Elliot for two years. Soil amended with Soil Booster. 2 1-gph emitters on half inch tubing.",
+      "x": 143.52969,
+      "y": 668.21698,
+      "r": 8
+    },
+    {
+      "type": "add",
+      "species": "hel",
+      "individual": "hel_6",
+      "date": "2019-04-28",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket",
+      "x": 1167.8596,
+      "y": 444.6741,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "hel",
+      "individual": "hel_5",
+      "date": "2019-04-28",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket",
+      "x": 1293.9814,
+      "y": 344.25262,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "lou",
+      "individual": "lou_1",
+      "date": "2019-04-28",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 130.06831,
+      "y": 901.09857,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "dym",
+      "individual": "dym_5",
+      "date": "2019-04-28",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 140.8374,
+      "y": 705.23566,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "dym",
+      "individual": "dym_6",
+      "date": "2019-04-28",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 124.68376,
+      "y": 975.80914,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "dym",
+      "individual": "dym_7",
+      "date": "2019-04-28",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 120.64535,
+      "y": 1055.2312,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "dym",
+      "individual": "dym_8",
+      "date": "2019-04-28",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 115.2608,
+      "y": 1125.9033,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "dym",
+      "individual": "dym_9",
+      "date": "2019-04-28",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 111.2224,
+      "y": 1201.287,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "pot",
+      "individual": "pot_1",
+      "date": "2019-04-28",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 454.8555,
+      "y": 1039.6531,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "pot",
+      "individual": "pot_2",
+      "date": "2019-04-28",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 402.50305,
+      "y": 1081.535,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "pot",
+      "individual": "pot_3",
+      "date": "2019-04-28",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 302.55753,
+      "y": 1162.4434,
+      "r": 10
+    },
+    {
+      "type": "remove",
+      "species": "pur",
+      "individual": "pur_1",
+      "date": "2019-08-12",
+      "description": "Removed by Mitchell Landscapes during synthetic turf installation. Replace by a rock garden next to the house.",
+      "x": 624.82849,
+      "y": 165.40372,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "pur",
+      "individual": "pur_2",
+      "date": "2019-08-12",
+      "description": "Removed by Mitchell Landscapes during synthetic turf installation. Replace by a rock garden next to the house.",
+      "x": 648.42432,
+      "y": 159.23662,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "pur",
+      "individual": "pur_3",
+      "date": "2019-08-12",
+      "description": "Removed by Mitchell Landscapes during synthetic turf installation. Replace by a rock garden next to the house.",
+      "x": 673.09259,
+      "y": 152.53326,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "pur",
+      "individual": "pur_4",
+      "date": "2019-08-12",
+      "description": "Removed by Mitchell Landscapes during synthetic turf installation. Replace by a rock garden next to the house.",
+      "x": 697.22467,
+      "y": 146.63431,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "pur",
+      "individual": "pur_5",
+      "date": "2019-08-12",
+      "description": "Removed by Mitchell Landscapes during synthetic turf installation. Replace by a rock garden next to the house.",
+      "x": 721.625,
+      "y": 139.93095,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "mim",
+      "individual": "mim_2",
+      "date": "2019-08-12",
+      "description": "Removed by Mitchell Landscapes during synthetic turf installation. Replace by a rock garden below the stairs.",
+      "x": 549.36615,
+      "y": 159.75438,
+      "r": 6
+    },
+    {
+      "type": "remove",
+      "species": "mim",
+      "individual": "mim_1",
+      "date": "2019-08-12",
+      "description": "Removed by Mitchell Landscapes during synthetic turf installation. Replace by a rock garden below the stairs.",
+      "x": 548.08765,
+      "y": 147.58141,
+      "r": 6
+    },
+    {
+      "type": "move",
+      "species": "sis",
+      "individual": "sis_1",
+      "date": "2019-08-12",
+      "description": "Moved to small pot during synthentic turf installation.",
+      "x": 249.17772,
+      "y": 406.25369,
+      "r": 6
+    },
+    {
+      "type": "move",
+      "species": "sis",
+      "individual": "sis_2",
+      "date": "2019-08-12",
+      "description": "Moved to small pot during synthentic turf installation.",
+      "x": 264.68414,
+      "y": 408.03073,
+      "r": 6
+    },
+    {
+      "type": "remove",
+      "species": "max",
+      "individual": "max_2",
+      "date": "2019-08-12",
+      "description": "Trampled by Mitchell Landscapes during synthetic turf installation.",
+      "x": 740.96417,
+      "y": 81.913475,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "mey",
+      "individual": "mey_1",
+      "date": "2019-10-01",
+      "description": "Tree died, likely due to damage or stress from staking the tree, which was leaning badly prior.",
+      "x": 801.26117,
+      "y": 546.77197,
+      "r": 15
+    },
+    {
+      "type": "remove",
+      "species": "eup",
+      "individual": "eup_1",
+      "date": "2019-11-01",
+      "description": "Plant died. Theory: poor drainage caused water to collect in basin under plant.",
+      "x": 1080.1378,
+      "y": 200.67749,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "ero",
+      "individual": "ero_1",
+      "date": "2020-04-01",
+      "description": "Killed accidentally by Elliot during a weed-pulling session on the hillside..",
+      "x": 275.45108,
+      "y": 677.63989,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "pen",
+      "individual": "pen_1",
+      "date": "2020-04-10",
+      "description": "Woody remains removed by Sebastian in preparation for new plants.",
+      "x": 785.57849,
+      "y": 677.25214,
+      "r": 10
+    },
+    {
+      "type": "remove",
+      "species": "pen",
+      "individual": "pen_2",
+      "date": "2020-04-10",
+      "description": "Woody remains removed by Sebastian in preparation for new plants.",
+      "x": 887.20245,
+      "y": 638.98633,
+      "r": 10
+    },
+    {
+      "type": "move",
+      "species": "sis",
+      "individual": "sis_1",
+      "date": "2020-04-11",
+      "description": "Moved from pot to south side yard.",
+      "x": 785.57849,
+      "y": 677.25214,
+      "r": 6
+    },
+    {
+      "type": "move",
+      "species": "sis",
+      "individual": "sis_2",
+      "date": "2020-04-11",
+      "description": "Moved from pot to south side yard.",
+      "x": 887.20245,
+      "y": 638.98633,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "ver",
+      "individual": "ver_1",
+      "date": "2020-04-11",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket.",
+      "x": 328.04028,
+      "y": 730.10541,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "ver",
+      "individual": "ver_2",
+      "date": "2020-04-11",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket.",
+      "x": 287.68094,
+      "y": 650.44366,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "tul",
+      "individual": "tul_1",
+      "date": "2020-04-11",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket.",
+      "x": 189.63911,
+      "y": 524.79785,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "tul",
+      "individual": "tul_2",
+      "date": "2020-04-11",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket.",
+      "x": 222.47836,
+      "y": 529.08124,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "coa",
+      "individual": "coa_3",
+      "date": "2020-04-11",
+      "description": "Planted by Sebastian. Plant raised from seedling by Elliot for two years.",
+      "x": 90.025864,
+      "y": 1323.3079,
+      "r": 8
+    },
+    {
+      "type": "add",
+      "species": "leo",
+      "individual": "leo_2",
+      "date": "2020-04-11",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket.",
+      "x": 308.05118,
+      "y": 690.1272,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "leo",
+      "individual": "leo_1",
+      "date": "2020-04-11",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket.",
+      "x": 275.45108,
+      "y": 677.63989,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "dym",
+      "individual": "dym_2",
+      "date": "2020-05-08",
+      "description": "Devoured by gophers.",
+      "x": 194.0098,
+      "y": 692.44739,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "dym",
+      "individual": "dym_4",
+      "date": "2020-05-08",
+      "description": "Devoured by gophers.",
+      "x": 220.25946,
+      "y": 716.0047,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "dym",
+      "individual": "dym_3",
+      "date": "2020-05-08",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 225.64401,
+      "y": 665.5246,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "set",
+      "individual": "set_1",
+      "date": "2020-05-15",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket.",
+      "x": 138.59024,
+      "y": 738.89185,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "set",
+      "individual": "set_2",
+      "date": "2020-05-15",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket.",
+      "x": 135.89796,
+      "y": 774.56445,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "fel",
+      "individual": "fel_1",
+      "date": "2020-05-15",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket.",
+      "x": 239.77846,
+      "y": 673.60144,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "fel",
+      "individual": "fel_4",
+      "date": "2020-05-15",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket.",
+      "x": 232.37471,
+      "y": 711.96631,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "cri",
+      "individual": "cri_1",
+      "date": "2020-05-15",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket.",
+      "x": 185.25992,
+      "y": 689.75513,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "cri",
+      "individual": "cri_2",
+      "date": "2020-05-15",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 196.70209,
+      "y": 734.17761,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "sho",
+      "individual": "sho_1",
+      "date": "2020-05-15",
+      "description": "Planted by Sebastian. Individual from Cottage Gardens. Amended with Soil Booster from Cottage Gardens. Rigid gopher basket.",
+      "x": 1075.3977,
+      "y": 202.72067,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "sho",
+      "individual": "sho_2",
+      "date": "2020-05-15",
+      "description": "Planted by Sebastian. Individual from Cottage Gardens. Amended with Soil Booster from Cottage Gardens. Rigid gopher basket.",
+      "x": 1093.5706,
+      "y": 198.68227,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "ora",
+      "individual": "ora_1",
+      "date": "2020-05-20",
+      "description": "Planted by Sebastian. Individual from Cottage Gardens. Amended with Soil Booster from Cottage Gardens. Rigid gopher basket.",
+      "x": 801.26117,
+      "y": 546.77197,
+      "r": 15
+    },
+    {
+      "type": "add",
+      "species": "ver",
+      "individual": "ver_3",
+      "date": "2020-06-13",
+      "description": "Planted by Sebastian. Replacement for yarrow. Individual from Cottage Gardens. Amended with Soil Booster from Cottage Gardens. Rigid gopher basket.",
+      "x": 1112.2422,
+      "y": 193.25771,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "ver",
+      "individual": "ver_4",
+      "date": "2020-06-13",
+      "description": "Planted by Sebastian. Replacement for yarrow. Individual from Cottage Gardens. Amended with Soil Booster from Cottage Gardens. Rigid gopher basket.",
+      "x": 1076.4803,
+      "y": 174.61589,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "ver",
+      "individual": "ver_5",
+      "date": "2020-06-13",
+      "description": "Planted by Sebastian. Replacement for sedum. Individual from Cottage Gardens. Amended with Soil Booster from Cottage Gardens. Rigid gopher basket.",
+      "x": 1113.921,
+      "y": 165.55302,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "mel",
+      "individual": "mel_1",
+      "date": "2020-06-13",
+      "description": "Planted by Sebastian. Replacement for sedum. Individual from Cottage Gardens. Amended with Soil Booster from Cottage Gardens. Rigid gopher basket.",
+      "x": 1134.4176,
+      "y": 181.22685,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "mel",
+      "individual": "mel_2",
+      "date": "2020-06-13",
+      "description": "Planted by Sebastian. Replacement for sedum. Individual from Cottage Gardens. Amended with Soil Booster from Cottage Gardens. Rigid gopher basket.",
+      "x": 1169.9851,
+      "y": 169.77289,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "roy",
+      "individual": "roy_1",
+      "date": "2020-06-13",
+      "description": "Planted by Sebastian. Replacement for sedum. Individual from Cottage Gardens. Amended with Soil Booster from Cottage Gardens. Rigid gopher basket.",
+      "x": 1295.3757,
+      "y": 289.73798,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "lan",
+      "individual": "lan_1",
+      "date": "2020-06-13",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket.",
+      "x": 279.60413,
+      "y": 616.11719,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "lan",
+      "individual": "lan_2",
+      "date": "2020-06-13",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Soil Booster. Rigid gopher basket.",
+      "x": 299.00848,
+      "y": 726.77386,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "pap",
+      "individual": "pap_2",
+      "date": "2020-06-13",
+      "description": "Individual never thrived. Stalks consistently flopped over. Replaced with verbena by Sebastian.",
+      "x": 1112.2422,
+      "y": 193.25771,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "pap",
+      "individual": "pap_1",
+      "date": "2020-06-13",
+      "description": "Individual never thrived. Stalks consistently flopped over. Replaced with verbena by Sebastian.",
+      "x": 1076.4803,
+      "y": 174.61589,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "ang",
+      "individual": "ang_1",
+      "date": "2020-06-13",
+      "description": "Individual developed dead, woody, interior sections. Replaced with verbena by Sebastian.",
+      "x": 1113.921,
+      "y": 165.55302,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "ang",
+      "individual": "ang_2",
+      "date": "2020-06-13",
+      "description": "Individual developed dead, woody, interior sections. Replaced with grass by Sebastian.",
+      "x": 1134.4176,
+      "y": 181.22685,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "ang",
+      "individual": "ang_3",
+      "date": "2020-06-13",
+      "description": "Individual developed dead, woody, interior sections. Replaced with grass by Sebastian.",
+      "x": 1169.9851,
+      "y": 169.77289,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "ang",
+      "individual": "ang_6",
+      "date": "2020-06-13",
+      "description": "Individual developed dead, woody, interior sections. Replaced with verbena by Sebastian.",
+      "x": 1295.3757,
+      "y": 289.73798,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "ero",
+      "individual": "ero_2",
+      "date": "2020-06-13",
+      "description": "Individual never thrived. Replaced with lantana by Sebastian.",
+      "x": 299.00848,
+      "y": 726.77386,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "roy",
+      "individual": "roy_2",
+      "date": "2020-06-13",
+      "description": "Planted by Sebastian. Individual from Cottage Gardens. Amended with Soil Booster from Cottage Gardens. Rigid gopher basket.",
+      "x": 1304.7987,
+      "y": 306.5647,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "tex",
+      "individual": "tex_13",
+      "date": "2020-06-23",
+      "description": "Hedge row was removed by Mitchell Landscape during deck replacement.",
+      "x": 571.32465,
+      "y": 255.58479,
+      "r": 9
+    },
+    {
+      "type": "remove",
+      "species": "tex",
+      "individual": "tex_14",
+      "date": "2020-06-23",
+      "description": "Hedge row was removed by Mitchell Landscape during deck replacement.",
+      "x": 574.18024,
+      "y": 282.6312,
+      "r": 9
+    },
+    {
+      "type": "remove",
+      "species": "tex",
+      "individual": "tex_15",
+      "date": "2020-06-23",
+      "description": "Hedge row was removed by Mitchell Landscape during deck replacement.",
+      "x": 577.87219,
+      "y": 309.84097,
+      "r": 9
+    },
+    {
+      "type": "remove",
+      "species": "tex",
+      "individual": "tex_16",
+      "date": "2020-06-23",
+      "description": "Hedge row was removed by Mitchell Landscape during deck replacement.",
+      "x": 582.63159,
+      "y": 337.44495,
+      "r": 9
+    },
+    {
+      "type": "remove",
+      "species": "tex",
+      "individual": "tex_17",
+      "date": "2020-06-23",
+      "description": "Hedge row was removed by Mitchell Landscape during deck replacement.",
+      "x": 589.29456,
+      "y": 364.37589,
+      "r": 9
+    },
+    {
+      "type": "remove",
+      "species": "tex",
+      "individual": "tex_18",
+      "date": "2020-06-23",
+      "description": "Hedge row was removed by Mitchell Landscape during deck replacement.",
+      "x": 596.23645,
+      "y": 392.2587,
+      "r": 9
+    },
+    {
+      "type": "remove",
+      "species": "tex",
+      "individual": "tex_19",
+      "date": "2020-06-23",
+      "description": "Hedge row was removed by Mitchell Landscape during deck replacement.",
+      "x": 605.47632,
+      "y": 419.97821,
+      "r": 9
+    },
+    {
+      "type": "remove",
+      "species": "tex",
+      "individual": "tex_20",
+      "date": "2020-06-23",
+      "description": "Hedge row was removed by Mitchell Landscape during deck replacement.",
+      "x": 614.32184,
+      "y": 445.67847,
+      "r": 9
+    },
+    {
+      "type": "remove",
+      "species": "lou",
+      "individual": "lou_1",
+      "date": "2020-11-01",
+      "description": "Plant died apparently due to gopher activity. It was toppled.",
+      "x": 130.06831,
+      "y": 901.09857,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "roy",
+      "individual": "roy_2",
+      "date": "2020-11-01",
+      "description": "Plant died several months after being added.",
+      "x": 1304.7987,
+      "y": 306.5647,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_23",
+      "date": "2021-01-09",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Cottage Garden Margo Mulch. Rigid gopher basket.",
+      "x": 193.33673,
+      "y": 652.06329,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_24",
+      "date": "2021-01-09",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Cottage Garden Margo Mulch. Rigid gopher basket.",
+      "x": 139.49127,
+      "y": 713.3125,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_25",
+      "date": "2021-01-09",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Cottage Garden Margo Mulch. Rigid gopher basket.",
+      "x": 140.8374,
+      "y": 691.10126,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "mas",
+      "individual": "mas_1",
+      "date": "2021-01-09",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Cottage Garden Margo Mulch. Rigid gopher basket.",
+      "x": 128.04912,
+      "y": 875.52197,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "mas",
+      "individual": "mas_2",
+      "date": "2021-01-09",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Cottage Garden Margo Mulch. Rigid gopher basket.",
+      "x": 130.06831,
+      "y": 849.94537,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "yan",
+      "individual": "yan_18",
+      "date": "2021-01-09",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Cottage Garden Margo Mulch. Rigid gopher basket.",
+      "x": 104.26376,
+      "y": 1166.9631,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "yan",
+      "individual": "yan_19",
+      "date": "2021-01-09",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Cottage Garden Margo Mulch. Rigid gopher basket.",
+      "x": 114.35978,
+      "y": 1044.4648,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "yan",
+      "individual": "yan_20",
+      "date": "2021-01-09",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Cottage Garden Margo Mulch. Rigid gopher basket.",
+      "x": 122.43661,
+      "y": 936.10083,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "hel",
+      "individual": "hel_7",
+      "date": "2021-01-09",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Cottage Garden Margo Mulch. Rigid gopher basket.",
+      "x": 1304.7987,
+      "y": 306.5647,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "dym",
+      "individual": "dym_1",
+      "date": "2021-01-09",
+      "description": "Sebastian removed all remaining Dymondia margaretae upon request.",
+      "x": 193.33673,
+      "y": 652.06329,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "dym",
+      "individual": "dym_5",
+      "date": "2021-01-09",
+      "description": "Sebastian removed all remaining Dymondia margaretae upon request.",
+      "x": 140.8374,
+      "y": 705.23566,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "dym",
+      "individual": "dym_6",
+      "date": "2021-01-09",
+      "description": "Sebastian removed all remaining Dymondia margaretae upon request.",
+      "x": 124.68376,
+      "y": 975.80914,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "dym",
+      "individual": "dym_7",
+      "date": "2021-01-09",
+      "description": "Sebastian removed all remaining Dymondia margaretae upon request.",
+      "x": 120.64535,
+      "y": 1055.2312,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "dym",
+      "individual": "dym_8",
+      "date": "2021-01-09",
+      "description": "Sebastian removed all remaining Dymondia margaretae upon request.",
+      "x": 115.2608,
+      "y": 1125.9033,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "dym",
+      "individual": "dym_9",
+      "date": "2021-01-09",
+      "description": "Sebastian removed all remaining Dymondia margaretae upon request.",
+      "x": 111.2224,
+      "y": 1201.287,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "pot",
+      "individual": "pot_1",
+      "date": "2021-03-26",
+      "description": "Plant died due to unknown causes. Perhaps the basin housing the plant was too shallow.",
+      "x": 454.8555,
+      "y": 1039.6531,
+      "r": 10
+    },
+    {
+      "type": "remove",
+      "species": "pot",
+      "individual": "pot_2",
+      "date": "2021-03-26",
+      "description": "Plant died due to unknown causes. Perhaps the basin housing the plant was too shallow.",
+      "x": 402.50305,
+      "y": 1081.535,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "tru",
+      "individual": "tru_1",
+      "date": "2021-03-27",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 454.8555,
+      "y": 1039.6531,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "tru",
+      "individual": "tru_2",
+      "date": "2021-03-27",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
+      "x": 402.50305,
+      "y": 1081.535,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "dru",
+      "individual": "dru_1",
+      "date": "2021-03-27",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended. Rigid gopher basket.",
+      "x": 267.52017,
+      "y": 848.29376,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "dru",
+      "individual": "dru_2",
+      "date": "2021-03-27",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended. Rigid gopher basket.",
+      "x": 281.32217,
+      "y": 838.29919,
+      "r": 6
+    },
+    {
+      "type": "remove",
+      "species": "pot",
+      "individual": "pot_3",
+      "date": "2021-07-28",
+      "description": "Plant died due to unknown causes. Perhaps the basin housing the plant was too shallow.",
+      "x": 302.55753,
+      "y": 1162.4434,
+      "r": 10
+    },
+    {
+      "type": "remove",
+      "species": "ice",
+      "individual": "ice_1",
+      "date": "2021-07-30",
+      "description": "Electively removed due to unsightliness. Carried out by Sebastian.",
+      "x": 1217.8324,
+      "y": 402.31622,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "ice",
+      "individual": "ice_2",
+      "date": "2021-07-30",
+      "description": "Electively removed due to unsightliness. Carried out by Sebastian.",
+      "x": 1260.2357,
+      "y": 367.98975,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "ari",
+      "individual": "ari_1",
+      "date": "2021-07-31",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens.",
+      "x": 302.55753,
+      "y": 1162.4434,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "ari",
+      "individual": "ari_2",
+      "date": "2021-07-31",
+      "description": "Planted by Sebastian. Plant from Cottage Gardens.",
+      "x": 333.01712,
+      "y": 1137.6949,
+      "r": 10
+    },
+    {
+      "type": "add",
+      "species": "plm",
+      "individual": "plm_1",
+      "date": "2021-07-31",
+      "description": "Planted by Sebastian. Individual from Cottage Gardens.",
+      "x": 1321.5957,
+      "y": 309.58771,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "plm",
+      "individual": "plm_2",
+      "date": "2021-07-31",
+      "description": "Planted by Sebastian. Individual from Cottage Gardens.",
+      "x": 1317.2207,
+      "y": 325.06827,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "cas",
+      "individual": "cas_2",
+      "date": "2021-07-31",
+      "description": "Replacement for ice plant. Plant from Cottage Gardens. Installed by Sebastian.",
+      "x": 1260.2357,
+      "y": 367.98975,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "cas",
+      "individual": "cas_1",
+      "date": "2021-07-31",
+      "description": "Replacement for ice plant. Plant from Cottage Gardens. Installed by Sebastian.",
+      "x": 1217.8324,
+      "y": 402.31622,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "leo",
+      "individual": "leo_2",
+      "date": "2022-02-25",
+      "description": "Plant died. It was never appealing. Going to be replaced by Owen's crew.",
+      "x": 308.05118,
+      "y": 690.1272,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "leo",
+      "individual": "leo_1",
+      "date": "2022-02-25",
+      "description": "Plant died. It was never appealing. Going to be replaced by Owen's crew.",
+      "x": 275.45108,
+      "y": 677.63989,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "hel",
+      "individual": "hel_2",
+      "date": "2022-02-25",
+      "description": "Plant died. Cause unknown.",
+      "x": 358.91156,
+      "y": 797.44604,
+      "r": 8
+    },
+    {
+      "type": "remove",
+      "species": "cas",
+      "individual": "cas_1",
+      "date": "2022-02-25",
+      "description": "Plant died. What a short life! Cause unknown.",
+      "x": 1217.8324,
+      "y": 402.31622,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "vio",
+      "individual": "vio_3",
+      "date": "2022-02-27",
+      "description": "Plant died. It never thrived. Cause unknown.",
+      "x": 585.75,
+      "y": 876.00739,
+      "r": 10
+    },
+    {
+      "type": "remove",
+      "species": "vio",
+      "individual": "vio_5",
+      "date": "2022-02-27",
+      "description": "Plant died. It never thrived. Cause unknown.",
+      "x": 637.47302,
+      "y": 835.46033,
+      "r": 10
+    },
+    {
+      "type": "remove",
+      "species": "vio",
+      "individual": "vio_7",
+      "date": "2022-02-27",
+      "description": "Plant died. It never thrived. Cause unknown.",
+      "x": 557.67828,
+      "y": 894.45898,
+      "r": 10
+    },
+    {
+      "type": "remove",
+      "species": "vio",
+      "individual": "vio_8",
+      "date": "2022-02-27",
+      "description": "Plant died. It never thrived. Cause unknown.",
+      "x": 611.86029,
+      "y": 854.27209,
+      "r": 10
+    },
+    {
+      "type": "remove",
+      "species": "con",
+      "individual": "con_2",
+      "date": "2022-02-27",
+      "description": "Plant died. Cause unknown. 1 gph emitter and gopher basket intact.",
+      "x": 247.19525,
+      "y": 315.62875,
+      "r": 7
+    }
+  ]
+}

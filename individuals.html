@@ -2,11 +2,9 @@
 <html lang="en">
 <head>
     <title>Garden Species</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
     <style>
@@ -24,16 +22,16 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link garden-link" data-target="index.html" href="#">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="species.html">Species</a>
+                <a class="nav-link garden-link" data-target="species.html" href="#">Species</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Individuals</a>
+                <a class="nav-link garden-link" data-target="individuals.html" href="#">Individuals</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="garden.html">Garden</a>
+                <a class="nav-link garden-link" data-target="garden.html" href="#">Garden</a>
             </li>
         </ul>
     </div>
@@ -43,8 +41,10 @@
     <table class="table">
         <thead>
         <tr>
+            <th>Index</th>
+            <th>Species</th>
             <th>Individual</th>
-            <th>Version</th>
+            <th>Event</th>
             <th>Date</th>
             <th>Type</th>
             <th>Description</th>
@@ -63,22 +63,28 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone-with-data.min.js"></script>
 <script src="js/svg.js"></script>
-<script src="js/fragment.js"></script>
 <script>
-    const fragment = new Fragment();
-    let svgName = fragment.get("svg") || "cambridge";
-    let svg = new Svg(`img/${svgName}.svg`);
+    const queryParams = new URLSearchParams(new URL(window.location.href).search);
+    let svgName = queryParams.get("svg") || "cambridge";
+    let svg = new Svg(svgName);
 
-    function individualTableRow(versions) {
+    $(".garden-link").each((i, g) => {
+        const target = $(g).attr('data-target');
+        $(g).attr('href', `${target}?svg=${svgName}`)
+    });
+
+    function individualTableRow(species, n, events) {
         let html = "";
-        for (let i = 0; i < versions.length; i++) {
+        for (let i = 0; i < events.length; i++) {
             html += `
             <tr>
-                ${i === 0 ? '<td rowspan="' + versions.length + '">' + versions[i].instance + '</td>' : ''}
-                <td>${versions[i].version}</td>
-                <td><a href="garden.html#species=${versions[i].species}&instance=${versions[i].instance}&date=${versions[i].dateString}">${versions[i].dateString}</a></td>
-                <td>${versions[i].type}</td>
-                <td>${versions[i].description}</td>
+                <td>${n + 1}</td>
+                <td><a href="individuals.html?svg=${svgName}&species=${events[i].species}">${species.commonName}</a></td>
+                <td><a href="garden.html?svg=${svgName}&species=${events[i].species}&individual=${events[i].individual}"><code>${events[i].individual}</code></a></td>
+                <td>${i + 1}</td>
+                <td><a href="garden.html?svg=${svgName}&species=${events[i].species}&individual=${events[i].individual}&date=${events[i].date}">${events[i].date}</a></td>
+                <td><code>${events[i].type}</code></td>
+                <td>${events[i].description}</td>
             </tr>
             `;
         }
@@ -86,12 +92,25 @@
     }
 
     function init() {
-        const species = fragment.get("species");
+        const speciesId = queryParams.get("species");
+        const indyId = queryParams.get("individual");
 
         let html = "";
-        svg.forEachInstance(species, versions => {
-            html += individualTableRow(versions);
-        });
+        if (speciesId) {
+            if (indyId) {
+                const species = svg.getSpecies(speciesId);
+                const events = svg.getIndividual(speciesId, indyId);
+                html += individualTableRow(species, 0, events);
+            } else {
+                svg.forEachSpeciesIndividual(speciesId, (species, n, events) => {
+                    html += individualTableRow(species, n, events);
+                });
+            }
+        } else {
+            svg.forEachIndividual((species, n, events) => {
+                html += individualTableRow(species, n, events);
+            });
+        }
 
         $("#tbodyIndividuals tr").remove();
         $("#tbodyIndividuals").append(html);

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1520"
+   height="1430"
+   viewBox="0 0 1520 1430.0001"
+   version="1.1"
+   id="svg253932"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
+   sodipodi:docname="barlaslane.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview253934"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="0.2102413"
+     inkscape:cx="111.77632"
+     inkscape:cy="563.63806"
+     inkscape:window-width="1728"
+     inkscape:window-height="1051"
+     inkscape:window-x="0"
+     inkscape:window-y="38"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid254053" />
+  </sodipodi:namedview>
+  <defs
+     id="defs253929" />
+  <g
+          inkscape:groupmode="layer"
+          id="layer3"
+          inkscape:label="paths">
+    <path
+            style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+            d="M 877.81428,789.42051 964.23663,815.09688 976.4137,773.60921 994.22029,778.92611 997.01814,770.97468 1041.2319,782.69974 1048.4187,754.99015 1142.7108,779.40204 1182.689,628.05592 1169.2475,624.38787 1189.828,546.19575 1113.679,522.39919 1124.6254,477.66165 1027.0595,449.58171 995.17215,581.89059 979.94236,577.13128 976.61084,590.45735 881.90053,565.233 856.20024,645.66537 886.65984,656.13586 869.52632,716.10319 898.08219,725.14588 Z"
+            id="path3675"
+            inkscape:connector-curvature="0"
+            sodipodi:nodetypes="ccccccccccccccccccccccc" />
+    <path
+            style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+            d="M 1022.0974,470.17068 836.30203,425.23232 817.105,373.95573 758.54805,356.45595 722.87543,402.89767 698.64497,427.8012 658.93393,447.99325 592.97323,465.49303 511.53196,491.06963 403.84102,547.60737 180.38232,676.8365 150.76731,689.6248 118.46003,691.644 96.921845,688.27866 76.729794,672.12501 0,590 0,690 149.42118,912.41043 159.85373,909.04509 187.78607,894.91065 191.82448,890.19917 179.70925,855.87268 176.34391,831.64222 180.38232,795.29653 187.78607,767.02766 206.63199,735.39344 234.90086,712.50912 317.40948,658.10607 422.01387,590.68375 489.3207,550.97271 542.4931,526.74225 590.28096,516.64623 641.43415,510.58861 709.41406,523.37691 793.54761,540.20362 881.90053,565.233 976.61084,590.45735 979.94236,577.13128 995.17215,581.89059 Z"
+            id="path3677"
+            inkscape:connector-curvature="0"
+            sodipodi:nodetypes="cccccccccccscccccccccccccccccccccccccccc" />
+  </g>
+</svg>

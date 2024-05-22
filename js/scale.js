@@ -11,7 +11,7 @@ function Scale(canvas) {
     this.endHeight = 10;
 }
 
-Scale.prototype.render = function (feetPerScaledPixel) {
+Scale.prototype.render = function (feetPerScaledPixel, xSvg, ySvg) {
     const width = this.canvas.width;
     const height = this.canvas.height;
     const ctx = this.ctx;
@@ -42,4 +42,6 @@ Scale.prototype.render = function (feetPerScaledPixel) {
     ctx.stroke();
 
     ctx.fillText(text, width - this.sideMargin - this.lineWidth / 2 - textWidth / 2, height - this.sideMargin - 5);
+
+    ctx.fillText(`${xSvg.toFixed(2)}, ${ySvg.toFixed(2)}`, this.sideMargin, this.sideMargin);
 };

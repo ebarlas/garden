@@ -28,15 +28,15 @@
 <script src="js/control.js"></script>
 <script src="js/sun.js"></script>
 <script src="js/garden.js"></script>
-<script src="js/fragment.js"></script>
 <script>
     const tz = "America/Los_Angeles";
-    const fragment = new Fragment();
-    const svgName = fragment.get("svg") || "cambridge";
-    const svg = new Svg(`img/${svgName}.svg`);
-    const mo = fragment.map("date", v => v ? moment.tz(v, tz) : moment.tz(tz));
-    const species = fragment.get("species");
-    const instance = fragment.get("instance");
+    const queryParams = new URLSearchParams(new URL(window.location.href).search);
+    const svgName = queryParams.get("svg") || "cambridge";
+    const svg = new Svg(svgName);
+    const date = queryParams.get("date");
+    const mo = date ? moment.tz(date, tz) : moment.tz(tz);
+    const species = queryParams.get("species");
+    const individual = queryParams.get("individual");
 
     let garden;
 
@@ -46,7 +46,7 @@
         const imgMoon = document.getElementById("imgMoon");
 
         garden = new Garden(canvas, imgSun, imgMoon, svg, mo);
-        garden.emphasize(species, instance);
+        garden.emphasize(species, individual);
     });
 </script>
 </body>

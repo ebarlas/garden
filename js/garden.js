@@ -65,9 +65,10 @@ Garden.prototype.emphasize = function(species, instance) {
 
     if (species) {
         if (instance) {
-            this.emphasized = svg.visibleVersionAt(species, instance, this.astro.getDate());
+            const pos = svg.visiblePositionAt(species, instance, this.astro.getDate());
+            this.emphasized = pos ? [pos] : [];
         } else {
-            this.emphasized = svg.visibleVersionsAt(species, this.astro.getDate());
+            this.emphasized = svg.visiblePositionsAt(species, this.astro.getDate());
         }
 
         this.frame = 0;
@@ -111,9 +112,9 @@ Garden.prototype.findTouchedIndividual = function (click, grace) {
     const scale = this.scale;
     const translation = this.translation;
 
-    this.svg.forEachCircle((c) => {
-        const xDiff = click.x - (c.cx * scale + translation.x);
-        const yDiff = click.y - (c.cy * scale + translation.y);
+    this.svg.forEachIndividualAt((c) => {
+        const xDiff = click.x - (c.x * scale + translation.x);
+        const yDiff = click.y - (c.y * scale + translation.y);
         const rad = (c.r + grace) * scale;
         if (xDiff * xDiff + yDiff * yDiff <= rad * rad && (!min || rad < min)) {
             min = rad;
@@ -170,7 +171,7 @@ Garden.prototype.findClickTarget = function (click, double) {
     // individual selection box clicked
     if (prevSelection) {
         if (this.selectionBox.scaledContains(click.x, click.y, this.scale, this.translation)) {
-            window.location.href = `individuals.html#species=${prevSelection.species}`;
+            window.location.href = `individuals.html?species=${prevSelection.species}&individual=${prevSelection.individual}`;
             return;
         }
     }
@@ -245,20 +246,18 @@ Garden.prototype.updateSelection = function () {
         return;
     }
 
-    const ind = this.selection;
-    const species = this.svg.getSpecies(ind.species);
-    const versions = this.svg.versions(ind.species, ind.instance);
+    const indyId = this.selection;
+    const species = this.svg.getSpecies(indyId.species);
+    const events = this.svg.individualEvents(indyId.species, indyId.individual);
 
     const lines = [
         species.scientificName,
         species.commonName,
-        "Individual " + ind.instance,
-        "Version " + ind.version + " of " + versions.length,
-        "Introduced " + versions[0].date.toLocaleDateString('en', Garden.DateFormat)
+        "Introduced " + events[0].moment.toLocaleDateString('en', Garden.DateFormat)
     ];
 
     this.selectionBox
-        .setPosition({x: ind.cx + ind.r, y: ind.cy - ind.r})
+        .setPosition({x: indyId.x + indyId.r, y: indyId.y - indyId.r})
         .setText(lines)
         .setStyle(Textbox.Anchor.LowerLeft);
 };
@@ -267,7 +266,7 @@ Garden.prototype.pulsate = function (ctx) {
     this.emphasized.forEach(h => {
         const r = this.interpolate(this.frame / this.framesPerPeriod);
         ctx.beginPath();
-        ctx.arc(h.cx, h.cy, r * 100, 0, Math.PI * 2, false);
+        ctx.arc(h.x, h.y, r * 100, 0, Math.PI * 2, false);
         ctx.strokeStyle = 'rgba(0, 0, 0, ' + (1.0 - r) + ')';
         ctx.stroke();
     });
@@ -299,13 +298,13 @@ Garden.prototype.render = function () {
     ctx.globalAlpha = 0.9;
 
     const circles = [];
-    svg.forEachCircle(c => circles.push(c), this.astro.getDate());
+    svg.forEachIndividualAt(c => circles.push(c), this.astro.getDate());
     circles.sort((l, r) => r.r - l.r);
 
     circles.forEach(c => {
         const species = svg.getSpecies(c.species);
         ctx.beginPath();
-        ctx.arc(c.cx, c.cy, c.r, 0, Math.PI * 2, false);
+        ctx.arc(c.x, c.y, c.r, 0, Math.PI * 2, false);
         ctx.fillStyle = this.colorPalette[species.index % this.colorPalette.length];
         ctx.fill();
     });
@@ -325,7 +324,12 @@ Garden.prototype.render = function () {
     }
 
     if (this.control.showScale) {
-        this.gardenScale.render(this.svg.feetPerPixel() / this.scale);
+        const xCanvas = this.canvas.width / 2;
+        const yCanvas = this.canvas.height / 2;
+        const xSvg = (xCanvas - this.translation.x) / this.scale;
+        const ySvg = (yCanvas - this.translation.y) / this.scale;
+        const ftPerPxScaled = this.svg.feetPerPixel() / this.scale;
+        this.gardenScale.render(ftPerPxScaled, xSvg, ySvg);
     }
 
     this.control.render();

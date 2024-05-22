@@ -2,13 +2,10 @@
 <html lang="en">
 <head>
     <title>Garden Species</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
@@ -28,10 +25,10 @@
                 <a class="nav-link garden-link" data-target="index.html" href="#">Home</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Species</a>
+                <a class="nav-link garden-link" data-target="species.html" href="#">Species</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#">Individuals</a>
+                <a class="nav-link garden-link" data-target="individuals.html" href="#">Individuals</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link garden-link" data-target="garden.html" href="#">Garden</a>
@@ -50,7 +47,8 @@
             <th>Scientific Name <button id="btnSciName" data-property="scientificName" type="button" class="btn btn-sm"><i class="fa fa-sort-asc"></i></button></th>
             <th>Common Name <button data-property="commonName" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
             <th>Type <button data-property="type" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
-            <th>Individuals <button data-property="individuals" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
+            <th>Ever <button data-property="individuals" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
+            <th>Current <button data-property="current" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
             <th>Introduced <button data-property="introduced" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
             <th>Updated <button data-property="updated" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
         </tr>
@@ -67,36 +65,31 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone-with-data.min.js"></script>
-<script src="js/fragment.js"></script>
 <script src="js/svg.js"></script>
 <script>
-    const fragment = new Fragment();
-    let svgName = fragment.get("svg") || "cambridge";
-    let svg = new Svg(`img/${svgName}.svg`);
+    const queryParams = new URLSearchParams(new URL(window.location.href).search);
+    let svgName = queryParams.get("svg") || "cambridge";
+    let svg = new Svg(svgName);
 
     let speciesList = [];
 
-    let gardenLinks = $(".garden-link");
     let speciesTableBody = $("#tbodySpecies");
     let searchInput = $("#txtSearch");
 
-    function updateLinks() {
-        gardenLinks.each((i, g) => {
-            const target = $(g).attr('data-target');
-            $(g).attr('href', `${target}#svg=${svgName}`)
-        });
-    }
-
-    updateLinks();
+    $(".garden-link").each((i, g) => {
+        const target = $(g).attr('data-target');
+        $(g).attr('href', `${target}?svg=${svgName}`)
+    });
 
     function speciesTableRow(species) {
         return `<tr>
-            <td><a href="garden.html#svg=${svgName}&species=${species.id}">${species.scientificName}</a> <a href="https://www.google.com/search?q=${encodeURIComponent(species.scientificName)}"><i class="fa fa-search"></i></a></td>
+            <td><a href="garden.html?svg=${svgName}&species=${species.id}">${species.scientificName}</a> <a href="https://www.google.com/search?q=${encodeURIComponent(species.scientificName)}"><i class="fa fa-search"></i></a></td>
             <td>${species.commonName}</td>
             <td>${species.type}</td>
-            <td><a href="individuals.html#svg=${svgName}&species=${species.id}">${species.individuals}</a></td>
-            <td><a href="garden.html#svg=${svgName}&date=${species.firstVersion.dateString}">${species.firstVersion.dateString}</a></td>
-            <td><a href="garden.html#svg=${svgName}&date=${species.lastVersion.dateString}">${species.lastVersion.dateString}</a></td>
+            <td><a href="individuals.html?svg=${svgName}&species=${species.id}">${species.individuals}</a></td>
+            <td><a href="individuals.html?svg=${svgName}&species=${species.id}">${species.visibleIndividuals}</a></td>
+            <td><a href="garden.html?svg=${svgName}&date=${species.firstEventTime.date}">${species.firstEventTime.date}</a></td>
+            <td><a href="garden.html?svg=${svgName}&date=${species.lastEventTime.date}">${species.lastEventTime.date}</a></td>
         </tr>`;
     }
 
@@ -120,11 +113,12 @@
     }
 
     function init() {
-        svg.forEachSpecies(s => {
+        svg.forEachSpeciesWithIndividuals(s => {
             const species = {
-                individuals: svg.countIndividuals(s.id),
-                firstVersion: svg.firstVersion(s.id),
-                lastVersion: svg.lastVersion(s.id)
+                individuals: svg.countIndividuals(s.id, false),
+                visibleIndividuals: svg.countIndividuals(s.id, true),
+                firstEventTime: svg.timeOfFirstEvent(s.id),
+                lastEventTime: svg.timeOfLastEvent(s.id)
             };
             $.extend(species, s);
             speciesList.push(species);
@@ -154,10 +148,12 @@
                 sortAndReplaceTableRows(search, (l, r) => mul * l.type.localeCompare(r.type));
             } else if (property === "individuals") {
                 sortAndReplaceTableRows(search, (l, r) => mul * (l.individuals - r.individuals));
+            } else if (property === "current") {
+                sortAndReplaceTableRows(search, (l, r) => mul * (l.visibleIndividuals - r.visibleIndividuals));
             } else if (property === "introduced") {
-                sortAndReplaceTableRows(search, (l, r) => mul * (l.firstVersion.date.getTime() - r.firstVersion.date.getTime()));
+                sortAndReplaceTableRows(search, (l, r) => mul * (l.firstEventTime.moment.getTime() - r.firstEventTime.moment.getTime()));
             } else if (property === "updated") {
-                sortAndReplaceTableRows(search, (l, r) => mul * (l.lastVersion.date.getTime() - r.lastVersion.date.getTime()));
+                sortAndReplaceTableRows(search, (l, r) => mul * (l.lastEventTime.moment.getTime() - r.lastEventTime.moment.getTime()));
             }
         });
     }

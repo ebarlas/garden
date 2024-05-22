@@ -5,28 +5,34 @@
  *   - Moment
  *
  * Stores three types of garden svg data elements:
- * - Dimensions, sizes, etc
+ * - Dimensions: width (px), height (px), lat (deg), lon (deg), garden width (ft)
  * - Paths (structures)
- * - Circles (plant individuals)
+ * - Plants
  *
- * Circles (plant individuals) are stored in an obj-obj-array index as follows:
+ * Plants data are indexed as follows:
+ * - events: sorted array of all plant individual events [{...}, ...]
+ * - species: array of all species [{...}, ...]
+ * - speciesIndividuals: map of species id to map of individual id to events array {'...': {'...': [{...}, ...]}}
+ * - individuals: array of all individuals [{...}, ...]
+ *
+ * Plant individuals are stored in an obj-obj-array index as follows:
  * {
- *   <species-code>: {
- *     <individual>: [
- *       <version 1>, <version 2>, ...
+ *   <species-id>: {
+ *     <individual-id>: [
+ *       <event 1>, <event 2>, ...
  *     ]
  *   }
  * }
  *
  * For example:
  * {
- *   teu: {
- *     1: [
+ *   raywood_ash: {
+ *     20140419_1_raywood_ash: [
  *       {
- *         id: <id>,
- *         version: 1,
- *         cx: <x>,
- *         cy: <y>,
+ *         species: <species_id>,
+ *         individual: <individual_id>,
+ *         x: <x>,
+ *         y: <y>,
  *         r: <radius>,
  *         ...
  *       }, ...
@@ -54,10 +60,7 @@ Svg.prototype.findDimensions = function (svg, resolver) {
     return this.iterator(svg, resolver, '//svg:svg', node => {
         return {
             width: parseFloat(node.attributes.width.value),
-            height: parseFloat(node.attributes.height.value),
-            latitude: parseFloat(node.attributes['garden:latitude'].value),
-            longitude: parseFloat(node.attributes['garden:longitude'].value),
-            gardenWidth: parseFloat(node.attributes['garden:width'].value)
+            height: parseFloat(node.attributes.height.value)
         };
     })[0];
 };
@@ -71,184 +74,162 @@ Svg.prototype.findPaths = function (svg, resolver) {
     });
 };
 
-Svg.prototype.findCircles = function (svg, resolver) {
-    return this.iterator(svg, resolver, '//svg:circle[@garden:date][@garden:species][@garden:instance][@garden:version][@garden:type][@garden:description]', node => {
-        return {
-            id: node.attributes.id.value,
-            cx: parseFloat(node.attributes.cx.value),
-            cy: parseFloat(node.attributes.cy.value),
-            r: parseFloat(node.attributes.r.value),
-            dateString: node.attributes['garden:date'].value,
-            date: moment.tz(node.attributes['garden:date'].value, "America/Los_Angeles").toDate(),
-            species: node.attributes['garden:species'].value,
-            instance: node.attributes['garden:instance'].value,
-            version: parseInt(node.attributes['garden:version'].value),
-            type: node.attributes['garden:type'].value,
-            description: node.attributes['garden:description'].value
-        };
-    });
-};
-
-Svg.prototype.findSpecies = function (svg, resolver) {
-    return this.iterator(svg, resolver, '//garden:species', node => {
-        return {
-            id: node.attributes['garden:id'].value,
-            scientificName: node.attributes['garden:scientificName'].value,
-            commonName: node.attributes['garden:commonName'].value,
-            type: node.attributes['garden:type'].value
-        };
-    });
-};
-
-Svg.prototype.locateVersion = function (versions, date) {
-    let i;
-    for (i = 0; i < versions.length; i++) {
-        // advance until target date is in the past
-        if (date.getTime() < versions[i].date.getTime()) {
+Svg.prototype.findPositionAt = function (events, targetMoment) {
+    let result = null;
+    for (const event of events) {
+        if (targetMoment.getTime() < event.moment.getTime()) {
             break;
         }
+        if (['inherit', 'add', 'move', 'update'].includes(event.type)) {
+            result = {
+                x: event.x,
+                y: event.y,
+                r: event.r,
+                species: event.species,
+                individual: event.individual,
+                date: event.date,
+                moment: event.moment
+            };
+        }
+        if (event.type === 'remove') {
+            return null;
+        }
     }
-    return i === 0 ? null : versions[i - 1];
+    return result;
 };
 
-/**
- * -> species
- * <- entire versions list for each individual of species
- */
-Svg.prototype.forEachInstance = function (species, callback) {
-    for (const instance in this.individuals[species]) {
-        callback(this.individuals[species][instance]);
-    }
+Svg.prototype.forEachSpeciesIndividual = function (speciesId, callback) {
+    Object.entries(this.speciesIndividuals[speciesId]).forEach(([indyId, indyEvents], n) => {
+        callback(this.species[speciesId], n, indyEvents);
+    });
 };
 
-/**
- * -> date
- * <- correct version for each individual of each species
- */
-Svg.prototype.forEachCircle = function (callback, date) {
-    for (const species in this.individuals) {
-        const instances = this.individuals[species];
-        for (const instance in instances) {
-            const versions = instances[instance];
-            const version = date ? this.locateVersion(versions, date) : versions[versions.length - 1];
-            if (version && version.type !== 'remove') {
-                callback(version);
+Svg.prototype.forEachIndividual = function (callback) {
+    this.individuals.forEach((indy, i) => {
+        callback(this.species[indy.species], i, this.speciesIndividuals[indy.species][indy.individual]);
+    });
+};
+
+Svg.prototype.forEachIndividualAt = function (callback, date) {
+    for (const indyObj of Object.values(this.speciesIndividuals)) {
+        for (const events of Object.values(indyObj)) {
+            const position = date ? this.findPositionAt(events, date) : events[events.length - 1];
+            if (position) {
+                callback(position);
             }
         }
     }
 };
 
-Svg.prototype.indexIndividuals = function (circles) {
-    const index = {};
-    circles.forEach((c) => {
-        let species = index[c.species];
-        if (!species) {
-            species = index[c.species] = {};
-        }
-        let instance = species[c.instance];
-        if (!instance) {
-            instance = species[c.instance] = [];
-        }
-        instance.push(c);
-        instance.sort((l, r) => l.version - r.version);
+Svg.prototype.indexModel = function(model) {
+    const species = model.species.reduce((acc, s, index) => {
+        s.index = index;
+        acc[s.id] = s;
+        return acc;
+    }, {});
+
+    const events = model.events.sort((l, r) => {
+        const dateCmp = l.date.localeCompare(r.date);
+        if (dateCmp !== 0) return dateCmp;
+
+        const speciesCmp = species[l.species].commonName.localeCompare(species[r.species].commonName);
+        if (speciesCmp !== 0) return speciesCmp;
+
+        return l.individual.localeCompare(r.individual);
     });
-    return index;
+
+    const speciesIndividuals = {};
+    const individuals = [];
+    events.forEach(e => {
+        e.moment = moment.tz(e.date, "America/Los_Angeles").toDate();
+
+        if (!speciesIndividuals[e.species]) {
+            speciesIndividuals[e.species] = {};
+        }
+
+        if (!speciesIndividuals[e.species][e.individual]) {
+            speciesIndividuals[e.species][e.individual] = [];
+            individuals.push({ species: e.species, individual: e.individual });
+        }
+
+        speciesIndividuals[e.species][e.individual].push(e);
+    });
+
+    return {
+        events,
+        species,
+        speciesIndividuals,
+        individuals
+    };
 };
 
-Svg.prototype.indexSpecies = function (species) {
-    const index = {};
-    for (let i = 0; i < species.length; i++) {
-        const s = species[i];
-        s.index = i;
-        index[s.id] = s;
-    }
-    return index;
-};
-
-/**
- * -> species
- * <- earliest version among all versions of all individuals of given species
- */
-Svg.prototype.firstVersion = function (species) {
-    const instances = this.individuals[species];
-    let min = null;
-    for (const instance in instances) {
-        if (min === null || instances[instance][0].date.getTime() < min.date.getTime()) {
-            min = {
-                date: instances[instance][0].date,
-                dateString: instances[instance][0].dateString
+Svg.prototype.timeOfFirstEvent = function (speciesId) {
+    let minEvent = null;
+    for (const events of Object.values(this.speciesIndividuals[speciesId])) {
+        const firstEvent = events[0];
+        if (!minEvent || firstEvent.moment.getTime() < minEvent.moment.getTime()) {
+            minEvent = {
+                moment: firstEvent.moment,
+                date: firstEvent.date
             };
         }
     }
-    return min;
+    return minEvent;
 };
 
-/**
- * -> species
- * <- latest version among all versions of all individuals of given species
- */
-Svg.prototype.lastVersion = function (species) {
-    const instances = this.individuals[species];
-    let max = null;
-    for (const instance in instances) {
-        const arr = instances[instance];
-        if (max === null || arr[arr.length - 1].date.getTime() > max.date.getTime()) {
-            max = {
-                date: arr[arr.length - 1].date,
-                dateString: arr[arr.length - 1].dateString
+Svg.prototype.timeOfLastEvent = function (speciesId) {
+    const indies = this.speciesIndividuals[speciesId];
+    let maxEvent = null;
+    for (const events of Object.values(indies)) {
+        const lastEvent = events[events.length - 1];
+        if (!maxEvent || lastEvent.moment.getTime() > maxEvent.moment.getTime()) {
+            maxEvent = {
+                moment: lastEvent.moment,
+                date: lastEvent.date
             };
         }
     }
-    return max;
+    return maxEvent;
 };
 
-/**
- * -> species, instance
- * <- all versions of given individual of given species
- */
-Svg.prototype.versions = function (species, instance) {
-    return (this.individuals[species] || {})[instance];
+Svg.prototype.individualEvents = function (speciesId, individualId) {
+    return (this.speciesIndividuals[speciesId] || {})[individualId];
 };
 
-/**
- * -> species, instance, date
- * <- correct, visible version of given individual of given species
- */
-Svg.prototype.visibleVersionAt = function (species, instance, date) {
-    const v = this.locateVersion(this.versions(species, instance) || [], date);
-    return v && v.type !== 'remove' ? [v] : [];
+Svg.prototype.visiblePositionAt = function (speciesId, individualId, date) {
+    return this.findPositionAt(this.individualEvents(speciesId, individualId) || [], date);
 };
 
-/**
- * -> species, date
- * <- correct, visible versions of each individual of given species
- */
-Svg.prototype.visibleVersionsAt = function (species, date) {
-    const instances = this.individuals[species];
-    const versions = [];
-    for (const instance in instances) {
-        const v = this.locateVersion(instances[instance], date);
-        if (v && v.type !== 'remove') {
-            versions.push(v);
+Svg.prototype.visiblePositionsAt = function (speciesId, date) {
+    const positions = [];
+    for (const events of Object.values(this.speciesIndividuals[speciesId])) {
+        const pos = this.findPositionAt(events, date);
+        if (pos) {
+            positions.push(pos);
         }
     }
-    return versions;
+    return positions;
 };
 
-Svg.prototype.countIndividuals = function (species) {
-    return Object.keys(this.individuals[species] || {}).length;
+Svg.prototype.countIndividuals = function (speciesId, visibleOnly) {
+    let count = 0;
+    for (const events of Object.values(this.speciesIndividuals[speciesId])) {
+        const lastEvent = events[events.length - 1];
+        if (!visibleOnly || lastEvent.type !== 'remove') {
+            count++;
+        }
+    }
+    return count;
 };
 
 Svg.prototype.countAllSpecies = function (visibleOnly) {
     let count = 0;
-    outer: for (const species in this.individuals) {
-        const instances = this.individuals[species];
-        for (const instance in instances) {
-            const versions = instances[instance];
-            const version = versions[versions.length - 1];
-            if (!visibleOnly || version.type !== 'remove') {
+    for (const indies of Object.values(this.speciesIndividuals)) {
+        for (const events of Object.values(indies)) {
+            const lastEvent = events[events.length - 1];
+            if (!visibleOnly || lastEvent.type !== 'remove') {
                 count++;
-                continue outer;
+                break; // Exit the inner loop as we only need one individual per species
             }
         }
     }
@@ -256,38 +237,20 @@ Svg.prototype.countAllSpecies = function (visibleOnly) {
 };
 
 Svg.prototype.countAllIndividuals = function (visibleOnly) {
-    let count = 0;
-    for (const species in this.individuals) {
-        const instances = this.individuals[species];
-        for (const instance in instances) {
-            const versions = instances[instance];
-            const version = versions[versions.length - 1];
-            if (!visibleOnly || version.type !== 'remove') {
-                count++;
-            }
-        }
-    }
-    return count;
+    return Object.keys(this.speciesIndividuals).reduce((total, speciesId) => {
+        return total + this.countIndividuals(speciesId, visibleOnly);
+    }, 0);
 };
 
 Svg.prototype.lastUpdate = function () {
-    let max = null;
-    for (const species in this.individuals) {
-        const instances = this.individuals[species];
-        for (const instance in instances) {
-            const versions = instances[instance];
-            const version = versions[versions.length - 1];
-            if (max === null || version.date.getTime() > max.getTime()) {
-                max = version.date;
-            }
-        }
-    }
-    return max;
+    return this.events[this.events.length - 1].date;
 };
 
-Svg.prototype.forEachSpecies = function (callback) {
+Svg.prototype.forEachSpeciesWithIndividuals = function (callback) {
     for (const id in this.species) {
-        callback(this.species[id]);
+        if (this.speciesIndividuals[id]) {
+            callback(this.species[id]);
+        }
     }
 };
 
@@ -295,30 +258,49 @@ Svg.prototype.getSpecies = function(id) {
     return this.species[id];
 };
 
+Svg.prototype.getIndividual = function(speciesId, individualId) {
+    return this.speciesIndividuals[speciesId][individualId];
+};
+
 Svg.prototype.feetPerPixel = function () {
     return this.gardenWidth / this.width;
 };
 
-Svg.prototype.load = function (callback) {
+Svg.prototype.load = async function (callback) {
     const svg = this;
 
-    const xhr = new XMLHttpRequest();
-    xhr.addEventListener("load", evt => {
-        const res = xhr.responseXML;
-        const resolver = res.createNSResolver(res.ownerDocument === null
-            ? res.documentElement
-            : res.ownerDocument.documentElement);
-        const dims = svg.findDimensions(res, resolver);
-        svg.latitude = dims.latitude;
-        svg.longitude = dims.longitude;
-        svg.width = dims.width;
-        svg.height = dims.height;
-        svg.gardenWidth = dims.gardenWidth;
-        svg.paths = svg.findPaths(res, resolver);
-        svg.individuals = svg.indexIndividuals(svg.findCircles(res, resolver));
-        svg.species = svg.indexSpecies(svg.findSpecies(res, resolver));
-        callback(svg);
-    });
-    xhr.open("GET", this.resource);
-    xhr.send();
+    const loadModelFn = async () => {
+        return (await fetch(`data/${svg.resource}.json`)).json();
+    };
+
+    const loadSvgFn = async () => {
+        return (await fetch(`data/${svg.resource}.svg`)).text();
+    };
+
+    const [model, svgText] = await Promise.all([loadModelFn(), loadSvgFn()]);
+
+    const parser = new DOMParser();
+    const res = parser.parseFromString(svgText, "image/svg+xml");
+    const resolver = res.createNSResolver(res.ownerDocument === null
+        ? res.documentElement
+        : res.ownerDocument.documentElement);
+
+    const dims = svg.findDimensions(res, resolver);
+    const paths = svg.findPaths(res, resolver);
+
+    svg.model = model;
+    svg.latitude = model.map.latitude;
+    svg.longitude = model.map.longitude;
+    svg.width = dims.width;
+    svg.height = dims.height;
+    svg.gardenWidth = model.map.width;
+    svg.paths = paths;
+
+    const index = svg.indexModel(model);
+    svg.events = index.events;
+    svg.species = index.species;
+    svg.speciesIndividuals = index.speciesIndividuals;
+    svg.individuals = index.individuals;
+
+    callback(svg);
 };

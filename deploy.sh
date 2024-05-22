@@ -4,6 +4,7 @@ aws s3 cp . s3://barlasgarden/garden/ --recursive \
 --exclude "*" \
 --include "favicon*" \
 --include "*.js" \
+--include "*.json" \
 --include "*.svg" \
 --include "*.html" \
 --include "*/twilight.png"  \

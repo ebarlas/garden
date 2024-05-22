@@ -1,0 +1,27 @@
+{
+  "map": {
+    "latitude": "38.235294",
+    "longitude": "-122.637760",
+    "width": 371
+  },
+  "species": [
+    {
+      "id": "ace",
+      "type": "Tree",
+      "commonName": "Japanese Maple",
+      "scientificName": "Acer palmatum"
+    }
+  ],
+  "events": [
+    {
+      "type": "add",
+      "species": "ace",
+      "individual": "ace_1",
+      "date": "2010-01-01",
+      "description": "Planted by Dad.",
+      "x": 1147.9828,
+      "y": 501.46136,
+      "r": 21.608749
+    }
+  ]
+}
