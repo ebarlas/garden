@@ -2566,10 +2566,7 @@
       "species": "cof",
       "individual": "cof_3",
       "date": "2016-10-27",
-      "description": "Plant died suddenly. No immediate replacement in this location.",
-      "x": 256.96509,
-      "y": 395.88849,
-      "r": 8
+      "description": "Plant died suddenly. No immediate replacement in this location."
     },
     {
       "type": "add",
@@ -2696,120 +2693,84 @@
       "species": "eup",
       "individual": "eup_4",
       "date": "2017-02-01",
-      "description": "Dead plant removed by Mitchell Landscapes. Replaced with sesleria greenlee.",
-      "x": 1189.8547,
-      "y": 400.21741,
-      "r": 7
+      "description": "Dead plant removed by Mitchell Landscapes. Replaced with sesleria greenlee."
     },
     {
       "type": "remove",
       "species": "eup",
       "individual": "eup_5",
       "date": "2017-02-01",
-      "description": "Dead plant removed by Mitchell Landscapes. Replaced with sesleria greenlee.",
-      "x": 1175.3866,
-      "y": 385.74927,
-      "r": 7
+      "description": "Dead plant removed by Mitchell Landscapes. Replaced with sesleria greenlee."
     },
     {
       "type": "remove",
       "species": "eup",
       "individual": "eup_6",
       "date": "2017-02-01",
-      "description": "Dead plant removed by Mitchell Landscapes. Replaced with sesleria greenlee.",
-      "x": 1189.8547,
-      "y": 368.86975,
-      "r": 7
+      "description": "Dead plant removed by Mitchell Landscapes. Replaced with sesleria greenlee."
     },
     {
       "type": "remove",
       "species": "cal",
       "individual": "cal_1",
       "date": "2017-02-01",
-      "description": "Dead plant removed by Mitchell Landscapes. Replaced with teucrium chamaedrys.",
-      "x": 1274.8792,
-      "y": 278.28403,
-      "r": 7
+      "description": "Dead plant removed by Mitchell Landscapes. Replaced with teucrium chamaedrys."
     },
     {
       "type": "remove",
       "species": "cal",
       "individual": "cal_2",
       "date": "2017-02-01",
-      "description": "Dead plant removed by Mitchell Landscapes. Replaced with teucrium chamaedrys.",
-      "x": 1305.6173,
-      "y": 268.87439,
-      "r": 7
+      "description": "Dead plant removed by Mitchell Landscapes. Replaced with teucrium chamaedrys."
     },
     {
       "type": "remove",
       "species": "cal",
       "individual": "cal_3",
       "date": "2017-02-01",
-      "description": "Dead plant removed by Mitchell Landscapes. Replaced with teucrium chamaedrys.",
-      "x": 1316.2815,
-      "y": 292.71213,
-      "r": 7
+      "description": "Dead plant removed by Mitchell Landscapes. Replaced with teucrium chamaedrys."
     },
     {
       "type": "remove",
       "species": "cal",
       "individual": "cal_4",
       "date": "2017-02-01",
-      "description": "Dead plant removed by Mitchell Landscapes. Replaced with teucrium chamaedrys.",
-      "x": 1266.7241,
-      "y": 86.954918,
-      "r": 7
+      "description": "Dead plant removed by Mitchell Landscapes. Replaced with teucrium chamaedrys."
     },
     {
       "type": "remove",
       "species": "cal",
       "individual": "cal_5",
       "date": "2017-02-01",
-      "description": "Dead plant removed by Mitchell Landscapes. Replaced with teucrium chamaedrys.",
-      "x": 1276.1338,
-      "y": 120.20227,
-      "r": 7
+      "description": "Dead plant removed by Mitchell Landscapes. Replaced with teucrium chamaedrys."
     },
     {
       "type": "remove",
       "species": "cal",
       "individual": "cal_6",
       "date": "2017-02-01",
-      "description": "Dead plant removed by Mitchell Landscapes. Replaced with teucrium chamaedrys.",
-      "x": 1255.3901,
-      "y": 132.12114,
-      "r": 7
+      "description": "Dead plant removed by Mitchell Landscapes. Replaced with teucrium chamaedrys."
     },
     {
       "type": "remove",
       "species": "wen",
       "individual": "wen_1",
       "date": "2017-02-01",
-      "description": "Dead plant removed by Mitchell Landscapes. Replaced by breath of heaven.",
-      "x": 1075.9222,
-      "y": 94.318619,
-      "r": 7
+      "description": "Dead plant removed by Mitchell Landscapes. Replaced by breath of heaven."
     },
     {
       "type": "remove",
       "species": "wen",
       "individual": "wen_2",
       "date": "2017-02-01",
-      "description": "Dead plant removed by Mitchell Landscapes. Replaced by breath of heaven.",
-      "x": 1114.2061,
-      "y": 101.73147,
-      "r": 7
+      "description": "Dead plant removed by Mitchell Landscapes. Replaced by breath of heaven."
     },
     {
       "type": "remove",
       "species": "wen",
       "individual": "wen_3",
       "date": "2017-02-01",
-      "description": "Dead plant removed by Mitchell Landscapes. Replaced by breath of heaven.",
-      "x": 1127.8728,
-      "y": 132.55576,
-      "r": 7
+      "description": "Dead plant removed by Mitchell Landscapes. Replaced by breath of heaven."
     },
     {
       "type": "add",
@@ -2836,10 +2797,7 @@
       "species": "max",
       "individual": "max_6",
       "date": "2017-02-25",
-      "description": "Dead plant removed by us. Replaced by Japanese tassel fern.",
-      "x": 814.90924,
-      "y": 71.427544,
-      "r": 7
+      "description": "Dead plant removed by us. Replaced by Japanese tassel fern."
     },
     {
       "type": "add",
@@ -3196,20 +3154,14 @@
       "species": "eup",
       "individual": "eup_2",
       "date": "2017-04-09",
-      "description": "Dead plant removed by us. Replaced with paprika yarrow.",
-      "x": 1076.4803,
-      "y": 174.61589,
-      "r": 7
+      "description": "Dead plant removed by us. Replaced with paprika yarrow."
     },
     {
       "type": "remove",
       "species": "eup",
       "individual": "eup_3",
       "date": "2017-04-09",
-      "description": "Dead plant removed by us. Replaced with paprika yarrow.",
-      "x": 1112.2422,
-      "y": 193.25771,
-      "r": 7
+      "description": "Dead plant removed by us. Replaced with paprika yarrow."
     },
     {
       "type": "add",
@@ -3236,10 +3188,7 @@
       "species": "mon",
       "individual": "mon_1",
       "date": "2017-04-28",
-      "description": "Planted died. Likely due to gopher activity or lack of sun exposure.",
-      "x": 550.71234,
-      "y": 172.69896,
-      "r": 6
+      "description": "Planted died. Likely due to gopher activity or lack of sun exposure."
     },
     {
       "type": "add",
@@ -3356,10 +3305,7 @@
       "species": "max",
       "individual": "max_3",
       "date": "2017-05-17",
-      "description": "Dead plant removed by us. Replaced by pittosporum tenuifolium.",
-      "x": 814.90924,
-      "y": 71.427544,
-      "r": 7
+      "description": "Dead plant removed by us. Replaced by pittosporum tenuifolium."
     },
     {
       "type": "add",
@@ -3386,10 +3332,7 @@
       "species": "mon",
       "individual": "mon_2",
       "date": "2017-05-17",
-      "description": "Planted died. Likely due to gopher activity or lack of sun exposure.",
-      "x": 552.75739,
-      "y": 185.24512,
-      "r": 6
+      "description": "Planted died. Likely due to gopher activity or lack of sun exposure."
     },
     {
       "type": "add",
@@ -3526,10 +3469,7 @@
       "species": "vio",
       "individual": "vio_6",
       "date": "2017-08-01",
-      "description": "Plant died. Appears to be due to gopher activity.",
-      "x": 627.21411,
-      "y": 762.28149,
-      "r": 10
+      "description": "Plant died. Appears to be due to gopher activity."
     },
     {
       "type": "move",
@@ -3796,20 +3736,14 @@
       "species": "rud",
       "individual": "rud_1",
       "date": "2018-06-21",
-      "description": "Planted died. Likely due to lack of sun exposure.",
-      "x": 1053.274,
-      "y": 97.543388,
-      "r": 7
+      "description": "Planted died. Likely due to lack of sun exposure."
     },
     {
       "type": "remove",
       "species": "rud",
       "individual": "rud_2",
       "date": "2018-06-21",
-      "description": "Planted died. Likely due to lack of sun exposure.",
-      "x": 1067.6573,
-      "y": 118.58714,
-      "r": 7
+      "description": "Planted died. Likely due to lack of sun exposure."
     },
     {
       "type": "add",
@@ -3836,10 +3770,7 @@
       "species": "pho",
       "individual": "pho_4",
       "date": "2018-07-30",
-      "description": "Plant died. Perhaps due to insufficient sunlight. Quite shady next to the hedges and under the liquid amber.",
-      "x": 934.25055,
-      "y": 596.32941,
-      "r": 12
+      "description": "Plant died. Perhaps due to insufficient sunlight. Quite shady next to the hedges and under the liquid amber."
     },
     {
       "type": "add",
@@ -3916,10 +3847,7 @@
       "species": "vio",
       "individual": "vio_1",
       "date": "2019-01-01",
-      "description": "Planted died. The valley violets have struggled consistently.",
-      "x": 529.51312,
-      "y": 913.09399,
-      "r": 10
+      "description": "Planted died. The valley violets have struggled consistently."
     },
     {
       "type": "add",
@@ -4366,70 +4294,49 @@
       "species": "pur",
       "individual": "pur_1",
       "date": "2019-08-12",
-      "description": "Removed by Mitchell Landscapes during synthetic turf installation. Replace by a rock garden next to the house.",
-      "x": 624.82849,
-      "y": 165.40372,
-      "r": 7
+      "description": "Removed by Mitchell Landscapes during synthetic turf installation. Replace by a rock garden next to the house."
     },
     {
       "type": "remove",
       "species": "pur",
       "individual": "pur_2",
       "date": "2019-08-12",
-      "description": "Removed by Mitchell Landscapes during synthetic turf installation. Replace by a rock garden next to the house.",
-      "x": 648.42432,
-      "y": 159.23662,
-      "r": 7
+      "description": "Removed by Mitchell Landscapes during synthetic turf installation. Replace by a rock garden next to the house."
     },
     {
       "type": "remove",
       "species": "pur",
       "individual": "pur_3",
       "date": "2019-08-12",
-      "description": "Removed by Mitchell Landscapes during synthetic turf installation. Replace by a rock garden next to the house.",
-      "x": 673.09259,
-      "y": 152.53326,
-      "r": 7
+      "description": "Removed by Mitchell Landscapes during synthetic turf installation. Replace by a rock garden next to the house."
     },
     {
       "type": "remove",
       "species": "pur",
       "individual": "pur_4",
       "date": "2019-08-12",
-      "description": "Removed by Mitchell Landscapes during synthetic turf installation. Replace by a rock garden next to the house.",
-      "x": 697.22467,
-      "y": 146.63431,
-      "r": 7
+      "description": "Removed by Mitchell Landscapes during synthetic turf installation. Replace by a rock garden next to the house."
     },
     {
       "type": "remove",
       "species": "pur",
       "individual": "pur_5",
       "date": "2019-08-12",
-      "description": "Removed by Mitchell Landscapes during synthetic turf installation. Replace by a rock garden next to the house.",
-      "x": 721.625,
-      "y": 139.93095,
-      "r": 7
+      "description": "Removed by Mitchell Landscapes during synthetic turf installation. Replace by a rock garden next to the house."
     },
     {
       "type": "remove",
       "species": "mim",
       "individual": "mim_2",
       "date": "2019-08-12",
-      "description": "Removed by Mitchell Landscapes during synthetic turf installation. Replace by a rock garden below the stairs.",
-      "x": 549.36615,
-      "y": 159.75438,
-      "r": 6
+      "description": "Removed by Mitchell Landscapes during synthetic turf installation. Replace by a rock garden below the stairs."
     },
     {
       "type": "remove",
       "species": "mim",
       "individual": "mim_1",
       "date": "2019-08-12",
-      "description": "Removed by Mitchell Landscapes during synthetic turf installation. Replace by a rock garden below the stairs.",
-      "x": 548.08765,
-      "y": 147.58141,
-      "r": 6
+      "description": "Removed by Mitchell Landscapes during synthetic turf installation. Replace by a rock garden below the stairs."
     },
     {
       "type": "move",
@@ -4456,60 +4363,42 @@
       "species": "max",
       "individual": "max_2",
       "date": "2019-08-12",
-      "description": "Trampled by Mitchell Landscapes during synthetic turf installation.",
-      "x": 740.96417,
-      "y": 81.913475,
-      "r": 7
+      "description": "Trampled by Mitchell Landscapes during synthetic turf installation."
     },
     {
       "type": "remove",
       "species": "mey",
       "individual": "mey_1",
       "date": "2019-10-01",
-      "description": "Tree died, likely due to damage or stress from staking the tree, which was leaning badly prior.",
-      "x": 801.26117,
-      "y": 546.77197,
-      "r": 15
+      "description": "Tree died, likely due to damage or stress from staking the tree, which was leaning badly prior."
     },
     {
       "type": "remove",
       "species": "eup",
       "individual": "eup_1",
       "date": "2019-11-01",
-      "description": "Plant died. Theory: poor drainage caused water to collect in basin under plant.",
-      "x": 1080.1378,
-      "y": 200.67749,
-      "r": 7
+      "description": "Plant died. Theory: poor drainage caused water to collect in basin under plant."
     },
     {
       "type": "remove",
       "species": "ero",
       "individual": "ero_1",
       "date": "2020-04-01",
-      "description": "Killed accidentally by Elliot during a weed-pulling session on the hillside..",
-      "x": 275.45108,
-      "y": 677.63989,
-      "r": 7
+      "description": "Killed accidentally by Elliot during a weed-pulling session on the hillside.."
     },
     {
       "type": "remove",
       "species": "pen",
       "individual": "pen_1",
       "date": "2020-04-10",
-      "description": "Woody remains removed by Sebastian in preparation for new plants.",
-      "x": 785.57849,
-      "y": 677.25214,
-      "r": 10
+      "description": "Woody remains removed by Sebastian in preparation for new plants."
     },
     {
       "type": "remove",
       "species": "pen",
       "individual": "pen_2",
       "date": "2020-04-10",
-      "description": "Woody remains removed by Sebastian in preparation for new plants.",
-      "x": 887.20245,
-      "y": 638.98633,
-      "r": 10
+      "description": "Woody remains removed by Sebastian in preparation for new plants."
     },
     {
       "type": "move",
@@ -4606,30 +4495,21 @@
       "species": "dym",
       "individual": "dym_2",
       "date": "2020-05-08",
-      "description": "Devoured by gophers.",
-      "x": 194.0098,
-      "y": 692.44739,
-      "r": 7
+      "description": "Devoured by gophers."
     },
     {
       "type": "remove",
       "species": "dym",
       "individual": "dym_4",
       "date": "2020-05-08",
-      "description": "Devoured by gophers.",
-      "x": 220.25946,
-      "y": 716.0047,
-      "r": 7
+      "description": "Devoured by gophers."
     },
     {
       "type": "remove",
       "species": "dym",
       "individual": "dym_3",
       "date": "2020-05-08",
-      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing.",
-      "x": 225.64401,
-      "y": 665.5246,
-      "r": 7
+      "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended with Grab N Go Organic Compost. Rigid gopher basket. 2 1-gph emitters on half inch tubing."
     },
     {
       "type": "add",
@@ -4806,70 +4686,49 @@
       "species": "pap",
       "individual": "pap_2",
       "date": "2020-06-13",
-      "description": "Individual never thrived. Stalks consistently flopped over. Replaced with verbena by Sebastian.",
-      "x": 1112.2422,
-      "y": 193.25771,
-      "r": 7
+      "description": "Individual never thrived. Stalks consistently flopped over. Replaced with verbena by Sebastian."
     },
     {
       "type": "remove",
       "species": "pap",
       "individual": "pap_1",
       "date": "2020-06-13",
-      "description": "Individual never thrived. Stalks consistently flopped over. Replaced with verbena by Sebastian.",
-      "x": 1076.4803,
-      "y": 174.61589,
-      "r": 7
+      "description": "Individual never thrived. Stalks consistently flopped over. Replaced with verbena by Sebastian."
     },
     {
       "type": "remove",
       "species": "ang",
       "individual": "ang_1",
       "date": "2020-06-13",
-      "description": "Individual developed dead, woody, interior sections. Replaced with verbena by Sebastian.",
-      "x": 1113.921,
-      "y": 165.55302,
-      "r": 7
+      "description": "Individual developed dead, woody, interior sections. Replaced with verbena by Sebastian."
     },
     {
       "type": "remove",
       "species": "ang",
       "individual": "ang_2",
       "date": "2020-06-13",
-      "description": "Individual developed dead, woody, interior sections. Replaced with grass by Sebastian.",
-      "x": 1134.4176,
-      "y": 181.22685,
-      "r": 7
+      "description": "Individual developed dead, woody, interior sections. Replaced with grass by Sebastian."
     },
     {
       "type": "remove",
       "species": "ang",
       "individual": "ang_3",
       "date": "2020-06-13",
-      "description": "Individual developed dead, woody, interior sections. Replaced with grass by Sebastian.",
-      "x": 1169.9851,
-      "y": 169.77289,
-      "r": 7
+      "description": "Individual developed dead, woody, interior sections. Replaced with grass by Sebastian."
     },
     {
       "type": "remove",
       "species": "ang",
       "individual": "ang_6",
       "date": "2020-06-13",
-      "description": "Individual developed dead, woody, interior sections. Replaced with verbena by Sebastian.",
-      "x": 1295.3757,
-      "y": 289.73798,
-      "r": 7
+      "description": "Individual developed dead, woody, interior sections. Replaced with verbena by Sebastian."
     },
     {
       "type": "remove",
       "species": "ero",
       "individual": "ero_2",
       "date": "2020-06-13",
-      "description": "Individual never thrived. Replaced with lantana by Sebastian.",
-      "x": 299.00848,
-      "y": 726.77386,
-      "r": 7
+      "description": "Individual never thrived. Replaced with lantana by Sebastian."
     },
     {
       "type": "add",
@@ -4886,100 +4745,70 @@
       "species": "tex",
       "individual": "tex_13",
       "date": "2020-06-23",
-      "description": "Hedge row was removed by Mitchell Landscape during deck replacement.",
-      "x": 571.32465,
-      "y": 255.58479,
-      "r": 9
+      "description": "Hedge row was removed by Mitchell Landscape during deck replacement."
     },
     {
       "type": "remove",
       "species": "tex",
       "individual": "tex_14",
       "date": "2020-06-23",
-      "description": "Hedge row was removed by Mitchell Landscape during deck replacement.",
-      "x": 574.18024,
-      "y": 282.6312,
-      "r": 9
+      "description": "Hedge row was removed by Mitchell Landscape during deck replacement."
     },
     {
       "type": "remove",
       "species": "tex",
       "individual": "tex_15",
       "date": "2020-06-23",
-      "description": "Hedge row was removed by Mitchell Landscape during deck replacement.",
-      "x": 577.87219,
-      "y": 309.84097,
-      "r": 9
+      "description": "Hedge row was removed by Mitchell Landscape during deck replacement."
     },
     {
       "type": "remove",
       "species": "tex",
       "individual": "tex_16",
       "date": "2020-06-23",
-      "description": "Hedge row was removed by Mitchell Landscape during deck replacement.",
-      "x": 582.63159,
-      "y": 337.44495,
-      "r": 9
+      "description": "Hedge row was removed by Mitchell Landscape during deck replacement."
     },
     {
       "type": "remove",
       "species": "tex",
       "individual": "tex_17",
       "date": "2020-06-23",
-      "description": "Hedge row was removed by Mitchell Landscape during deck replacement.",
-      "x": 589.29456,
-      "y": 364.37589,
-      "r": 9
+      "description": "Hedge row was removed by Mitchell Landscape during deck replacement."
     },
     {
       "type": "remove",
       "species": "tex",
       "individual": "tex_18",
       "date": "2020-06-23",
-      "description": "Hedge row was removed by Mitchell Landscape during deck replacement.",
-      "x": 596.23645,
-      "y": 392.2587,
-      "r": 9
+      "description": "Hedge row was removed by Mitchell Landscape during deck replacement."
     },
     {
       "type": "remove",
       "species": "tex",
       "individual": "tex_19",
       "date": "2020-06-23",
-      "description": "Hedge row was removed by Mitchell Landscape during deck replacement.",
-      "x": 605.47632,
-      "y": 419.97821,
-      "r": 9
+      "description": "Hedge row was removed by Mitchell Landscape during deck replacement."
     },
     {
       "type": "remove",
       "species": "tex",
       "individual": "tex_20",
       "date": "2020-06-23",
-      "description": "Hedge row was removed by Mitchell Landscape during deck replacement.",
-      "x": 614.32184,
-      "y": 445.67847,
-      "r": 9
+      "description": "Hedge row was removed by Mitchell Landscape during deck replacement."
     },
     {
       "type": "remove",
       "species": "lou",
       "individual": "lou_1",
       "date": "2020-11-01",
-      "description": "Plant died apparently due to gopher activity. It was toppled.",
-      "x": 130.06831,
-      "y": 901.09857,
-      "r": 7
+      "description": "Plant died apparently due to gopher activity. It was toppled."
     },
     {
       "type": "remove",
       "species": "roy",
       "individual": "roy_2",
       "date": "2020-11-01",
-      "description": "Plant died several months after being added.",
-      "x": 1304.7987,
-      "y": 306.5647,
-      "r": 7
+      "description": "Plant died several months after being added."
     },
     {
       "type": "add",
@@ -5076,80 +4905,56 @@
       "species": "dym",
       "individual": "dym_1",
       "date": "2021-01-09",
-      "description": "Sebastian removed all remaining Dymondia margaretae upon request.",
-      "x": 193.33673,
-      "y": 652.06329,
-      "r": 7
+      "description": "Sebastian removed all remaining Dymondia margaretae upon request."
     },
     {
       "type": "remove",
       "species": "dym",
       "individual": "dym_5",
       "date": "2021-01-09",
-      "description": "Sebastian removed all remaining Dymondia margaretae upon request.",
-      "x": 140.8374,
-      "y": 705.23566,
-      "r": 7
+      "description": "Sebastian removed all remaining Dymondia margaretae upon request."
     },
     {
       "type": "remove",
       "species": "dym",
       "individual": "dym_6",
       "date": "2021-01-09",
-      "description": "Sebastian removed all remaining Dymondia margaretae upon request.",
-      "x": 124.68376,
-      "y": 975.80914,
-      "r": 7
+      "description": "Sebastian removed all remaining Dymondia margaretae upon request."
     },
     {
       "type": "remove",
       "species": "dym",
       "individual": "dym_7",
       "date": "2021-01-09",
-      "description": "Sebastian removed all remaining Dymondia margaretae upon request.",
-      "x": 120.64535,
-      "y": 1055.2312,
-      "r": 7
+      "description": "Sebastian removed all remaining Dymondia margaretae upon request."
     },
     {
       "type": "remove",
       "species": "dym",
       "individual": "dym_8",
       "date": "2021-01-09",
-      "description": "Sebastian removed all remaining Dymondia margaretae upon request.",
-      "x": 115.2608,
-      "y": 1125.9033,
-      "r": 7
+      "description": "Sebastian removed all remaining Dymondia margaretae upon request."
     },
     {
       "type": "remove",
       "species": "dym",
       "individual": "dym_9",
       "date": "2021-01-09",
-      "description": "Sebastian removed all remaining Dymondia margaretae upon request.",
-      "x": 111.2224,
-      "y": 1201.287,
-      "r": 7
+      "description": "Sebastian removed all remaining Dymondia margaretae upon request."
     },
     {
       "type": "remove",
       "species": "pot",
       "individual": "pot_1",
       "date": "2021-03-26",
-      "description": "Plant died due to unknown causes. Perhaps the basin housing the plant was too shallow.",
-      "x": 454.8555,
-      "y": 1039.6531,
-      "r": 10
+      "description": "Plant died due to unknown causes. Perhaps the basin housing the plant was too shallow."
     },
     {
       "type": "remove",
       "species": "pot",
       "individual": "pot_2",
       "date": "2021-03-26",
-      "description": "Plant died due to unknown causes. Perhaps the basin housing the plant was too shallow.",
-      "x": 402.50305,
-      "y": 1081.535,
-      "r": 10
+      "description": "Plant died due to unknown causes. Perhaps the basin housing the plant was too shallow."
     },
     {
       "type": "add",
@@ -5196,30 +5001,21 @@
       "species": "pot",
       "individual": "pot_3",
       "date": "2021-07-28",
-      "description": "Plant died due to unknown causes. Perhaps the basin housing the plant was too shallow.",
-      "x": 302.55753,
-      "y": 1162.4434,
-      "r": 10
+      "description": "Plant died due to unknown causes. Perhaps the basin housing the plant was too shallow."
     },
     {
       "type": "remove",
       "species": "ice",
       "individual": "ice_1",
       "date": "2021-07-30",
-      "description": "Electively removed due to unsightliness. Carried out by Sebastian.",
-      "x": 1217.8324,
-      "y": 402.31622,
-      "r": 7
+      "description": "Electively removed due to unsightliness. Carried out by Sebastian."
     },
     {
       "type": "remove",
       "species": "ice",
       "individual": "ice_2",
       "date": "2021-07-30",
-      "description": "Electively removed due to unsightliness. Carried out by Sebastian.",
-      "x": 1260.2357,
-      "y": 367.98975,
-      "r": 7
+      "description": "Electively removed due to unsightliness. Carried out by Sebastian."
     },
     {
       "type": "add",
@@ -5286,90 +5082,84 @@
       "species": "leo",
       "individual": "leo_2",
       "date": "2022-02-25",
-      "description": "Plant died. It was never appealing. Going to be replaced by Owen's crew.",
-      "x": 308.05118,
-      "y": 690.1272,
-      "r": 7
+      "description": "Plant died. It was never appealing. Going to be replaced by Owen's crew."
     },
     {
       "type": "remove",
       "species": "leo",
       "individual": "leo_1",
       "date": "2022-02-25",
-      "description": "Plant died. It was never appealing. Going to be replaced by Owen's crew.",
-      "x": 275.45108,
-      "y": 677.63989,
-      "r": 7
+      "description": "Plant died. It was never appealing. Going to be replaced by Owen's crew."
     },
     {
       "type": "remove",
       "species": "hel",
       "individual": "hel_2",
       "date": "2022-02-25",
-      "description": "Plant died. Cause unknown.",
-      "x": 358.91156,
-      "y": 797.44604,
-      "r": 8
+      "description": "Plant died. Cause unknown."
     },
     {
       "type": "remove",
       "species": "cas",
       "individual": "cas_1",
       "date": "2022-02-25",
-      "description": "Plant died. What a short life! Cause unknown.",
-      "x": 1217.8324,
-      "y": 402.31622,
-      "r": 7
+      "description": "Plant died. What a short life! Cause unknown."
     },
     {
       "type": "remove",
       "species": "vio",
       "individual": "vio_3",
       "date": "2022-02-27",
-      "description": "Plant died. It never thrived. Cause unknown.",
-      "x": 585.75,
-      "y": 876.00739,
-      "r": 10
+      "description": "Plant died. It never thrived. Cause unknown."
     },
     {
       "type": "remove",
       "species": "vio",
       "individual": "vio_5",
       "date": "2022-02-27",
-      "description": "Plant died. It never thrived. Cause unknown.",
-      "x": 637.47302,
-      "y": 835.46033,
-      "r": 10
+      "description": "Plant died. It never thrived. Cause unknown."
     },
     {
       "type": "remove",
       "species": "vio",
       "individual": "vio_7",
       "date": "2022-02-27",
-      "description": "Plant died. It never thrived. Cause unknown.",
-      "x": 557.67828,
-      "y": 894.45898,
-      "r": 10
+      "description": "Plant died. It never thrived. Cause unknown."
     },
     {
       "type": "remove",
       "species": "vio",
       "individual": "vio_8",
       "date": "2022-02-27",
-      "description": "Plant died. It never thrived. Cause unknown.",
-      "x": 611.86029,
-      "y": 854.27209,
-      "r": 10
+      "description": "Plant died. It never thrived. Cause unknown."
     },
     {
       "type": "remove",
       "species": "con",
       "individual": "con_2",
       "date": "2022-02-27",
-      "description": "Plant died. Cause unknown. 1 gph emitter and gopher basket intact.",
-      "x": 247.19525,
-      "y": 315.62875,
-      "r": 7
+      "description": "Plant died. Cause unknown. 1 gph emitter and gopher basket intact."
+    },
+    {
+      "type": "remove",
+      "species": "ace",
+      "individual": "ace_2",
+      "date": "2023-09-15",
+      "description": "After struggling for years, the tree finally died. According to Kent Julin, most likely related to dry conditions and radiant heat from the stucco wall. Cut down with chainsaw by Armando."
+    },
+    {
+      "type": "remove",
+      "species": "icy",
+      "individual": "icy_1",
+      "date": "2023-01-28",
+      "description": "Cypress-like plants weren't very attractive and were blocking street view from house. Removed by Robert on a Saturday morning."
+    },
+    {
+      "type": "remove",
+      "species": "icy",
+      "individual": "icy_2",
+      "date": "2023-01-28",
+      "description": "Cypress-like plants weren't very attractive and were blocking street view from house. Removed by Robert on a Saturday morning."
     }
   ]
 }

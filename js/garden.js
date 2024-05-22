@@ -246,18 +246,19 @@ Garden.prototype.updateSelection = function () {
         return;
     }
 
-    const indyId = this.selection;
-    const species = this.svg.getSpecies(indyId.species);
-    const events = this.svg.individualEvents(indyId.species, indyId.individual);
+    const sel = this.selection;
+    const species = this.svg.getSpecies(sel.species);
+    const events = this.svg.individualEvents(sel.species, sel.individual);
 
     const lines = [
         species.scientificName,
         species.commonName,
+        "Individual " + sel.individual,
         "Introduced " + events[0].moment.toLocaleDateString('en', Garden.DateFormat)
     ];
 
     this.selectionBox
-        .setPosition({x: indyId.x + indyId.r, y: indyId.y - indyId.r})
+        .setPosition({x: sel.x + sel.r, y: sel.y - sel.r})
         .setText(lines)
         .setStyle(Textbox.Anchor.LowerLeft);
 };
