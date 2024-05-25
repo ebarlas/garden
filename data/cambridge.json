@@ -628,6 +628,72 @@
       "type": "Shrub",
       "commonName": "Butterfly Bush",
       "scientificName": "Buddleia 'Grand Cascade'"
+    },
+    {
+      "id": "cha",
+      "type": "Perennial",
+      "commonName": "Beard Tongue",
+      "scientificName": "Penstemon 'Cha Cha Cherry'"
+    },
+    {
+      "id": "rok",
+      "type": "Perennial",
+      "commonName": "Rock Rose",
+      "scientificName": "Helianthemum 'Ben Hope'"
+    },
+    {
+      "id": "dcr",
+      "type": "Perennial",
+      "commonName": "Greggii Hybrid Sage",
+      "scientificName": "Salvia 'Shell Dancer'"
+    },
+    {
+      "id": "phl",
+      "type": "Perennial",
+      "commonName": "Creeping Phlox",
+      "scientificName": "Phlox subulata 'Spring Scarlet'"
+    },
+    {
+      "id": "spd",
+      "type": "Perennial",
+      "commonName": "African Daisy",
+      "scientificName": "Osteospermum 'FlowerPower Spider White'"
+    },
+    {
+      "id": "twh",
+      "type": "Shrub",
+      "commonName": "Germander",
+      "scientificName": "Teucrium chamaedrys 'White'"
+    },
+    {
+      "id": "fst",
+      "type": "Shrub",
+      "commonName": "Pride of Madera",
+      "scientificName": "Echium fastuosum"
+    },
+    {
+      "id": "eli",
+      "type": "Grass",
+      "commonName": "Elijah Blue Fescue",
+      "scientificName": "Festuca glauca 'Elijah's Blue'"
+    },
+    {
+      "id": "gol",
+      "type": "Perennial",
+      "commonName": "Golden Lavender Cotton",
+      "scientificName": "Santolina virens"
+    },
+    {
+      "id": "spc",
+      "type": "Perennial",
+      "commonName": "Rock Purslane",
+      "scientificName": "Calandrinia spectabilis"
+    },
+    {
+      "id": "ply",
+      "type": "Shrub",
+      "commonName": "Sweet-Pea Shrub",
+      "scientificName": "Polygala fruticosa ‘Petite Butterflies’"
     }
   ],
   "events": [
@@ -737,8 +803,8 @@
       "individual": "lil_3",
       "date": "2014-04-19",
       "description": "Plant was present when we moved in.",
-      "x": 979.7312,
-      "y": 142.70563,
+      "x": 988.57,
+      "y": 169.57,
       "r": 8
     },
     {
@@ -747,8 +813,8 @@
       "individual": "lil_1",
       "date": "2014-04-19",
       "description": "Plant was present when we moved in.",
-      "x": 983.81207,
-      "y": 120.55254,
+      "x": 998.32,
+      "y": 147.85,
       "r": 8
     },
     {
@@ -757,8 +823,8 @@
       "individual": "lil_2",
       "date": "2014-04-19",
       "description": "Plant was present when we moved in.",
-      "x": 1001.8843,
-      "y": 135.12694,
+      "x": 1012.07,
+      "y": 166.37,
       "r": 8
     },
     {
@@ -1027,8 +1093,8 @@
       "individual": "icy_1",
       "date": "2014-04-19",
       "description": "Tree was present when we moved in.",
-      "x": 969.8194,
-      "y": 100.65855,
+      "x": 976.58,
+      "y": 121.93,
       "r": 11
     },
     {
@@ -1037,8 +1103,8 @@
       "individual": "icy_2",
       "date": "2014-04-19",
       "description": "Tree was present when we moved in.",
-      "x": 989.64056,
-      "y": 168.28375,
+      "x": 994.27,
+      "y": 191.60,
       "r": 11
     },
     {
@@ -1437,9 +1503,9 @@
       "individual": "ses_3",
       "date": "2016-05-11",
       "description": "Planted by Mitchell Landscapes.",
-      "x": 1012.6199,
-      "y": 224.79108,
-      "r": 7
+      "x": 1034.41,
+      "y": 225.30,
+      "r": 6
     },
     {
       "type": "add",
@@ -1447,9 +1513,9 @@
       "individual": "ses_1",
       "date": "2016-05-11",
       "description": "Planted by Mitchell Landscapes.",
-      "x": 1004.1801,
-      "y": 203.69168,
-      "r": 7
+      "x": 1024.10,
+      "y": 195.38,
+      "r": 6
     },
     {
       "type": "add",
@@ -1557,9 +1623,9 @@
       "individual": "ses_2",
       "date": "2016-05-11",
       "description": "Planted by Mitchell Landscapes.",
-      "x": 1028.2937,
-      "y": 205.5002,
-      "r": 7
+      "x": 1037.13,
+      "y": 208.98,
+      "r": 6
     },
     {
       "type": "add",
@@ -4982,8 +5048,8 @@
       "individual": "dru_1",
       "date": "2021-03-27",
       "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended. Rigid gopher basket.",
-      "x": 267.52017,
-      "y": 848.29376,
+      "x": 215.40,
+      "y": 888.35,
       "r": 6
     },
     {
@@ -4992,8 +5058,8 @@
       "individual": "dru_2",
       "date": "2021-03-27",
       "description": "Planted by Sebastian. Plant from Cottage Gardens. Soil amended. Rigid gopher basket.",
-      "x": 281.32217,
-      "y": 838.29919,
+      "x": 231.89,
+      "y": 879.64,
       "r": 6
     },
     {
@@ -5145,7 +5211,7 @@
       "species": "ace",
       "individual": "ace_2",
       "date": "2023-09-15",
-      "description": "After struggling for years, the tree finally died. According to Kent Julin, most likely related to dry conditions and radiant heat from the stucco wall. Cut down with chainsaw by Armando."
+      "description": "After struggling for years, the tree finally died. According to Kent Julin, most likely related to dry conditions and radiant heat from the stucco wall. Cut down with chainsaw by Armando. Date estimated."
     },
     {
       "type": "remove",
@@ -5160,6 +5226,873 @@
       "individual": "icy_2",
       "date": "2023-01-28",
       "description": "Cypress-like plants weren't very attractive and were blocking street view from house. Removed by Robert on a Saturday morning."
+    },
+    {
+      "type": "remove",
+      "species": "plm",
+      "individual": "plm_1",
+      "date": "2023-01-01",
+      "description": "This plant has several showy seasons but ultimately died. Date estimated."
+    },
+    {
+      "type": "remove",
+      "species": "plm",
+      "individual": "plm_2",
+      "date": "2023-01-01",
+      "description": "This plant has several showy seasons but ultimately died. Date estimated."
+    },
+    {
+      "type": "remove",
+      "species": "roy",
+      "individual": "roy_1",
+      "date": "2023-01-01",
+      "description": "This plant has several showy seasons but ultimately died. Date estimated."
+    },
+    {
+      "type": "remove",
+      "species": "cas",
+      "individual": "cas_2",
+      "date": "2023-07-01",
+      "description": "This plant was healthy and thriving. Too healthy! It spread quickly and overtook the garden area. We decided to remove it. Date not exact."
+    },
+    {
+      "type": "remove",
+      "species": "sto",
+      "individual": "sto_1",
+      "date": "2021-01-01",
+      "description": "This plant never thrived and eventually died. Date estimated."
+    },
+    {
+      "type": "remove",
+      "species": "ver",
+      "individual": "ver_3",
+      "date": "2023-01-01",
+      "description": "This plant has several showy seasons but ultimately died. Date estimated."
+    },
+    {
+      "type": "remove",
+      "species": "ver",
+      "individual": "ver_4",
+      "date": "2023-01-01",
+      "description": "This plant has several showy seasons but ultimately died. Date estimated."
+    },
+    {
+      "type": "remove",
+      "species": "ver",
+      "individual": "ver_5",
+      "date": "2023-01-01",
+      "description": "This plant has several showy seasons but ultimately died. Date estimated."
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_26",
+      "date": "2023-02-10",
+      "description": "Planted by Armando. Plant from Cottage Gardens.",
+      "x": 258.33,
+      "y": 1062.24,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_27",
+      "date": "2023-02-10",
+      "description": "Planted by Armando. Plant from Cottage Gardens.",
+      "x": 252.03,
+      "y": 1034.13,
+      "r": 7
+    },
+    {
+      "type": "inherit",
+      "species": "coy",
+      "individual": "coy_3",
+      "date": "2014-04-19",
+      "description": "Native shrub was present when we moved in.",
+      "x": 285.33,
+      "y": 1092.35,
+      "r": 14
+    },
+    {
+      "type": "remove",
+      "species": "con",
+      "individual": "con_1",
+      "date": "2022-09-01",
+      "description": "I believe this individual was a casualty of the vole field mice summer of 2022. Date estimated."
+    },
+    {
+      "type": "remove",
+      "species": "lan",
+      "individual": "lan_1",
+      "date": "2022-07-01",
+      "description": "This individual always struggled and eventually died. Date estimated."
+    },
+    {
+      "type": "remove",
+      "species": "lan",
+      "individual": "lan_2",
+      "date": "2022-07-01",
+      "description": "This individual always struggled and eventually died. Date estimated."
+    },
+    {
+      "type": "remove",
+      "species": "ver",
+      "individual": "ver_2",
+      "date": "2022-07-01",
+      "description": "This individual never thrived and eventually died. Date estimated."
+    },
+    {
+      "type": "remove",
+      "species": "ham",
+      "individual": "ham_1",
+      "date": "2022-09-01",
+      "description": "This individual was a casualty of the vole field mice summer of 2022. Date estimated."
+    },
+    {
+      "type": "remove",
+      "species": "ham",
+      "individual": "ham_2",
+      "date": "2022-09-01",
+      "description": "This individual was a casualty of the vole field mice summer of 2022. Date estimated."
+    },
+    {
+      "type": "remove",
+      "species": "heb",
+      "individual": "heb_1",
+      "date": "2022-09-01",
+      "description": "This individual was a casualty of the vole field mice summer of 2022. Date estimated."
+    },
+    {
+      "type": "remove",
+      "species": "heb",
+      "individual": "heb_2",
+      "date": "2022-09-01",
+      "description": "This individual was a casualty of the vole field mice summer of 2022. Date estimated."
+    },
+    {
+      "type": "remove",
+      "species": "heb",
+      "individual": "heb_3",
+      "date": "2022-09-01",
+      "description": "This individual was a casualty of the vole field mice summer of 2022. Date estimated."
+    },
+    {
+      "type": "update",
+      "species": "coa",
+      "individual": "coa_1",
+      "date": "2024-05-22",
+      "description": "This coast live oak is thriving and this update reflects the larger footprint.",
+      "r": 6
+    },
+    {
+      "type": "update",
+      "species": "coa",
+      "individual": "coa_2",
+      "date": "2024-05-22",
+      "description": "This coast live oak is thriving and this update reflects the larger footprint.",
+      "r": 6
+    },
+    {
+      "type": "remove",
+      "species": "ang",
+      "individual": "ang_4",
+      "date": "2022-07-01",
+      "description": "I don't recall the removal of this individual. Date estimated."
+    },
+    {
+      "type": "remove",
+      "species": "ang",
+      "individual": "ang_5",
+      "date": "2022-07-01",
+      "description": "I don't recall the removal of this individual. Date estimated."
+    },
+    {
+      "type": "remove",
+      "species": "hel",
+      "individual": "hel_7",
+      "date": "2022-07-01",
+      "description": "Helianthemum have struggled around the garden quite a bit. This one never thrived. Date estimated."
+    },
+    {
+      "type": "remove",
+      "species": "hel",
+      "individual": "hel_5",
+      "date": "2022-07-01",
+      "description": "Helianthemum have struggled around the garden quite a bit. This one never thrived. Date estimated."
+    },
+    {
+      "type": "add",
+      "species": "pen",
+      "individual": "pen_3",
+      "date": "2024-04-18",
+      "description": "Planted by Elliot. Plant from Cottage Gardens.",
+      "x": 1297.35,
+      "y": 304.07,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "pen",
+      "individual": "pen_4",
+      "date": "2024-04-18",
+      "description": "Planted by Elliot. Plant from Cottage Gardens.",
+      "x": 1313.84,
+      "y": 322.07,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "hel",
+      "individual": "hel_8",
+      "date": "2022-03-01",
+      "description": "Addition date uncertain.",
+      "x": 1266.12,
+      "y": 305.40,
+      "r": 7
+    },
+    {
+      "type": "observation",
+      "species": "hel",
+      "individual": "hel_8",
+      "date": "2024-05-23",
+      "description": "This is a rare thriving specimen! It had a showy bloom this season from roughly March to May."
+    },
+    {
+      "type": "add",
+      "species": "hel",
+      "individual": "hel_9",
+      "date": "2022-03-01",
+      "description": "Addition date uncertain.",
+      "x": 1257,
+      "y": 365.38,
+      "r": 7
+    },
+    {
+      "type": "observation",
+      "species": "hel",
+      "individual": "hel_9",
+      "date": "2024-05-23",
+      "description": "Characteristically, this specimen is not doing well. I removed significant dead portions several weeks ago."
+    },
+    {
+      "type": "add",
+      "species": "cha",
+      "individual": "cha_1",
+      "date": "2024-04-18",
+      "description": "Planted by Elliot. Plant from Cottage Gardens.",
+      "x": 1294.87,
+      "y": 336.5,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "cha",
+      "individual": "cha_2",
+      "date": "2024-04-18",
+      "description": "Planted by Elliot. Plant from Cottage Gardens.",
+      "x": 1226.77,
+      "y": 396.22,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "rok",
+      "individual": "rok_1",
+      "date": "2024-03-20",
+      "description": "Planted by Elliot. Plant from Cottage Gardens.",
+      "x": 1253.17,
+      "y": 290.22,
+      "r": 5
+    },
+    {
+      "type": "add",
+      "species": "rok",
+      "individual": "rok_2",
+      "date": "2024-03-20",
+      "description": "Planted by Elliot. Plant from Cottage Gardens.",
+      "x": 1222.30,
+      "y": 320.56,
+      "r": 5
+    },
+    {
+      "type": "add",
+      "species": "dcr",
+      "individual": "dcr_1",
+      "date": "2023-04-29",
+      "description": "Planted by Elliot or Armando. Plant from Cottage Gardens.",
+      "x": 990.17,
+      "y": 200.25,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "dcr",
+      "individual": "dcr_2",
+      "date": "2023-04-29",
+      "description": "Planted by Elliot or Armando. Plant from Cottage Gardens.",
+      "x": 1006.03,
+      "y": 196.22,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "hel",
+      "individual": "hel_10",
+      "date": "2022-03-01",
+      "description": "Addition date uncertain.",
+      "x": 1201.72,
+      "y": 410.81,
+      "r": 7
+    },
+    {
+      "type": "observation",
+      "species": "hel",
+      "individual": "hel_10",
+      "date": "2024-05-23",
+      "description": "Characteristically, this specimen is not doing well. I removed significant dead portions several weeks ago."
+    },
+    {
+      "type": "add",
+      "species": "phl",
+      "individual": "phl_1",
+      "date": "2022-03-01",
+      "description": "Plant from Cottage Garden. Added by Elliot or Armando.",
+      "x": 1216.95,
+      "y": 417.07,
+      "r": 5
+    },
+    {
+      "type": "add",
+      "species": "phl",
+      "individual": "phl_2",
+      "date": "2022-03-01",
+      "description": "Plant from Cottage Garden. Added by Elliot or Armando.",
+      "x": 1213.16,
+      "y": 400.84,
+      "r": 5
+    },
+    {
+      "type": "add",
+      "species": "spd",
+      "individual": "spd_1",
+      "date": "2022-02-10",
+      "description": "Plant from Cottage Garden. Added by Elliot or Armando. Several neighboring specimens were added but didn't survive very long.",
+      "x": 979.76,
+      "y": 108.76,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_28",
+      "date": "2022-04-01",
+      "description": "Plant from Cottage Garden. Added by Elliot or Armando.",
+      "x": 1065.68,
+      "y": 164.62,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_29",
+      "date": "2022-04-01",
+      "description": "Plant from Cottage Garden. Added by Elliot or Armando.",
+      "x": 1070.57,
+      "y": 184.93,
+      "r": 7
+    },
+    {
+      "type": "update",
+      "species": "aga",
+      "individual": "aga_1",
+      "date": "2024-05-23",
+      "description": "Agave plant is doing very well. This update reflects its larger size. It sprouted a stalk in early 2022. It completed its lifecycle and dried out this year. I removed it last weekend.",
+      "r": 5
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_30",
+      "date": "2023-04-01",
+      "description": "Plant from Cottage Garden. Added by Armando.",
+      "x": 1107.10,
+      "y": 163.36,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_31",
+      "date": "2023-04-01",
+      "description": "Plant from Cottage Garden. Added by Armando.",
+      "x": 1104.48,
+      "y": 180.01,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "mel",
+      "individual": "mel_1",
+      "date": "2024-03-10",
+      "description": "Remains of struggling plant removed by Elliot."
+    },
+    {
+      "type": "remove",
+      "species": "mel",
+      "individual": "mel_2",
+      "date": "2024-03-10",
+      "description": "Remains of struggling plant removed by Elliot."
+    },
+    {
+      "type": "add",
+      "species": "twh",
+      "individual": "twh_1",
+      "date": "2024-03-20",
+      "description": "Plant from Cottage Garden. Added by Elliot.",
+      "x": 1129.28,
+      "y": 180.18,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "twh",
+      "individual": "twh_2",
+      "date": "2024-03-20",
+      "description": "Plant from Cottage Garden. Added by Elliot.",
+      "x": 1165.18,
+      "y": 167.83,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "mel",
+      "individual": "mel_3",
+      "date": "2024-03-20",
+      "description": "Volunteer specimen yielded from neighboring Pink Crystals grasses.",
+      "x": 1175.28,
+      "y": 177.58,
+      "r": 6
+    },
+    {
+      "type": "update",
+      "species": "hea",
+      "individual": "hea_1",
+      "date": "2024-05-23",
+      "description": "This front-yard specimen has quite the footprint now.",
+      "r": 5
+    },
+    {
+      "type": "update",
+      "species": "hea",
+      "individual": "hea_2",
+      "date": "2024-05-23",
+      "description": "This front-yard specimen has quite the footprint now.",
+      "r": 5
+    },
+    {
+      "type": "update",
+      "species": "hea",
+      "individual": "hea_3",
+      "date": "2024-05-23",
+      "description": "This front-yard specimen has quite the footprint now.",
+      "r": 5
+    },
+    {
+      "type": "remove",
+      "species": "but",
+      "individual": "but_4",
+      "date": "2023-03-01",
+      "description": "Butterfly bush perished at some point, I'm not sure when. Armando removed remains if memory serves."
+    },
+    {
+      "type": "add",
+      "species": "fst",
+      "individual": "fst_1",
+      "date": "2024-03-20",
+      "description": "Pride of madeira from Cottage Gardens. Planted by Elliot in soggy, clay soil.",
+      "x": 254.58595,
+      "y": 691.77429,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "fst",
+      "individual": "fst_2",
+      "date": "2024-03-20",
+      "description": "Pride of madeira from Cottage Gardens. Planted by Elliot in soggy, clay soil.",
+      "x": 274.01,
+      "y": 712.49,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "eli",
+      "individual": "eli_1",
+      "date": "2023-04-29",
+      "description": "Plant from Cottage Gardens. Planted by Armando.",
+      "x": 289.37,
+      "y": 652.04,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "eli",
+      "individual": "eli_2",
+      "date": "2023-04-29",
+      "description": "Plant from Cottage Gardens. Planted by Armando.",
+      "x": 313.34,
+      "y": 702.11,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "eli",
+      "individual": "eli_3",
+      "date": "2023-04-29",
+      "description": "Plant from Cottage Gardens. Planted by Armando.",
+      "x": 146.26,
+      "y": 1219.95,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "eli",
+      "individual": "eli_4",
+      "date": "2023-04-29",
+      "description": "Plant from Cottage Gardens. Planted by Armando.",
+      "x": 142.75,
+      "y": 1253.22,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "gol",
+      "individual": "gol_1",
+      "date": "2022-11-11",
+      "description": "Plant from Cottage Gardens. Planted by Armando.",
+      "x": 149.70,
+      "y": 1183.83,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "lav",
+      "individual": "lav_6",
+      "date": "2022-11-11",
+      "description": "Plant from Cottage Gardens. Planted by Armando.",
+      "x": 299.46,
+      "y": 720.59,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "lav",
+      "individual": "lav_7",
+      "date": "2022-11-11",
+      "description": "Plant from Cottage Gardens. Planted by Armando.",
+      "x": 284.04,
+      "y": 684.66,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "pho",
+      "individual": "pho_1",
+      "date": "2022-09-01",
+      "description": "Casualty of the vole field mice and gopher summer of 2022. Date estimated."
+    },
+    {
+      "type": "remove",
+      "species": "pho",
+      "individual": "pho_2",
+      "date": "2022-09-01",
+      "description": "Casualty of the vole field mice and gopher summer of 2022. Date estimated."
+    },
+    {
+      "type": "add",
+      "species": "lom",
+      "individual": "lom_8",
+      "date": "2022-11-11",
+      "description": "Plant from Cottage Gardens. Planted by Armando.",
+      "x": 701.02905,
+      "y": 613.08374,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "lom",
+      "individual": "lom_9",
+      "date": "2022-11-11",
+      "description": "Plant from Cottage Gardens. Planted by Armando.",
+      "x": 738.53027,
+      "y": 646.5141,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "eli",
+      "individual": "eli_5",
+      "date": "2022-11-11",
+      "description": "Plant from Cottage Gardens. Planted by Armando.",
+      "x": 712.22,
+      "y": 624.77,
+      "r": 5
+    },
+    {
+      "type": "add",
+      "species": "eli",
+      "individual": "eli_6",
+      "date": "2022-11-11",
+      "description": "Plant from Cottage Gardens. Planted by Armando.",
+      "x": 725.18,
+      "y": 634.27,
+      "r": 5
+    },
+    {
+      "type": "remove",
+      "species": "pho",
+      "individual": "pho_3",
+      "date": "2021-01-01",
+      "description": "This individual never thrived. Estimated perish date."
+    },
+    {
+      "type": "add",
+      "species": "spc",
+      "individual": "spc_1",
+      "date": "2022-07-31",
+      "description": "Replacements for upper deck plants targeted by voles. Plant from Cottage Gardens. Planted by Armando.",
+      "x": 186,
+      "y": 1077,
+      "r": 8
+    },
+    {
+      "type": "add",
+      "species": "spc",
+      "individual": "spc_2",
+      "date": "2022-07-31",
+      "description": "Replacements for upper deck plants targeted by voles. Plant from Cottage Gardens. Planted by Armando.",
+      "x": 160.52,
+      "y": 1138.58,
+      "r": 8
+    },
+    {
+      "type": "add",
+      "species": "spc",
+      "individual": "spc_3",
+      "date": "2023-02-15",
+      "description": "Plant from Cottage Gardens. Selected because of success of prior specimens. Planted by Armando.",
+      "x": 169.45,
+      "y": 1098.93,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "spc",
+      "individual": "spc_4",
+      "date": "2023-02-15",
+      "description": "Plant from Cottage Gardens. Selected because of success of prior specimens. Planted by Armando.",
+      "x": 143.82,
+      "y": 1279.40,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "spc",
+      "individual": "spc_5",
+      "date": "2023-02-15",
+      "description": "Plant from Cottage Gardens. Selected because of success of prior specimens. Planted by Armando.",
+      "x": 195.29,
+      "y": 1229.43,
+      "r": 7
+    },
+    {
+      "type": "update",
+      "species": "but",
+      "individual": "but_3",
+      "date": "2024-05-23",
+      "description": "Update to reflect growth of butterfly bush. It's enormous!",
+      "r": 7
+    },
+    {
+      "type": "update",
+      "species": "toy",
+      "individual": "toy_1",
+      "date": "2024-05-23",
+      "description": "Update to reflect growth of toyon. It's enormous!",
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "ply",
+      "individual": "ply_1",
+      "date": "2023-02-10",
+      "description": "Plant from Cottage Gardens. Planted by Armando.",
+      "x": 191.01,
+      "y": 906.89,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "ply",
+      "individual": "ply_2",
+      "date": "2023-02-10",
+      "description": "Plant from Cottage Gardens. Planted by Armando.",
+      "x": 255.35,
+      "y": 752.22,
+      "r": 5
+    },
+    {
+      "type": "update",
+      "species": "but",
+      "individual": "but_1",
+      "date": "2024-05-24",
+      "description": "Update to reflect growth of butterfly bush.",
+      "r": 7
+    },
+    {
+      "type": "update",
+      "species": "but",
+      "individual": "but_2",
+      "date": "2024-05-24",
+      "description": "Update to reflect growth of butterfly bush.",
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "eri",
+      "individual": "eri_1",
+      "date": "2022-01-01",
+      "description": "I don't recall if this plant died or if it was struggling and I elected to remove it."
+    },
+    {
+      "type": "remove",
+      "species": "eri",
+      "individual": "eri_2",
+      "date": "2022-01-01",
+      "description": "I don't recall if this plant died or if it was struggling and I elected to remove it."
+    },
+    {
+      "type": "remove",
+      "species": "pur",
+      "individual": "pur_6",
+      "date": "2020-01-01",
+      "description": "I have absolutely no idea when this specimen died. Very rough date estimate!"
+    },
+    {
+      "type": "remove",
+      "species": "cam",
+      "individual": "cam_1",
+      "date": "2021-01-01",
+      "description": "I have absolutely no idea when this specimen died. Very rough date estimate!"
+    },
+    {
+      "type": "remove",
+      "species": "cam",
+      "individual": "cam_2",
+      "date": "2021-01-01",
+      "description": "I have absolutely no idea when this specimen died. Very rough date estimate!"
+    },
+    {
+      "type": "remove",
+      "species": "max",
+      "individual": "max_1",
+      "date": "2021-01-01",
+      "description": "I have absolutely no idea when this specimen died. Very rough date estimate!"
+    },
+    {
+      "type": "remove",
+      "species": "max",
+      "individual": "max_4",
+      "date": "2021-01-01",
+      "description": "I have absolutely no idea when this specimen died. Very rough date estimate!"
+    },
+    {
+      "type": "remove",
+      "species": "max",
+      "individual": "max_5",
+      "date": "2021-01-01",
+      "description": "I have absolutely no idea when this specimen died. Very rough date estimate!"
+    },
+    {
+      "type": "remove",
+      "species": "aco",
+      "individual": "aco_1",
+      "date": "2021-01-01",
+      "description": "I have absolutely no idea when this specimen died. Very rough date estimate!"
+    },
+    {
+      "type": "remove",
+      "species": "aco",
+      "individual": "aco_2",
+      "date": "2021-01-01",
+      "description": "I have absolutely no idea when this specimen died. Very rough date estimate!"
+    },
+    {
+      "type": "remove",
+      "species": "bir",
+      "individual": "bir_2",
+      "date": "2023-06-01",
+      "description": "White birch tree had a small, strange growth pattern and was leaning badly. Removed by Armando."
+    },
+    {
+      "type": "add",
+      "species": "yan",
+      "individual": "yan_21",
+      "date": "2022-03-01",
+      "description": "Plant from Cottage Gardens. Planted by Elliot.",
+      "x": 539.71,
+      "y": 920.84,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "yan",
+      "individual": "yan_22",
+      "date": "2022-03-01",
+      "description": "Plant from Cottage Gardens. Planted by Elliot.",
+      "x": 587.34,
+      "y": 884.65,
+      "r": 9
+    },
+    {
+      "type": "add",
+      "species": "yan",
+      "individual": "yan_23",
+      "date": "2022-03-01",
+      "description": "Plant from Cottage Gardens. Planted by Elliot.",
+      "x": 634.63,
+      "y": 849.97,
+      "r": 9
+    },
+    {
+      "type": "update",
+      "species": "dar",
+      "individual": "dar_2",
+      "date": "2024-05-24",
+      "description": "Dark star ceanothus is gigantic!",
+      "r": 8
+    },
+    {
+      "type": "update",
+      "species": "yan",
+      "individual": "yan_15",
+      "date": "2024-05-24",
+      "description": "Yankee point ceanothus has taken over the area.",
+      "r": 8
+    },
+    {
+      "type": "remove",
+      "species": "car",
+      "individual": "car_1",
+      "date": "2024-05-24",
+      "description": "Tragically, this specimen died. Today was the first time I noticed as I was browsing the garden."
+    },
+    {
+      "type": "remove",
+      "species": "sis",
+      "individual": "sis_2",
+      "date": "2023-01-01",
+      "description": "Not sure when this plant died. It never thrived if memory serves."
     }
   ]
 }

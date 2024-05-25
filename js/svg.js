@@ -13,7 +13,6 @@
  * - events: sorted array of all plant individual events [{...}, ...]
  * - species: array of all species [{...}, ...]
  * - speciesIndividuals: map of species id to map of individual id to events array {'...': {'...': [{...}, ...]}}
- * - individuals: array of all individuals [{...}, ...]
  *
  * Plant individuals are stored in an obj-obj-array index as follows:
  * {
@@ -80,7 +79,7 @@ Svg.prototype.findPositionAt = function (events, targetMoment) {
         if (targetMoment.getTime() < event.moment.getTime()) {
             break;
         }
-        if (['inherit', 'add', 'move', 'update'].includes(event.type)) {
+        if (['inherit', 'add', 'move'].includes(event.type)) {
             result = {
                 x: event.x,
                 y: event.y,
@@ -91,6 +90,11 @@ Svg.prototype.findPositionAt = function (events, targetMoment) {
                 moment: event.moment
             };
         }
+        if (event.type === 'update') {
+            if (event.x) result.x += event.x;
+            if (event.y) result.y += event.y;
+            if (event.r) result.r += event.r;
+        }
         if (event.type === 'remove') {
             return null;
         }
@@ -98,16 +102,11 @@ Svg.prototype.findPositionAt = function (events, targetMoment) {
     return result;
 };
 
-Svg.prototype.forEachSpeciesIndividual = function (speciesId, callback) {
-    Object.entries(this.speciesIndividuals[speciesId]).forEach(([indyId, indyEvents], n) => {
-        callback(this.species[speciesId], n, indyEvents);
-    });
-};
-
-Svg.prototype.forEachIndividual = function (callback) {
-    this.individuals.forEach((indy, i) => {
-        callback(this.species[indy.species], i, this.speciesIndividuals[indy.species][indy.individual]);
-    });
+Svg.prototype.findEvents = function (speciesId, individualId) {
+    return this.events.filter(e =>
+        (!speciesId || speciesId === e.species) &&
+        (!individualId || individualId === e.individual)
+    );
 };
 
 Svg.prototype.forEachIndividualAt = function (callback, date) {
@@ -139,27 +138,24 @@ Svg.prototype.indexModel = function(model) {
     });
 
     const speciesIndividuals = {};
-    const individuals = [];
-    events.forEach(e => {
+    let n = 0;
+    for (const e of events) {
+        e.index = n++;
         e.moment = moment.tz(e.date, "America/Los_Angeles").toDate();
-
+        e.speciesObj = species[e.species];
         if (!speciesIndividuals[e.species]) {
             speciesIndividuals[e.species] = {};
         }
-
         if (!speciesIndividuals[e.species][e.individual]) {
             speciesIndividuals[e.species][e.individual] = [];
-            individuals.push({ species: e.species, individual: e.individual });
         }
-
         speciesIndividuals[e.species][e.individual].push(e);
-    });
+    }
 
     return {
         events,
         species,
         speciesIndividuals,
-        individuals
     };
 };
 
@@ -258,10 +254,6 @@ Svg.prototype.getSpecies = function(id) {
     return this.species[id];
 };
 
-Svg.prototype.getIndividual = function(speciesId, individualId) {
-    return this.speciesIndividuals[speciesId][individualId];
-};
-
 Svg.prototype.feetPerPixel = function () {
     return this.gardenWidth / this.width;
 };
@@ -300,7 +292,6 @@ Svg.prototype.load = async function (callback) {
     svg.events = index.events;
     svg.species = index.species;
     svg.speciesIndividuals = index.speciesIndividuals;
-    svg.individuals = index.individuals;
 
     callback(svg);
 };

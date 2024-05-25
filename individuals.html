@@ -42,12 +42,11 @@
     <table class="table">
         <thead>
         <tr>
-            <th>Index</th>
-            <th>Species</th>
-            <th>Individual</th>
-            <th>Event</th>
-            <th>Date</th>
-            <th>Type</th>
+            <th class="text-nowrap">Event <button data-property="event" type="button" class="btn btn-sm"><i class="fa fa-sort-asc"></i></button></th>
+            <th class="text-nowrap">Species <button data-property="species" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
+            <th class="text-nowrap">Individual <button data-property="individual" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
+            <th class="text-nowrap">Date <button data-property="date" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
+            <th class="text-nowrap">Type <button data-property="type" type="button" class="btn btn-sm"><i class="fa fa-sort"></i></button></th>
             <th>Description</th>
         </tr>
         </thead>
@@ -66,55 +65,66 @@
 <script src="js/svg.js"></script>
 <script>
     const queryParams = new URLSearchParams(new URL(window.location.href).search);
-    let svgName = queryParams.get("svg") || "cambridge";
-    let svg = new Svg(svgName);
+    const svgName = queryParams.get("svg") || "cambridge";
+    const speciesId = queryParams.get("species");
+    const indyId = queryParams.get("individual");
+    const svg = new Svg(svgName);
+
+    let pageEvents = [];
 
     $(".garden-link").each((i, g) => {
         const target = $(g).attr('data-target');
         $(g).attr('href', `${target}?svg=${svgName}`)
     });
 
-    function individualTableRow(species, n, events) {
+    function tableHtml() {
         let html = "";
-        for (let i = 0; i < events.length; i++) {
+        for (const e of pageEvents) {
             html += `
             <tr>
-                <td>${n + 1}</td>
-                <td><a href="individuals.html?svg=${svgName}&species=${events[i].species}">${species.commonName}</a> <a href="https://www.google.com/search?q=${encodeURIComponent(species.scientificName)}"><i class="fa fa-search"></i></a></td>
-                <td><a href="garden.html?svg=${svgName}&species=${events[i].species}&individual=${events[i].individual}"><code>${events[i].individual}</code></a></td>
-                <td>${i + 1}</td>
-                <td><a href="garden.html?svg=${svgName}&species=${events[i].species}&individual=${events[i].individual}&date=${events[i].date}">${events[i].date}</a></td>
-                <td><code>${events[i].type}</code></td>
-                <td>${events[i].description}</td>
+                <td>${e.index + 1}</td>
+                <td class="text-nowrap"><a href="individuals.html?svg=${svgName}&species=${e.species}">${e.speciesObj.commonName}</a> <a href="https://www.google.com/search?q=${encodeURIComponent(e.speciesObj.scientificName)}"><i class="fa fa-search"></i></a></td>
+                <td><a href="garden.html?svg=${svgName}&species=${e.species}&individual=${e.individual}"><code>${e.individual}</code></a></td>
+                <td class="text-nowrap"><a href="garden.html?svg=${svgName}&species=${e.species}&individual=${e.individual}&date=${e.date}">${e.date}</a></td>
+                <td><code>${e.type}</code></td>
+                <td>${e.description}</td>
             </tr>
             `;
         }
         return html;
     }
 
-    function init() {
-        const speciesId = queryParams.get("species");
-        const indyId = queryParams.get("individual");
-
-        let html = "";
-        if (speciesId) {
-            if (indyId) {
-                const species = svg.getSpecies(speciesId);
-                const events = svg.getIndividual(speciesId, indyId);
-                html += individualTableRow(species, 0, events);
-            } else {
-                svg.forEachSpeciesIndividual(speciesId, (species, n, events) => {
-                    html += individualTableRow(species, n, events);
-                });
-            }
-        } else {
-            svg.forEachIndividual((species, n, events) => {
-                html += individualTableRow(species, n, events);
-            });
-        }
-
+    function sortAndReplaceTableRows(comparator) {
+        pageEvents.sort(comparator);
         $("#tbodyIndividuals tr").remove();
-        $("#tbodyIndividuals").append(html);
+        $("#tbodyIndividuals").append(tableHtml());
+    }
+
+    function init() {
+        pageEvents = svg.findEvents(speciesId, indyId);
+        sortAndReplaceTableRows((l, r) => l.index - r.index);
+
+        $("thead th button").click(function () {
+            const i = $(this).find("i");
+            const property = $(this).attr("data-property");
+            const asc = i.hasClass("fa-sort-asc");
+            const mul = (asc ? -1 : 1);
+
+            $("thead th button i").removeClass("fa-sort-asc").removeClass("fa-sort-desc").addClass("fa-sort");
+            i.removeClass("fa-sort").addClass(asc ? "fa-sort-desc" : "fa-sort-asc");
+
+            if (property === "event") {
+                sortAndReplaceTableRows((l, r) => mul * (l.index - r.index));
+            } else if (property === "species") {
+                sortAndReplaceTableRows((l, r) => mul * l.speciesObj.commonName.localeCompare(r.speciesObj.commonName));
+            } else if (property === "individual") {
+                sortAndReplaceTableRows((l, r) => mul * l.individual.localeCompare(r.individual));
+            } else if (property === "date") {
+                sortAndReplaceTableRows((l, r) => mul * (l.moment.getTime() - r.moment.getTime()));
+            } else if (property === "type") {
+                sortAndReplaceTableRows((l, r) => mul * l.type.localeCompare(r.type));
+            }
+        });
     }
 
     svg.load(init);
