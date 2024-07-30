@@ -6093,6 +6093,13 @@
       "individual": "sis_2",
       "date": "2023-01-01",
       "description": "Not sure when this plant died. It never thrived if memory serves."
+    },
+    {
+      "type": "remove",
+      "species": "gol",
+      "individual": "gol_1",
+      "date": "2024-07-26",
+      "description": "Individual died due to gopher activity. Removed by Armando."
     }
   ]
 }
