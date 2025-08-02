@@ -694,6 +694,24 @@
       "type": "Shrub",
       "commonName": "Sweet-Pea Shrub",
       "scientificName": "Polygala fruticosa ‘Petite Butterflies’"
+    },
+    {
+      "id": "rho",
+      "type": "Shrub",
+      "commonName": "California Azalea",
+      "scientificName": "Rhododendron occidentale"
+    },
+    {
+      "id": "how",
+      "type": "Shrub",
+      "commonName": "Manzanita",
+      "scientificName": "Arctostaphylos 'Howard McMinn'"
+    },
+    {
+      "id": "sup",
+      "type": "Shrub",
+      "commonName": "Petunia",
+      "scientificName": "Supertunia Mini Vista"
     }
   ],
   "events": [
@@ -6223,6 +6241,135 @@
       "date": "2024-10-03",
       "description": "The hybrid plum-apricot continues to thrive. Its footprint has grown significantly.",
       "r": 7
+    },
+    {
+      "type": "add",
+      "species": "rho",
+      "individual": "rho_1",
+      "date": "2025-05-30",
+      "description": "Plant from Friedman Brother's. Installed by Armando. Potting soil additive. Replaced dead daisy.",
+      "x": 213.52879,
+      "y": 676.2937,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "rho",
+      "individual": "rho_2",
+      "date": "2025-05-30",
+      "description": "Plant from Friedman Brother's. Installed by Armando. Potting soil additive. Replaced dead daisy.",
+      "x": 232.37471,
+      "y": 711.96631,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "how",
+      "individual": "how_1",
+      "date": "2025-05-30",
+      "description": "Plant from Friedman Brother's. Installed by Armando. Potting soil additive. Replaced dead daisy.",
+      "x": 206.12505,
+      "y": 704.56256,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "how",
+      "individual": "how_2",
+      "date": "2025-05-30",
+      "description": "Plant from Friedman Brother's. Installed by Armando. Potting soil additive. Replaced dead daisy.",
+      "x": 239.77846,
+      "y": 673.60144,
+      "r": 7
+    },
+    {
+      "type": "remove",
+      "species": "bir",
+      "individual": "bir_1",
+      "date": "2025-05-20",
+      "description": "White birch tree died, likely a result of the trench by Gopher-It Trenchless. I cut most of it down."
+    },
+    {
+      "type": "remove",
+      "species": "fel",
+      "individual": "fel_1",
+      "date": "2025-03-01",
+      "description": "Plant died for an unknown reason."
+    },
+    {
+      "type": "remove",
+      "species": "fel",
+      "individual": "fel_2",
+      "date": "2025-03-01",
+      "description": "Plant died for an unknown reason."
+    },
+    {
+      "type": "remove",
+      "species": "fel",
+      "individual": "fel_3",
+      "date": "2025-03-01",
+      "description": "Plant died for an unknown reason."
+    },
+    {
+      "type": "remove",
+      "species": "fel",
+      "individual": "fel_4",
+      "date": "2025-03-01",
+      "description": "Plant died for an unknown reason."
+    },
+    {
+      "type": "remove",
+      "species": "teu",
+      "individual": "teu_8",
+      "date": "2025-03-01",
+      "description": "Plant died for an unknown reason."
+    },
+    {
+      "type": "add",
+      "species": "dar",
+      "individual": "dar_3",
+      "date": "2024-05-01",
+      "description": "Plant from Cottage Gardens. Installed by Armando.",
+      "x": 107.26,
+      "y": 1109.84,
+      "r": 9
+    },
+    {
+      "type": "remove",
+      "species": "hel",
+      "individual": "hel_9",
+      "date": "2025-05-01",
+      "description": "Plant died unsurprisingly."
+    },
+    {
+      "type": "add",
+      "species": "sup",
+      "individual": "sup_1",
+      "date": "2025-06-02",
+      "description": "Plant from Cottage Gardens picked up with Max during an outing.",
+      "x": 1287.54,
+      "y": 352.66,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "maj",
+      "individual": "maj_3",
+      "date": "2025-06-02",
+      "description": "Plant from Cottage Gardens picked up with Max during an outing.",
+      "x": 1253.77,
+      "y": 376.75,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "maj",
+      "individual": "maj_4",
+      "date": "2025-06-02",
+      "description": "Plant from Cottage Gardens picked up with Max during an outing.",
+      "x": 1266.47,
+      "y": 368.18,
+      "r": 6
     }
   ]
 }
