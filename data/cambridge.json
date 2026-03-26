@@ -718,6 +718,12 @@
       "type": "Shrub",
       "commonName": "La Diva Vintage Violet Lavender",
       "scientificName": "Lavandula stoechas 'La Diva Vintage Violet'"
+    },
+    {
+      "id": "arc",
+      "type": "Shrub",
+      "commonName": "Bearberry",
+      "scientificName": "Arctostaphylos uva-ursi 'Radiant'"
     }
   ],
   "events": [
@@ -6381,29 +6387,29 @@
       "type": "remove",
       "species": "rud",
       "individual": "rud_4",
-      "date": "2026-03-26",
-      "description": "Removed to make way for La Diva Vintage Violet lavender."
+      "date": "2026-03-23",
+      "description": "Removed by Robert to make way for La Diva Vintage Violet lavender."
     },
     {
       "type": "remove",
       "species": "rud",
       "individual": "rud_5",
-      "date": "2026-03-26",
-      "description": "Removed to make way for La Diva Vintage Violet lavender."
+      "date": "2026-03-23",
+      "description": "Removed by Robert to make way for La Diva Vintage Violet lavender."
     },
     {
       "type": "remove",
       "species": "rud",
       "individual": "rud_6",
-      "date": "2026-03-26",
-      "description": "Removed to make way for La Diva Vintage Violet lavender."
+      "date": "2026-03-23",
+      "description": "Removed by Robert to make way for La Diva Vintage Violet lavender."
     },
     {
       "type": "add",
       "species": "ldv",
       "individual": "ldv_1",
-      "date": "2026-03-26",
-      "description": "Planted as replacement for rud_4.",
+      "date": "2026-03-23",
+      "description": "Planted by Robert as replacement for rud_4.",
       "x": 1209.1455,
       "y": 347.16754,
       "r": 7
@@ -6412,8 +6418,8 @@
       "type": "add",
       "species": "ldv",
       "individual": "ldv_2",
-      "date": "2026-03-26",
-      "description": "Planted as replacement for rud_5.",
+      "date": "2026-03-23",
+      "description": "Planted by Robert as replacement for rud_5.",
       "x": 1235.6704,
       "y": 333.30219,
       "r": 7
@@ -6422,11 +6428,31 @@
       "type": "add",
       "species": "ldv",
       "individual": "ldv_3",
-      "date": "2026-03-26",
-      "description": "Planted as replacement for rud_6.",
+      "date": "2026-03-23",
+      "description": "Planted by Robert as replacement for rud_6.",
       "x": 1237.479,
       "y": 304.36591,
       "r": 7
+    },
+    {
+      "type": "add",
+      "species": "arc",
+      "individual": "arc_1",
+      "date": "2026-03-26",
+      "description": "Planted by Armando.",
+      "x": 273,
+      "y": 364,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "arc",
+      "individual": "arc_2",
+      "date": "2026-03-26",
+      "description": "Planted by Armando.",
+      "x": 272,
+      "y": 386,
+      "r": 6
     }
   ]
 }
