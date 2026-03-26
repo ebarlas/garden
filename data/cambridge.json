@@ -712,6 +712,12 @@
       "type": "Shrub",
       "commonName": "Petunia",
       "scientificName": "Supertunia Mini Vista"
+    },
+    {
+      "id": "ldv",
+      "type": "Shrub",
+      "commonName": "La Diva Vintage Violet Lavender",
+      "scientificName": "Lavandula stoechas 'La Diva Vintage Violet'"
     }
   ],
   "events": [
@@ -6370,6 +6376,57 @@
       "x": 1266.47,
       "y": 368.18,
       "r": 6
+    },
+    {
+      "type": "remove",
+      "species": "rud",
+      "individual": "rud_4",
+      "date": "2026-03-26",
+      "description": "Removed to make way for La Diva Vintage Violet lavender."
+    },
+    {
+      "type": "remove",
+      "species": "rud",
+      "individual": "rud_5",
+      "date": "2026-03-26",
+      "description": "Removed to make way for La Diva Vintage Violet lavender."
+    },
+    {
+      "type": "remove",
+      "species": "rud",
+      "individual": "rud_6",
+      "date": "2026-03-26",
+      "description": "Removed to make way for La Diva Vintage Violet lavender."
+    },
+    {
+      "type": "add",
+      "species": "ldv",
+      "individual": "ldv_1",
+      "date": "2026-03-26",
+      "description": "Planted as replacement for rud_4.",
+      "x": 1209.1455,
+      "y": 347.16754,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "ldv",
+      "individual": "ldv_2",
+      "date": "2026-03-26",
+      "description": "Planted as replacement for rud_5.",
+      "x": 1235.6704,
+      "y": 333.30219,
+      "r": 7
+    },
+    {
+      "type": "add",
+      "species": "ldv",
+      "individual": "ldv_3",
+      "date": "2026-03-26",
+      "description": "Planted as replacement for rud_6.",
+      "x": 1237.479,
+      "y": 304.36591,
+      "r": 7
     }
   ]
 }
