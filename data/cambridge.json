@@ -6463,6 +6463,33 @@
       "x": 273,
       "y": 340,
       "r": 6
+    },
+    {
+      "type": "remove",
+      "species": "cri",
+      "individual": "cri_1",
+      "date": "2026-03-26",
+      "description": "Removed by Armando."
+    },
+    {
+      "type": "add",
+      "species": "arc",
+      "individual": "arc_3",
+      "date": "2026-03-26",
+      "description": "Planted by Armando.",
+      "x": 182,
+      "y": 694,
+      "r": 6
+    },
+    {
+      "type": "add",
+      "species": "arc",
+      "individual": "arc_4",
+      "date": "2026-03-26",
+      "description": "Planted by Armando.",
+      "x": 187,
+      "y": 713,
+      "r": 6
     }
   ]
 }
