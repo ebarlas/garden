@@ -6453,6 +6453,16 @@
       "x": 272,
       "y": 386,
       "r": 6
+    },
+    {
+      "type": "add",
+      "species": "man",
+      "individual": "man_40",
+      "date": "2026-03-26",
+      "description": "Planted by Armando.",
+      "x": 273,
+      "y": 340,
+      "r": 6
     }
   ]
 }
