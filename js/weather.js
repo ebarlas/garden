@@ -2,6 +2,9 @@ GardenWeather = {};
 
 GardenWeather.CacheTime = 1000 * 60 * 5;
 
+// Petaluma Airport (KO69), Novato alternative: KDVO
+GardenWeather.Station = 'KO69';
+
 GardenWeather.load = function (latitude, longitude) {
     const keyWeather = `weather.${latitude}.${longitude}`;
     const keyTime = `time.${latitude}.${longitude}`;
@@ -17,27 +20,26 @@ GardenWeather.load = function (latitude, longitude) {
     }
 
     const promise = $.ajax({
-        // Petaluma Airport weather observations stopped updating on 2021-01-06
-        // It seems to be available again
-        url: `https://w1.weather.gov/xml/current_obs/KO69.xml`
-        // Novato alternative:
-        // url: `https://w1.weather.gov/xml/current_obs/KDVO.xml`
+        url: `https://api.weather.gov/stations/${GardenWeather.Station}/observations/latest`,
+        dataType: 'json'
     });
 
-    const obs = promise.then(function (data, status, resp) {
-        function extractFromXml(tag) {
-            const arr = new RegExp(`<${tag}>(.*)</${tag}>`).exec(resp.responseText);
-            return arr ? arr[1] : null;
-        }
+    const obs = promise.then(function (data) {
+        const p = data.properties;
+        const tempC = p.temperature.value;
+        const tempF = tempC !== null ? (tempC * 9 / 5 + 32).toFixed(0) : null;
+        const windKmh = p.windSpeed.value;
+        const windMph = windKmh !== null ? (windKmh * 0.621371).toFixed(0) : null;
+        const windDir = p.windDirection.value;
 
         return {
-            'time': new Date(extractFromXml('observation_time_rfc822')).getTime(),
-            'windSpeed': extractFromXml('wind_mph'),
-            'windDirection': extractFromXml('wind_degrees'),
-            'weather': extractFromXml('weather'),
-            'temp': extractFromXml('temp_f'),
-            'icon': extractFromXml('icon_url_base') + extractFromXml('icon_url_name'),
-        }
+            'time': new Date(p.timestamp).getTime(),
+            'windSpeed': windMph,
+            'windDirection': windDir !== null ? String(windDir) : '999',
+            'weather': p.textDescription || '',
+            'temp': tempF,
+            'icon': p.icon,
+        };
     });
 
     obs.done(function (obj) {
